@@ -25,15 +25,7 @@ Je leert hoe je de (percieved) performance van een bestaande website kan verbete
         <td>13:00 uur *</td>
         <td>Kickoff</td>
     </tr>
-    <tr>
-        <td colspan="4"><b>Week 2</b></td>
-    </tr>
-    <tr>
-        <td>Dinsdag, woensdag of donderdag</td>
-        <td>11 mei</td>
-        <td>13:00 uur *</td>
-        <td>Feedbacksessie</td>
-    </tr>
+ 
     <tr>
         <td colspan="4"><b>Week 3</b></td>
     </tr>
@@ -41,7 +33,7 @@ Je leert hoe je de (percieved) performance van een bestaande website kan verbete
         <td>Donderdag</td>
         <td>18 mei</td>
         <td>13:00 uur *</td>
-        <td>Oplevering</td>
+        <td>Voortgangsmeeting</td>
     </tr>
 </table>
 * vanaf 13:00 uur
