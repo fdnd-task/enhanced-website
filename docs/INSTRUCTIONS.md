@@ -25,7 +25,6 @@ Je leert hoe je de (percieved) performance van een bestaande website kan verbete
         <td>13:00 uur *</td>
         <td>Kickoff</td>
     </tr>
- 
     <tr>
         <td colspan="4"><b>Week 3</b></td>
     </tr>
