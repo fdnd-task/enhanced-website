@@ -23,7 +23,7 @@ Je leert hoe je de (percieved) performance van een bestaande website kan verbete
         <td>Maandag</td>
         <td>25 april</td>
         <td>13:00 uur *</td>
-        <td>Kickoff</td>
+        <td>Voortgangsgesprek</td>
     </tr>
     <tr>
         <td colspan="4"><b>Week 3</b></td>
@@ -32,7 +32,7 @@ Je leert hoe je de (percieved) performance van een bestaande website kan verbete
         <td>Donderdag</td>
         <td>18 mei</td>
         <td>13:00 uur *</td>
-        <td>Voortgangsmeeting</td>
+        <td>Voortgangsgesprek</td>
     </tr>
 </table>
 * vanaf 13:00 uur
