@@ -1,16 +1,15 @@
-<!--
-De conventie voor naamgeving is sprintnaam-(sub)taaknaam
-Topics: semester-naam, semesternummer, sprint-naam, sprint-nummer
--->
+# Performance Matters - Fast Website
 
-# {Naam}
-
-{Beschrijving van de leertaak}.
+Ontwerp en maak met een team een snelle website voor een opdrachtgever
 
 ## Context
-*Bij welke sprint hoort deze leertaak en welk niveau heeft deze leertaak.*
+Deze leertaak hoort bij sprint 10 "Performance Matters". Dit is een leertaak die je in een team uitvoert voor een opdrachtgever.
 
-Deze leertaak hoort bij {sprint # "titel van de sprint"}. Dit is een {niveau van de opdracht} die je {individueel, in team} uitvoert voor {opdrachtgever}
+In het college S10W1-01-Sprintplanning-Performance-Matters en de workshop S10W1-03-Samenwerken-in-Github wordt de opdracht en de werkwijzwe uitgelegd.
+
+Bij deze leertaak hoort de deeltaak:
+- [Serverside Optimization](https://github.com/fdnd-task/performance-matters-serverside-optimization)
+
 
 
 ## User story
