@@ -41,7 +41,7 @@ In de analysefase maak je als team afspraken over hoe je gaat samenwerken.
 #### Planning
 In de analysefase bespreek je als team welke werkzaamheden er zijn, wie wat gaat doen en maak je een planning. 
 
-1. Maak een _project_ aan op de gezamenlijke _repository_ om bij te kunnen houden wie wat doet en wanneer
+1. Maak een _project board_ aan op jullie gezamenlijke _repository_ om bij te kunnen houden wie wat doet en wanneer
 2. Plan voor de aankomende weken alle standups en reviews en noteer de planning in jullie _project board_.
 3. Bekijk en bespreek alle _User Stories_ die bij het project horen. 
 4. Bespreek de _User Stories_ die jullie willen gaan maken en bedenk wat je voor elke user story moet doen
