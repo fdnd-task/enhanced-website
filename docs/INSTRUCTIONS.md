@@ -108,6 +108,6 @@ Deze opdracht is done als:
 - [ ] Je hebt met een team aan de opdracht van een opdrachtgever gewerkt
 - [ ] Teamafspraken
 - [ ] Projectboard
-- [ ] Frontend Performance Issues in de living styleguide
+- [ ] Frontend Performance Technieken geducumenteerd in de living styleguide
 - [ ] 
 
