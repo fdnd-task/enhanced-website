@@ -57,7 +57,7 @@ In de analysefase bespreek je als team welke werkzaamheden er zijn en wie wat ga
 In de ontwerpfase gaan jullie schetsen en afspraken maken over hoe jullie gaan coderen en de huisstijl toepassen.
 
 In deze Sprint gaan jullie je richten op de performance van websites. Om de performance te verbeteren kun je verschillende performance technieken toepassen.  Voor deze opdracht gaan jullie een aantal Frontend Performance optimalisaties toepassen zoals die te lezen zijn in de [Frontend Performance Checklist van Smashing Magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/). 
-In de checklist worden verschillende technieken behandeld waarmee je een webbsit egoed kan optimaliseren. Deze technieken hebben effect op wat voor HTML je gebruikt, CSS en/of JS. Afspraken over hoe jullie dit in code en design gaan doen leggen jullie vast in de _living styleguide_. 
+In de checklist worden verschillende technieken behandeld waarmee je een website kan optimaliseren. Deze technieken hebben effect op wat voor HTML je gebruikt, CSS en/of JS. Afspraken over hoe jullie dit in code en design gaan doen leggen jullie vast in de _living styleguide_. 
 
 1. Clone de bestaande living-styleguide voor de opdrachtgever naar jullie repository. Hier gaan jullie tijdens de opdracht code en design afspraken vastleggen. 
 2. Teken de structuur van de website die jullie willen maken in een _Sitemap_ en bedenk wat op de pagina's moet komen te staan
