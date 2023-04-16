@@ -7,10 +7,6 @@ Deze leertaak hoort bij sprint 10 "Performance Matters". Dit is een leertaak die
 
 In het college S10W1-01-Sprintplanning-Performance-Matters en de workshop S10W1-03-Samenwerken-in-Github wordt de opdracht en de werkwijzwe uitgelegd.
 
-Bij deze leertaak hoort de deeltaak:
-- [Serverside Optimization](https://github.com/fdnd-task/performance-matters-serverside-optimization)
-
-
 
 ## User story
 *Kies een user story uit de backlog van jou project.*
