@@ -94,7 +94,7 @@ Focus sprint 10 - De focus van deze sprint ligt op het beter en sneller laten we
 
 Doel van deze opdracht:
 
-* je leert hoe hoe je met een team een snelle website voor een opdrachtgever kan maken
+* je leert hoe je met een team een website ontwerpt en maakt voor een opdrachtgever waarbij je verschillende performance technieken toepast
 
 
 Voor deze leertaak gelden de gedragscriteria:
