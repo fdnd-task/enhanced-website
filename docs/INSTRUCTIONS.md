@@ -34,6 +34,7 @@ In de analysefase maak je als team afspraken over hoe je gaat samenwerken.
 
 #### Materiaal voor samenwerken
 
+- [How to Collaborate on GitHub](https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267)
 - [download het Team Canvas](https://github.com/fdnd-task/performance-matters-fast-website/blob/main/docs/Teamcanvas.pdf)
 - [Lees instructies over het gebruik van het Teamcanvas in de deeltaak uit sprint 1](https://github.com/fdnd-task/your-tribe-team-canvas)
 
@@ -49,8 +50,7 @@ In de analysefase bespreek je als team welke werkzaamheden er zijn, wie wat gaat
 
 #### Materiaal planning
 
-- [How to Collaborate on GitHub](https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267)
-- [About Projects, quickstart en best practices](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+- [About Githhub Projects, quickstart en best practices](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 - [Wat is een User Story?](https://agilescrumgroup.nl/wat-is-een-user-story/)
 
 
