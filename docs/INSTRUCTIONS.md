@@ -10,7 +10,10 @@ In het college S10W1-01-Sprintplanning-Performance-Matters en de workshop S10W1-
 
 ## Doel van deze opdracht
 
-Tot nu toe heb je in GitHub meestal alleen op één repository gewerkt met server-side code, API's en client-side scripting. Een frontender werkt vaak in teams, zodat taken kunnen worden verdeeld om grotere opdrachten in minder tijd te realiseren. Dan zul je met meerdere frontenders moeten overleggen, duidelijk communiceren wie waar aan gaat werken en code en design afspraken maken. Als je met een team aan één opdracht werkt kun je op slimme manieren op één codebase werken in Github. Dat leer je allemaal in deze sprint.  
+Tot nu toe heb je meestal alleen gewerkt aan server-side code, API's en client-side scripting. Een frontender werkt vaak in teams, dan kun je taken verdelen om grotere opdrachten in minder tijd te realiseren. 
+Als je met een team werkt zul je moeten overleggen, duidelijk communiceren wie waar aan gaat werken en code en design afspraken maken. 
+Met een team kun je op slimme manieren op één codebase werken in Github. 
+Dat leer je allemaal in deze sprint.  
 
 
 ## Werkwijze
