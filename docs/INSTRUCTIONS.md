@@ -110,4 +110,4 @@ Deze opdracht is done als:
 - [ ] Je hebt met een team aan de opdracht van een opdrachtgever gewerkt
 - [ ] Je website is online gepubliceerd
 - [ ] De planning, samenwerking en teamafspraken zijn gedocumenteerd in de Wiki en project-board
-- [ ] Verschillended Frontend Performance optimalisaties zijn gedocumenteerd in de Living Styleguide
+- [ ] Verschillended Frontend Performance optimalisaties zijn toegepast en gedocumenteerd in de Living Styleguide
