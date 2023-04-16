@@ -34,8 +34,8 @@ In de analysefase gaan jullie onderzoeken wat jullie gaan maken, hoe jullie dit 
 
 - [How to Collaborate on GitHub](https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267)
 - [About Projects, quickstart en best practices](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-- [Learn about the Team Canvas](http://theteamcanvas.com/learn/)
-- [Lees instructies over het gebruik van het Teamcanvas in de deeltaak uit sprint 1]([https://example.com](https://github.com/fdnd-task/your-tribe-team-canvas))
+- [download het Team Canvas](./)
+- [Lees instructies over het gebruik van het Teamcanvas in de deeltaak uit sprint 1](https://github.com/fdnd-task/your-tribe-team-canvas)
 
 
 
