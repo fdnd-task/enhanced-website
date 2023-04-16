@@ -107,8 +107,6 @@ Voor deze leertaak gelden de gedragscriteria:
 Deze opdracht is done als:
 
 - [ ] Je hebt met een team aan de opdracht van een opdrachtgever gewerkt
-- [ ] Teamafspraken
-- [ ] Projectboard
-- [ ] Frontend Performance Technieken geducumenteerd in de living styleguide
-- [ ] 
-
+- [ ] Je website is online gepubliceerd
+- [ ] De planning, samenwerking en teamafspraken zijn gedocumenteerd in de Wiki en/of projectboard
+- [ ] Verschillended Frontend Performance optimalisaties zijn gedocumenteerd in de Living Styleguide
