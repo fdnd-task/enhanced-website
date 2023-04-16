@@ -21,7 +21,7 @@ Je gaat in een team van 3 frontenders aan een website voor een opdrachtgever wer
 Deze opdracht gaat over alle fases van de DLC [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
 
 ### Analyseren
-In de analysefase gaan jullie onderzoeken wat jullie gaan maken, hoe jullie gaan werken als team en maak je een planning. 
+In de analysefase gaan jullie bespreken hoe jullie gaan [samenwerken](#samenwerken), en ga je onderzoeken wat jullie gaan maken en maak je een [planning](#werkzaamheden). 
 
 #### Samenwerken
 In de analysefase maak je als team afspraken over hoe je gaat samenwerken.
@@ -41,14 +41,14 @@ In de analysefase maak je als team afspraken over hoe je gaat samenwerken.
 - [Lees instructies over het gebruik van het Teamcanvas in de deeltaak uit sprint 1](https://github.com/fdnd-task/your-tribe-team-canvas)
 
 
-#### Werkzaamheden
-In de analysefase bespreek je als team welke werkzaamheden er zijn en wie wat gaat doen. 
+#### Planning
+In de analysefase bespreek je als team welke werkzaamheden er zijn, wie wat gaat doen en maak je een planning. 
 
 1. Bekijk en bespreek alle _User Stories_ die bij het project horen. 
 2. Bespreek de _User Stories_ die jullie willen gaan maken en bedenk wat je voor elke user story moet doen
 3. Maak taken aan in het _project board_, geef ze een prioriteit en voeg de namen toe van de mensen die eraan gaan werken
 
-#### Materiaal voor werkzaamheden
+#### Materiaal planning
 
 - [Wat is een User Story?](https://agilescrumgroup.nl/wat-is-een-user-story/)
 
