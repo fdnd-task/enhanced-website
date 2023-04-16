@@ -49,7 +49,7 @@ In de ontwerpfase gaan jullie afspraken maken over code en design. Deze afsprake
 
 
 ### Frontend Performance Checklist
-Voor deze opdracht gaan jullie proberen Frontend Performance issues toe te passen. Afspraken over hoe jullie ddit in code en design gaan doe leggen jullie vast in een living styleguide. 
+Voor deze opdracht gaan jullie proberen Frontend Performance issues toe te passen. Afspraken over hoe jullie dit in code en design gaan doe leggen jullie vast in de living styleguide. 
 
 1. Clone de bestaanded living-styleguide voor de opdrachtgever naar jullie repository. Hier gaan jullie tijdens de opdracht code en design afspraken vastleggen. 
 2. ...
@@ -91,6 +91,6 @@ Deze opdracht is done als:
 - [ ] Je hebt met een team aan de opdracht van een opdrachtgever gewerkt
 - [ ] Teamafspraken
 - [ ] Projectboard
-- [ ] Frontend Performance Issues in de living styleguide
+- [ ] Frontend Performance Issues in de living styleguide staan
 - [ ] 
 
