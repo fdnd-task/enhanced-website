@@ -21,7 +21,7 @@ Je gaat in een team van 3 frontenders aan een website voor een opdrachtgever wer
 Deze opdracht gaat over alle fases van de DLC [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
 
 ### Analyseren
-In de analysefase gaan jullie bespreken hoe jullie gaan [samenwerken](#samenwerken), en ga je onderzoeken wat jullie gaan maken en maak je een [planning](#werkzaamheden). 
+In de analysefase gaan jullie bespreken hoe jullie gaan [samenwerken](#samenwerken), en ga je onderzoeken wat jullie gaan maken en maak je een [planning](#planning). 
 
 #### Samenwerken
 In de analysefase maak je als team afspraken over hoe je gaat samenwerken.
