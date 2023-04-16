@@ -1,4 +1,4 @@
-# Performance Matters - Fast Website
+# Performance Matters - Optimized Website
 
 Ontwerp en maak met een team een website voor een opdrachtgever waarbij je verschillende performance technieken toepast
 
