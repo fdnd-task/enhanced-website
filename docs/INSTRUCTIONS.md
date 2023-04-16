@@ -10,104 +10,60 @@ In het college S10W1-01-Sprintplanning-Performance-Matters en de workshop S10W1-
 
 ## Doel van deze opdracht
 
-Tot nu toe heb je meestal alleen gewerkt aan server-side code, API's en client-side scripting. Een frontender werkt vaak in teams, dan kun je taken verdelen om grotere opdrachten in minder tijd te realiseren. 
-Als je met een team werkt zul je moeten overleggen, duidelijk communiceren wie waar aan gaat werken en code en design afspraken maken. 
-Met een team kun je op slimme manieren op één codebase werken in Github. 
-Dat leer je allemaal in deze sprint.  
+Tot nu toe heb je, meestal, alleen gewerkt aan server-side code, API's en client-side scripting. Een frontender werkt vaak in teams, zodat je taken kan verdelen en grotere opdrachten in minder tijd kunt realiseren. 
+Als je met een team werkt ga je met meerdere frontenders op één code-base werken, je zult moeten overleggen, afspreken wie waar aan gaat werken, en code en design afspraken maken. Dat leer je allemaal in deze sprint.  
 
 
 ## Werkwijze
 
-Je gaat in een team van 3 frontenders aan een website voor een opdrachtgever werken. In de analyse fase ga je onderzoeken wat jullie gaan maken, hoe jullie dit gaan doen en je gaat afspraken maken over de gezamenlijke code en het design in de styleguide.  
+Je gaat in een team van 3 frontenders aan een website voor een opdrachtgever werken. Zorg er voor dat je duidelijk afspraken maakt en elkaar regelmatig op de hoogte houdt van je vorderingen. samen met je team ben je verantwoordelijk voor de planning en het eindresultaat. 
 
 Deze opdracht gaat over alle fases van de DLC [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
 
 ### Analyseren
-*In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren.*
-
-
-Uitleg ver het werken in teams op 1 codebase en taken verdelen. 
-Code en design afspraken maken op basis van performance en toegankelijkhed, afspraken en conventies in een nieuwe versie van de Styleguide bijhouden, documenteren
-
+In de analysefase gaan jullie onderzoeken wat jullie gaan maken, hoe jullie dit gaan doen en wanneer. 
 
 #### Aanpak
-
-1. {geef de stappen}
-2. {die in deze fase}
-3. {doorlopen worden}
+1. Fork deze leertaak en zet de _repository_ klaar voor het team zodat iedereen met dezelfde codebase kan werken. 
+2. Maak een _project_ aan op de gezamenlijke _repository_ om bij te kunnen houden wie wat doet en wanneer
+3. Vul een Teamcanvas in, begin met het individuele deel en bespreek de persoonlijke doelen, vul vervolgens als team de andere vlakken.
+4. Maak afspraken hoe jullie gaan samenwerken, plan voor de aankomende weken alvast standups en reviews in. leg de afspraken vast in de _wiki_ en noteer de planning in jullie _project_. 
+ 
 
 #### Materiaal analysefase
 
-- [Resource](https://example.com)
-- [Resource](https://example.com)
-- [Resource](https://example.com)
+- [How to Collaborate on GitHub](https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267)
+- [About Projects, quickstart en best practices](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+- [Learn about the Team Canvas](http://theteamcanvas.com/learn/)
+- [Lees instructies over het gebruik van het Teamcanvas in de deeltaak uit sprint 1]([https://example.com](https://github.com/fdnd-task/your-tribe-team-canvas))
 
-</details>
+
 
 ### Ontwerpen
-*In de ontwerpfase neem je ontwerpbeslissingen en zorg je dat je precies weet wat je moet gaan bouwen.*
+In de ontwerpfase gaan jullie afspraken maken over code en design. Deze afspraken gaan jullie vastleggen in de living-styleguide. 
 
 #### Aanpak
+1. Bekijk en bespreek alle user stories die bij het project horen. Teken een structuur voor de website met een sitemap. Kun je verschillende user stories een plek geven?
+2. Bespreek welke Usser Stories jullie willen gaan maken en bedenk wat je daarvoor moet doen
+3. Maak taken aan in het project board, geef ze een prioriteit en voeg de naman toe van de mensen die eraan gaan werken
 
-1. {geef de stappen}
-2. {die in deze fase}
-3. {doorlopen worden}
 
-#### Materiaal ontwerpfase
+### Frontend Performance Checklist
+Voor deze opdracht gaan jullie proberen Frontend Performance issues toe te passen. Afspraken over hoe jullie code en design gaan toepassen leggen jullie vast in de living styleguide. 
 
-- [Resource](https://example.com)
-- [Resource](https://example.com)
-- [Resource](https://example.com)
-
+1. Clone de bestaanded living-styleguide voor de opdrachtgever naar jullie repository. Hier gaan jullie tijdens de opdracht code en design afspraken vastleggen. 
+2. ...
+3. ...
 
 
 ### Bouwen
-*In de bouwfase realiseer je de beslissingen uit de ontwerpfase.*
-
-#### Aanpak
-
-1. {geef de stappen}
-2. {die in deze fase}
-3. {doorlopen worden}
-
-#### Materiaal bouwfase
-
-- [Resource](https://example.com)
-- [Resource](https://example.com)
-- [Resource](https://example.com)
-
+In de bouwfase realiseer je de beslissingen uit de ontwerpfase.
 
 ### Integreren
-*In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien.*
-
-#### Aanpak
-
-1. {geef de stappen}
-2. {die in deze fase}
-3. {doorlopen worden}
-
-#### Materiaal integratiefase
-
-- [Resource](https://example.com)
-- [Resource](https://example.com)
-- [Resource](https://example.com)
-
-
+In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien.
 
 ### Testen
-*In de testfase controleer je of jouw aanpassingen werken zoals bedoeld.*
-
-#### Aanpak
-
-1. {geef de stappen}
-2. {die in deze fase}
-3. {doorlopen worden}
-
-#### Materiaal testfase
-
-- [Resource](https://example.com)
-- [Resource](https://example.com)
-- [Resource](https://example.com)
+In de testfase controleer je of jouw aanpassingen werken zoals bedoeld.
 
 
 
@@ -133,5 +89,8 @@ Voor deze leertaak gelden de gedragscriteria:
 Deze opdracht is done als:
 
 - [ ] Je hebt met een team aan de opdracht van een opdrachtgever gewerkt
+- [ ] Teamafspraken
+- [ ] Projectboard
+- [ ] Frontend Performance Issues in de living styleguide
 - [ ] 
 
