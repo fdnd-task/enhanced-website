@@ -1,6 +1,6 @@
 # Performance Matters - Fast Website
 
-Ontwerp en maak met een team een snelle website voor een opdrachtgever
+Ontwerp en maak met een team een website voor een opdrachtgever waarbij je verschillende performance technieken toepast
 
 ## Context
 Deze leertaak hoort bij sprint 10 "Performance Matters". Dit is een leertaak die je in een team uitvoert voor een opdrachtgever.
