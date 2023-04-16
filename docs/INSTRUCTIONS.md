@@ -69,6 +69,7 @@ In de checklist worden verschillende technieken behandeld waarmee je een webbsit
 - [How to create a UX Sitemap: a simple guideline](https://uxdesign.cc/how-to-create-a-ux-sitemap-a-simple-guideline-8786c16f85c1)
 - [Sitemaps & Information Architecture (IA)](https://xd.adobe.com/ideas/process/information-architecture/sitemap-and-information-architecture/)
 - [Wireframing User Flow with Wireflows](https://balsamiq.com/learn/articles/wireflows/)
+- [Frontend Performance Checklist van Smashing Magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/)
 - [Lees instructies over het maken van een Living-styleguide uit sprint 4](https://github.com/fdnd-task/look-and-feel-living-styleguide/)
 
 
