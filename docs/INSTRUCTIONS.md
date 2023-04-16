@@ -27,16 +27,13 @@ In de analysefase gaan jullie bespreken hoe jullie gaan [samenwerken](#samenwerk
 In de analysefase maak je als team afspraken over hoe je gaat samenwerken.
 
 1. Fork deze leertaak en zet de _repository_ klaar voor het team zodat iedereen met dezelfde codebase kan werken. 
-2. Maak een _project_ aan op de gezamenlijke _repository_ om bij te kunnen houden wie wat doet en wanneer
 3. Vul een Teamcanvas in, begin met het individuele deel en bespreek de persoonlijke doelen. 
 4. Vul vervolgens als team de andere vlakken van het Teamcanvas in.
-5. Maak afspraken over hoe jullie gaan samenwerken, plan voor de aankomende weken alle standups en reviews. Leg de afspraken vast in de _wiki_ en noteer de planning in jullie _project_. 
+5. Maak afspraken over hoe jullie gaan samenwerken,  leg de afspraken vast in de _wiki_.
  
 
 #### Materiaal voor samenwerken
 
-- [How to Collaborate on GitHub](https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267)
-- [About Projects, quickstart en best practices](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 - [download het Team Canvas](https://github.com/fdnd-task/performance-matters-fast-website/blob/main/docs/Teamcanvas.pdf)
 - [Lees instructies over het gebruik van het Teamcanvas in de deeltaak uit sprint 1](https://github.com/fdnd-task/your-tribe-team-canvas)
 
@@ -44,12 +41,16 @@ In de analysefase maak je als team afspraken over hoe je gaat samenwerken.
 #### Planning
 In de analysefase bespreek je als team welke werkzaamheden er zijn, wie wat gaat doen en maak je een planning. 
 
-1. Bekijk en bespreek alle _User Stories_ die bij het project horen. 
-2. Bespreek de _User Stories_ die jullie willen gaan maken en bedenk wat je voor elke user story moet doen
-3. Maak taken aan in het _project board_, geef ze een prioriteit en voeg de namen toe van de mensen die eraan gaan werken
+1. Maak een _project_ aan op de gezamenlijke _repository_ om bij te kunnen houden wie wat doet en wanneer
+2. Plan voor de aankomende weken alle standups en reviews en noteer de planning in jullie _project board_.
+3. Bekijk en bespreek alle _User Stories_ die bij het project horen. 
+4. Bespreek de _User Stories_ die jullie willen gaan maken en bedenk wat je voor elke user story moet doen
+5. Maak taken aan in het _project board_, geef ze een prioriteit en voeg de namen toe van de mensen die eraan gaan werken
 
 #### Materiaal planning
 
+- [How to Collaborate on GitHub](https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267)
+- [About Projects, quickstart en best practices](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 - [Wat is een User Story?](https://agilescrumgroup.nl/wat-is-een-user-story/)
 
 
@@ -108,5 +109,5 @@ Deze opdracht is done als:
 
 - [ ] Je hebt met een team aan de opdracht van een opdrachtgever gewerkt
 - [ ] Je website is online gepubliceerd
-- [ ] De planning, samenwerking en teamafspraken zijn gedocumenteerd in de Wiki en/of projectboard
+- [ ] De planning, samenwerking en teamafspraken zijn gedocumenteerd in de Wiki en project-board
 - [ ] Verschillended Frontend Performance optimalisaties zijn gedocumenteerd in de Living Styleguide
