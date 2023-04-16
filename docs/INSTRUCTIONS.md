@@ -26,8 +26,8 @@ In de analysefase gaan jullie onderzoeken wat jullie gaan maken, hoe jullie dit 
 #### Aanpak
 1. Fork deze leertaak en zet de _repository_ klaar voor het team zodat iedereen met dezelfde codebase kan werken. 
 2. Maak een _project_ aan op de gezamenlijke _repository_ om bij te kunnen houden wie wat doet en wanneer
-3. Vul een Teamcanvas in, begin met het individuele deel en bespreek de persoonlijke doelen, vul vervolgens als team de andere vlakken.
-4. Maak afspraken hoe jullie gaan samenwerken, plan voor de aankomende weken alvast standups en reviews in. leg de afspraken vast in de _wiki_ en noteer de planning in jullie _project_. 
+3. Vul een Teamcanvas in, begin met het individuele deel en bespreek de persoonlijke doelen. Vul vervolgens als team de andere vlakken in.
+4. Maak afspraken over hoe jullie gaan samenwerken, plan voor de aankomende weken alle standups en reviews. Leg de afspraken vast in de _wiki_ en noteer de planning in jullie _project_. 
  
 
 #### Materiaal analysefase
