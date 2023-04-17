@@ -9,7 +9,7 @@ import notFoundPage from './routes/not-found.js'
 const { env } = process
 const server = express()
 
-const port = env.PORT
+const port = env.PORT || 3000
 
 server.set('view engine', 'ejs')
 server.set('views', 'views')
