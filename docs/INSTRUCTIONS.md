@@ -83,10 +83,27 @@ In de ontwerpfase maak je schetsen voor de taak waar jij nu aan gaat werken. Dit
 
 
 ### Bouwen
-In de bouwfase realiseer je de beslissingen uit de ontwerpfase.
+In de bouwfase realiseer je de beslissingen uit de ontwerpfase. Na de les over samenwerken in GitHub doe je dat waarschijnlijk op een *feature branch* die je na het uitwerken van de taak in de integratiefase met een *pull-request* toevoegt aan het project.
+
+1. Werk aan jouw taak. Probeer voor elke afgeronde stap een commit te doen zodat herleidbaar is welke aanpassingen je gemaakt hebt.
+2. Test de implementatie van jouw taak voor je naar de integratiefase gaat.
+
+
+#### Materiaal bouwfase
+
+[Frontend Performance Checklist van Smashing Magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/).
 
 ### Integreren
-In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien.
+In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien en er op verder kan bouwen. Waarschijnlijk doe je dit pas na de les over samenwerken in Github.
+
+1. Maak een *pull-request* voor jouw feature.
+2. Bespreek met je team wanneer *pull-requests* worden verwerkt en wie ze afhandelt.
+3. Handel het *pull-request* af.
+
+#### Materiaal integratiefase
+
+- [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+- [GitHub, Aan een project bijdragen](https://git-scm.com/book/nl/v2/GitHub-Aan-een-project-bijdragen) (laat je niet afschrikken door de command line code, jij kunt daar prima GitHub Desktop voor gebruiken!)
 
 ### Testen
 In de testfase controleer je of jouw aanpassingen werken zoals bedoeld.
@@ -102,11 +119,9 @@ In de testfase controleer je of jouw aanpassingen werken zoals bedoeld.
 
 Focus sprint 10 - De focus van deze sprint ligt op het beter en sneller laten werken van een website en samenwerken.
 
-
 Doel van deze opdracht:
 
 * je leert hoe je met een team een website ontwerpt en maakt voor een opdrachtgever waarbij je verschillende performance technieken toepast
-
 
 Voor deze leertaak gelden de gedragscriteria:
 
@@ -121,4 +136,4 @@ Deze opdracht is done als:
 - [ ] Je hebt met een team aan de opdracht van een opdrachtgever gewerkt
 - [ ] Je website is online gepubliceerd
 - [ ] De planning, samenwerking en teamafspraken zijn gedocumenteerd in de Wiki en project-board
-- [ ] Verschillended Frontend Performance technieken zijn toegepast en gedocumenteerd in de Living Styleguide
+- [ ] Verschillende Frontend Performance technieken zijn toegepast en gedocumenteerd in de *Living-Styleguide*
