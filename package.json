@@ -1,0 +1,29 @@
+{
+  "name": "performance-matters-optimized-website",
+  "version": "1.0.0",
+  "description": "> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanHont/performance-matters-optimized-website.git"
+  },
+  "author": "Sander & Tim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanHont/performance-matters-optimized-website/issues"
+  },
+  "homepage": "https://github.com/SanHont/performance-matters-optimized-website#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
