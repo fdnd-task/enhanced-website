@@ -1,6 +1,6 @@
 # Performance Matters - Optimized Website
 
-Ontwerp en maak met een team een website voor een opdrachtgever waarbij je verschillende performance technieken toepast
+Ontwerp en maak met een team een website voor een opdrachtgever waarbij je verschillende performance technieken toepast.
 
 ## Context
 Deze leertaak hoort bij sprint 10 "Performance Matters". Dit is een leertaak die je in een team uitvoert voor een opdrachtgever.
@@ -10,27 +10,25 @@ In het college S10W1-01-Sprintplanning-Performance-Matters en de workshop S10W1-
 
 ## Doel van deze opdracht
 
-Tot nu toe heb je, meestal, alleen gewerkt aan server-side code, API's en client-side scripting. Een frontender werkt vaak in teams, zodat je taken kan verdelen en grotere opdrachten in minder tijd kunt realiseren. 
-Als je met een team werkt ga je met meerdere frontenders op één code-base werken, je zult moeten overleggen, afspreken wie waar aan gaat werken, en code en design afspraken maken. Dat leer je allemaal in deze sprint.  
-
+Tot nu toe heb je voornamelijk alleen gewerkt aan server-side code, API's en client-side scripting. Een frontender werkt vaak samen in teams zodat je taken kunt verdelen en grote(re) opdrachten in minder tijd kunt realiseren. 
+Als je in een team werkt werk je met meerdere frontenders in één repository samen. Je zult moeten overleggen, afspreken wie waar aan gaat werken, en code en design afspraken maken. Hoe je dat op een goede manier doet leer je in deze sprint.
 
 ## Werkwijze
 
-Je gaat in een team van 3 frontenders aan een website voor een opdrachtgever werken. Zorg er voor dat je duidelijk afspraken maakt en elkaar regelmatig op de hoogte houdt van je vorderingen. samen met je team ben je verantwoordelijk voor de planning en het eindresultaat. 
+Je werkt in een team van max. 3 frontenders aan een website voor een opdrachtgever. Zorg er voor dat je duidelijk afspraken maakt en elkaar dagelijks op de hoogte houdt van vorderingen. Samen met jouw team ben je verantwoordelijk voor de planning, het samenwerkingsproces én het eindresultaat.
 
 Deze opdracht gaat over alle fases van de DLC [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
 
 ### Analyseren
-In de analysefase gaan jullie bespreken hoe jullie gaan [samenwerken](#samenwerken), en ga je onderzoeken wat jullie gaan maken en maak je een [planning](#planning). 
+In de analysefase wordt besproken hoe jullie willen gaan [samenwerken](#samenwerken), onderzoek je wat jullie gaan maken en maak je een [planning](#planning). 
 
 #### Samenwerken
 In de analysefase maak je als team afspraken over hoe je gaat samenwerken.
 
-1. Fork deze leertaak en zet de _repository_ klaar voor het team zodat iedereen met dezelfde codebase kan werken. 
-3. Vul een Teamcanvas in, begin met het individuele deel en bespreek de persoonlijke doelen. 
+1. Fork deze leertaak en zet de _repository_ klaar voor het team zodat iedereen met dezelfde codebase kan werken.
+3. Vul een Teamcanvas in, begin met het individuele deel en bespreek jouw persoonlijke doelen met je teamgenoten.
 4. Vul vervolgens als team de andere vlakken van het Teamcanvas in.
 5. Maak afspraken over hoe jullie gaan samenwerken,  leg de afspraken vast in de _wiki_.
- 
 
 #### Materiaal voor samenwerken
 
@@ -38,32 +36,41 @@ In de analysefase maak je als team afspraken over hoe je gaat samenwerken.
 - [download het Team Canvas](https://github.com/fdnd-task/performance-matters-fast-website/blob/main/docs/Teamcanvas.pdf)
 - [Lees instructies over het gebruik van het Teamcanvas in de deeltaak uit sprint 1](https://github.com/fdnd-task/your-tribe-team-canvas)
 
-
 #### Planning
-In de analysefase bespreek je als team welke werkzaamheden er zijn, wie wat gaat doen en maak je een planning. 
+In de analysefase bespreek je als team welke werkzaamheden er zijn, wie wat gaat doen en maak je een planning.
 
 1. Maak een _project board_ aan op jullie gezamenlijke _repository_ om bij te kunnen houden wie wat doet en wanneer
 2. Plan voor de aankomende weken alle standups en reviews en noteer de planning in jullie _project board_.
-3. Bekijk en bespreek alle _User Stories_ die bij het project horen. 
-4. Bespreek de _User Stories_ die jullie willen gaan maken en bedenk wat je voor elke user story moet doen
-5. Maak taken aan in het _project board_, geef ze een prioriteit en voeg de namen toe van de mensen die eraan gaan werken
+3. Bekijk en bespreek álle _User Stories_ die bij het project horen. 
+4. Bespreek de _User Stories_ die jullie willen oppakken en bedenk wat je voor elke user story moet doen.
+5. Maak bij elke *User Story* meerdere taken aan in het *project board*, geef ze een prioriteit en voeg de namen toe van de mensen die eraan gaan werken. ProTip: Als taken te groot zijn (langer dan een dag duren) is het zinvol ze op te splitsen in meerdere kleinere taken.
 
 #### Materiaal planning
 
 - [About Githhub Projects, quickstart en best practices](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 - [Wat is een User Story?](https://agilescrumgroup.nl/wat-is-een-user-story/)
-
+- [What's Microproductivity?](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps)
 
 ### Ontwerpen
-In de ontwerpfase gaan jullie schetsen en afspraken maken over hoe jullie gaan coderen en de huisstijl toepassen.
+In de ontwerpfase gaan jullie schetsen en afspraken maken over hoe jullie de huisstijl toepassen en hoe je dit gaat verwerken in het project voor de opdrachtgever.
 
-In deze Sprint gaan jullie je ook richten op de performance van websites. Om de performance te verbeteren kun je verschillende performance technieken toepassen.  Voor deze opdracht gaan jullie een aantal Frontend Performance optimalisaties toepassen zoals die te lezen zijn in de [Frontend Performance Checklist van Smashing Magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/). 
-In de checklist worden verschillende technieken behandeld waarmee je een website kan optimaliseren. Deze technieken hebben effect op wat voor HTML je gebruikt, CSS en/of JS. Afspraken over hoe jullie dit in code en design gaan doen leggen jullie vast in de _living styleguide_. 
+#### Living Styleguide
+In deze Sprint gaan jullie je (ook) richten op de performance van websites. Om de performance te verbeteren kun je verschillende performance technieken toepassen.  Voor deze opdracht gaan jullie een aantal Frontend Performance optimalisaties toepassen zoals die te lezen zijn in de [Frontend Performance Checklist van Smashing Magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/).
 
-1. Clone de bestaande living-styleguide voor de opdrachtgever naar jullie repository. 
-2. Teken de structuur van de website die jullie willen maken in een _Sitemap_ en bedenk wat op de pagina's moet komen te staan
-3. Schets de User Stories waar jullie aan gaan werken in een Wireflow en maak gezamenlijk breakdown-schetsen 
-4. Terwijl jullie aan de website gaan werken houden jullie in de Living-stylguide bij wat voor HTML, CSS en/of JS voor een functionaliteit, component of de layout nodig is
+In de checklist worden verschillende technieken behandeld waarmee je een website kan optimaliseren. Deze technieken hebben effect op wat voor HTML je gebruikt, CSS en/of JS. Afspraken over hoe jullie dit in code en design gaan doen leggen jullie vast in de _living styleguide_.
+
+1. Clone de bestaande *living-styleguide* voor de opdrachtgever naar jullie repository.
+2. Teken de structuur van de website die jullie willen maken in een _Sitemap_ en bedenk wat op de pagina's moet komen te staan.
+3. Schets de User Stories waar jullie aan gaan werken in een Wireflow en maak gezamenlijk breakdown-schetsen.
+4. Terwijl jullie aan de website gaan werken houden jullie in de *living-stylguide* bij wat voor HTML, CSS en/of JS voor een functionaliteit, component of de layout nodig is.
+5. (optioneel) Als je als team *pull-requests* goed onder de knie hebt kan je aan het eind van de sprint de aanpassingen aan de *living-styleguide* met een *pull-request* samenvoegen met het origineel dat je bij stap 1 *cloned* hebt. Let op: je moet dan afspraken maken met de andere teams die voor deze opdrachtgever werken!
+
+#### Project voor de opdrachtgever
+In de ontwerpfase maak je schetsen voor de taak waar jij nu aan gaat werken. Dit doe je waarschijnlijk meerdere keren per sprint, telkens voor de nieuwe taak waar je aan werkt.
+
+1. Maak ontwerpschetsen, kies zelf het medium wat voor jou het beste werkt maar begin in ieder geval even op papier. Probeer verschillende oplossingen uit maar houd je aan de afspraken in de *living-styleguide*. Je bent klaar als je voor ogen hebt wat je gaat bouwen.
+2. Bespreek jouw ontwerp met een teamgenoot, stel eventueel je ontwerp bij op basis van de feedback die je ontvangt. Hint: Maak een issue aan!
+3. Documenteer jouw ontwerp in de wiki.
 
 #### Materiaal ontwerpfase
 
@@ -84,6 +91,10 @@ In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien.
 ### Testen
 In de testfase controleer je of jouw aanpassingen werken zoals bedoeld.
 
+1. Test de performance van jouw project, maak issues aan en documenteer je bevindingen in de wiki.
+2. Test jouw project op meerdere devices en browsers, maak issues aan  en documenteer je bevindingen in de wiki.
+3. Test de toegankelijkheid van jouw project, maak issues aan  en documenteer je bevindingen in de wiki.
+4. Test de bruikbaarheid van jouw project, maak issues aan  en documenteer je bevindingen in de wiki.
 
 
 ## Criteria
