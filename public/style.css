@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+# VARIABLES
+--------------------------------------------------------------*/
+
+:root {
+  --c-delft-blue: #3A3C63;
+  --c-floral-white: #F9F4EA;
+  --c-atomic-tangerin: #F19460;
+  --c-keppel: #51B599;
+  --c-iris: #6E46CC;
+  --c-raisin-black: #1E1D22;
+  --c-dark-grey-bg: #242529;
+  --c-light-grey-bg: #DCDCDC;
+}
+
+/*--------------------------------------------------------------
+  # FONTS
+  --------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Inter-Light';
+  src: url(../fonts/Inter-Light.ttf);
+}
+
+/*--------------------------------------------------------------
+  # GLOBALS
+  --------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--c-delft-blue);
+  color: var(--c-floral-white);
+  font-family: 'Inter-Light';
+}
