@@ -39,8 +39,23 @@
 }
 
 @font-face {
-  font-family: 'Inter-Light';
-  src: url(../fonts/Inter-Light.ttf);
+  font-family: 'Montserrat-Medium';
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url(../fonts/Inter-SemiBold.ttf);
 }
 
 /*--------------------------------------------------------------
