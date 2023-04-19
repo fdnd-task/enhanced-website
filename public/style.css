@@ -3,14 +3,30 @@
 --------------------------------------------------------------*/
 
 :root {
-  --c-delft-blue: #3A3C63;
-  --c-floral-white: #F9F4EA;
-  --c-atomic-tangerin: #F19460;
-  --c-keppel: #51B599;
-  --c-iris: #6E46CC;
-  --c-raisin-black: #1E1D22;
+  --c-body-text-color: #FFFFFF;
+
   --c-dark-grey-bg: #242529;
-  --c-light-grey-bg: #DCDCDC;
+  --c-area-bg: #36383E;
+
+  --c-player-cards: #6F6F6F;
+  --c-male-gender: #76C6FF;
+  --c-female-gender: #F476FF;
+
+  --c-blocks-input: #FF4B4B;
+  --c-turnovers-input: #ECD45E;
+  --c-goals-input: #4ED19D;
+  --c-assists-input: #9570CF;
+
+  --c-score-green: #37C356;
+  --c-score-light-green: #5DFF81;
+  --c-score-red: #C91E1E;
+  --c-score-light-red: #FF4D4D;
+
+  --c-button-border: #EFFFAD;
+
+  --c-live-button: #FF1A1A;
+
+  --br-areas: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -46,7 +62,57 @@ html {
 }
 
 body {
-  background-color: var(--c-delft-blue);
-  color: var(--c-floral-white);
+  background-color: var(--c-dark-grey-bg);
+  color: var(--c-body-text-color);
   font-family: 'Inter-Light';
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 5% 30% 1fr;
+  grid-template-rows: 1.2fr 0.8fr 1fr 1fr;
+  gap: 1.5rem;
+  grid-template-areas:
+    "sidebar live-score players-team-one"
+    "sidebar score-history players-team-one"
+    "sidebar score-history players-team-two"
+    "sidebar score-history players-team-two";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border-radius: 0 10px 10px 0;
+  background-color: #36383E;
+}
+
+.live-score {
+  grid-area: live-score;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  background-color: #36383E;
+  border-radius: var(--br-areas);
+}
+
+.score-history {
+  grid-area: score-history;
+  margin-left: 2rem;
+  background-color: #36383E;
+  border-radius: var(--br-areas);
+  margin-bottom: 1.5rem;
+}
+
+.players-team-one {
+  margin-top: 1.5rem;
+  margin-right: 4rem;
+  margin-left: 2rem;
+  border-radius: var(--br-areas);
+  grid-area: players-team-one;
+  background-color: #36383E;
+}
+
+.players-team-two {
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 4rem;
+  border-radius: var(--br-areas);
+  grid-area: players-team-two;
+  background-color: #36383E;
 }
