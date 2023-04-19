@@ -8,9 +8,10 @@
 <h2 id="inhoud">📦 Inhoud</h2>
 
 1. Beschrijving
-2. Kenmerken
-3. Bronnen
-4. Licenties
+2. Gebruik
+3. Kenmerken
+4. Bronnen
+5. Licenties
 
 <h2 id="beschrijving">ℹ️ Beschrijving</h2>
 
