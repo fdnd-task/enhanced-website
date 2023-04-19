@@ -22,77 +22,10 @@ app.use(express.static("public"));
 
 // Maak een route voor de index
 
-// homepagina
+// index renderen
+
 app.get("/", (request, response) => {
   response.render("index");
-});
-
-// profile
-
-app.get("/profile", (request, response) => {
-  response.render("profile");
-});
-
-// overzichtspagina
-app.get("/overzichtspagina", (request, response) => {
-  console.log(request.query.methods);
-  const methodsUrl = url + "/methods?first=100";
-
-  fetchJson(methodsUrl).then((data) => {
-    response.render("overzichtspagina", data);
-  });
-});
-
-// detailpagina
-
-app.get("/detailpagina/:slug", (request, response) => {
-  // console.log(request.query.methods);
-  let detailPageUrl = url + "/method/" + request.params.slug;
-  let commentsPageUrl = url + "/comments/?id=" + request.query.id;
-  console.log(commentsPageUrl);
-  const id = request.query.id;
-
-  fetchJson(detailPageUrl).then((data) => {
-    fetchJson(commentsPageUrl).then((data2) => {
-      console.log(commentsPageUrl, data2);
-      const combinedData = {
-        method: data.method,
-        comments: data2.comments,
-      };
-      console.log(combinedData);
-      response.render("detailpagina", combinedData);
-    });
-  });
-});
-
-// post detailpagina
-
-app.post("/detailpagina/:slug", (request, response) => {
-  const baseurl = "https://api.visualthinking.fdnd.nl/api/v1/";
-  const url = `${baseurl}comments`;
-  const commentUrl = `${baseurl}comments` + "?id=" + request.query.id;
-
-  console.log("verstuurd:");
-  console.log(request.body);
-
-  postJson(url, request.body).then((data) => {
-    let newComment = { ...request.body };
-    console.log("ontvangen:");
-    console.log(data);
-    if (data.success) {
-      response.redirect(
-        "/detailpagina/" + request.params.slug + "?methodPosted=true"
-      );
-    } else {
-      response.redirect(
-        "/detailpagina/" + request.params.slug + "?methodPosted=false"
-      );
-      // const errormessage = `${data.message}: Werkt niet:(`;
-      // const newdata = { error: errormessage, values: newComment };
-
-      // response.render("detailpagina/" + request.params.slug, newdata);
-    }
-  });
 });
 
 // Stel het poortnummer in waar express op gaat luisteren
