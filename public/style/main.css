@@ -3,6 +3,12 @@
 	margin: 0;
 }
 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 /* Standaard eigen waardes */
 :root {
     /* animaties */
@@ -12,13 +18,15 @@
     --a-large: 1s;
 
     /* eenheden */
-    --u-nano: 0.1em;
-    --u-micro: 0.2em;
+    --u-nano: 0.125em;
+    --u-micro: 0.25em;
     --u-small: 0.4em;
     --u-medium: 0.5em;
     --u-default: 1em;
     --u-large: 2em;
     --u-round: 50%;
+
+    --u-interactive: 44px;
 
     /* lay-out */
     --w-quarter: 25vw;
@@ -33,6 +41,7 @@
     --c-default: #fff;
     --c-accent-25: #f4f4f4;
     --c-accent-50: #e1e1e1;
+    --c-accent-75: rgb(200, 200, 200);
     --c-accent-100: #999;
     --c-invert: #111;
     --c-succes: #58ab3c;
@@ -54,11 +63,76 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: var(--u-default);
-    box-shadow: 0px 4px 10px 2px rgba(51, 51, 51, 0.33);
+    box-shadow: 0px var(--u-micro) 10px 2px rgba(51, 51, 51, 0.33);
 }
 
-header svg {
+header #logo svg {
     height: var(--u-large);
-    fill: #f00;
+    fill: var(--c-primary-100);
+}
+
+.menu {
+    width: var(--u-interactive);
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--u-medium);
+}
+
+.menu:hover div {
+    background-color: var(--c-accent-100); 
+}
+
+.menu div {
+    width: var(--u-interactive);
+    height: var(--u-micro);
+    background-color: #f00;
+    display: block;
+    transition: var(--a-quick);
+}
+
+.menu:active {
+
+}
+
+/* Layout */
+
+aside {
+    width: 66vw;
+    height: 100vh;
+    display: block;
+    background-color: var(--c-invert);
+    position: absolute;
+    top: 0;
+    left: -66vw;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* Interactions */
+
+a {
+    cursor: pointer;
+}
+
+
+@media (prefers-reduced-motion) {
+    /* styles to apply if the user's settings are set to reduced motion */
+    :root {
+        /* animaties */
+        --a-quick: 0.01s;
+        --a-default: 0.01s;
+        --a-medium: 0.01s;
+        --a-large: 0.01s;
+  }
 }
