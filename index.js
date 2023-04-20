@@ -25,6 +25,26 @@ server.listen(server.get("port"), function () {
 	);
 });
 
+// Extenties voor de URL
+const space = "%20";
+const bookItems = "boeken";
+
+// Opbouw URL van de API
+const urlBase = "https://zoeken.oba.nl/api/v1/search/";
+const urlQuery = "?q=";
+const urlDefault = "special:all";
+const urlKey = `${process.env.KEY}`;
+const urlOutput = "&refine=true&output=json";
+const defaultUrl =
+	urlBase + urlQuery + urlDefault + space + bookItems + urlKey + urlOutput;
+
+// Maakt een route voor de index
+server.get("/", (request, response) => {
+	fetchJson(defaultUrl).then((data) => {
+		response.render("index", data);
+	});
+});
+
 /**
  * fetchJson() is a wrapper for the experimental node fetch api. It fetches the url
  * passed as a parameter and returns the response body parsed through json.

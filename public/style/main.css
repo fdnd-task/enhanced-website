@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/* Standaard eigen waardes */
+:root {
+    /* animaties */
+    --a-quick: 0.2s;
+    --a-default: 0.3s;
+    --a-medium: 0.6s;
+    --a-large: 1s;
+
+    /* eenheden */
+    --u-nano: 0.1em;
+    --u-micro: 0.2em;
+    --u-small: 0.4em;
+    --u-medium: 0.5em;
+    --u-default: 1em;
+    --u-large: 2em;
+    --u-round: 50%;
+
+    /* lay-out */
+    --w-quarter: 25vw;
+    --w-third: 33vw;
+    --w-half: 50vw;
+    --w-full: 100%;
+
+    /* kleuren */
+    --c-primary-150: #600;
+    --c-primary-100: #f00;
+    --c-primary-50: #fcd9d9;
+    --c-default: #fff;
+    --c-accent-25: #f4f4f4;
+    --c-accent-50: #e1e1e1;
+    --c-accent-100: #999;
+    --c-invert: #111;
+    --c-succes: #58ab3c;
+}
+
+::selection {
+	background-color: var(--c-primary-100);
+	color: var(--c-default);
+}
+
+html {
+	font-family: "avenir", "arial", sans-serif;
+	font-variant-ligatures: common-ligatures;
+}
+
+body {
+	background-color: var(--c-default);
+	position: relative;
+}
+
+svg {
+    width: 40px;
+    fill: #f00;
+}
