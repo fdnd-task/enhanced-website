@@ -5,6 +5,9 @@ import dotenv from "dotenv";
 // Maakt een nieuwe express app
 const server = express();
 
+// Stelt de public map in
+server.use(express.static('public'))
+
 // Stelt het poortnummer in waar express op gaat luisteren
 server.set("port", process.env.PORT || 8000);
 
