@@ -38,6 +38,54 @@ app.get("/overviewpage", (request, response) => {
   });
 });
 
+// detailpage renderen
+
+app.get("/detailpage/:slug", (request, response) => {
+  // console.log(request.query.methods);
+  let detailPageUrl = url + "/method/" + request.params.slug;
+  let commentsPageUrl = url + "/comments/?id=" + request.query.id;
+  console.log(commentsPageUrl);
+  const id = request.query.id;
+
+  fetchJson(detailPageUrl).then((data) => {
+    fetchJson(commentsPageUrl).then((data2) => {
+      console.log(commentsPageUrl, data2);
+      const combinedData = {
+        method: data.method,
+        comments: data2.comments,
+      };
+      console.log(combinedData);
+      response.render("detailpage", combinedData);
+    });
+  });
+});
+
+// detailpage post
+
+app.post("/detailpagina/:slug", (request, response) => {
+  const baseurl = "https://api.visualthinking.fdnd.nl/api/v1/";
+  const url = `${baseurl}comments`;
+  const commentUrl = `${baseurl}comments` + "?id=" + request.query.id;
+
+  console.log("verstuurd:");
+  console.log(request.body);
+
+  postJson(url, request.body).then((data) => {
+    let newComment = { ...request.body };
+    console.log("ontvangen:");
+    console.log(data);
+    if (data.success) {
+      response.redirect(
+        "/detailpage/" + request.params.slug + "?methodPosted=true"
+      );
+    } else {
+      response.redirect(
+        "/detailpage/" + request.params.slug + "?methodPosted=false"
+      );
+    }
+  });
+});
+
 // Stel het poortnummer in waar express op gaat luisteren
 app.set("port", process.env.PORT || 8000);
 
