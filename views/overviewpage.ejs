@@ -1,5 +1,27 @@
 <%- include('./head') %>
 
+<main>
+    
+    <section class="method-container">
+        
+      <% methods.forEach(method=> { %>
+        <article class="method-card">
+          <a href="./detailpage/<%= method.slug %>?id=<%= method.id %>">
+           <% if (method.template?.url) { %> 
+            <img class="method-img" src="<%= method.template?.url %>">
+           <% } else { %>
+            <img  class="method-img" src="/placeholder.png" alt="Placeholder" />
+           <% } %>
+            <h2><%= method.title %></h2>
+         </a>
+        </article> 
+      <% }) %>
+    
+    </section>
+
+</main>
+
+
 
 
 
