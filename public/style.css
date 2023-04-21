@@ -1,0 +1,56 @@
+:root {
+    /* primaire kleuren */
+    /* donkerblauw */
+    --text-color: #090940;
+    --text-color-var01: #3a3a66;
+    --text-color-var02: #6b6b8c;
+    --text-color-var03: #9d9db3;
+    --text-color-var04: #ceced9;
+
+    /* tekstvlakken of stroken */
+    /*lichtblauw */
+    --text-stroke-color: #67c5d1;
+    --text-stroke-color-var01: #85d1da;
+    --text-stroke-color-var02: #a4dce3;
+    --text-stroke-color-var03: #c2e8ed;
+    --text-stroke-color-var04: #e1f3f6;
+
+    /* rood */
+    --text-stroke-color-var05: #f96c4f;
+    --text-stroke-color-var06: #fa8972;
+    --text-stroke-color-var07: #fba795;
+    --text-stroke-color-var08: #fdc4b9;
+    --text-stroke-color-var09: #fee2dc;
+
+    /* interactieve elementen */
+    /* geel */
+    --interactive-el-color: #feb51e;
+    --interactive-el-color-var01: #fec44b;
+    --interactive-el-color-var02: #fed378;
+    --interactive-el-color-var03: #ffe1a5;
+    --interactive-el-color-var04: #fff0d2;
+
+    /* secundaire kleuren */
+    --sec-colors-01: #af1301;
+    --sec-colors-02: #fbc5b4, ;
+    --sec-colors-03: #169861, ;
+    --sec-colors-04: #63c09f, ;
+    --sec-colors-05: #4fbbc2, ;
+    --sec-colors-06: #31439c, ;
+    --sec-colors-07: #8b3a00, ;
+    --sec-colors-08: #fe6f07;
+
+
+    /* grey tones */
+    --grey-colors: #625c51;
+    --grey-colors-01: #c0beb9;
+    --grey-colors-02: #e0dedc;
+    --grey-colors-03: #f9f8f8;
+
+    --background-color: white;
+
+    /* fonts */
+    --rigid: rigid-square, sans-serif;
+    --broodtekst: "yrsa", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+
+}
