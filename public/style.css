@@ -54,3 +54,41 @@
     --broodtekst: "yrsa", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 
 }
+
+
+
+
+
+/* overviewpage styling */
+
+
+.method-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.method-card {
+    height: 20em;
+    width: auto;
+    border: solid var(--grey-colors-01);
+}
+
+.method-card:hover {
+    border: solid var(--interactive-el-color-var02);
+}
+
+.method-card a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.method-card h2 {
+    margin-left: 0.5em;
+}
+
+.method-img {
+    height: 15em;
+    width: auto;
+}
