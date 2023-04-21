@@ -3,6 +3,14 @@
 	margin: 0;
 }
 
+a {
+    color: var(--c-invert);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
     background: none;
     border: none;
@@ -41,7 +49,7 @@ button {
     --c-default: #fff;
     --c-accent-25: #f4f4f4;
     --c-accent-50: #e1e1e1;
-    --c-accent-75: rgb(200, 200, 200);
+    --c-accent-75: #c8c8c8;
     --c-accent-100: #999;
     --c-invert: #111;
     --c-succes: #58ab3c;
@@ -66,6 +74,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row-reverse;
     padding: var(--u-default);
     box-shadow: 0px var(--u-micro) 10px 2px rgba(51, 51, 51, 0.33);
 }
@@ -73,56 +82,111 @@ header {
 header #logo svg {
     height: var(--u-large);
     fill: var(--c-primary-100);
-}
-
-.menu {
-    width: var(--u-interactive);
-    aspect-ratio: 1/1;
-    display: flex;
-    flex-direction: column;
-    gap: var(--u-medium);
-}
-
-.menu:hover div {
-    background-color: var(--c-accent-100); 
-}
-
-.menu div {
-    width: var(--u-interactive);
-    height: var(--u-micro);
-    background-color: #f00;
-    display: block;
+    opacity: 1;
     transition: var(--a-quick);
 }
 
-.menu:active {
+header #logo:hover svg {
+    opacity: 0.4;
+}
 
+header nav {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    gap: var(--u-default);
+}
+
+header a {
+    font-weight: 500;
+    transition: var(--a-quick);
+}
+
+header a:hover {
+    color: #f00;
+}
+
+header a:focus {
+    text-decoration: underline; 
+}
+
+header a:active {
+    text-decoration: underline;
 }
 
 /* Layout */
 
 aside {
-    width: 66vw;
+    width: 15em;
     height: 100vh;
-    display: block;
-    background-color: var(--c-invert);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--c-accent-75);
+    padding: var(--u-default);
     position: absolute;
     top: 0;
-    left: -66vw;
+    left: -14em;
+    transition: var(--a-default);
+}
+
+aside:hover {
+    left: 0;
+}
+
+aside::after {
+    content: '';
+    display: block;
+    width: 2.5em;
+    height: 2em;
+    background-color: var(--c-accent-75);
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    right: -2.5em;
+    clip-path: polygon(100% 0%, 50% 50%, 100% 100%, 0 100%, 0 50%, 0 0);
 }
 
 ul {
     padding: 0;
+    gap: var(--u-default);
 }
 
 li {
+    color: var(--c-accent-25);
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--u-default);
 }
 
 /* Interactions */
 
 a {
     cursor: pointer;
+}
+
+@media (min-width: 20em) {
+    header {
+
+    }
+}
+
+@media (min-width: 48em) {
+    header {
+        padding: var(--u-default) var(--u-large);
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    header .menu {
+        display: none;
+    }
 }
 
 
@@ -136,3 +200,10 @@ a {
         --a-large: 0.01s;
   }
 }
+
+@font-face {
+    font-family: "amsterdam-sans";
+    src: local("Amsterdam Sans"),
+      url("trickster-COLRv1.otf") format("opentype");
+  }
+  

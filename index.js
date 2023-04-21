@@ -39,12 +39,24 @@ const urlDefault = "special:all";
 const urlKey = `${process.env.KEY}`;
 const urlOutput = "&refine=true&output=json";
 const defaultUrl =
+	urlBase + urlQuery + urlDefault + urlKey + urlOutput;
+
+const bookUrl = 
 	urlBase + urlQuery + urlDefault + space + bookItems + urlKey + urlOutput;
 
 // Maakt een route voor de index
 server.get("/", (request, response) => {
 	fetchJson(defaultUrl).then((data) => {
 		response.render("index", data);
+	});
+});
+
+
+
+// Maakt een route voor de detailpagina
+server.get("/item", (request, response) => {
+	fetchJson(bookUrl).then((data) => {
+		response.render("item", data);
 	});
 });
 
