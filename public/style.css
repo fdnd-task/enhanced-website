@@ -32,12 +32,12 @@
 
     /* secundaire kleuren */
     --sec-colors-01: #af1301;
-    --sec-colors-02: #fbc5b4, ;
-    --sec-colors-03: #169861, ;
-    --sec-colors-04: #63c09f, ;
-    --sec-colors-05: #4fbbc2, ;
-    --sec-colors-06: #31439c, ;
-    --sec-colors-07: #8b3a00, ;
+    --sec-colors-02: #fbc5b4;
+    --sec-colors-03: #169861;
+    --sec-colors-04: #63c09f;
+    --sec-colors-05: #4fbbc2;
+    --sec-colors-06: #31439c;
+    --sec-colors-07: #8b3a00;
     --sec-colors-08: #fe6f07;
 
 
@@ -74,6 +74,11 @@
     flex-direction: column;
     height: 15em;
     width: auto;
+    border-left: 11px solid #FEB51E;
+     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 6px;
+
+
 }
 
 .method-card a {
@@ -85,4 +90,31 @@
 .method-img {
     height: 15em;
     width:fit-content;
+    border-radius: 6px;
+}
+
+/* categories colors */
+
+.Leren-over-jezelf-en-reflecteren{
+    border-left-color:#85d1da;
+}
+
+.Leren-over-anderen{
+    border-left-color:#4fbbc2;
+}
+
+.Creatief-denken{
+    border-left-color: #f96c4f;
+}
+
+.Organiseren-en-plannen{
+    border-left-color:#63c09f;
+}
+
+.Communcieren-en-presenteren{
+    border-left-color: #af1301;
+}
+
+.Onderzoeken-en-begrijpen{
+    border-left-color:#3a3a66;
 }

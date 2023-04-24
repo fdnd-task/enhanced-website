@@ -1,11 +1,13 @@
 <%- include('./head') %>
 
 <main>
+
+  
     
     <section class="method-container">
         
       <% methods.forEach(method=> { %>
-        <article class="method-card">
+        <article class="method-card <%= method.categories[0].title.replaceAll(" ", "-") %>">
           <a href="./detailpage/<%= method.slug %>?id=<%= method.id %>">
            <% if (method.template?.url) { %> 
             <img class="method-img" src="<%= method.template?.url %>" alt="<%= method.title %>">
