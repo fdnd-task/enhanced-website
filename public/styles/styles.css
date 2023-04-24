@@ -330,6 +330,16 @@ header ul li button {
   );
 }
 
+@media screen and (min-width: 600px) {
+
+  header nav ul{
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+}
+
+
 @media screen and (min-width: 820px) {
 header{
   flex-direction: row;
@@ -347,6 +357,7 @@ display: none;}
   height: 100%;
   width: 100%;
   background: none;
+  transform: translate(0);
 }
 
 nav{
@@ -364,9 +375,7 @@ nav{
 }
 
 header nav ul{
-  flex-direction: row;
   justify-content: flex-end;
-  
 }
 
 header nav ul li{
