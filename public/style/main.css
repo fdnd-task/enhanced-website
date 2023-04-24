@@ -3,22 +3,6 @@
 	margin: 0;
 }
 
-a {
-    width: fit-content;
-    color: var(--c-accent-100);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--u-default);
-}
-
-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 /* Standaard eigen waardes */
 :root {
     /* animaties */
@@ -63,8 +47,18 @@ button {
 }
 
 html {
-	font-family: "avenir", "arial", sans-serif;
+	font-family: "Amsterdam-sans-Regular","avenir", "arial", sans-serif;
 	font-variant-ligatures: common-ligatures;
+}
+
+@font-face {
+    font-family: "Amsterdam-sans-Regular";
+    src: url("/fonts/otf/AmsterdamSans-Regular.otf");
+}
+
+@font-face {
+    font-family: "Amsterdam-sans-Light";
+    src: url("/fonts/otf/AmsterdamSans-Light.otf");
 }
 
 body {
@@ -72,12 +66,30 @@ body {
 	position: relative;
 }
 
+a {
+    width: fit-content;
+    color: var(--c-accent-100);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--u-default);
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ======================= HEADER ======================= */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: var(--u-default);
-    box-shadow: 0px var(--u-micro) 10px 2px rgba(51, 51, 51, 0.33);
+    box-shadow: 0px var(--u-micro) 10px -6px rgba(51, 51, 51, 0.33);
 }
 
 header #logo svg {
@@ -237,12 +249,69 @@ a {
 }
 
 .dropdown:active {
-    color: red;
+    color: var(--c-primary-100);
     text-decoration: none;
 }
 
 .dropdown:active svg {
-    fill: red;
+    fill: var(--c-primary-100);
+}
+
+/* ======================= MAIN ======================= */
+
+.bg-ams{
+    width: 100%;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 51%, 0 61%);
+}
+
+.search-form{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 6em;
+    right: 1em
+}
+
+.search-form  > input{
+    width: 15em;
+    padding: .5em;
+    border-radius:  2px 0 0 2px;
+    border: 1px solid var(--c-accent-75);
+}
+.search-form > button{
+    background-color: var(--c-primary-100);
+    color: white;
+    padding: 0.24em 1em;
+    border-radius:  0 2px 2px 0;
+}
+
+main > section:nth-of-type(2){
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 3em;
+}
+
+main h1{
+    margin: 1em 0 ;
+}
+
+main > section:nth-of-type(2) p{
+    font-family: Amsterdam-sans-Light;
+}
+
+/* ======================= MEDIA QUERYS ======================= */
+
+@media (prefers-reduced-motion) {
+    /* styles to apply if the user's settings are set to reduced motion */
+    :root {
+        /* animaties */
+        --a-quick: 0.01s;
+        --a-default: 0.01s;
+        --a-medium: 0.01s;
+        --a-large: 0.01s;
+    }
 }
 
 @media (min-width: 20em) {
@@ -260,6 +329,8 @@ a {
 }
 
 @media (min-width: 48em) {
+
+    /* ========= HEADER ========= */
     header {
         padding: var(--u-default) var(--u-large);
     }
@@ -275,23 +346,11 @@ a {
     header details {
         display: none;
     }
+
+    /* ========= MAIN ========= */
+
 }
 
 
-@media (prefers-reduced-motion) {
-    /* styles to apply if the user's settings are set to reduced motion */
-    :root {
-        /* animaties */
-        --a-quick: 0.01s;
-        --a-default: 0.01s;
-        --a-medium: 0.01s;
-        --a-large: 0.01s;
-  }
-}
 
-@font-face {
-    font-family: "amsterdam-sans";
-    src: local("Amsterdam Sans"),
-      url("trickster-COLRv1.otf") format("opentype");
-  }
-  
+

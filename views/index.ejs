@@ -4,27 +4,20 @@
 <%- include('./partials/header') %>
 
 <main>
-	<section class="items">
-		<!-- Laad de resultaten in en genereert diverse articles met content -->
-		<% results.forEach(result => { %>
-		<article>
-				<img
-				src=" <%= result.coverimages %> "
-				alt=" <%= result.titles %> "
-				/>
-			<!-- Laad de titel van het boek in -->
-			<h2><%= result.titles[0] %></h2>
-			<!-- Laad de schrijver van het boek in -->
-			<h3><%= result.authors %></h3>
-			<div>
-				<!-- Genereert een link met unieke content van het boek -->
-				<a class="cta" href="/item?id=<%= result.id %>">
-					bekijk exemplaar
-				</a>
-			</div>
-		</article>
-		<% }); %>
-	</section>
+    <section>
+        <img class="bg-ams" src="assets/amsterdam.webp" type="image/webp" alt="Achtergrond van Amsterdam">
+        <form method="get" action="/home.do" class="search-form">
+            <input type="search" id="search-bar" placeholder="Waar ben je naar op zoek?" />
+            <button type="submit" name="submit">Zoek</button>
+        </form>
+    </section>
+
+    <section>
+        <h1> Lekker lezen</h1>
+        <p>
+            Maak kennis met verhalen in vele vormen. In jouw OBA vind je boeken om mee weg te kruipen, een theatervoorstelling waar je stil van wordt en voorleesuurtjes waar je niet over uitgepraat raakt. 
+        </p>
+    </section>
 </main>
 
 <!-- De opmaak van de footer  -->
