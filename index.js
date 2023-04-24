@@ -5,6 +5,9 @@ import dotenv from "dotenv";
 // Maakt een nieuwe express app
 const server = express();
 
+// Stelt de public map in
+server.use(express.static('public'))
+
 // Stelt het poortnummer in waar express op gaat luisteren
 server.set("port", process.env.PORT || 8000);
 
@@ -23,6 +26,38 @@ server.listen(server.get("port"), function () {
 			"port"
 		)}`
 	);
+});
+
+// Extenties voor de URL
+const space = "%20";
+const bookItems = "boeken";
+
+// Opbouw URL van de API
+const urlBase = "https://zoeken.oba.nl/api/v1/search/";
+const urlQuery = "?q=";
+const urlDefault = "special:all";
+const urlKey = `${process.env.KEY}`;
+const urlOutput = "&refine=true&output=json";
+const defaultUrl =
+	urlBase + urlQuery + urlDefault + urlKey + urlOutput;
+
+const bookUrl = 
+	urlBase + urlQuery + urlDefault + space + bookItems + urlKey + urlOutput;
+
+// Maakt een route voor de index
+server.get("/", (request, response) => {
+	fetchJson(defaultUrl).then((data) => {
+		response.render("index", data);
+	});
+});
+
+
+
+// Maakt een route voor de detailpagina
+server.get("/item", (request, response) => {
+	fetchJson(bookUrl).then((data) => {
+		response.render("item", data);
+	});
 });
 
 /**

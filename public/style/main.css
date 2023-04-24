@@ -1,0 +1,247 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+a {
+    width: fit-content;
+    color: var(--c-accent-100);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--u-default);
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Standaard eigen waardes */
+:root {
+    /* animaties */
+    --a-quick: 0.2s;
+    --a-default: 0.3s;
+    --a-medium: 0.6s;
+    --a-large: 1s;
+
+    /* eenheden */
+    --u-nano: 0.125em;
+    --u-micro: 0.25em;
+    --u-small: 0.4em;
+    --u-medium: 0.5em;
+    --u-default: 1em;
+    --u-large: 2em;
+    --u-round: 50%;
+
+    --u-interactive: 44px;
+
+    /* lay-out */
+    --w-quarter: 25vw;
+    --w-third: 33vw;
+    --w-half: 50vw;
+    --w-full: 100%;
+
+    /* kleuren */
+    --c-primary-150: #600;
+    --c-primary-100: #f00;
+    --c-primary-50: #fcd9d9;
+    --c-default: #fff;
+    --c-accent-25: #f4f4f4;
+    --c-accent-50: #e1e1e1;
+    --c-accent-75: #c8c8c8;
+    --c-accent-100: #999;
+    --c-invert: #111;
+    --c-succes: #58ab3c;
+}
+
+::selection {
+	background-color: var(--c-primary-100);
+	color: var(--c-default);
+}
+
+html {
+	font-family: "avenir", "arial", sans-serif;
+	font-variant-ligatures: common-ligatures;
+}
+
+body {
+	background-color: var(--c-default);
+	position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--u-default);
+    box-shadow: 0px var(--u-micro) 10px 2px rgba(51, 51, 51, 0.33);
+}
+
+header #logo svg {
+    height: var(--u-large);
+    fill: var(--c-primary-100);
+    opacity: 1;
+    transition: var(--a-quick);
+}
+
+header #logo:hover svg {
+    opacity: 0.4;
+}
+
+header nav {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    gap: var(--u-default);
+}
+
+header a {
+    font-weight: 500;
+    transition: var(--a-quick);
+}
+
+header a:hover {
+    color: #f00;
+}
+
+header a:focus {
+    text-decoration: underline; 
+}
+
+header a:active {
+    text-decoration: underline;
+}
+
+header details ul {
+    display: flex;
+    gap: var(--u-small);
+}
+
+header details {
+    content: '';
+    width: 12.5em;
+    position: absolute;
+    top: var(--u-default);
+    right: 1em;
+    margin: auto 0;
+    transition: var(--a-quick);
+}
+
+header details .dropdown {
+    color: var(--c-accent-100);
+    margin-left: auto;
+}
+
+header details svg {
+    fill: var(--c-accent-100);
+}
+
+header details[open] ul svg {
+    fill: var(--c-invert);
+}
+
+header details:hover svg {
+    fill: red;
+}
+
+header details[open] svg, .dropdown {
+    color: red;
+}
+
+header details summary {
+    display: flex;
+    flex-direction: column;
+}
+
+header details ul {
+    background-color: var(--c-default);
+    padding: var(--u-default);
+    margin: 2.75em 0;
+    box-shadow: 0px var(--u-micro) 10px 2px rgba(51, 51, 51, 0.33);
+}
+
+/* Layout */
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--u-default);
+    padding: 0;
+}
+
+li {
+    color: var(--c-accent-25);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--u-default);
+}
+
+/* image and graphics */
+
+summary svg, details ul svg  {
+    height: var(--u-default);
+    width: var(--u-default);
+}
+
+/* Interactions */
+
+a {
+    cursor: pointer;
+}
+
+.dropdown:active {
+    color: red;
+    text-decoration: none;
+}
+
+.dropdown:active svg {
+    fill: red;
+}
+
+@media (min-width: 20em) {
+
+}
+
+@media (min-width: 48em) {
+    header {
+        padding: var(--u-default) var(--u-large);
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header details {
+        display: none;
+    }
+}
+
+
+@media (prefers-reduced-motion) {
+    /* styles to apply if the user's settings are set to reduced motion */
+    :root {
+        /* animaties */
+        --a-quick: 0.01s;
+        --a-default: 0.01s;
+        --a-medium: 0.01s;
+        --a-large: 0.01s;
+  }
+}
+
+@font-face {
+    font-family: "amsterdam-sans";
+    src: local("Amsterdam Sans"),
+      url("trickster-COLRv1.otf") format("opentype");
+  }
+  
