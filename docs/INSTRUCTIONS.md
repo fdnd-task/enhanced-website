@@ -52,25 +52,25 @@ In de analysefase bespreek je als team welke werkzaamheden er zijn, wie wat gaat
 - [What's Microproductivity?](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps)
 
 ### Ontwerpen
-In de ontwerpfase gaan jullie schetsen en afspraken maken over hoe jullie de huisstijl toepassen en hoe je dit gaat verwerken in het project voor de opdrachtgever.
+In de ontwerpfase gaan jullie schetsen en code en design afspraken maken.
 
-#### Living Styleguide
-In deze Sprint gaan jullie je (ook) richten op de performance van websites. Om de performance te verbeteren kun je verschillende performance technieken toepassen.  Voor deze opdracht gaan jullie een aantal Frontend Performance optimalisaties toepassen zoals die te lezen zijn in de [Frontend Performance Checklist van Smashing Magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/).
+<!-- #### Living Styleguide -->
+In deze Sprint gaan jullie je (ook) richten op de performance van websites. Om de performance te verbeteren kun je verschillende performance technieken toepassen.  Voor deze opdracht gaan jullie een aantal Frontend Performance optimalisaties toepassen zoals die te lezen zijn in de [Frontend Performance Checklist van Smashing Magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/). 
 
-In de checklist worden verschillende technieken behandeld waarmee je een website kan optimaliseren. Deze technieken hebben effect op wat voor HTML je gebruikt, CSS en/of JS. Afspraken over hoe jullie dit in code en design gaan doen leggen jullie vast in de _living styleguide_.
+In de checklist worden verschillende technieken behandeld waarmee je een website kan optimaliseren. Deze technieken hebben effect op de HTML, CSS en/of JS. Afspraken over hoe jullie dit in code en design gaan doen leggen jullie vast in de _living styleguide_.
 
-1. Clone de bestaande *living-styleguide* voor de opdrachtgever naar jullie repository.
+1. Bekijk en bespreek alle _User Stories_ die bij het project horen. 
 2. Teken de structuur van de website die jullie willen maken in een _Sitemap_ en bedenk wat op de pagina's moet komen te staan.
 3. Schets de User Stories waar jullie aan gaan werken in een Wireflow en maak gezamenlijk breakdown-schetsen.
-4. Terwijl jullie aan de website gaan werken houden jullie in de *living-stylguide* bij wat voor HTML, CSS en/of JS voor een functionaliteit, component of de layout nodig is.
+4. Terwijl jullie aan de website gaan werken houden jullie in de *living-stylguide* bij wat voor HTML, CSS en/of JS voor een functionaliteit, component of de layout nodig is. Clone de bestaande *living-styleguide* naar jullie repository zodat je deze met je team kan aanvullen en aanpassen.
 5. (optioneel) Als je als team *pull-requests* goed onder de knie hebt kan je aan het eind van de sprint de aanpassingen aan de *living-styleguide* met een *pull-request* samenvoegen met het origineel dat je bij stap 1 *cloned* hebt. Let op: je moet dan afspraken maken met de andere teams die voor deze opdrachtgever werken!
 
-#### Project voor de opdrachtgever
+<!-- #### Project voor de opdrachtgever
 In de ontwerpfase maak je schetsen voor de taak waar jij nu aan gaat werken. Dit doe je waarschijnlijk meerdere keren per sprint, telkens voor de nieuwe taak waar je aan werkt.
 
 1. Maak ontwerpschetsen, kies zelf het medium wat voor jou het beste werkt maar begin in ieder geval even op papier. Probeer verschillende oplossingen uit maar houd je aan de afspraken in de *living-styleguide*. Je bent klaar als je voor ogen hebt wat je gaat bouwen.
 2. Bespreek jouw ontwerp met een teamgenoot, stel eventueel je ontwerp bij op basis van de feedback die je ontvangt. Hint: Maak een issue aan!
-3. Documenteer jouw ontwerp in de wiki.
+3. Documenteer jouw ontwerp in de wiki. -->
 
 #### Materiaal ontwerpfase
 
