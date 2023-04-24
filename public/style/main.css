@@ -208,7 +208,8 @@ dd {
 }
 
 .item {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: var(--u-default);
 }
 
