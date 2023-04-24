@@ -22,7 +22,7 @@
 		"NodeJS",
 		"Express"
 	],
-	"author": "Luuk Brauckmann",
+	"author": "Luuk Brauckmann, Sascha Davidson, Tom Poortman",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/luukbrauckmann/sprint-10-leertaak/issues"

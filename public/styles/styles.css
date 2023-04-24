@@ -154,3 +154,111 @@ body {
   }
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header {
+  padding: 1rem;
+  background-color: #fff;
+  z-index: 2;
+  display: flex;
+}
+
+.logo {
+  width: 75%;
+}
+
+header .nav-toggle {
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.8rem;
+  border-radius: 6px;
+}
+
+.nav-js-style {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  background: rgb(0, 0, 0);
+    background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, .7) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.nav-active {
+  transform: translate(0, 100%);
+}
+
+nav {
+  position: relative;
+  background-color: white;
+  padding: .5rem 0;
+}
+
+.nav-design {
+  margin: 1rem;
+  border-radius: 6px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+header ul li {
+  list-style-type: none;
+  padding: .5rem 1rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  padding: 0.3rem 0;
+  display: block;
+}
+
+header ul li button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0.3rem 0;
+
+  font-family: Regular, san-serif;
+}
+
+.search-bar {
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 200%);
+  width: calc(100% - 2rem);
+  padding: 0.4rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.search-bar-js {
+  left: 0;
+  width: 100%;
+}
+
+.hero {
+  height: calc(100vh - 63px);
+  height: calc(100svh - 63px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../images/vervoerregio-amsterdam-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
