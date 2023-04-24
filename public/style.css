@@ -1,0 +1,23 @@
+:root {
+    --red: rgb(255, 0, 0);
+    --dark-red: #e30b0b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Regular;
+    color: #000000;
+}
+
+/* GENERAL */
+
+
+/* HOME PAGE */
+
+
+/* DETAIL PAGE */
+
+
+/* SUCCES PAGE */
