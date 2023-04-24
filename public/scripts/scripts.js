@@ -21,6 +21,7 @@ searchBar.classList.add("search-bar-js");
 menuBtn.hidden = false;
 menuBtn.addEventListener("click", () => {
     navContainer.classList.toggle("nav-active");
+    searchBar.classList.toggle("search-bar-active");
 });
 }
 
