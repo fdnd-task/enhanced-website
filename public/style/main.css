@@ -3,22 +3,6 @@
 	margin: 0;
 }
 
-a {
-    width: fit-content;
-    color: var(--c-accent-100);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--u-default);
-}
-
-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 /* Standaard eigen waardes */
 :root {
     /* animaties */
@@ -67,17 +51,41 @@ html {
 	font-variant-ligatures: common-ligatures;
 }
 
+@font-face {
+    font-family: "amsterdam-sans";
+    src: local("Amsterdam Sans"),
+    url("trickster-COLRv1.otf") format("opentype");
+}
+
 body {
 	background-color: var(--c-default);
 	position: relative;
 }
+
+a {
+    width: fit-content;
+    color: var(--c-accent-100);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--u-default);
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ======================= HEADER ======================= */
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: var(--u-default);
-    box-shadow: 0px var(--u-micro) 10px 2px rgba(51, 51, 51, 0.33);
+    box-shadow: 0px var(--u-micro) 10px -6px rgba(51, 51, 51, 0.33);
 }
 
 header #logo svg {
@@ -197,12 +205,50 @@ a {
 }
 
 .dropdown:active {
-    color: red;
+    color: var(--c-primary-100);
     text-decoration: none;
 }
 
 .dropdown:active svg {
-    fill: red;
+    fill: var(--c-primary-100);
+}
+
+/* ======================= MAIN ======================= */
+
+main > section{
+    width: 100%;
+    background-image: url(/assets/Amsterdam.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.search-form{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-form  > input{
+    width: 13.5em;
+}
+.search-form > button{
+    background-color: var(--c-primary-100);
+    color: white;
+    padding: 0.24em 1em;
+    border-radius: 2px;
+}
+
+/* ======================= MEDIA QUERYS ======================= */
+
+@media (prefers-reduced-motion) {
+    /* styles to apply if the user's settings are set to reduced motion */
+    :root {
+        /* animaties */
+        --a-quick: 0.01s;
+        --a-default: 0.01s;
+        --a-medium: 0.01s;
+        --a-large: 0.01s;
+    }
 }
 
 @media (min-width: 20em) {
@@ -210,6 +256,8 @@ a {
 }
 
 @media (min-width: 48em) {
+
+    /* ========= HEADER ========= */
     header {
         padding: var(--u-default) var(--u-large);
     }
@@ -225,23 +273,11 @@ a {
     header details {
         display: none;
     }
+
+    /* ========= MAIN ========= */
+
 }
 
 
-@media (prefers-reduced-motion) {
-    /* styles to apply if the user's settings are set to reduced motion */
-    :root {
-        /* animaties */
-        --a-quick: 0.01s;
-        --a-default: 0.01s;
-        --a-medium: 0.01s;
-        --a-large: 0.01s;
-  }
-}
 
-@font-face {
-    font-family: "amsterdam-sans";
-    src: local("Amsterdam Sans"),
-      url("trickster-COLRv1.otf") format("opentype");
-  }
-  
+
