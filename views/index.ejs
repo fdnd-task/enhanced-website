@@ -1,12 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>YO</p>
-</body>
-</html>
+<%- include('./partials/head') %>
+
+    <section>
+        <h1>Alle Boeken</h1>
+        <div class="search">
+            <input class="search-input" type="text" placeholder="Search.." name="search">
+            <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="overzichtspagina">
+
+            <p>
+            <article>
+                <img class="overzicht-img" src="https://media.graphassets.com/VwMnUsECTYe18QHwPQ6E" alt="boek">
+                <div class="overzicht-info">
+                    <h2>Vestiging 1</h2>
+                    <i class="fa-solid fa-circle-right fa-2xl"></i>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <%- include('./partials/foot') %>

@@ -9,13 +9,17 @@
     box-sizing: border-box;
     font-family: Arial, Regular;
     color: #000000;
+
 }
 
 /* GENERAL */
 
 
 /* HOME PAGE */
-
+.overzicht-img{
+    max-height: 100px;
+    max-width: 100px;
+}
 
 /* DETAIL PAGE */
 
