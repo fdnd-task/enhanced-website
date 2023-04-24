@@ -1,4 +1,27 @@
 
+:root {
+    /* CUSTOM PROPERTIES */
+    /* Colours for specific allergies */
+    --walnoot-kleur: #cd9540;
+    --amandel-kleur: #f1c17e;
+    --cashewnoot-kleur: #e68460;
+    --ei-kleur: #f4eb34;
+    --vis-kleur: #daeeee;
+    --hazelnoot-kleur: #baddce;
+    --pinda-kleur: #72afa6;
+    --schelp-kleur: #f1c8ba;
+    --soja-kleur: #eae3d2;
+
+    /* Primaire kleuren */
+    --donkerblauw: #152a45;
+    --wit: #ffffff;
+    --zwart: #121212;
+    --licht-grijs: #888682;
+
+    /* Font Family */
+    --body-font: "Montserrat";
+}
+
 .nav{
     color: red;
 }
