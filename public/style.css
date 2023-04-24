@@ -1,4 +1,5 @@
 
+
 .nav{
     color: red;
 }
@@ -7,6 +8,7 @@ header{
 }
 
 * {
+
     margin: 0;
     padding: 0;
 }
