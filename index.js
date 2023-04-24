@@ -17,17 +17,25 @@ app.use(express.urlencoded({ extended: true }))
 
 // Maak een route voor de index pagina
 app.get('/', (request, response) => {
-    response.render('index', data)
+
+    fetchJson().then((data) => {
+        response.render('index', data)
+    })
+   
 })
 
 // Maak een route voor de detail pagina
 app.get("/detail", (request, response) => {
-    response.render("detail", data);  
+    fetchJson().then((data) => {
+        response.render('detail', data)
+    })
 });
 
 
 app.get('succes', (request, response) => {
-  response.render('succes', data)
+    fetchJson().then((data) => {
+        response.render('succes', data)
+    })
 })
 
 
