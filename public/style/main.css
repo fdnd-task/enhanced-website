@@ -217,16 +217,16 @@ a {
 
 .bg-ams{
     width: 100%;
-    position: absolute;
-    top: 3.4em;
     z-index: -1;
-    clip-path: polygon(0 3%, 100% 4%, 100% 51%, 0 61%);
+    clip-path: polygon(0 0, 100% 0, 100% 51%, 0 61%);
 }
 
 .search-form{
     display: flex;
     justify-content: flex-end;
-    margin-top: 2em;
+    position: absolute;
+    top: 6em;
+    right: 1em;
 }
 
 .search-form  > input{
