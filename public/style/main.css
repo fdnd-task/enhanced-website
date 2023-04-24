@@ -47,14 +47,13 @@
 }
 
 html {
-	font-family: "avenir", "arial", sans-serif;
+	font-family: "Amsterdam-sans-Regular","avenir", "arial", sans-serif;
 	font-variant-ligatures: common-ligatures;
 }
 
 @font-face {
-    font-family: "amsterdam-sans";
-    src: local("Amsterdam Sans"),
-    url("trickster-COLRv1.otf") format("opentype");
+    font-family: "Amsterdam-sans-Regular";
+    src: url("/fonts/otf/AmsterdamSans-Regular.otf");
 }
 
 body {
@@ -215,27 +214,43 @@ a {
 
 /* ======================= MAIN ======================= */
 
-main > section{
+.bg-ams{
     width: 100%;
-    background-image: url(/assets/Amsterdam.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 51%, 0 61%);
 }
 
 .search-form{
     display: flex;
     justify-content: flex-end;
+    position: absolute;
+    top: 6em;
+    right: 1em
 }
 
 .search-form  > input{
-    width: 13.5em;
+    width: 15em;
+    padding: .5em;
+    border-radius:  2px 0 0 2px;
+    border: 1px solid var(--c-accent-75);
 }
 .search-form > button{
     background-color: var(--c-primary-100);
     color: white;
     padding: 0.24em 1em;
-    border-radius: 2px;
+    border-radius:  0 2px 2px 0;
+}
+
+main > section:nth-of-type(2){
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 3em;
+}
+
+main h1{
+    margin: 1em 0 ;
+
 }
 
 /* ======================= MEDIA QUERYS ======================= */
