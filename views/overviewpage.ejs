@@ -2,7 +2,15 @@
 
 <main>
   <section class="filter-container">
-    <div class="stripe"></div>
+    <div class="main-border">
+
+    </div>
+     <div class="filter-icons">
+      <% methods.forEach(categorie=> { %>
+    
+      <% }) %>
+
+    </div>
   </section>
 
 
@@ -12,7 +20,7 @@
         <article class="method-card <%= method.categories[0].title.replaceAll(" ", "-") %>">
           <a href="./detailpage/<%= method.slug %>?id=<%= method.id %>">
            <% if (method.template?.url) { %> 
-            <img class="method-img" src="<%= method.template?.url %>" alt="<%= method.title %>">
+            <img class="method-img" src="<%= method.template?.url %>" loading="lazy" alt="<%= method.title %>">
            <% } else { %>
             <img  class="method-img" src="/placeholder.png" alt="Placeholder" />
            <% } %>
