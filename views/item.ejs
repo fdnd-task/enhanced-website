@@ -13,6 +13,19 @@
 	<section>
 		<h1><%= results[0].titles[0] %></h1>
 		<h2><%= results[0].authors[0] %></h2>
+		<dl class="discription">
+			<dt>Uitgeverij</dt>
+			<dd><%= results[0].publisher %></dd>
+			<dt>Genre</dt>
+			<dd><%= results[0].languages %></dd>
+			<dt>Taal</dt>
+			<dd><%= results[0].languages %></dd>
+		</dl>
+		<h2>Samenvatting</h2>
+		<p><%= results[0].summaries %></p>
+	</section>
+	<section>
+		Beschikbaarheid
 	</section>
 </main>
 

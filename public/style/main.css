@@ -181,6 +181,20 @@ li {
     gap: var(--u-default);
 }
 
+dl {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--u-small);
+    margin: var(--u-default) 0;
+}
+
+dt
+
+dd {
+    padding-bottom: var(--u-small);
+}
+
 .item {
     display: block;
     padding: var(--u-default);
@@ -192,6 +206,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.discription {
+    background-color: var(--c-accent-25);
+    padding: var(--u-medium);
 }
 
 /* image and graphics */
