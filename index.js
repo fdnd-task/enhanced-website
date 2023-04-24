@@ -34,14 +34,20 @@ server.listen(server.get("port"), function () {
 const space = "%20";
 const bookItems = "boeken";
 
+// Endpoints voor de URL
+const urlSearch = "search/";
+
 // Opbouw URL van de API
-const urlBase = "https://zoeken.oba.nl/api/v1/search/";
+const urlBase = "https://zoeken.oba.nl/api/v1/";
 const urlQuery = "?q=";
 const urlDefault = "special:all";
 const urlKey = `${process.env.KEY}`;
 const urlOutput = "&refine=true&output=json";
+
 const defaultUrl =
-	urlBase + urlQuery + urlDefault + space + bookItems + urlKey + urlOutput;
+	urlBase + urlSearch + urlQuery + urlDefault + space + bookItems + urlKey + urlOutput;
+
+
 
 // Maakt een route voor de index
 server.get("/", (request, response) => {
@@ -57,7 +63,7 @@ server.get("/item", async (request, response) => {
 	let urlId = request.query.id || "|oba-catalogus|279240";
 
 	const itemUrl = 
-	urlBase + uniqueQuery + urlId + urlKey + urlOutput;
+	urlBase + urlSearch + uniqueQuery + urlId + urlKey + urlOutput;
 
 	const data = await fetch(itemUrl)
 		.then((response) => response.json())

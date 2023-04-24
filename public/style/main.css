@@ -285,10 +285,6 @@ a {
     border-radius:  0 2px 2px 0;
 }
 
-main h1{
-    margin: 1em 0 ;
-}
-
 main > section:nth-of-type(2) p{
     font-family: Amsterdam-sans-Light;
 }
@@ -312,7 +308,7 @@ main > section:nth-of-type(2) p{
 
 @media (min-width: 35em) {
     .item {
-        grid-template-columns: 5fr 5fr;
+        grid-template-columns: 3fr 5fr;
     }
 }
 
