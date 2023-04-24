@@ -1,3 +1,4 @@
+
 :root {
     /* CUSTOM PROPERTIES */
     /* Colours for specific allergies */
@@ -19,4 +20,16 @@
 
     /* Font Family */
     --body-font: "Montserrat";
+}
+
+.nav{
+    color: red;
+}
+header{
+    color: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
