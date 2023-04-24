@@ -56,6 +56,11 @@ html {
     src: url("/fonts/otf/AmsterdamSans-Regular.otf");
 }
 
+@font-face {
+    font-family: "Amsterdam-sans-Light";
+    src: url("/fonts/otf/AmsterdamSans-Light.otf");
+}
+
 body {
 	background-color: var(--c-default);
 	position: relative;
@@ -250,7 +255,10 @@ main > section:nth-of-type(2){
 
 main h1{
     margin: 1em 0 ;
+}
 
+main > section:nth-of-type(2) p{
+    font-family: Amsterdam-sans-Light;
 }
 
 /* ======================= MEDIA QUERYS ======================= */
