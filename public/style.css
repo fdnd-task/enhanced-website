@@ -87,8 +87,6 @@
     border-left: 11px solid #FEB51E;
      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 6px;
-
-
 }
 
 .method-card a {
@@ -99,32 +97,32 @@
 
 .method-img {
     height: 15em;
-    width:fit-content;
+    width:20em;
     border-radius: 6px;
 }
 
 /* categories colors */
 
 .Leren-over-jezelf-en-reflecteren{
-    border-left-color:#85d1da;
+    border-left-color:var(--text-stroke-color);
 }
 
 .Leren-over-anderen{
-    border-left-color:#4fbbc2;
+    border-left-color:var(--sec-colors-04);
 }
 
 .Creatief-denken{
-    border-left-color: #f96c4f;
+    border-left-color:var(--text-stroke-color-var05);
 }
 
 .Organiseren-en-plannen{
-    border-left-color:#63c09f;
+    border-left-color:var(--sec-colors-03);
 }
 
 .Communcieren-en-presenteren{
-    border-left-color: #af1301;
+    border-left-color:var(--sec-colors-08);
 }
 
 .Onderzoeken-en-begrijpen{
-    border-left-color:#3a3a66;
+    border-left-color:var(--text-stroke-color-var07);
 }
