@@ -1,6 +1,12 @@
+
 .nav{
     color: red;
 }
 header{
     color: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
