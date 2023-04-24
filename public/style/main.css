@@ -49,6 +49,7 @@
 html {
 	font-family: "Amsterdam-sans-Regular","avenir", "arial", sans-serif;
 	font-variant-ligatures: common-ligatures;
+    letter-spacing: -0.016em;
 }
 
 @font-face {
@@ -194,10 +195,13 @@ li {
 }
 
 dl {
+    width: fit-content;
+    background-color: var(--c-accent-25);
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: var(--u-small);
+    padding: var(--u-medium);
     margin: var(--u-default) 0;
 }
 
@@ -214,16 +218,10 @@ dd {
 }
 
 .item section:first-child {
-    width: 100%;
-    height: 25em;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.discription {
-    background-color: var(--c-accent-25);
-    padding: var(--u-medium);
+    padding: var(--u-default);
 }
 
 /* image and graphics */
@@ -287,13 +285,6 @@ a {
     border-radius:  0 2px 2px 0;
 }
 
-main > section:nth-of-type(2){
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    bottom: 3em;
-}
-
 main h1{
     margin: 1em 0 ;
 }
@@ -321,11 +312,7 @@ main > section:nth-of-type(2) p{
 
 @media (min-width: 35em) {
     .item {
-        display: flex;
-    }
-
-    .item section {
-        width: var(--w-half);
+        grid-template-columns: 5fr 5fr;
     }
 }
 
@@ -349,7 +336,22 @@ main > section:nth-of-type(2) p{
     }
 
     /* ========= MAIN ========= */
+    .item {
+        width: 75vw;
+        margin: auto;
+    }
+}
 
+@media (min-width: 64em) {
+    .item {
+        width: 66vw;
+    }
+}
+
+@media (min-width: 80em) {
+    .item {
+        width: 50vw;
+    }
 }
 
 

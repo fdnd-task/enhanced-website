@@ -4,16 +4,16 @@
 <%- include('./partials/header') %>
 
 <main class="item">
-	<section>
+	<section class="item-image">
 		<picture>
 			<source srcset="" />
 			<img src="<%= results[0].coverimages[1] %>" alt="" />
 		</picture>
 	</section>
-	<section>
+	<section class="discription">
 		<h1><%= results[0].titles[0] %></h1>
 		<h2><%= results[0].authors[0] %></h2>
-		<dl class="discription">
+		<dl>
 			<dt>Uitgeverij</dt>
 			<dd><%= results[0].publisher %></dd>
 			<dt>Genre</dt>
@@ -24,8 +24,8 @@
 		<h2>Samenvatting</h2>
 		<p><%= results[0].summaries %></p>
 	</section>
-	<section>
-		Beschikbaarheid
+	<section class="availablity">
+		<h2>Beschikbaarheid</h2>
 	</section>
 </main>
 
