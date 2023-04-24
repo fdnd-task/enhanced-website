@@ -66,7 +66,7 @@
 }
 
 .stripe{
-    background-color:#9d9db3;
+    background-color:var(--text-color-var03);
     height: 0.1em;
     width: 80vw;
 }
@@ -84,7 +84,7 @@
     flex-direction: column;
     height: 15em;
     width: auto;
-    border-left: 11px solid #FEB51E;
+    border-left: 11px solid (--interactive-el-color);
      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 6px;
 }
