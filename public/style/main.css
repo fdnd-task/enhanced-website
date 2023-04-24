@@ -215,17 +215,18 @@ a {
 
 /* ======================= MAIN ======================= */
 
-main > section{
+.bg-ams{
     width: 100%;
-    background-image: url(/assets/Amsterdam.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-
+    position: absolute;
+    top: 3.4em;
+    z-index: -1;
+    clip-path: polygon(0 3%, 100% 4%, 100% 51%, 0 61%);
 }
 
 .search-form{
     display: flex;
     justify-content: flex-end;
+    margin-top: 2em;
 }
 
 .search-form  > input{
