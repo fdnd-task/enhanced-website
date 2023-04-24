@@ -1,84 +1,110 @@
-// Importeer express uit de node_modules map
+// Import necesssary express and ejs modules
 import { render } from "ejs";
 import express, { response } from "express";
 
-// Maak een nieuwe express app aan
+// Create a new express instance
 const app = express();
 
-// get info form api
-
+// Assign URL of API to variable
 const url = "https://api.visualthinking.fdnd.nl/api/v1";
 
-// Stel ejs in als template engine en geef de 'views' map door
+// Make EJS the selected view engine for our express app, and assign the views directory
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
-// Stel afhandeling van formulieren inzx
+// Let express know we want to use JSON and URL-encoded request bodies
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Gebruik de map 'public' voor statische resources
+// Use map "public" to serve static files
 app.use(express.static("public"));
 
-// Maak een route voor de index
 
-// index renderen
-
+// --- Rendering the index page: ---
 app.get("/", (request, response) => {
   response.render("index");
 });
 
-// overviewpage renderen
+// --- Rendering the overview page: ---
+// Define an HTTP GET route for the path '/overviewpage'
 app.get("/overviewpage", (request, response) => {
+  // Log the value of the 'methods' parameter from the request's query string
   console.log(request.query.methods);
+
+  // Define the URL to fetch the data from
   const methodsUrl = url + "/methods?first=100";
 
+  // Use the fetchJson function to retrieve data from the specified URL
+  // Once the data is retrieved, render the 'overviewpage' view with the data
   fetchJson(methodsUrl).then((data) => {
     response.render("overviewpage", data);
   });
 });
 
-// detailpage renderen
-
+// --- Rendering the detail page: ---
+// Define an HTTP GET route for the path '/detailpage/:slug', where ':slug' is a URL parameter
 app.get("/detailpage/:slug", (request, response) => {
-  // console.log(request.query.methods);
+  // Construct the URL to fetch the detail page data from based on the URL parameter ':slug'
   let detailPageUrl = url + "/method/" + request.params.slug;
+  // Construct the URL to fetch the comments page data from based on the query parameter 'id'
   let commentsPageUrl = url + "/comments/?id=" + request.query.id;
-  console.log(commentsPageUrl);
+
+  // Log the constructed URL for the comments page
+  // console.log(commentsPageUrl);
+
   const id = request.query.id;
 
+  // Use the fetchJson function to retrieve the data for the detail page
   fetchJson(detailPageUrl).then((data) => {
+    // Use the fetchJson function to retrieve the data for the comments page
     fetchJson(commentsPageUrl).then((data2) => {
-      console.log(commentsPageUrl, data2);
+
+      // Combine the data from both responses into a single object
       const combinedData = {
-        method: data.method,
-        comments: data2.comments,
+        method: data.method,   // Data from the detail page
+        comments: data2.comments,   // Data from the comments page
       };
-      console.log(combinedData);
+
+      // Log the combined data
+      // console.log(combinedData);
+
+      // Render the 'detailpage' view with the combined data
       response.render("detailpage", combinedData);
     });
   });
 });
 
-// detailpage post
-
-app.post("/detailpagina/:slug", (request, response) => {
+// --- Handling post requests for the comments: ---
+// Define an HTTP POST route for the path '/detailpagina/:slug', where ':slug' is a URL parameter
+app.post("/detailpage/:slug", (request, response) => {
+  // Define the URLS we will use to post the comment data to
   const baseurl = "https://api.visualthinking.fdnd.nl/api/v1/";
   const url = `${baseurl}comments`;
+  // Construct the URL to fetch the comments page data from based on the query parameter 'id'
   const commentUrl = `${baseurl}comments` + "?id=" + request.query.id;
 
+  // Log the request body (the data submitted by the user)
   console.log("verstuurd:");
   console.log(request.body);
 
+  // Use the postJson function to post the comment data to the specified URL
   postJson(url, request.body).then((data) => {
+
+    // Create a copy of the request body
     let newComment = { ...request.body };
+
+    // Log the response data from the API
     console.log("ontvangen:");
     console.log(data);
+
+    // Check if the comment was successfully posted
     if (data.success) {
+      // If the comment was successfully posted, redirect to the detail page with a success message
       response.redirect(
         "/detailpage/" + request.params.slug + "?methodPosted=true"
       );
     } else {
+      // If the comment was not successfully posted, redirect to the detail page with an error message
       response.redirect(
         "/detailpage/" + request.params.slug + "?methodPosted=false"
       );
