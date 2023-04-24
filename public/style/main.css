@@ -161,7 +161,7 @@ header details summary {
 header details ul {
     background-color: var(--c-default);
     padding: var(--u-default);
-    margin: var(--u-large) 0;
+    margin: 2.75em 0;
     box-shadow: 0px var(--u-micro) 10px 2px rgba(51, 51, 51, 0.33);
 }
 
