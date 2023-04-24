@@ -124,7 +124,7 @@ header details ul {
 
 header details {
     content: '';
-    width: 12.5em;
+    width: 10em;
     position: absolute;
     top: var(--u-default);
     right: 1em;
@@ -166,8 +166,6 @@ header details ul {
 }
 
 /* Layout */
-
-
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -183,11 +181,34 @@ li {
     gap: var(--u-default);
 }
 
+.item {
+    display: block;
+    padding: var(--u-default);
+}
+
+.item section:first-child {
+    width: 100%;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* image and graphics */
 
 summary svg, details ul svg  {
     height: var(--u-default);
     width: var(--u-default);
+}
+
+/* Typography */
+
+h1 {
+    max-width: 20em;
+}
+
+h2 {
+    font-size: var(--u-default);
 }
 
 /* Interactions */
@@ -207,6 +228,16 @@ a {
 
 @media (min-width: 20em) {
 
+}
+
+@media (min-width: 35em) {
+    .item {
+        display: flex;
+    }
+
+    .item section {
+        width: var(--w-half);
+    }
 }
 
 @media (min-width: 48em) {

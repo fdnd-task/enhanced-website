@@ -4,7 +4,27 @@
 <%- include('./partials/header') %>
 
 <main>
-    [...]
+	<section class="items">
+		<!-- Laad de resultaten in en genereert diverse articles met content -->
+		<% results.forEach(result => { %>
+		<article>
+				<img
+				src=" <%= result.coverimages %> "
+				alt=" <%= result.titles %> "
+				/>
+			<!-- Laad de titel van het boek in -->
+			<h2><%= result.titles[0] %></h2>
+			<!-- Laad de schrijver van het boek in -->
+			<h3><%= result.authors %></h3>
+			<div>
+				<!-- Genereert een link met unieke content van het boek -->
+				<a class="cta" href="/item?id=<%= result.id %>">
+					bekijk exemplaar
+				</a>
+			</div>
+		</article>
+		<% }); %>
+	</section>
 </main>
 
 <!-- De opmaak van de footer  -->
