@@ -58,15 +58,25 @@
 
 
 
-
 /* overviewpage styling */
+
+.filter-container{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.stripe{
+    background-color:#9d9db3;
+    height: 0.1em;
+    width: 80vw;
+}
 
 
 .method-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2em 1em;
+    gap: 3em 2em;
 }
 
 .method-card {
