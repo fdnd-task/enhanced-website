@@ -229,7 +229,6 @@ header .menu {
 nav {
   position: relative;
   background-color: white;
-  padding: 0.5rem 0;
 }
 
 .nav-design {
@@ -241,18 +240,19 @@ header ul {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: .5rem 0;
+
 }
 
 header ul li {
   list-style-type: none;
-  padding: 0.5rem 1rem;
 }
 
 header ul li a {
   text-decoration: none;
   color: black;
   width: 100%;
-  padding: 0.3rem 0;
+  padding: 0.5rem 1rem;
   display: block;
 }
 
@@ -265,7 +265,9 @@ header ul li button {
   background: none;
   cursor: pointer;
   font-size: 16px;
-  padding: 0.3rem 0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: left;
   font-family: Regular, san-serif;
 }
 
@@ -336,6 +338,7 @@ header ul li button {
   header nav ul {
     flex-direction: row;
     justify-content: space-between;
+    padding: .3rem 0;
   }
 }
 
@@ -363,8 +366,7 @@ header ul li button {
   nav {
     margin: 0;
     border-radius: 0;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: .3rem 1rem .3rem 1rem;
   }
 
   .nav-design {
@@ -374,6 +376,7 @@ header ul li button {
 
   header nav ul {
     justify-content: flex-end;
+    padding: 0;
   }
 
   header nav ul li {
@@ -382,7 +385,7 @@ header ul li button {
 
   header nav ul li a,
   header nav ul li button {
-    padding: 0.3rem;
+    padding: 0.5rem 0.3rem;
   }
 
   .search-bar {
