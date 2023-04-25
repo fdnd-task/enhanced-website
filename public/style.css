@@ -60,23 +60,16 @@
 
 /* overviewpage styling */
 
-.filter-container{
-    margin-top: 2em;
-    margin-bottom: 2em;
+.overviewpage-main{
+    display: flex;
+    justify-content: center;
 }
-
-.main-border{
-    background-color:var(--text-color-var03);
-    height: 0.1em;
-    width: 80vw;
-    margin-bottom: 2em;
-}
-
 
 .method-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 5em 4em;
 }
 
