@@ -65,6 +65,12 @@
     margin-bottom: 2em;
 }
 
+.overviewpage-header h1{
+    font-size: 30px;
+    font-family: var(--rigid);
+    color: var(--text-color);
+}
+
 .overviewpage-main{
     display: flex;
     flex-direction: column;
