@@ -1,0 +1,21 @@
+<%- include('./partials/head.ejs') %>
+
+<!-- test home link -->
+<a href="/">homelink</a>
+
+<hr>
+
+
+<section>
+    <img class="product-pagina-img" src="<%= data.product.plaatjes[0].url %>" alt="<%= data.product.titel %>" width="<%= data.product.plaatjes[0].width %>" height="<%= data.product.plaatjes[0].height %>">
+    
+    <a class="checkout-button" href="/checkout?id=<%= data.product.id %>">
+        <img src="/img/shop.svg" alt="shopping-cart">
+    </a>
+</section>
+
+<h1 class="product-pagina-h1"><%= data.product.titel %></h1>
+
+
+
+<%- include('./partials/foot.ejs') %>

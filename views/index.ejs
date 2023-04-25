@@ -2,5 +2,14 @@
 
 
 
-<h1>hiiii</h1>
+<% categories.forEach(category => { %>
+
+    <% if(category.titel === "Pinda" || category.titel === "Ei" ){ %>
+        <a href="/test-producten?categorieId=<%= category.id %>"><%= category.titel %></a>
+    <% } %>
+
+<% }); %>
+
+
+
 <%- include('./partials/foot.ejs') %>
