@@ -1,9 +1,6 @@
 <%- include('./head') %>
 
-<main>
-  <section class="filter-container">
-    <div class="stripe"></div>
-  </section>
+<main class="overviewpage-main">
 
 
     <section class="method-container">
@@ -12,10 +9,11 @@
         <article class="method-card <%= method.categories[0].title.replaceAll(" ", "-") %>">
           <a href="./detailpage/<%= method.slug %>?id=<%= method.id %>">
            <% if (method.template?.url) { %> 
-            <img class="method-img" src="<%= method.template?.url %>" alt="<%= method.title %>">
+            <img class="method-img" src="<%= method.template?.url %>" loading="lazy" alt="<%= method.title %>">
            <% } else { %>
             <img  class="method-img" src="/placeholder.png" alt="Placeholder" />
            <% } %>
+           <div class="method-name"><%= method.title %><img class="arrow" src="/arrows-left.png" alt="pijltjes naar rechts"></div>
          </a>
         </article> 
       <% }) %>

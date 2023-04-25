@@ -60,23 +60,17 @@
 
 /* overviewpage styling */
 
-.filter-container{
-    margin-top: 2em;
-    margin-bottom: 2em;
+.overviewpage-main{
+    display: flex;
+    justify-content: center;
 }
-
-.stripe{
-    background-color:var(--text-color-var03);
-    height: 0.1em;
-    width: 80vw;
-}
-
 
 .method-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 3em 2em;
+    justify-content: center;
+    gap: 5em 4em;
 }
 
 .method-card {
@@ -100,6 +94,20 @@
     width:20em;
     border-radius: 6px;
 }
+
+.method-name{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--rigid);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.arrow{
+    height: 1em;
+    width: auto;
+}
+
 
 /* categories colors */
 
