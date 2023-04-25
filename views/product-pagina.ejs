@@ -6,16 +6,42 @@
 <hr>
 
 
-<section>
-    <img class="product-pagina-img" src="<%= data.product.plaatjes[0].url %>" alt="<%= data.product.titel %>" width="<%= data.product.plaatjes[0].width %>" height="<%= data.product.plaatjes[0].height %>">
-    
-    <a class="checkout-button" href="/checkout?id=<%= data.product.id %>">
-        <img src="/img/shop.svg" alt="shopping-cart">
-    </a>
+<section class="section-header-product-page">
+
+    <% if(data.product.plaatjes.length !== 0) { %>   
+        <img class="product-pagina-img" src="<%= data.product.plaatjes[0].url %>" alt="<%= data.product.titel %>" width="<%= data.product.plaatjes[0].width %>" height="<%= data.product.plaatjes[0].height %>">
+    <% } else { %>
+        <img class="article-img" src="/img/placeholder.png" alt="<%= data.product.titel %>">
+    <% } %>    
+
+    <div class="price-checkout-container">
+        <h2 class="product-price">€<%= data.product.prijs %></h2>
+        <a class="checkout-button" href="/checkout?id=<%= data.product.id %>">
+            <img src="/img/shop.svg" alt="shopping-cart">
+        </a>
+    </ul>
+
 </section>
 
 <h1 class="product-pagina-h1"><%= data.product.titel %></h1>
 
+<section class="product-beschrijving">
+    <h1>Beschrijving</h1>
+    <%- data.product.beschrijving.html %>
+</section>
+
+<section class="product-stappenplan">
+    <h1>Stappenplan</h1>
+    <% data.product.schema.stappen.forEach(stap => { %>
+        <h3><%= stap.titel %></h3>
+        <%- stap.beschrijving.html %>
+    <% }); %>
+</section>
+
+<section class="last-buttons">
+    <a class="voeg-toe" href="#">VOEG TOE AAN WINKELWAGEN</a>
+    <a class="nu-kopen" href="/checkout?id=<%= data.product.id %>">NU KOPEN</a>
+</section>
 
 
 <%- include('./partials/foot.ejs') %>

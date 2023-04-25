@@ -34,6 +34,7 @@
 
 /* R20222 product-pagina CSS gedeelte */
 
+/* header gedeelte */
 .product-pagina-img{
     width: 80%;
     height: auto;
@@ -45,11 +46,104 @@
     font-size: 1.5rem;
     color: var(--donkerblauw);
 }
+.section-header-product-page{
+    display: flex;
+}
+.price-checkout-container{
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    
+    align-items: center;
+    position:absolute;
+    right:1rem;
+    margin-top: 2rem;
+}
 .checkout-button{
     background-color: var(--donkerblauw);
-    position: absolute;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top:.5rem;
+    margin-top: 1rem;
     right: 1rem;
     border-radius: 3rem;
+}
+.product-price{
+    color:var(--donkerblauw);
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+/* beschrijving gedeelte */
+.product-beschrijving{
+    color: var(--donkerblauw);
+    border: 4px solid var(--pinda-kleur);
+    border-radius: 1rem;
+    margin:1rem;
+    padding: 1rem;
+}
+.product-beschrijving > h1, .product-stappenplan > h1{
+    margin-bottom:1rem;
+}
+.product-beschrijving > ul, .product-beschrijving > p{
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+.product-beschrijving > li{
+    margin-bottom: 5rem;
+}
+
+/* stappenplan gedeelte */
+
+.product-stappenplan{
+    color: var(--donkerblauw);
+    border: 4px solid var(--ei-kleur);
+    border-radius: 1rem;
+    margin:1rem;
+    padding: 1rem;
+}
+.product-stappenplan > p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* laatste knoppen */
+
+.last-buttons{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:1rem;
+    font-weight: 500;
+}
+.last-buttons > a{
+    text-decoration: none;
+}
+.voeg-toe{
+    color:var(--donkerblauw);
+    border: 1px solid var(--donkerblauw);
+    border-radius:3rem;
+    text-align: center;
+    padding:1rem;
+    width:19rem;
+    margin-bottom:1rem;
+}
+.nu-kopen{
+    color:var(--wit);
+    background-color: var(--donkerblauw);
+    border-radius:3rem;
+    text-align: center;
+    padding:1rem;
+    width:19rem;
+}
+
+/* desktop versie */
+.voeg-toe:hover{
+    color:var(--wit);
+    background-color: var(--donkerblauw);
+}
+.nu-kopen:hover{
+    color:var(--donkerblauw);
+    background-color: var(--wit);
+    border: 1px solid var(--donkerblauw);
 }
