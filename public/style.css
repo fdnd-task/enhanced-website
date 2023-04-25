@@ -32,12 +32,12 @@
 
     /* secundaire kleuren */
     --sec-colors-01: #af1301;
-    --sec-colors-02: #fbc5b4, ;
-    --sec-colors-03: #169861, ;
-    --sec-colors-04: #63c09f, ;
-    --sec-colors-05: #4fbbc2, ;
-    --sec-colors-06: #31439c, ;
-    --sec-colors-07: #8b3a00, ;
+    --sec-colors-02: #fbc5b4;
+    --sec-colors-03: #169861;
+    --sec-colors-04: #63c09f;
+    --sec-colors-05: #4fbbc2;
+    --sec-colors-06: #31439c;
+    --sec-colors-07: #8b3a00;
     --sec-colors-08: #fe6f07;
 
 
@@ -56,28 +56,42 @@
 }
 
 
-html{
-    scroll-behavior: smooth;
-}
-body{
-    margin: 0;
+/* overviewpage styling */
+
+.overviewpage-header{
+    margin-left: 10%;
+    margin-bottom: 2em;
 }
 
-/* overviewpage styling */
+.overviewpage-header h1{
+    font-size: 30px;
+    font-family: var(--rigid);
+    color: var(--text-color);
+}
+
+.overviewpage-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 .method-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2em 1em;
+    justify-content: center;
+    gap: 5em 4em;
+
 }
 
 .method-card {
     display: flex;
     flex-direction: column;
     height: 15em;
-    width: auto;
+    width: 20em;
+    border-left:var(--interactive-el-color) 11px solid;
+    border-radius: 6px;
 }
 
 .method-card a {
@@ -88,10 +102,71 @@ body{
 
 .method-img {
     height: 15em;
-    width:fit-content;
+    width: 100%;
+    border-radius: 6px;
+    -webkit-box-shadow: 12px 9px 11px -6px rgba(0, 0, 0, 0.37);
+        box-shadow: 12px 9px 11px -6px rgba(0, 0, 0, 0.37);
 }
 
+
+.method-name{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--rigid);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.arrow{
+    height: 1em;
+    width: auto;
+}
+
+.load-more{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.load-more-button{
+    font-family: var(--rigid);
+    font-weight: bold;
+    border: none;
+    background-color: var(--interactive-el-color);
+    height: 3em;
+    width: auto;
+}
+
+
+/* categories colors */
+
+.Leren-over-jezelf-en-reflecteren{
+    border-left-color:var(--text-stroke-color-var01);
+}
+
+.Leren-over-anderen{
+    border-left-color:var(--sec-colors-04);
+}
+
+.Creatief-denken{
+    border-left-color:var(--text-stroke-color-var05);
+}
+
+.Organiseren-en-plannen{
+    border-left-color:var(--sec-colors-03);
+}
+
+.Communcieren-en-presenteren{
+    border-left-color:var(--sec-colors-08);
+}
+
+.Onderzoeken-en-begrijpen{
+    border-left-color: var(--text-stroke-color-var07);
+}
+
+
 /* detailpage styling */
+
 .backtab{
     height: 3em;
     width: 100%;
@@ -156,3 +231,5 @@ blockquote{
 ol{
     list-style-type: none;
 }
+
+
