@@ -62,6 +62,7 @@
 
 .overviewpage-main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -107,6 +108,21 @@
 
 .arrow{
     height: 1em;
+    width: auto;
+}
+
+.load-more{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.load-more-button{
+    font-family: var(--rigid);
+    font-weight: bold;
+    border: none;
+    background-color: var(--interactive-el-color);
+    height: 3em;
     width: auto;
 }
 
