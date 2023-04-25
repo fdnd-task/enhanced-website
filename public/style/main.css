@@ -224,6 +224,14 @@ dd {
     padding: var(--u-default);
 }
 
+.item section:first-child picture {
+    margin: 0 0 auto;
+}
+
+.item .discription {
+    padding: var(--u-default);
+}
+
 /* image and graphics */
 
 summary svg, details ul svg  {
