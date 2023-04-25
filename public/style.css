@@ -56,8 +56,6 @@
 }
 
 
-
-
 /* overviewpage styling */
 
 .overviewpage-header{
@@ -109,6 +107,7 @@
     -webkit-box-shadow: 12px 9px 11px -6px rgba(0, 0, 0, 0.37);
         box-shadow: 12px 9px 11px -6px rgba(0, 0, 0, 0.37);
 }
+
 
 .method-name{
     display: flex;
@@ -164,3 +163,73 @@
 .Onderzoeken-en-begrijpen{
     border-left-color: var(--text-stroke-color-var07);
 }
+
+
+/* detailpage styling */
+
+.backtab{
+    height: 3em;
+    width: 100%;
+    background-color: #31439c;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.backtab h3{
+    color: white;
+}
+.backtab img{
+    margin: 1em 1em 1em 1em;
+}
+
+.nav{
+    background-color: var(--text-color-var04);
+    height: 4em;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav a{
+    text-decoration: none;
+    font: var(--broodtekst);
+    font-size: 1.6em;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.nav a:hover{
+    border-bottom: solid 0.1em var(--text-color);
+    margin-bottom: -0.05em;
+    transition: 50ms;
+}
+
+.main-detailpage{
+    margin-left: 2em;
+    font-size: 1.5em;
+}
+
+.main-detailpage h1{
+    color: var(--text-color);;
+}
+.main-detailpage h2{
+    color: var(--text-color);;
+}
+.main-detailpage h3{
+    color: var(--text-color);;
+}
+.main-detailpage h4{
+    color: var(--text-color);;
+}
+
+blockquote{
+    font-weight: bolder;
+}
+ol{
+    list-style-type: none;
+}
+
+
