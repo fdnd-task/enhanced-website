@@ -60,11 +60,17 @@
 
 /* overviewpage styling */
 
+.overviewpage-header{
+    margin-left: 10%;
+    margin-bottom: 2em;
+}
+
 .overviewpage-main{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 .method-container {
     display: flex;
