@@ -139,7 +139,31 @@
     background-color: var(--interactive-el-color);
     height: 3em;
     width: auto;
+    margin-bottom: 2em;
 }
+
+
+.add-method-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.add-method-text h2{
+    font-size: 17px;
+    color: var(--text-color);
+    font-family: var(--broodtekst);
+    width: fit-content;
+}
+
+.add-method-text img{
+    position: relative;
+    top: -2.8em;
+    margin-left: 0.5em;
+    height: auto;
+    width: 4em;
+}
+
 
 
 /* categories colors */
