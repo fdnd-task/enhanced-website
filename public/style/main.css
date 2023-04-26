@@ -3,7 +3,7 @@
 	margin: 0;
 }
 
-/* Standaard eigen waardes */
+/* ======================= Standaard eigen waardes ======================= */
 :root {
     /* animaties */
     --a-quick: 0.2s;
@@ -74,7 +74,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--u-default);
+    gap: var(--u-small);
 }
 
 button {
@@ -236,6 +236,15 @@ dd {
 
 /* image and graphics */
 
+img {
+    transform: perspective( 20em ) rotateY( 20deg );
+    transition: var(--a-default);
+}
+
+img:hover {
+    transform: perspective( 20em ) rotateY( 0deg );
+}
+
 summary svg, details ul svg  {
     height: var(--u-default);
     width: var(--u-default);
@@ -251,10 +260,23 @@ h2 {
     font-size: var(--u-default);
 }
 
+p {
+    margin-bottom: var(--u-default);
+}
+
 /* Interactions */
 
 a {
     cursor: pointer;
+    transition: var(--a-quick);
+}
+
+a:hover {
+    color: red;
+}
+
+a:focus {
+    color: red;
 }
 
 .dropdown:active {

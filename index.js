@@ -71,7 +71,13 @@ server.get("/item", async (request, response) => {
 	response.render("item", data);
 });
 
-// Maakt een route voor de detailpagina
+// Maakt een route voor de reguliere reserveringspagina
+
+server.get("/reserveren", (request, response) => {
+	response.render("reserveren");
+});
+
+// Maakt een route voor de studieplek reserveringspagina
 server.get("/reserveer-een-studieplek", (request, response) => {
 		response.render("reserveer-een-studieplek");
 });
@@ -99,3 +105,4 @@ export async function postJson(url, body) {
 		.then((response) => response.json())
 		.catch((error) => error);
 }
+
