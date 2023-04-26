@@ -5,7 +5,7 @@
 <% categories.forEach(category => { %>
 
     <% if(category.titel === "Pinda" || category.titel === "Ei" ){ %>
-        <a href="/test-producten?categorieId=<%= category.id %>"><%= category.titel %></a>
+        <a href="/pinda-ei?categorieId=<%= category.id %>"><%= category.titel %></a>
     <% } %>
 
 <% }); %>

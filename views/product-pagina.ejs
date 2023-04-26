@@ -32,10 +32,12 @@
 
 <section class="product-stappenplan">
     <h1>Stappenplan</h1>
+    <% if(data.product.schema){ %>
     <% data.product.schema.stappen.forEach(stap => { %>
         <h3><%= stap.titel %></h3>
         <%- stap.beschrijving.html %>
-    <% }); %>
+    <% }) %>
+    <% }; %>
 </section>
 
 <section class="last-buttons">

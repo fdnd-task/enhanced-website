@@ -27,13 +27,13 @@ server.get('/', (request, response) => {
   })
 
   // test route voor test pagina roelie producten
-  server.get('/test-producten', async (request, response) => {
+  server.get('/pinda-ei', async (request, response) => {
     const query = request.query.categorieId
 
     const productenUrl = url + `/producten?categorieId=${query}`
   
     await fetchJson(productenUrl).then((data) => {
-      response.render('test-producten', {data: data} )
+      response.render('pinda-ei', {data: data} )
     })
   })
 
