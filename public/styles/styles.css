@@ -185,6 +185,7 @@ header {
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease-out;
 }
 
 .logo {
@@ -229,6 +230,7 @@ header .menu {
 nav {
   position: relative;
   background-color: white;
+  transition: all 0.3s ease-out;
 }
 
 .nav-design {
@@ -306,6 +308,7 @@ header ul li button {
   justify-content: center;
   height: 100%;
   padding: 4rem 1rem 4rem 1rem;
+  transition: all 0.3s ease-out;
 }
 
 .bottom-bar {
