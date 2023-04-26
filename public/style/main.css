@@ -328,6 +328,66 @@ main > section:nth-of-type(1) p {
     transition: all .3s ease;
 }
 
+<<<<<<< Updated upstream
+=======
+/* ======================= FOOTER ======================= */
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+footer {
+    background: #111;
+    background-image: url("Amsterdam.webp");
+    padding: 70px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 1.5rem;
+    color: #e1e1e1;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: rgb(255, 255, 255);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul {
+    list-style: row;
+    display: inline;
+}
+
+.footer-col ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+
+}
+
+>>>>>>> Stashed changes
 /* ======================= MEDIA QUERYS ======================= */
 
 @media (prefers-reduced-motion) {
@@ -362,8 +422,7 @@ main > section:nth-of-type(1) p {
 
     /* ========= FOOTER========= */
         .footer-col {
-            width: 100%;
-    
+            width: 50%;
         }
 }
 
@@ -391,7 +450,7 @@ main > section:nth-of-type(1) p {
 
     /* ========= FOOTER========= */
         .footer-col {
-            width: 50%;
+            width: 25%;
             margin-bottom: 30px;
         }
 }
