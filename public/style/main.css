@@ -230,6 +230,8 @@ dd {
 
 .item .discription {
     padding: var(--u-default);
+    width: 20em;
+    margin: auto;
 }
 
 /* image and graphics */
@@ -317,6 +319,10 @@ main > section:nth-of-type(2) p{
 @media (min-width: 35em) {
     .item {
         grid-template-columns: 3fr 5fr;
+    }
+    .item .discription {
+        width: 22em;
+        margin: 0;
     }
 }
 
