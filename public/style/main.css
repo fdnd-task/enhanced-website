@@ -225,7 +225,16 @@ a {
     clip-path: polygon(0 0, 100% 0, 100% 51%, 0 61%);
 }
 
+<<<<<<< Updated upstream
 .search-form{
+=======
+main>section:nth-of-type(1) {
+    background-image: url("/assets/Amsterdam.jpg");
+    background-image: image-set(url('/assets/Amsterdam.avif') type('image/avif'), url('/assets/Amsterdam.jpg')type('image/jpeg'));
+}
+
+.search-form {
+>>>>>>> Stashed changes
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -276,8 +285,31 @@ main > section:nth-of-type(2) p{
 
 @media (min-width: 20em) {
 
+<<<<<<< Updated upstream
 }
 
+=======
+    /* ========= MAIN ========= */
+    main>section:nth-of-type(1) {
+        height: 6em;
+    }
+}
+
+/* SMALL MEDIUM SCREEN 600px */
+
+@media (min-width: 37.5em) {
+
+    /* ========= MAIN ========= */
+    main>section:nth-of-type(1) {
+        background-size: contain;
+        background-repeat: repeat;
+        background-size: 56vw;
+    }
+}
+
+/* MEDIUM SCREEN 768px */
+
+>>>>>>> Stashed changes
 @media (min-width: 48em) {
 
     /* ========= HEADER ========= */
@@ -301,6 +333,27 @@ main > section:nth-of-type(2) p{
 
 }
 
+<<<<<<< Updated upstream
+=======
+/* Large screen 1120px */
+@media (min-width: 70em) {
+
+    /* ========= MAIN ========= */
+    main>section:nth-of-type(1) {
+        height: 7em;
+        background-size: 50vw;
+    }
+}
+
+/* Extra Large screen 1400px */
+@media (min-width:88em) {
+
+    /* ========= MAIN ========= */
+    main>section:nth-of-type(1) {
+        height: 8em;
+        background-size: 40vw;
+    }
+>>>>>>> Stashed changes
 
 
 
