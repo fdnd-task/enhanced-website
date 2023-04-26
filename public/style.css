@@ -88,6 +88,7 @@
 .product-beschrijving > ul, .product-beschrijving > p{
     list-style-type: none;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 .product-beschrijving > li{
     margin-bottom: 5rem;
