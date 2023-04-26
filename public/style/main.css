@@ -250,6 +250,7 @@ summary svg, details ul svg  {
     width: var(--u-default);
 }
 
+
 /* Typography */
 
 h1 {
@@ -290,10 +291,15 @@ a:focus {
 
 /* ======================= MAIN ======================= */
 
-.bg-ams{
-    width: 100%;
-    z-index: -1;
-    clip-path: polygon(0 0, 100% 0, 100% 51%, 0 61%);
+main > section:nth-of-type(2){
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 3em;
+}
+
+main h1{
+    margin: 1em 0 ;
 }
 
 .search-form{
