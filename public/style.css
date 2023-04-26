@@ -1,6 +1,14 @@
 /* Montserrat */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 body {
     font-family: var(--body-font);
     background-color: var(--wit);   
@@ -161,3 +169,5 @@ footer {
          display: none;
      }
  }
+
+
