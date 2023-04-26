@@ -71,6 +71,11 @@ server.get("/item", async (request, response) => {
 	response.render("item", data);
 });
 
+// Maakt een route voor de detailpagina
+server.get("/reserveer-een-studieplek", (request, response) => {
+		response.render("reserveer-een-studieplek");
+});
+
 /**
  * fetchJson() is a wrapper for the experimental node fetch api. It fetches the url
  * passed as a parameter and returns the response body parsed through json.
