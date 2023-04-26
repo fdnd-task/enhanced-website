@@ -227,6 +227,8 @@ a {
     clip-path: polygon(0 0, 100% 0, 100% 51%, 0 61%);
 }
 
+
+
 .search-form {
     display: flex;
     justify-content: flex-end;
@@ -264,6 +266,80 @@ main>section:nth-of-type(2) p {
     font-family: Amsterdam-sans-Light;
 }
 
+/* ======================= FOOTER ======================= */
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+
+}
+
+.footer {
+    background: #111;
+    background-image: url("Amsterdam.webp");
+    padding: 70px 0;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 1.5rem;
+    color: #e1e1e1;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: rgb(255, 255, 255);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul {
+    list-style: row;
+    display: inline;
+
+}
+
+.footer-col ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ======================= MEDIA QUERYS ======================= */
 
 @media (prefers-reduced-motion) {
@@ -280,11 +356,70 @@ main>section:nth-of-type(2) p {
 
 @media (min-width: 20em) {}
 
+@media (min-width: 20em) {
+
+    /* ========= MAIN ========= */
+    main>section:nth-of-type(1) {
+        height: 6em;
+    }
+}
+
+/* SMALL MEDIUM SCREEN 600px */
+
+@media (min-width: 37.5em) {
+
+    /* ========= MAIN ========= */
+    main>section:nth-of-type(1) {
+        background-size: contain;
+        background-repeat: repeat;
+        background-size: 56vw;
+    }
+}
+
+/* MEDIUM SCREEN 768px */
+
 @media (min-width: 48em) {
 
     /* ========= HEADER ========= */
     header {
         padding: var(--u-default) var(--u-large);
+
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header details {
+        display: none;
+    }
+
+    /* ========= MAIN ========= */
+
+}
+
+/* Large screen 1120px */
+@media (min-width: 70em) {
+
+    /* ========= MAIN ========= */
+    main>section:nth-of-type(1) {
+        height: 7em;
+        background-size: 50vw;
+    }
+}
+
+/* Extra Large screen 1400px */
+@media (min-width:88em) {
+
+    /* ========= MAIN ========= */
+    main>section:nth-of-type(1) {
+        height: 8em;
+        background-size: 40vw;
+
     }
 
     header nav {
