@@ -1,6 +1,6 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 /* Standaard eigen waardes */
@@ -42,13 +42,13 @@
 }
 
 ::selection {
-	background-color: var(--c-primary-100);
-	color: var(--c-default);
+    background-color: var(--c-primary-100);
+    color: var(--c-default);
 }
 
 html {
-	font-family: "Amsterdam-sans-Regular","avenir", "arial", sans-serif;
-	font-variant-ligatures: common-ligatures;
+    font-family: "Amsterdam-sans-Regular", "avenir", "arial", sans-serif;
+    font-variant-ligatures: common-ligatures;
 }
 
 @font-face {
@@ -62,8 +62,8 @@ html {
 }
 
 body {
-	background-color: var(--c-default);
-	position: relative;
+    background-color: var(--c-default);
+    position: relative;
 }
 
 a {
@@ -124,7 +124,7 @@ header a:hover {
 }
 
 header a:focus {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 header a:active {
@@ -163,7 +163,8 @@ header details:hover svg {
     fill: red;
 }
 
-header details[open] svg, .dropdown {
+header details[open] svg,
+.dropdown {
     color: red;
 }
 
@@ -199,7 +200,8 @@ li {
 
 /* image and graphics */
 
-summary svg, details ul svg  {
+summary svg,
+details ul svg {
     height: var(--u-default);
     width: var(--u-default);
 }
@@ -221,16 +223,12 @@ a {
 
 /* ======================= MAIN ======================= */
 
+
 main > section:nth-of-type(1){
     background-image: url("/assets/Amsterdam.jpg");
     background-image: image-set(url('/assets/Amsterdam.avif') type('image/avif'), url('/assets/Amsterdam.jpg')type('image/jpeg'));
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
-}
 
-.search-form{
+.search-form {
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -238,36 +236,105 @@ main > section:nth-of-type(1){
     right: 1em
 }
 
-.search-form  > input{
+.search-form>input {
     width: 15em;
     padding: .5em;
-    border-radius:  2px 0 0 2px;
+    border-radius: 2px 0 0 2px;
     border: 1px solid var(--c-accent-75);
 }
-.search-form > button{
+
+.search-form>button {
     background-color: var(--c-primary-100);
     color: white;
     padding: 0.24em 1em;
-    border-radius:  0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
 }
 
-main > section:nth-of-type(2){
+main>section:nth-of-type(2) {
     width: 90%;
     margin: 0 auto;
 }
 
-main h1{
-    margin: 1em 0 ;
+main h1 {
+    margin: 1em 0;
 }
 
-main > section:nth-of-type(2) p{
+main>section:nth-of-type(2) p {
     font-family: Amsterdam-sans-Light;
     max-width: 30em;
+
 }
+
+/* ======================= FOOTER ======================= */
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+
+}
+
+.footer {
+    background: #111;
+    background-image: url("Amsterdam.webp");
+    padding: 70px 0;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 1.5rem;
+    color: #e1e1e1;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: rgb(255, 255, 255);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul {
+    list-style: row;
+    display: inline;
+
+}
+
+.footer-col ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+
+
+}
+
+
+
+
+
 
 /* ======================= MEDIA QUERYS ======================= */
 
 @media (prefers-reduced-motion) {
+
     /* styles to apply if the user's settings are set to reduced motion */
     :root {
         /* animaties */
@@ -343,8 +410,26 @@ main > section:nth-of-type(2) p{
         background-size: 40vw;
     }
 
+
+
+
+
+
+
 }
 
+/* ========= FOOTER========= */
 
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
 
+@media(max-width: 567px) {
+    .footer-col {
+        width: 100%;
 
+    }
+}
