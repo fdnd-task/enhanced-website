@@ -1,6 +1,6 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 /* Standaard eigen waardes */
@@ -42,13 +42,13 @@
 }
 
 ::selection {
-	background-color: var(--c-primary-100);
-	color: var(--c-default);
+    background-color: var(--c-primary-100);
+    color: var(--c-default);
 }
 
 html {
-	font-family: "Amsterdam-sans-Regular","avenir", "arial", sans-serif;
-	font-variant-ligatures: common-ligatures;
+    font-family: "Amsterdam-sans-Regular", "avenir", "arial", sans-serif;
+    font-variant-ligatures: common-ligatures;
 }
 
 @font-face {
@@ -62,8 +62,8 @@ html {
 }
 
 body {
-	background-color: var(--c-default);
-	position: relative;
+    background-color: var(--c-default);
+    position: relative;
 }
 
 a {
@@ -122,7 +122,7 @@ header a:hover {
 }
 
 header a:focus {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 header a:active {
@@ -161,7 +161,8 @@ header details:hover svg {
     fill: red;
 }
 
-header details[open] svg, .dropdown {
+header details[open] svg,
+.dropdown {
     color: red;
 }
 
@@ -197,7 +198,8 @@ li {
 
 /* image and graphics */
 
-summary svg, details ul svg  {
+summary svg,
+details ul svg {
     height: var(--u-default);
     width: var(--u-default);
 }
@@ -219,22 +221,13 @@ a {
 
 /* ======================= MAIN ======================= */
 
-.bg-ams{
+.bg-ams {
     width: 100%;
     z-index: -1;
     clip-path: polygon(0 0, 100% 0, 100% 51%, 0 61%);
 }
 
-<<<<<<< Updated upstream
-.search-form{
-=======
-main>section:nth-of-type(1) {
-    background-image: url("/assets/Amsterdam.jpg");
-    background-image: image-set(url('/assets/Amsterdam.avif') type('image/avif'), url('/assets/Amsterdam.jpg')type('image/jpeg'));
-}
-
 .search-form {
->>>>>>> Stashed changes
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -242,37 +235,39 @@ main>section:nth-of-type(1) {
     right: 1em
 }
 
-.search-form  > input{
+.search-form>input {
     width: 15em;
     padding: .5em;
-    border-radius:  2px 0 0 2px;
+    border-radius: 2px 0 0 2px;
     border: 1px solid var(--c-accent-75);
 }
-.search-form > button{
+
+.search-form>button {
     background-color: var(--c-primary-100);
     color: white;
     padding: 0.24em 1em;
-    border-radius:  0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
 }
 
-main > section:nth-of-type(2){
+main>section:nth-of-type(2) {
     width: 90%;
     margin: 0 auto;
     position: relative;
     bottom: 3em;
 }
 
-main h1{
-    margin: 1em 0 ;
+main h1 {
+    margin: 1em 0;
 }
 
-main > section:nth-of-type(2) p{
+main>section:nth-of-type(2) p {
     font-family: Amsterdam-sans-Light;
 }
 
 /* ======================= MEDIA QUERYS ======================= */
 
 @media (prefers-reduced-motion) {
+
     /* styles to apply if the user's settings are set to reduced motion */
     :root {
         /* animaties */
@@ -283,33 +278,8 @@ main > section:nth-of-type(2) p{
     }
 }
 
-@media (min-width: 20em) {
+@media (min-width: 20em) {}
 
-<<<<<<< Updated upstream
-}
-
-=======
-    /* ========= MAIN ========= */
-    main>section:nth-of-type(1) {
-        height: 6em;
-    }
-}
-
-/* SMALL MEDIUM SCREEN 600px */
-
-@media (min-width: 37.5em) {
-
-    /* ========= MAIN ========= */
-    main>section:nth-of-type(1) {
-        background-size: contain;
-        background-repeat: repeat;
-        background-size: 56vw;
-    }
-}
-
-/* MEDIUM SCREEN 768px */
-
->>>>>>> Stashed changes
 @media (min-width: 48em) {
 
     /* ========= HEADER ========= */
@@ -332,28 +302,3 @@ main > section:nth-of-type(2) p{
     /* ========= MAIN ========= */
 
 }
-
-<<<<<<< Updated upstream
-=======
-/* Large screen 1120px */
-@media (min-width: 70em) {
-
-    /* ========= MAIN ========= */
-    main>section:nth-of-type(1) {
-        height: 7em;
-        background-size: 50vw;
-    }
-}
-
-/* Extra Large screen 1400px */
-@media (min-width:88em) {
-
-    /* ========= MAIN ========= */
-    main>section:nth-of-type(1) {
-        height: 8em;
-        background-size: 40vw;
-    }
->>>>>>> Stashed changes
-
-
-
