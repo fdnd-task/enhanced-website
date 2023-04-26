@@ -65,10 +65,13 @@
     margin-bottom: 2em;
 }
 
-.overviewpage-header h1{
-    font-size: 30px;
-    font-family: var(--rigid);
-    color: var(--text-color);
+.header-methodes h1{
+  color: var(--text-color);
+  font-family: var(--rigid);
+}
+
+.filter-search-container{
+    margin-bottom: 2em;
 }
 
 .overviewpage-main{

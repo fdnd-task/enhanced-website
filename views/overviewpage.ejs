@@ -1,5 +1,9 @@
 <%- include('./head-overviewpage') %>
 
+<header class="header-methodes">
+  <h1>Tekenmethodes</h1>
+</header>
+
  <section class="filter-search-container">
       <div class="searchbar">
       <form>
@@ -7,7 +11,13 @@
          <input type="text" placeholder="zoeken..">
       </form>
      </div>
+     <div class="categories-container">
+      <% methods.forEach(categorie=> { %> 
+        <h2><%= method.categories[0].title %></h2>
+      <% }) %>
+     </div>
   </section>
+
 
 <main class="overviewpage-main">
 
