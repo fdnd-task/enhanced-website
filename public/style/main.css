@@ -293,7 +293,6 @@ a:focus {
 }
 
 /* Amsterdam background / searchbar */
-
 .search-container{
     background-image: url("/assets/Amsterdam.jpg");
     background-image: image-set(url('/assets/Amsterdam.avif') type('image/avif'), url('/assets/Amsterdam.jpg')type('image/jpeg'));
@@ -400,6 +399,65 @@ main > section:nth-of-type(1) p {
     transition: all .3s ease;
 }
 
+/* ======================= FOOTER ======================= */
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+
+}
+
+.footer {
+    background: #111;
+    background-image: url("Amsterdam.webp");
+    padding: 70px 0;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 1.5rem;
+    color: #e1e1e1;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: rgb(255, 255, 255);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul {
+    list-style: row;
+    display: inline;
+}
+
+.footer-col ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+
+}
+
 /* ======================= MEDIA QUERYS ======================= */
 
 @media (prefers-reduced-motion) {
@@ -414,13 +472,16 @@ main > section:nth-of-type(1) p {
     }
 }
 
-/* SMALL SCREEN 320px */
-
+/* EXTRA SMALL SCREEN 560px */
 @media (min-width: 20em) {
 
-
+    /* ========= MAIN ========= */
+    main>section:nth-of-type(1) {
+        height: 6em;
+    }
 }
 
+/* SMALL SCREEN 560px */
 @media (min-width: 35em) {
     .item {
         grid-template-columns: 3fr 5fr;
@@ -505,6 +566,26 @@ main > section:nth-of-type(1) p {
 
 /* Extra Large screen 1400px */
 @media (min-width:88em) {
+
+    /* ========= MAIN ========= */
+    main>section:nth-of-type(1) {
+        height: 8em;
+        background-size: 40vw;
+
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header details {
+        display: none;
+    }
+
     .item {
         width: 50vw;
     }
@@ -514,20 +595,5 @@ main > section:nth-of-type(1) p {
         height: 8em;
         background-size: 40vw;
     }
-}
 
-/* ========= FOOTER========= */
-
-@media(max-width: 767px) {
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width: 567px) {
-    .footer-col {
-        width: 100%;
-
-    }
 }
