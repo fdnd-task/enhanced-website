@@ -69,7 +69,7 @@ body {
 
 a {
     width: fit-content;
-    color: var(--c-accent-100);
+    color: var(--c-invert);
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -292,22 +292,14 @@ a:focus {
     fill: var(--c-primary-100);
 }
 
-/* ======================= MAIN ======================= */
+/* Amsterdam background / searchbar */
 
-main > section:nth-of-type(2){
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    bottom: 3em;
-}
-
-main h1{
-    margin: 1em 0 ;
-}
-
-main > section:nth-of-type(1){
+.search-container{
     background-image: url("/assets/Amsterdam.jpg");
     background-image: image-set(url('/assets/Amsterdam.avif') type('image/avif'), url('/assets/Amsterdam.jpg')type('image/jpeg'));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 6em;
 }
 
 .search-form {
@@ -318,21 +310,26 @@ main > section:nth-of-type(1){
     right: 1em
 }
 
-.search-form>input {
+.search-form > input {
     width: 15em;
     padding: .5em;
     border-radius: 2px 0 0 2px;
     border: 1px solid var(--c-accent-75);
 }
 
-.search-form>button {
+.search-form > button {
     background-color: var(--c-primary-100);
     color: white;
     padding: 0.24em 1em;
     border-radius: 0 2px 2px 0;
 }
 
-main > section:nth-of-type(2) p{
+/* ======================= MAIN ======================= */
+main{
+    margin: 2em 0;
+}
+
+main > section:nth-of-type(1) {
     width: 90%;
     margin: 0 auto;
 }
@@ -341,10 +338,9 @@ main h1 {
     margin: 1em 0;
 }
 
-main>section:nth-of-type(2) p {
+main > section:nth-of-type(1) p {
     font-family: Amsterdam-sans-Light;
     max-width: 30em;
-
 }
 
 /* ======================= FOOTER ======================= */
@@ -359,7 +355,6 @@ main>section:nth-of-type(2) p {
     background: #111;
     background-image: url("Amsterdam.webp");
     padding: 70px 0;
-
 }
 
 .row {
@@ -394,7 +389,6 @@ main>section:nth-of-type(2) p {
 .footer-col ul {
     list-style: row;
     display: inline;
-
 }
 
 .footer-col ul li a {
@@ -404,14 +398,7 @@ main>section:nth-of-type(2) p {
     display: block;
     margin-bottom: 10px;
     transition: all .3s ease;
-
-
 }
-
-
-
-
-
 
 /* ======================= MEDIA QUERYS ======================= */
 
@@ -431,10 +418,7 @@ main>section:nth-of-type(2) p {
 
 @media (min-width: 20em) {
 
-    /* ========= MAIN ========= */
-        main > section:nth-of-type(1){
-            height: 6em;
-        }
+
 }
 
 @media (min-width: 35em) {
@@ -452,10 +436,16 @@ main>section:nth-of-type(2) p {
 @media (min-width: 37.5em)  {
 
     /* ========= MAIN ========= */
-        main > section:nth-of-type(1){
+        .search-container{
             background-size: contain;
             background-repeat: repeat;
             background-size: 56vw;
+        }
+
+    /* ========= FOOTER========= */
+        .footer-col {
+            width: 100%;
+    
         }
 }
 
@@ -481,18 +471,33 @@ main>section:nth-of-type(2) p {
         }
     /* ========= MAIN ========= */
 
+    /* ========= FOOTER========= */
+        .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+}
+
+/* MEDIUM LARGE SCREEN 1024px */
+@media (min-width: 64em) {
+    .item {
+        width: 66vw;
+    }
 }
 
 /* Large screen 1120px */
 @media (min-width: 70em) {
 
-    /* ========= MAIN ========= */
+    /* ========= HEADER ========= */
+
     .item {
         width: 75vw;
         margin: auto;
     }
 
-        main > section:nth-of-type(1){
+    /* ========= MAIN ========= */
+
+        .search-container{
             height: 7em;
             background-size: 50vw;
         }
@@ -500,22 +505,14 @@ main>section:nth-of-type(2) p {
 
 /* Extra Large screen 1400px */
 @media (min-width:88em) {
-
-    /* ========= MAIN ========= */
-    main > section:nth-of-type(1){
-        height: 8em;
-        background-size: 40vw;
-    }
-
-@media (min-width: 64em) {
-    .item {
-        width: 66vw;
-    }
-}
-
-@media (min-width: 80em) {
     .item {
         width: 50vw;
+    }
+    
+   /* ========= MAIN ========= */
+    .search-container{
+        height: 8em;
+        background-size: 40vw;
     }
 }
 
