@@ -46,7 +46,8 @@ header {
     padding: 1rem;
 }
 
-p{
+/* ik heb even die p class gele-banner gegeven, roelie */
+p.gele-banner{
     color: var(--zwart);
     text-align: center;
     font-size: 1.4rem;
@@ -173,12 +174,17 @@ footer {
 
 /* R20222 product-pagina CSS gedeelte */
 
+
 /* header gedeelte */
 .product-pagina-img{
     width: 80%;
     height: auto;
     position: relative;
     left: -2.5rem;
+}
+.placeholder-img{
+    margin-bottom: 1rem;
+    margin-left:1rem;
 }
 .product-pagina-h1{
     margin:1.5rem;
@@ -192,7 +198,6 @@ footer {
     display: flex;
     flex-direction: column;
     width:fit-content;
-    
     align-items: center;
     position:absolute;
     right:1rem;
@@ -228,9 +233,11 @@ footer {
     list-style-type: none;
     margin-bottom: 1rem;
     font-size: 1rem;
+    max-width: 40rem;
 }
 .product-beschrijving > li{
     margin-bottom: 5rem;
+    max-width: 40rem;
 }
 
 /* stappenplan gedeelte */
@@ -245,6 +252,7 @@ footer {
 .product-stappenplan > p{
     margin-top: 1rem;
     margin-bottom: 1rem;
+    max-width: 40rem;
 }
 
 /* laatste knoppen */
@@ -256,9 +264,6 @@ footer {
     margin-bottom:1rem;
     font-weight: 500;
 }
-.last-buttons > a{
-    text-decoration: none;
-}
 .voeg-toe{
     color:var(--donkerblauw);
     border: 1px solid var(--donkerblauw);
@@ -267,6 +272,7 @@ footer {
     padding:1rem;
     width:19rem;
     margin-bottom:1rem;
+    text-decoration: none;
 }
 .nu-kopen{
     color:var(--wit);
@@ -275,7 +281,15 @@ footer {
     text-align: center;
     padding:1rem;
     width:19rem;
+    text-decoration: none;
 }
+.else-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
 
 /* desktop versie */
 .voeg-toe:hover{
@@ -286,4 +300,54 @@ footer {
     color:var(--donkerblauw);
     background-color: var(--wit);
     border: 1px solid var(--donkerblauw);
+}
+
+@media screen and (min-width: 50em){
+    .product-pagina-img{
+        /* max-width:38rem; */
+        max-width:30rem;
+    }
+    .product-pagina-h1{
+        font-size:3rem;
+        max-width:20rem;
+        position:absolute;
+        top:15rem;
+        left: calc(50% - 5rem);
+        font-weight: 500;
+    }
+    .price-checkout-container{
+        margin-top: 4.5rem;
+        margin-right: 2rem;
+        scale: 125%;
+    }
+}
+
+@media screen and (min-width: 63em){
+    .product-pagina-img{
+        left:0;
+        margin-left: 1rem;
+    }
+    
+    .product-beschrijving{
+        width: 45%;
+    }
+    .product-stappenplan{
+        width:45%;
+        
+    }
+    .product-pagina-flex-container{
+        display: flex;
+        margin-top: 1rem;
+    }
+    .last-buttons{
+        width: 45%;
+        position: relative;
+        left:calc(50% + 2rem) ;
+    }
+    .voeg-toe, .nu-kopen{
+        width:100%;
+    }
+    .else-buttons{
+        width:45%;
+    }
 }
