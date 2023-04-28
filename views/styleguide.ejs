@@ -1,5 +1,76 @@
-<%- include('./partials/head') %>
-<%- include('./partials/header') %>
-<%- include('./partials/food') %>
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#D4005B" />
 
+    <meta name="keywords" content="Vervoerregio Amsterdam wcag" />
+    <meta name="description" content="Vervoerregio Amsterdam wcag" />
+    <meta
+      name="author"
+      content="Luuk Brauckmann, Sascha Davidson, Tom Poortman"
+    />
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/styleguide.css" />
+
+    <link rel="stylesheet" href="/icons/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="/icons/fontawesome/css/solid.css" />
+
+    <script src="/scripts/scripts.js" defer></script>
+
+    <title><%- title %></title>
+  </head>
+  <body class="styleguide">
+    <nav class="menu">
+      <a class="menu__item" href="/styleguide/introductie">Introductie</a>
+      <a class="menu__item" href="/styleguide/knoppen">Knoppen</a>
+    </nav>
+
+    <section class="page">
+      <header class="page__header">
+        <nav class="breadcrumbs">
+          <a class="breadcrumbs__item">
+            <span class="breadcrumbs__item__icon">
+              <i class="fa-solid fa-code"></i>
+            </span>
+            <span class="breadcrumbs__item__label">Styleguide</span>
+          </a>
+        </nav>
+        <h1>Introductie</h1>
+      </header>
+
+      <div class="page__content">
+        <article class="card example-card">
+          <header class="card__header">
+            <h2>Element</h2>
+          </header>
+
+          <div class="card__content">
+            <article class="styleguide-example">
+              <header class="styleguide-example__header">
+                <h3>Voorbeeld</h3>
+              </header>
+              <div class="styleguide-example__content">Voorbeeld</div>
+            </article>
+            <article class="styleguide-example">
+              <header class="styleguide-example__header">
+                <h3>HTML</h3>
+              </header>
+              <div class="styleguide-example__content">HTML</div>
+            </article>
+            <article class="styleguide-example">
+              <header class="styleguide-example__header">
+                <h3>CSS</h3>
+              </header>
+              <div class="styleguide-example__content">CSS</div>
+            </article>
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
 

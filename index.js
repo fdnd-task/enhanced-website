@@ -4,10 +4,10 @@ import compression from 'compression'
 import helmet from 'helmet'
 
 import startPage from './routes/start.js'
-import notFoundPage from './routes/not-found.js'
 import newChecklist from './routes/new-checklist.js'
 import partners from './routes/partners.js'
-// import styleguid from './routes/styleguid.js'
+import styleguide from './routes/styleguide.js'
+import notFoundPage from './routes/not-found.js'
 
 const { env } = process
 const server = express()
@@ -26,10 +26,11 @@ server.use(express.urlencoded({ extended: true }))
 
 /* Routes */
 server.get('/', startPage)
-server.get('**', notFoundPage)
 server.get('/new-checklist', newChecklist)
 server.get('/partners', partners)
-// server.get('/styleguid', styleguid)
+server.get('/styleguide', styleguide)
+server.get('/styleguide/**', styleguide)
+server.get('**', notFoundPage)
 
 server.listen(port, () => {
 	console.log(`App is served on port http://localhost:${port}/`)
