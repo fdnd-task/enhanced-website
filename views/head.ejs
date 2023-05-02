@@ -16,8 +16,10 @@
   </head>
   <body>
 
-    <% if (container) { %>
+    <% try { if (container) { %>
       <div class="container">
+    <% } } catch (error) {  %>
+      <% return %>
     <% } %>
 
     <header>
