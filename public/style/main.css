@@ -295,6 +295,7 @@ a:focus {
 }
 
 /* Amsterdam background / searchbar */
+
 .search-container{
     background-image: url("/assets/Amsterdam.jpg");
     background-image: image-set(url('/assets/Amsterdam.avif') type('image/avif'), url('/assets/Amsterdam.jpg')type('image/jpeg'));
@@ -308,7 +309,7 @@ a:focus {
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    top: 6em;
+    top: 6.5em;
     right: 1em
 }
 
