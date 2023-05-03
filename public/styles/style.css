@@ -1,15 +1,168 @@
+/* font-family: 'Roboto Mono', monospace; */
+/* font-family: 'Roboto Slab', serif; */
+
 :root{
-    --primary-color: #003434;
-    --secondary-color: #004b4b;
+    --primary-color: #004b4b;
+    --secondary-color: #003434 ;
+    --primary-color-lighter: #125f5f;
     --tertiary: #FED55D;
+    --text-color: #ffffff;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--text-color);
+    font-family: 'Roboto Mono', serif;
 }
 
 body{
     background: var(--primary-color);
+    font-family: 'Roboto Mono', serif;
 }
+
+
+
+/* ---------------------------------------- HEADER (start) ---------------------------------------- */
+
+.box-shadow-header{
+    position: absolute;
+    left: 0;
+    top: 0;   
+    width: 150%;
+    height: 100%;
+    margin-left: -25%;
+    /* box-shadow: 
+    inset 0rem 0rem 1rem .5rem rgba(255, 255, 255, 0.3), 
+    inset 0rem 0rem .5rem 0rem rgba(255, 255, 255, 0.3)
+    ; */
+    display: none;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 2rem;
+    padding: .3rem 2.5vw;
+    background-image: linear-gradient(var(--secondary-color), var(--primary-color-lighter));
+    /* background-color: var(--primary-color); */
+}
+
+.ul-game-info{
+    display: flex;
+    flex-direction: row;
+    overflow: clip;
+    column-gap: .5rem;
+    list-style-type: none;
+}
+
+.li-game-info{
+    white-space: nowrap;
+}
+
+h1::after{
+    content: '•';
+    padding-left: .5rem;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.logo{
+    align-self: self-start;
+    width: 1.2rem;
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(271deg) brightness(105%) contrast(100%);
+}
+
+/* ---------------------------------------- HEADER (end) ---------------------------------------- */
+
+/* ---------------------------------------- SCOREBOARD (start) ---------------------------------------- */
+
+.game-score{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.5vw;
+    margin-top: 3rem;
+    height: 5rem;
+    background-color: var(--secondary-color);
+}
+
+.container-flag-country{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-score-flag{
+    border-radius: 1.5rem;
+    height: 5rem;
+    box-sizing: content-box;
+    width: auto;
+    transform: translateY(-.3rem);
+    border: .3rem solid var(--primary-color);
+    box-shadow: .1rem .1rem .3rem 0rem rgba(0, 0, 0, 0.7);
+}
+
+.game-score-country{
+    font-size: 1.1rem;
+    letter-spacing: .05rem;
+    font-weight: 300;
+}
+
+.container-score-minutes{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-board-score, .score-board-minutes{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.score-board-score{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+}
+
+.score-board-minutes{
+    transform: translateX(.1rem);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/* ---------------------------------------- SCOREBOARD (end) ---------------------------------------- */
+
+/* ---------------------------------------- NAVIGATION (start) ---------------------------------------- */
+
+nav{
+    background-color: var(--secondary-color);
+    margin-top: 5rem;
+}
+
+.ul-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw 0 5vw;
+    list-style-type: none;
+}
+
+.nav-items{
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.nav-items:nth-child(2){
+    border-bottom: .1rem solid var(--tertiary);
+}
+
+
+/* ---------------------------------------- NAVIGATION (end) ---------------------------------------- */
