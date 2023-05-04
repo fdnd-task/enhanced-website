@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library Seat Booking</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        margin: 0;
+      }
+      form {
+        padding: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="date"],
+      input[type="time"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .btn-submit {
+        background-color: #2c3e50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn-submit:hover {
+        background-color: #34495e;
+      }
+	  a.btn-submit{
+		text-decoration: none;
+	  }
+    </style>
+  </head>
+  <body>
+    <h1>Library Seat Booking</h1>
+    <form method="POST" action="/book-seat">
+      <label for="seatNumber">Seat Number:</label>
+      <input type="text" id="seatNumber" name="seatNumber" required />
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required />
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required />
+      <!-- <button class="btn-submit" type="submit">Book Seat</button> -->
+	  <a class="btn-submit" href="/success">Book seat</a>
+    </form>
+  </body>
+</html>
