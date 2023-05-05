@@ -326,7 +326,7 @@ fieldset {
     margin-bottom: var(--u-default);
 }
 
-.form-studyplace, .form-reservate button {
+.form-button-submit {
     background-color: var(--c-accent-100);
     color: var(--c-default);
     margin: var(--u-default) 0;
@@ -334,11 +334,11 @@ fieldset {
     transition: var(--a-quick) ease-in-out;
 }
 
-.form-studyplace, .form-reservate button:hover {
+.form-button-submit:hover {
     background-color: red;
 }   
 
-.form-studyplace, .form-reservate button:focus {
+.form-button-submit:focus {
     background-color: red;
 }   
 
@@ -517,7 +517,7 @@ form.form-studyplace {
 
 @media (min-width: 37.5em)  {
 
-    form.form-studyplace {
+    form.form-studyplace, form.form-reservate {
         width: 25em;
     }
 
