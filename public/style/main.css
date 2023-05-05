@@ -352,7 +352,21 @@ main > section:nth-of-type(2) div{
     height: 10em;
 }
 
+/* ======================= FORM ======================= */
 
+.studyplace {
+    width: 10em;
+    display: block;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: var(--u-default);
+}
 
 /* ======================= FOOTER ======================= */
 
@@ -426,7 +440,12 @@ footer {
 /* EXTRA SMALL SCREEN 560px */
 @media (min-width: 20em) {
 
-    /* ========= MAIN ========= */
+        /* ========= FORM ========= */
+
+        .studyplace {
+            width: 17.5em;
+            display: block;
+        }
 
 }
 
@@ -435,10 +454,18 @@ footer {
     .item {
         grid-template-columns: 3fr 5fr;
     }
+
     .item .discription {
         width: 22em;
         margin: 0;
     }
+
+        /* ========= FORM ========= */
+
+        .studyplace {
+            width: 20em;
+            display: block;
+        }
 }
 
 /* SMALL MEDIUM SCREEN 600px */
@@ -466,7 +493,14 @@ footer {
             text-align: center;
         }
 
-    /* ========= FOOTER========= */
+    /* ========= FORM ========= */
+
+        .studyplace {
+            width: 25em;
+            display: block;
+        }
+
+    /* ========= FOOTER ========= */
         .footer-col {
             width: 50%;
         }
