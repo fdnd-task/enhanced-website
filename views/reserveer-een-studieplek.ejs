@@ -7,19 +7,23 @@
     <section>
         <h1>Reserveer een studieplek</h1>
     </section>
-    <section>
-        <form class="studyplace">
+    <section class="section-studyplace">
+        <form class="form-studyplace">
             <fieldset>
-                <legend>Wat wij willen weten</legend>
-                <label>
-                    Hoelaat wilt u reserveren?
+                <legend>Datum & tijd</legend>
+                <label for="date">
+                    Wanneer wilt u reserveren?
                 </label>
-                <input />
-                <label>
-                    Bij welke vestiging wilt u reserveren?
-                </label>
-                <input />
-            </fieldset>  
+                <input id="date" type="datetime-local" required />
+            </fieldset>
+            <fieldset>
+                <legend>Locatie</legend>
+                <label>Bij welke vestiging wilt u reserveren?</label>
+                <select>
+                <option></option>
+            </select>
+            </fieldset>
+            <button type="submit">Verzenden</button>
         </form>
     </section>
 </main>
