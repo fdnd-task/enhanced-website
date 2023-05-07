@@ -1,139 +1,130 @@
-# Performance Matters - Optimized Website
+# Server-Side Website
 
-Ontwerp en maak met een team een website voor een opdrachtgever waarbij je verschillende performance technieken toepast.
+Ontwerp en ontwikkel een server-side website voor een opdrachtgever.
+
 
 ## Context
-Deze leertaak hoort bij sprint 10 "Performance Matters". Dit is een leertaak die je in een team uitvoert voor een opdrachtgever.
 
-In het college S10W1-01-Sprintplanning-Performance-Matters en de workshop S10W1-03-Samenwerken-in-Github wordt de opdracht en de werkwijze uitgelegd.
+Deze leertaak hoort bij sprint 8 "Server-Side Rendering". Dit is een leertaak die je individueel uitvoert voor een opdrachtgever.
+
+In het college S08W1-01-Sprintplanning-server-side-rendering wordt uitgelegd wat je moet doen. Tijdens de sprintplanning met de opdrachtgever bespreek je de opdracht.
+
+Bij deze leertaak hoort de deeltaak:
+- [The Cient - Briefing/Debriefing](https://github.com/fdnd-task/the-client-briefing-debriefing/)
 
 
 ## Doel van deze opdracht
 
-Tot nu toe heb je voornamelijk alleen gewerkt aan server-side code, API's en client-side scripting. Een frontender werkt vaak samen in teams zodat je taken kunt verdelen en grote(re) opdrachten in minder tijd kunt realiseren. 
-Als je in een team werkt werk je met meerdere frontenders in één repository samen. Je zult moeten overleggen, afspreken wie waar aan gaat werken, en code en design afspraken maken. Hoe je dat op een goede manier doet leer je in deze sprint.
+Je leert hoe je server-side data kunt gebruiken voor het maken van een website.
+
 
 ## Werkwijze
 
-Je werkt in een team van max. 3 frontenders aan een website voor een opdrachtgever. Zorg er voor dat je duidelijk afspraken maakt en elkaar dagelijks op de hoogte houdt van vorderingen. Samen met jouw team ben je verantwoordelijk voor de planning, het samenwerkingsproces én het eindresultaat.
+Voor deze leertaak krijg je eerst een sprintplanning met de opdrachtgever. Tijdens de sprintplanning bespreek je de taken van het project board en de content in de database. Elke opdrachtgever heeft content voor de website in een database. Met een een REST API kun je deze content gebruiken voor het maken van de website.
 
-Deze opdracht gaat over alle fases van de DLC [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
+Voor deze opdracht doorloop je alle fases van de DLC [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
+
 
 ### Analyseren
-In de analysefase wordt besproken hoe jullie willen gaan [samenwerken](#samenwerken), onderzoek je wat jullie gaan maken en maak je een [planning](#planning). 
+In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren.
 
-#### Samenwerken
-In de analysefase maak je als team afspraken over hoe je gaat samenwerken.
+Bijvoorbeeld: grip krijgen op een taak door het voeren van een gesprek met jouw opdrachtgever, schrijven van een debriefing, inventarisatie van bestaande informatie, interface audit, interface inventory, planning, maken van een todo lijst en bepalen van definitions of done.
 
-1. Fork deze leertaak en zet de _repository_ klaar voor het team zodat iedereen met dezelfde codebase kan werken.
-3. Vul een Teamcanvas in, begin met het individuele deel en bespreek jouw persoonlijke doelen met je teamgenoten.
-4. Vul vervolgens als team de andere vlakken van het Teamcanvas in.
-5. Maak afspraken over hoe jullie gaan samenwerken,  leg de afspraken vast in de _wiki_.
+#### User Stories
+Kies een of meerdere user stories uit de backlog van het project waar je aan gaat werken. De projecten staan bij [FDND Agency](https://github.com/fdnd-agency).
 
-#### Materiaal voor samenwerken
+Bekijk per user story welke content in de REST API staat.
 
-- [How to Collaborate on GitHub](https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267)
-- [download het Team Canvas](https://github.com/fdnd-task/performance-matters-fast-website/blob/main/docs/Teamcanvas.pdf)
-- [Lees instructies over het gebruik van het Teamcanvas in de deeltaak uit sprint 1](https://github.com/fdnd-task/your-tribe-team-canvas)
+Bekijk per user story relevant studentenwerk uit semester 1.
 
-#### Planning
-In de analysefase bespreek je als team welke werkzaamheden er zijn, wie wat gaat doen en maak je een planning.
+#### Briefing/debriefing
+Schrijf een debriefing. De debriefing is noodzakelijk voor de opdrachtgever om na te gaan of duidelijk is overgekomen wat hij voor ogen had. Maar ook voor jou om te controleren of je alles goed hebt begrepen en geconcretiseerd.
 
-1. Maak een _project board_ aan op jullie gezamenlijke _repository_ om bij te kunnen houden wie wat doet en wanneer
-2. Plan voor de aankomende weken alle standups en reviews en noteer de planning in jullie _project board_.
-3. Bekijk en bespreek álle _User Stories_ die bij het project horen. 
-4. Bespreek de _User Stories_ die jullie willen oppakken en bedenk wat je voor elke user story moet doen.
-5. Maak bij elke *User Story* meerdere taken aan in het *project board*, geef ze een prioriteit en voeg de namen toe van de mensen die eraan gaan werken. ProTip: Als taken te groot zijn (langer dan een dag duren) is het zinvol ze op te splitsen in meerdere kleinere taken.
+#### Inrichten ontwikkelomgeving
 
-#### Materiaal planning
+Fork deze leertaak en clone het naar je systeem. 
 
-- [About Githhub Projects, quickstart en best practices](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-- [Wat is een User Story?](https://agilescrumgroup.nl/wat-is-een-user-story/)
-- [What's Microproductivity?](https://blog.trello.com/microproductivity-break-tasks-into-smaller-steps)
+Je gaat een server-side website bouwen met Node/Express/EJS gebaseerd op een REST API met JSON. 
+Installeer de Node ontwikkelomgeving en installeer de packages die je nodig hebt. Maak de files en folders aan die je nodig hebt op de Node server. 
+
+Test de Node server door de JSON van de REST API te fetchen en te loggen. 
+
+### Bronnen analyseerfase
+
+* [Introduction to the server side](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction)
+* [Client-side vs. Server-side: what’s the difference?](https://medium.com/@donotapply/client-side-vs-server-side-whats-the-difference-a933341cd60e)
+* [Node.js Ultimate Beginner’s Guide in 7 Easy Steps](https://www.youtube.com/watch?v=ENrzD9HAZK4)
+* [Learn JSON in 10 Minutes](https://www.youtube.com/watch?v=iiADhChRriM&t=513s)
+
 
 ### Ontwerpen
-In de ontwerpfase gaan jullie schetsen en afspraken maken over hoe jullie de huisstijl toepassen en hoe je dit gaat verwerken in het project voor de opdrachtgever.
+In de ontwerpfase neem je ontwerpbeslissingen en zorg je dat je precies weet wat je moet gaan bouwen.
 
-#### Living Styleguide
-In deze Sprint gaan jullie je (ook) richten op de performance van websites. Om de performance te verbeteren kun je verschillende performance technieken toepassen.  Voor deze opdracht gaan jullie een aantal Frontend Performance optimalisaties toepassen zoals die te lezen zijn in de [Frontend Performance Checklist van Smashing Magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/).
+Bijvoorbeeld: het maken van idee-schetsen, wireframes en wireflows tekenen. Content analyseren en onderzoek doen naar semantische HTML elementen die je nodig hebt, hoe je de layout in CSS zou kunnen maken en welke JS en CSS je nodig hebt voor interacties en animaties.
 
-In de checklist worden verschillende technieken behandeld waarmee je een website kan optimaliseren. Deze technieken hebben effect op wat voor HTML je gebruikt, CSS en/of JS. Afspraken over hoe jullie dit in code en design gaan doen leggen jullie vast in de _living styleguide_.
+#### Schetsen
+Schets de user story in een wireframe of wireflow. Bepaal de verschillende breakpoints die je nodig hebt.  
 
-1. Clone de bestaande *living-styleguide* voor de opdrachtgever naar jullie repository.
-2. Teken de structuur van de website die jullie willen maken in een _Sitemap_ en bedenk wat op de pagina's moet komen te staan.
-3. Schets de User Stories waar jullie aan gaan werken in een Wireflow en maak gezamenlijk breakdown-schetsen.
-4. Terwijl jullie aan de website gaan werken houden jullie in de *living-stylguide* bij wat voor HTML, CSS en/of JS voor een functionaliteit, component of de layout nodig is.
-5. (optioneel) Als je als team *pull-requests* goed onder de knie hebt kan je aan het eind van de sprint de aanpassingen aan de *living-styleguide* met een *pull-request* samenvoegen met het origineel dat je bij stap 1 *cloned* hebt. Let op: je moet dan afspraken maken met de andere teams die voor deze opdrachtgever werken!
+Maak een breakdown van de ingewikkelde componenten die je wil maken. Misschien wil je een carousel ontwerpen, of een responsive menu? 
+Welke HTML, CSS en JS heb je daarvoor nodig?
 
-#### Project voor de opdrachtgever
-In de ontwerpfase maak je schetsen voor de taak waar jij nu aan gaat werken. Dit doe je waarschijnlijk meerdere keren per sprint, telkens voor de nieuwe taak waar je aan werkt.
+Schrijf bij je schets welke elementen statisch zijn en welke elementen dynamsch. 
 
-1. Maak ontwerpschetsen, kies zelf het medium wat voor jou het beste werkt maar begin in ieder geval even op papier. Probeer verschillende oplossingen uit maar houd je aan de afspraken in de *living-styleguide*. Je bent klaar als je voor ogen hebt wat je gaat bouwen.
-2. Bespreek jouw ontwerp met een teamgenoot, stel eventueel je ontwerp bij op basis van de feedback die je ontvangt. Hint: Maak een issue aan!
-3. Documenteer jouw ontwerp in de wiki.
-
-#### Materiaal ontwerpfase
-
-- [How to create a UX Sitemap: a simple guideline](https://uxdesign.cc/how-to-create-a-ux-sitemap-a-simple-guideline-8786c16f85c1)
-- [Sitemaps & Information Architecture (IA)](https://xd.adobe.com/ideas/process/information-architecture/sitemap-and-information-architecture/)
-- [Wireframing User Flow with Wireflows](https://balsamiq.com/learn/articles/wireflows/)
-- [Frontend Performance Checklist - Assets Optimizations](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#assets-optimizations)
-- [Frontend Performance Checklist - Delivery Optimizations](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#delivery-optimizations)
-- [Lees instructies over het maken van een Living-styleguide uit sprint 4](https://github.com/fdnd-task/look-and-feel-living-styleguide/)
+Schrijf bij je schets welke onderdelen van een pagina je in _partials_ kan opdelen.
 
 
 ### Bouwen
-In de bouwfase realiseer je de beslissingen uit de ontwerpfase. Na de les over samenwerken in GitHub doe je dat waarschijnlijk op een *feature branch* die je na het uitwerken van de taak in de integratiefase met een *pull-request* toevoegt aan het project.
+In de bouwfase realiseer je de beslissingen uit de ontwerpfase.
 
-1. Werk aan jouw taak. Probeer voor elke afgeronde stap een commit te doen zodat herleidbaar is welke aanpassingen je gemaakt hebt.
-2. Test de implementatie van jouw taak voor je naar de integratiefase gaat.
+Je bouwt de website met Node, Express en EJS op de server en je gebruikt client-side technieken HTML, CSS of JS voor het responsive ontwerp of interactieve funcionaliteiten.
 
 
-#### Materiaal bouwfase
+#### Bronnen bouwfase
 
-[Frontend Performance Checklist van Smashing Magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/).
+<!-- * [Using EJS template engine with Express.js](https://www.topcoder.com/thrive/articles/using-ejs-template-engine-with-express-js) -->
+<!-- * [Rendering Views with Node, Express, and EJS](https://medium.com/@bloomaman/rendering-views-with-node-express-and-ejs-415af1493c74) -->
+* [Master EJS template engine with Node.js and Expressjs](https://medium.com/swlh/master-ejs-template-engine-with-node-js-and-expressjs-979cc22b69be)
+* [How to Use JSON in Node.js](http://www.jsonexample.com/how-to-use-json-in-node-js/)
+
+
+
 
 ### Integreren
-In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien en er op verder kan bouwen. Waarschijnlijk doe je dit pas na de les over samenwerken in Github.
+In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien.
 
-1. Maak een *pull-request* voor jouw feature.
-2. Bespreek met je team wanneer *pull-requests* worden verwerkt en wie ze afhandelt.
-3. Handel het *pull-request* af.
+Als je helemaal klaar bent en alles lokaal werkt ga je verder met het publiceren van jouw project op internet. Omdat we met Node werken is dit iets ingewikkelder dan voorheen, er moet namelijk een serveromgeving opgestart worden. Wij gebruiken cyclic.sh als hostingpartij maar je mag natuurlijk je eigen voorkeur volgen als die anders is.
 
-#### Materiaal integratiefase
-
-- [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
-- [GitHub, Aan een project bijdragen](https://git-scm.com/book/nl/v2/GitHub-Aan-een-project-bijdragen) (laat je niet afschrikken door de command line code, jij kunt daar prima GitHub Desktop voor gebruiken!)
 
 ### Testen
-In de testfase controleer je of jouw aanpassingen werken zoals bedoeld.
+In de testfase controleer je of jouw aanpassingen werken zoals bedoeld en pas je zo nodig jouw ontwerp of de code aan om te beantwoorden aan jouw bevindingen.
 
-1. Test de performance van jouw project, maak issues aan en documenteer je bevindingen in de wiki.
-2. Test jouw project op meerdere devices en browsers, maak issues aan  en documenteer je bevindingen in de wiki.
-3. Test de toegankelijkheid van jouw project, maak issues aan  en documenteer je bevindingen in de wiki.
-4. Test de bruikbaarheid van jouw project, maak issues aan  en documenteer je bevindingen in de wiki.
+Bijvoorbeeld: uitvoeren van code/design reviews, user tests met gebruikers, toegankelijkheid testen met lighthouse en handmatige tests, je bevindingen documenteren en bepalen of je nog een iteratie maakt.
+
+
 
 
 ## Criteria
 *Definitions of done*
 
-Focus sprint 10 - De focus van deze sprint ligt op het beter en sneller laten werken van een website en samenwerken.
+Focus sprint 8 - De focus van deze sprint ligt op het maken van een opdracht voor een opdrachtgever, leren hoe je op de server data kunt laden en presenteren.
 
 Doel van deze opdracht:
 
-* je leert hoe je met een team een website ontwerpt en maakt voor een opdrachtgever waarbij je verschillende performance technieken toepast
+* Je leert hoe je server-side data kunt gebruiken voor het maken van een website.
 
 Voor deze leertaak gelden de gedragscriteria:
 
-* M: Je combineert aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving
-* S: Je werkt in teams, vraagt begeleiding waar nodig en geeft feedback aan teamleden
-* S: Je draagt verantwoording voor eigen resultaten, verwerkt ontvangen feedback en wijst teamleden op hun verantwoording
+* C: Je luistert en vraagt door, neemt wat een ander zegt serieus
 * C: Je kan ontwerpkeuzes, eigen ideeën en producten begrijpelijk overbrengen aan belanghebbenden
-* P: Je analyseert een vraag, signaleert knelpunten en volgt de aangeboden oplossingsrichting
+* P: Je combineert aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving om een passende oplossing voor een opdrachtgever te realiseren
+* ~~L: Je volgt aangeboden internationale ontwikkelingen in het vakgebied~~
 
 Deze opdracht is done als:
 
-- [ ] Je hebt met een team aan de opdracht van een opdrachtgever gewerkt
+- [ ] Je hebt een website ontworpen en gemaakt met Node, Express en EJS en een REST API
 - [ ] Je website is online gepubliceerd
-- [ ] De planning, samenwerking en teamafspraken zijn gedocumenteerd in de Wiki en project-board
-- [ ] Verschillende Frontend Performance technieken zijn toegepast en gedocumenteerd in de *Living-Styleguide*
+- [ ] Je hebt je proces bijgehouden in de Wiki
+- [ ] Je toont aan dat je in de analysefase verschillende methoden en technieken hebt ingezet om te inventariseren wat er moet gebeuren
+- [ ] Je toont aan dat je in de ontwerpfase verschillende methoden en technieken hebt ingezet die ervoor zorgen dat je precies weet wat je moet bouwen
+- [ ] Je toont aan dat je in de bouwfase verschillende server-side en client-side methoden en technieken hebt ingezet om het ontwerp te realiseren
+

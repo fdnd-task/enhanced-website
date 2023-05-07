@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --main-ctc-color: #4F52C9;
+    --secondary-ctc-color: white;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D9E9F2;
+
+}
+
+header{
+    box-sizing: border-box;
+    border: 1px solid white;
+    padding: 1em;
+    background-color: var(--secondary-ctc-color);
+    width: 22.6em;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+}
+
+header > img{
+    width: 15em;
+}
+header > svg{
+    float: right;
+    display: none;
+}
+
+header > svg:hover{
+    transform: scale(1.2);
+}
+
+header > input:nth-of-type(1){
+    box-sizing: border-box;
+    position: absolute;
+    padding: 1em;
+    top: 6.2em;
+    left: 0;
+    width: 100% ;
+    display: none;
+}
+
+header > p{
+    color: var(--main-ctc-color);;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
+}
+
+.directionsButton{
+    width: 3em;
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+#map{
+    width: 96vw;
+    height: 93vh;
+    border-radius: 1em;
+}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #D9E9F2;
+}
+#big-wrapper{
+    position: relative;
+    overflow: hidden;
+    box-shadow: -1px 0px 13px 5px rgba(224,224,224,1);
+    border-radius: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#big-list{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 20em;
+    width: 20em;
+    background-color: var(--secondary-ctc-color);
+    color: var(--main-ctc-color);;
+    position: relative;
+    padding: 1em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 94.5vh;
+    border-radius: 1em;
+    max-height: 100vh;
+    top: -1em;
+}
+
+#big-list > li:nth-of-type(1), #big-list > li:nth-of-type(2){
+   flex-basis: 20%;
+   padding: 2em;
+}
+
+#big-list > li:nth-of-type(1)::after, #big-list > li:nth-of-type(2)::after{
+    background: var(--secondary-ctc-color);
+ }
+
+#big-list > li:nth-of-type(1) button, #big-list > li:nth-of-type(2) button{
+    padding: .5em 2em .5em 2em;
+    transform: translateX(-80%);
+
+}
+
+#stick-top > img{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 15em;
+}
+
+#side-wrapper{
+    position: absolute;
+    height: 20em;
+    top: 0;
+    max-height: 38em;
+    left: 0;
+    transition: .2s ease;
+}
+
+li{
+    position: relative;
+    list-style-type: none;
+    flex-grow: 1;
+    margin: 1em;
+    box-shadow: 4px 7px 10px 1px rgba(150,150,150,1);
+    border-radius: 1em;
+    padding: 1em;
+    color: black;
+}
+
+/* li::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: var(--main-ctc-color);;
+    width: 90%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: .5em;
+} */
+
+#stick-top{
+    width: 100%;
+    position: sticky;
+    top: -1em;
+    background-color: white;
+    z-index: 2;
+    padding-bottom: 1em;
+}
+li> p{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.buttonHolder{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 0.75em
+}
+
+li> div> button{
+    border-radius: 40px;
+    border: none;
+    color: var(--main-ctc-color);
+    outline:  var(--main-ctc-color) solid 2px;
+    background-color: white;
+    cursor: pointer;
+    max-height: 3.5em;
+    width: 6em;
+    font-weight: bold;
+
+}
+
+#top-holder{
+    width: 100%;
+    padding-left: 2em;
+}
+
+#top-holder > button{
+    border-radius: 40px;
+    border: none;
+    color: var(--main-ctc-color);
+    outline:  var(--main-ctc-color) solid 2px;
+    background-color: white;
+    cursor: pointer;
+    max-height: 3.5em;
+    padding: 0.5em;
+    width: 6em;
+}
+
+
+li> button:hover{
+    background-color: var(--secondary-ctc-color);
+    transition: ease .2s;
+    color: var(--main-ctc-color);;
+    outline: 1px solid white;
+}
+li> p:nth-of-type(1){
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+#big-list > li:nth-of-type(1), #big-list > li:nth-of-type(2){
+    margin: 0em;
+    margin-bottom: 2em;
+    box-shadow: none;
+    border-radius: 0em;
+    padding: 0em;
+}
+
+#big-list > li:nth-of-type(1)::after, #big-list > li:nth-of-type(2)::after{
+    content: none;
+}
+
+.lowFill{
+    color: greenyellow;
+}
+
+.mediumFill{
+    color: #FFDD00;
+}
+
+.highFill{
+    color: #E00000;
+}
+
+#side-out{
+    width: 2em;
+    height: 5em;
+    position: absolute;
+    top: 100%; 
+    left: 100%;  
+    background-image: url(/images/left-with-straight-arrow.png); /* <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Freepik - Flaticon</a> */
+    background-repeat: no-repeat;
+    background-color: #00ffec;
+    background-size: 12px;
+    background-position: center;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+}
+
+
+.side-out-flip{
+    transform: rotate(180deg);
+}
+
+#side-out:hover{
+    background-color: white;
+    transition: ease-in .2s;
+    border-color: black;
+}
+.selectButton{
+    font-family: 'Rajdhani', sans-serif;
+    padding: .5em;
+    /* <a target="_blank" href="https://icons8.com/icon/kuUwIi4UBqyH/arrow">Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
+}
+
+.reserveButton{
+    padding: .5em;
+    background: linear-gradient(to right, rgba(79,81,201,1) 0%, rgba(79,81,201,1) 40%, rgba(79,81,201,1) 44%, rgba(133,34,199,1) 100%);
+    color: white;
+}
+
+.animation-visible{
+    left: 0em !important;
+}
+
+.animation-hidden{
+    left: -22em !important;
+}
+
+.map-location-center{
+    padding: 1em;
+    background-color: white;
+    border: none;
+    margin-top: .5em;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+    border: 1px solid rgba(0, 0, 0, 0.14902);
+}
+
+.funJSON{
+    white-space: pre;
+}
+
+.gm-style .gm-style-iw {
+    font-size: 16px;
+    font-weight: bold;
+ }
+
+.titleStyle{
+    color: var(--secondary-ctc-color);
+}
+.filterStyle{
+    display: list-item;
+}
+
+.filterHidden{
+    display: none;
+}
+.sortStyle{
+    display: list-item;
+}
+
+.sortHidden{
+    display: none;
+}
+
+.sortStyle > button{
+    position: relative;
+    padding: 1em;
+    top: 0;
+    left: 0;
+    margin-bottom: 1em;
+    border-radius: 10%;
+    border: none;
+    color: var(--secondary-ctc-color);
+}
+
+#big-search-bar{
+    padding: 1em 2em 1em 2em;
+}
+
+.sizeActive , .useActive, .funcActive, .locActive{
+    background-color: var(--secondary-ctc-color);
+    color: white !important;
+    outline: 1px solid white;
+}
+
+.dynamicCard{
+    background-color: white;
+    color: var(--secondary-ctc-color);
+    padding: 1px;
+    text-align: center;
+    display: none;
+    border-radius: 10%;
+    padding: 5px;
+}
+main > form{
+    align-self: flex-end;
+    margin-right: 2em;
+    outline: solid 1px var(--secondary-ctc-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2em;
+    background-color:var(--secondary-ctc-color);
+    color: white;
+    position: absolute;
+    z-index: 2;
+    
+}
+form> label{
+    font-weight: bold;
+}
+
+section{
+    margin-top: 15em;
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 4em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Roboto', sans-serif;
+    visibility: hidden;
+}
+
+section > form{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 15em;
+    color: var(--main-ctc-color);
+
+}
+
+section > form > input, section > form > select{
+    color: var(--main-ctc-color);
+    border: none;
+    outline: 1px solid grey;
+   
+
+}
+section > form > label, section > form > select { 
+    margin-top: .5em;
+}
+
+.submitButton{
+    border-radius: 10%;
+    margin-top: .5em;
+    border: none;
+    outline: 1px solid white;
+    color: var(--main-ctc-color);
+    padding: .5em;
+}
+
+section > img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.5em;
+}
+
+.exitButton{
+    cursor: pointer;
+}
+
+.reserveStyle{
+    transform: scale(1);
+    transition: .5s ease-in-out;
+    visibility: visible;
+}
+
+.reserveHidden{
+    transform: scale(0);
+    transition: .5s ease-in-out;
+    visibility: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+@media screen and (max-width: 980px) {
+    #map{
+        width: 35em;
+        height: 55em;
+    }
+
+    #big-list{
+        max-height: 53em;
+    }
+    
+    header > input:nth-of-type(1){
+        display: none;
+    }
+    
+    header > svg{
+        display: block;
+    }
+    
+    #side-wrapper{
+        left: -22em;
+    }   
+
+    header > img{
+        float: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #map{
+        width: 25em;
+        height: 55em;
+    }
+}
