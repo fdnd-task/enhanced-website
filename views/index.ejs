@@ -15,42 +15,23 @@
         <h2> Onze nieuwe aanwinsten</h2>
 
         <div class="wrapper">
+            <i class="material-symbols-outlined">
+                chevron_left
+            </i>
+
             <ul class="carousel">
+                <% results.forEach(result => { %>
                 <li class="book">
                     <a href="">
-                        <img src="" alt="">
+                        <img src="<%= result.coverimages %> " alt="result.titles[0]">
                     </a>
-                    <h1> boek 1</h1>
                 </li>
-
-                <li class="book">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <h1> boek 2</h1>
-                </li>
-
-                <li class="book">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <h1> boek 3</h1>
-                </li>
-
-                <li class="book">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <h1> boek 4</h1>
-                </li>
-
-                <li class="book">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <h1> boek 5</h1>
-                </li>
+                <% }); %>
             </ul>
+            
+            <i class="material-symbols-outlined">
+                chevron_right
+            </i>
         </div>
     </section>
 
