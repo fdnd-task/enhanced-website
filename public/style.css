@@ -1,9 +1,21 @@
+/* ----------- Import */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap");
+
 :root {
   --yellow: #f4eb34;
   --lightGreen: #72a7a5;
   --white: white;
   --black: black;
   --red: red;
+  --groen: #72a7a6;
+  --black: #000;
+  --wit: #ffffff;
+  --licht-grijs: #eee;
+  --donker-grijs: #ccc;
+  --lichtblauw: #e4f2f2;
+  --donkerblauw: #b5dbdc;
+  --font: "Montserrat";
 }
 
 body {
@@ -21,7 +33,6 @@ nav {
   justify-content: space-between; /* this will position the shopping.png on the left and the toggle on the right */
   align-items: center; /* this will vertically center the logo */
 }
-
 
 nav img.logo {
   margin: 0 auto; /* this will horizontally center the logo */
@@ -172,7 +183,7 @@ ul li span {
 
 /* A 7 column grid on the table */
 #calendar {
-  margin-left: 10%;  
+  margin-left: 10%;
   margin-bottom: 10%;
   width: 80%;
   /*margin:0 auto;*/
@@ -180,7 +191,8 @@ ul li span {
   grid-template-columns: repeat(7, 1fr);
 }
 
-#calendar tr, #calendar tbody {
+#calendar tr,
+#calendar tbody {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -196,27 +208,28 @@ caption {
 }
 
 #calendar a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
-#calendar td, #calendar th {
-	padding: 4px;
-	box-sizing:border-box;
-	border: 4px solid #ccc;
+#calendar td,
+#calendar th {
+  padding: 4px;
+  box-sizing: border-box;
+  border: 4px solid #ccc;
 }
 
 #calendar .weekdays {
-	background: var(--lightGreen);  
+  background: var(--lightGreen);
 }
 
 #calendar .weekdays th {
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 20px;
-	border: none;
-	padding: 10px 6px;
-	color: #fff;
-	font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 20px;
+  border: none;
+  padding: 10px 6px;
+  color: #fff;
+  font-size: 13px;
 }
 
 #calendar td {
@@ -226,78 +239,240 @@ caption {
 }
 
 #calendar .days li:hover {
-	background: #d3d3d3;
+  background: #d3d3d3;
 }
 
 #calendar .date {
-	text-align: center;
-	margin-bottom: 5px;
-	padding: 4px;
-	background: #72afa6;
-	color: #fff;
-	width: 20px;
-	border-radius: 50%;
-    flex: 0 0 auto;
-    align-self: flex-end;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 4px;
+  background: #72afa6;
+  color: #fff;
+  width: 20px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  align-self: flex-end;
 }
 
 #calendar .event {
   flex: 0 0 auto;
-	font-size: 13px;
-	border-radius: 4px;
-	padding: 5px;
-	margin-bottom: 5px;
-	line-height: 14px;
-	background: #e4f2f2;
-	border: 1px solid #b5dbdc;
-	color: #009aaf;
-	text-decoration: none;
+  font-size: 13px;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 5px;
+  line-height: 14px;
+  background: #e4f2f2;
+  border: 1px solid #b5dbdc;
+  color: #009aaf;
+  text-decoration: none;
 }
 
 #calendar .event-desc {
-	color: #666;
-	margin: 3px 0 7px 0;
-	text-decoration: none;	
+  color: #666;
+  margin: 3px 0 7px 0;
+  text-decoration: none;
 }
 
 #calendar .other-month {
-	background: #f5f5f5;
-	color: #666;
+  background: #f5f5f5;
+  color: #666;
 }
 
 /* ============================
 				Mobile Responsiveness  START
    ============================*/
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
+  #calendar .weekdays,
+  #calendar .other-month {
+    display: none;
+  }
 
-	#calendar .weekdays, #calendar .other-month {
-		display: none;
-	}
+  #calendar li {
+    height: auto;
+    border: 1px solid #ededed;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: -1px;
+  }
 
-	#calendar li {
-		height: auto;
-		border: 1px solid #ededed;
-		width: 100%;
-		padding: 10px;
-		margin-bottom: -1px;
-	}
-  
-  #calendar, #calendar tr, #calendar tbody {
+  #calendar,
+  #calendar tr,
+  #calendar tbody {
     grid-template-columns: 1fr;
   }
-  
-  #calendar  tr {
+
+  #calendar tr {
     grid-column: 1 / 2;
   }
 
-	#calendar .date {
-		align-self: flex-start;
-	}
+  #calendar .date {
+    align-self: flex-start;
+  }
 }
 
 /* ============================
 				Mobile Responsiveness END
    ============================*/
 
+/* ----------- Productenpagina */
+
+.productenTitel {
+  color: var(--groen);
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.productContainer {
+  display: grid;
+  --columns: 1;
+  grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+.product {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px var(--groen);
+  margin: 20px;
+  padding: 20px;
+  max-width: 18em;
+}
+
+.productBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.productData {
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+}
+
+.productName {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--groen);
+}
+
+.productPrice {
+  color: var(--black);
+  font-weight: 500;
+}
+
+.foto {
+  max-width: 18em;
+  border-radius: 5%;
+}
+
+/*---- MediaQuery -- RESPONSIVE!! ---- */
+@media all and (min-width: 700px) {
+  .productContainer {
+    --columns: 2;
+  }
+}
+@media all and (min-width: 1000px) {
+  .productContainer {
+    --columns: 3;
+  }
+}
+@media all and (min-width: 1200px) {
+  .productContainer {
+    --columns: 4;
+  }
+}
+
+/*  ------------------- Detailpagina */
+.detail-title {
+  font-size: 1.2rem;
+  color: var(--groen);
+  margin-top: 2rem;
+  margin-left: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+span p {
+  font-size: 1em;
+  line-height: 1.4rem;
+  text-align: left;
+  font-weight: 300;
+  color: var(--geel);
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+span ul {
+  display: none;
+}
+
+span li {
+  margin-bottom: 0.5em;
+  color: var(--geel);
+}
+
+.image-detail {
+  width: 100%;
+  height: auto;
+  max-width: 50vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-price {
+  margin-left: 1.2rem;
+  color: var(--groen);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+span button {
+  margin-left: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.detail-container {
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px var(--groen);
+  margin: 20px;
+  padding: 20px;
+  max-width: 50em;
+}
+
+/* ------------------ Footer */
+
+  footer {
+    border-top: 1px solid #ddd;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "i"
+      "s"
+      "m";
+    justify-items: center;
+    text-align: center;
+    grid-column-gap: 20px;
+  }
+
+  footer h2{
+    color: #72a7a6;
+  }
+
+  @media (max-width: 600px) {
+    footer {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 
+        "i s m";
+    }
+  }
+  
+
+
+  
 
