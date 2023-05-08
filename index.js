@@ -15,7 +15,7 @@ app.use(express.static('public'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-// Maak een route voor de index pagina
+// Maak een route voor de index pagina en haalt data uit de api 
 app.get('/', (request, response) => {
   const vestigingUrl = url + urlDefault;
 
