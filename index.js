@@ -29,10 +29,15 @@ app.get('/', (request, response) => {
 })
 
 // Maak een route voor de detail pagina
-app.get("/detail", (request, response) => {
-    fetchJson().then((data) => {
-        response.render('detail', data)
-    })
+app.get("/detail", async (request, response) => {
+  let id = request.query.id; 
+  const uniqueUrl = url + "?id=" + id;
+
+    const data = await fetch(uniqueUrl)
+        .then((response) => response.json())
+        .catch((err) => err);
+    response.render("detail", data);  
+
 });
 
 // Maak een route voor de succes pagina

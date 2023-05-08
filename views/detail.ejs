@@ -1,10 +1,10 @@
 <%- include('./partials/head.ejs') %>
 
 <section class="detail-main">
-    <h1>OBA Roelof Hartplein</h1>
-    <p>430, 1071 TT Amsterdam</p>
+    <h1><%= vestigingen[0].naam %></h1>
+    <p><%= vestigingen[0].adres %></p>
     <div>
-        <img class="detail-image" src="https://media.graphassets.com/VwMnUsECTYe18QHwPQ6E" alt="Roelof image">
+        <img class="detail-image" src="<%= vestigingen[0].foto.originalAsWebP %>" alt="Roelof image">
     </div>
     
 </section>
