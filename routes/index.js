@@ -10,6 +10,17 @@ const baseurl = `${process.env.API_URL}`;
 /* GET home page. */
 router.get('/', function(req, res, next) {
   let smartUrl = url 
+
+  let size = req.query.size || '1'
+  let orderBy = req.query.orderBy || 'name'
+  let direction
+
+  
+  let role = req.query.role
+  
+
+  let squadUrl = url + '?size=' + size + '&direction=' + direction + "&role=" + role
+
   console.log(smartUrl)
 
   fetchJson(url).then((data) => {
