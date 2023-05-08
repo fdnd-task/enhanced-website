@@ -18,33 +18,26 @@
 
         <% vestigingen.forEach(result=> { %>
 
-        <div class="skewed">
-            <div class="text">
-                <small>Vestiging</small>
-                <h2><%= result.naam %></h2>
-                <p>
-                    Adres: <%= result.adres %>
-                </p>
-                <a href="/detail?id=<%= result.id %>">Lees meer </a>
-            </div>
-            <div class="image">
-                <div>
-                    <img src="<%= result.foto.original %>" alt="boek">
+            <div class="skewed">
+                <div class="text">
+                    <small>Vestiging</small>
+                    <h2>
+                        <%= result.naam %>
+                    </h2>
+                    <p>
+                        Adres: <%= result.adres %>
+                    </p>
+                    <a href="/detail?id=<%= result.id %>">Lees meer </a>
+                </div>
+                <div class="image">
+                    <div>
+                        <img src="<%= result.foto.original %>" alt="boek">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <% }) %>
+            <% }) %>
 
     </section>
 
     <%- include('./partials/foot') %>
-
-
-        <!-- <article>
-        <img class="overzicht-img" src="https://media.graphassets.com/VwMnUsECTYe18QHwPQ6E" alt="boek">
-        <div class="overzicht-info">
-            <h2>Vestiging 1</h2>
-            <i class="fa-solid fa-circle-right fa-2xl"></i>
-        </div>
-    </article> -->
