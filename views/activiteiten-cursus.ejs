@@ -1,0 +1,25 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/header.ejs') %>
+
+
+
+<section class="activiteit-cursus">
+  <% if (results) { %>
+    <%results.forEach(result => { %>
+  
+        <article>
+          <img src="<%= result.coverimages %>" alt="activiteit-cursus">
+          <h4> <%= result.titles[0] %></h4>
+          <% if (result.authors) { %>
+          <h5> <%= result.authors %></h5>
+          <% } %>
+          <p> <%= result.summaries[0] %></p>
+        </article>
+    
+    <% }) %>
+  <% } %>
+
+    
+</section>
+
+<%- include('./partials/foot.ejs') %>
