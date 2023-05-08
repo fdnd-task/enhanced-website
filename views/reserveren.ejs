@@ -8,24 +8,37 @@
 <main>
     <section class="section-studyplace">
         <h1>Reserveer dit exemplaar</h1>
-        <form class="form-reservate">
+        <form class="form-reservate" action="/reserveren" method="post">
             <fieldset>
-                <legend>Persoonlijke gegevens</legend>
-                <label for="id">oba ID</label>
-                <input id="id"  />
-                <label for="date">
-                    Wat is uw naam?
-                </label>
-                <input id="text" required />
-            </fieldset>
-            <fieldset>
-                <legend>Datum & tijd</legend>
-                <label for="date">Wanneer wilt u dit exemplaar lenen?</label>
-                <input type="date" id="date" required />
-                </select>
-            </fieldset>
-            <button class="form-button-submit" type="submit">Verzenden</button>
-        </fieldset>
+				<legend>Persoonlijke gegevens</legend>
+				<label for="obaId">oba ID nummer</label>
+				<input
+					required
+					id="obaId"
+					type="text"
+					name="obaId"
+					value=""
+                    
+				/>
+				<label for="userName">Wat is uw voornaam?</label>
+				<input
+					required
+					id="userName"
+					type="text"
+					name="userName"
+					value="<%= locals.reservations?.userName ?? '' %>"
+				/>
+				<label for="date">
+                    Wanneer wilt u een boek lenen?</label>
+				<input
+					required
+					id="date"
+					type="date"
+					name="date"
+					value="<%= locals.reservations?.date ?? '' %>"
+				/>
+				<button class="execute" type="submit" value="reserveren">reserveren</button>
+			</fieldset>
         </form>
         <img src="" />
     </section>
