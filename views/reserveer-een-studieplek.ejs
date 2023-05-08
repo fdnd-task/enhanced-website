@@ -10,24 +10,38 @@
         <h1>Reserveer een studieplek</h1>
     </section>
     <section class="section-studyplace">
-        <form class="form-reservate">
+        <form class="form-reservate" action="/reserveer-een-studieplek" method="post">
             <fieldset>
-                <label for="id" hidden>Id</label>
-                <input id="id" readonly type="text" placeholder="clgnqhzv4fww00busvww4olcn" hidden>
-                <legend>Datum & tijd</legend>
-                <label for="beginTijd">
-                    Wanneer wilt u reserveren?
-                </label>
-                <input id="beginTijd" type="datetime-local" required />
-            </fieldset>
-            <fieldset>
-                <legend>Locatie</legend>
-                <label for="vestiging">Bij welke vestiging wilt u reserveren?</label>
-                <select>
-                    <option id="vestiging">OBA Oostdok</option>
-                </select>
-            </fieldset>
-            <button class="form-button-submit" type="submit">Verzenden</button>
+				<legend>Persoonlijke gegevens</legend>
+                <input
+                    required
+                    id="id"
+                    type="text"
+                    name="id"
+                    value="<%= locals.studieplekReserveringen?.id ?? 'clgnoumd6fttt0buw6rwa00pa' %>"
+                    hidden
+                 />
+				<label for="beginTijd">Wanneer wilt u reserveren?</label>
+				<input
+					required
+					id="beginTijd"
+					type="datetime-local"
+					name="beginTijd"
+                    min="13:30:00"
+                    max="00:00:00"
+					value="<%= locals.studieplekReserveringen?.beginTijd ?? '' %>"
+                    
+				/>
+				<label for="naam">Bij welke vestiging wilt u reserveren?</label>
+				<input
+					required
+					id="vestigingId"
+					type="text"
+					name="vestigingId"
+					value="<%= locals.studieplekReserveringen?.vestigingId ?? '' %>"
+				/>
+                <button class="form-button-submit" type="submit">Verzenden</button>
+			</fieldset>
         </form>
     </section>
 </main>
