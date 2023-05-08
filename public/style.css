@@ -35,6 +35,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* test roelie */
+html{
+    overflow-y: hidden;
+}
 /* Header zenit*/   
 
 
