@@ -37,8 +37,7 @@ body {
 }
 /* Header zenit*/   
 
-/* Header */   
-header {
+
 
 /* MAIN CONTENT */
 .checkout {
@@ -101,11 +100,7 @@ header {
     transition: 0.3s;
 }
 
-/* Header  Zenit*/
-.header-zenit {
-    width: 100vw;
-    height: 3.5rem;
-=======
+
 /* NAV + LOGO zenit*/   
 .headerzenit{
     width: 100%;
@@ -652,7 +647,7 @@ ul {
   }
 
 
-=======
+
 @media screen and (min-width: 50em) {
     .product-pagina-img {
         /* max-width:38rem; */
