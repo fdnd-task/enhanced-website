@@ -130,6 +130,7 @@ body {
 }
 
 .body-header {
+  padding: 1rem var(--body-padding);
   display: flex;
 }
 
