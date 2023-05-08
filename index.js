@@ -17,6 +17,14 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
+app.get('/proces', (request, response) => {
+  response.render('proces')
+})
+
+app.get('/agenda', function (req, res) {
+  res.render('agenda')
+})
+
 // Stel het poortnummer in en start express
 app.set('port', process.env.PORT || 8000)
 app.listen(app.get('port'), function () {
