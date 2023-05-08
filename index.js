@@ -1,5 +1,6 @@
 // Express uit de nodemodules map
 import express from "express";
+import { ppid } from "process";
 
 const url = "https://api.vinimini.fdnd.nl/api/v1/producten"; // URL naar Json data
 const url2 = 'https://api.vinimini.fdnd.nl/api/v1';
@@ -15,14 +16,28 @@ app.set("views", "./views");
 app.use(express.static("public"));
 
 // Maak een route voor de index
-app.get("/product", (request, response) => {
-  let productenUrl = url;
-  fetchJson(productenUrl).then((data) => {
-    response.render("producten", data);
-  });
-});
 
-// Detail pagina
+app.get('/', (request, response) => {
+  response.render('index')
+})
+
+
+// app.get("/producten", (request, response) => {
+//   let productenUrl = url ;
+//   fetchJson(productenUrl).then((data) => {
+//     response.render("producten", data);
+//   });
+// });
+
+
+app.get('/proces', (request, response) => {
+  response.render('proces')
+})
+
+app.get('/agenda', function (req, res) {
+  res.render('agenda')
+})
+
 app.get("/detail", (request, response) => {
   let id = request.query.detailId || "clerps05z09jm0aw3vccjq5un";
   let detailUrl2 = url2 + "/product?id=" + id;
@@ -33,25 +48,12 @@ app.get("/detail", (request, response) => {
   });
 });
 
-app.get('/proces', (request, response) => {
-  response.render('proces')
-})
-
-app.get('/agenda', function (req, res) {
-  res.render('agenda')
-})
-
 // Stel het poortnummer in en start express
 app.set('port', process.env.PORT || 8000)
 app.listen(app.get('port'), function () {
   console.log(`Application started on http://localhost:${app.get('port')}`)
 })
 
-// Start express op, haal het ingestelde poortnummer op
-app.listen(app.get("port"), function () {
-  // Toon een bericht in de console en geef het poortnummer door
-  console.log(`Application started on http://localhost:${app.get("port")}`);
-});
 async function fetchJson(url, payload = {}) {
   return await fetch(url, payload)
     .then((response) => response.json())

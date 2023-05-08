@@ -1,13 +1,9 @@
-
 <%- include('./partials/head') %>
 
 <h1 class="productenTitel">Producten</h1>
 
 <section class="productContainer">
-<% producten.forEach(product=> { %>
-
-
-
+  <% producten.forEach(product=> { %>
 
   <div class="product">
     <!-- deze linkt naar de detailpagina van een product -->
@@ -41,9 +37,6 @@
     </div>
   </div>
 
-
-
   <% }) %>
 </section>
- <%- include('./partials/foot') %>
-
+<%- include('./partials/foot') %>
