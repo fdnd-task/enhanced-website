@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--body-font);
+    color: var(--donkerblauw);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
@@ -30,14 +31,76 @@ body {
     --donkerblauw: #152a45;
     --wit: #ffffff;
     --zwart: #121212;
-    --licht-grijs: #888682;
+    --grijs: #888682;
+    --mini-nav-grijs: #a9a1a1;
+    --licht-grijs: #eaeaea;
 
     /* Font Family */
     --body-font: "Montserrat";
 }
 
+/* MAIN CONTENT */
+.checkout {
+    display: flex;
+    flex-direction: column;
+}
 
-/* Header */   
+/* Header */
+.mini-nav > a {
+    font-style: var(--mini-nav-grijs);
+    text-decoration: none;
+}
+
+.mini-nav-links {
+    color: var(--mini-nav-grijs);
+    font-size: 0.7em;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+/* Warning banner */
+.warning {
+    font-size: 1em;
+    background-color: var(--ei-kleur);
+    border-left: 5px solid var(--donkerblauw);
+    margin: 1em;
+    padding: 0.5em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.warning-desc > span {
+    font-weight: 900;
+}
+
+.page-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-left: 0.7em;
+    text-align: left;
+}
+
+.buttons {
+    margin-top: 0.4em;
+    font-weight: 500;
+    padding: 1em;
+}
+
+.check-out-order {
+    background-color: var(--pinda-kleur);
+    color: var(--wit);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.125em;
+    text-decoration: none;
+    border-radius: 1.875em;
+    margin-bottom: 1em;
+    transition: 0.3s;
+}
+
+/* Header  Zenit*/   
 header {
     width: 100vw;
     height: 3.5rem;
@@ -351,3 +414,429 @@ footer {
         width:45%;
     }
 }
+
+.continue-shop {
+    border: 2px solid var(--pinda-kleur);
+    color: var(--pinda-kleur);
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.125em;
+    text-decoration: none;
+    border-radius: 1.875em;
+}
+
+.present {
+    background-color: var(--licht-grijs);
+    margin: 1em;
+    padding: 1em;
+}
+
+.present-title {
+    font-size: 1.2em;
+}
+
+.present-desc {
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.present-desc-2 {
+    margin-top: 1em;
+    font-weight: 500;
+}
+
+.present-desc-2 > span {
+    font-weight: 700;
+}
+
+.progress {
+    width: 100%;
+    background-color: var(--wit);
+    border-radius: 1em;
+}
+
+.bar {
+    width: 42.7%;
+    height: 30px;
+    background-color: var(--pinda-kleur);
+    border-radius: 1em;
+}
+
+/* Section overview order  */
+.overview-order {
+    margin: 0.5em;
+}
+
+.border {
+    border: 2px solid rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 1em 1em 1em;
+}
+
+.product-img {
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.product-title {
+    font-size: 1em;
+    margin: -5em 1em 0 6em;
+}
+
+.edit-buttons {
+    font-size: 0.8em;
+    margin: 0.8em 0em 1em 7.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-buttons > a {
+    color: var(--pinda-kleur);
+    font-weight: 500;
+}
+
+.price {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-more-amount {
+    padding: 1em;
+    margin: -2.3em 0em 0em 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.min,
+.amount,
+.plus {
+    display: inline-block;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.min,
+.plus {
+    width: 1.9em;
+    height: 1.9em;
+    border: none;
+    color: var(--wit);
+    background-color: var(--pinda-kleur);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount {
+    font-weight: 600;
+    margin: 0em 0.5em 0em 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Coupon */
+.coupon-code {
+    background-color: var(--licht-grijs);
+    margin: 2em 1em 1em 1em;
+    padding: 1em;
+}
+
+.coupon-code > h2 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.coupon-field {
+    font-weight: 500;
+    height: 2em;
+    width: 100%;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.coupon-field:focus::placeholder {
+    color: transparent;
+}
+
+.apply-code {
+    font-size: 1em;
+    background-color: var(--pinda-kleur);
+    color: var(--wit);
+    font-weight: 500;
+    height: 3.125em;
+    width: 100%;
+    border: none;
+    border-radius: 1.875em;
+}
+
+/* Overview shopping cart with total costs */
+.overview-costs {
+    background-color: var(--licht-grijs);
+    padding: 1em;
+    margin: -10em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-left {
+    font-size: 1em;
+    text-align: left;
+    margin-right: auto;
+}
+
+.title-right {
+    font-size: 1em;
+    text-align: right;
+    margin-left: auto;
+    margin-top: -1.2em;
+}
+
+.line-divider {
+    border-bottom: 2px solid rgb(186, 186, 186);
+    margin: 1em 0 1em 0;
+}
+
+.delivery-options {
+    color: var(--pinda-kleur);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.finish-order {
+    margin: 1em 0 0.4em 0;
+    font-weight: 500;
+}
+
+.finish-order-button {
+    background-color: var(--pinda-kleur);
+    color: var(--wit);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.125em;
+    text-decoration: none;
+    border-radius: 1.875em;
+}
+
+/* Invisible table for desktop */
+.mobile-overview-product {
+    visibility: hidden;
+}
+
+/* Recommended products */
+/* .featured-products-section {
+    display: flex;
+    justify-content: center;
+}
+
+.featured-title {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 1em;
+    margin: auto;
+}
+
+.title-product-1,
+.title-product-2,
+.title-product-3 {
+    font-size: 1em;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.featured-products-price {
+    font-size: 1em;
+}
+
+.star-review {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.star-review > li {
+    margin-right: 0.1em;
+}
+
+.featured-products-button {
+    border: 2px solid var(--pinda-kleur);
+    color: var(--pinda-kleur);
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.125em;
+    text-decoration: none;
+    border-radius: 1.875em;
+    font-weight: 500;
+} */
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 500px) {
+    .page-title {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .warning {
+        margin: 1em;
+        padding: 1em;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    .page-title {
+        font-size: 2.25em;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        margin-top: -3.5em;
+        margin-bottom: -5em;
+        position: absolute;
+        right: 1em;
+    }
+
+    .buttons > a {
+        width: 15em;
+    }
+
+    .overview-order {
+        margin-top: 2em;
+    }
+
+    .gap {
+        display: flex;
+        gap: 1em;
+    }
+
+    .present,
+    .coupon-code {
+        flex: 1;
+    }
+
+    .coupon-code {
+        max-width: 20em;
+    }
+
+    .border {
+        position: absolute;
+        top: 42em;
+        right: 3em;
+        transform: translateY(-50%);
+        width: 20em;
+        margin-bottom: 2em;
+        width: 100%;
+        visibility: hidden;
+    }
+
+    /* .present {
+    }
+
+    .gap {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5em;
+    }
+
+    .border {
+        flex-grow: 1;
+    }
+
+    .coupon-code {
+        flex-shrink: 0;
+        width: 20em;
+    }
+    */
+
+    .overview-costs {
+        position: absolute;
+        top: 42em;
+        right: 0.5em;
+        transform: translateY(-50%);
+        margin-top: 2em;
+        margin-bottom: 2em;
+        flex-shrink: 0;
+        width: 20em;
+    }
+
+    .side-by-side {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    /* Table visibile for desktop */
+    .mobile-overview-product {
+        border-collapse: collapse;
+        margin: 1.1em 1em 0 1em;
+        visibility: visible;
+        flex-shrink: 1;
+        width: 34em;
+    }
+
+    .mobile-overview-product th {
+        border-bottom: 1px solid var(--donkerblauw);
+        padding: 5px;
+        background: var(--pinda-kleur);
+    }
+
+    .mobile-overview-product td {
+        text-align: left;
+        padding: 5px;
+        background: var(--wit);
+        color: var(--donkerblauw);
+    }
+
+    .add-more-amount {
+        margin-left: -0.5em;
+        margin-top: -0.1em;
+    }
+
+    .space > h2 {
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .checkout {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .buttons {
+        right: 10.4em;
+    }
+
+    .overview-costs {
+        right: 5.5em;
+    }
+
+    .mobile-overview-product {
+        width: 3em;
+    }
+}
+
