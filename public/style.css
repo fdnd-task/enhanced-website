@@ -449,6 +449,7 @@ span button {
 /* ------------------ Footer */
 
   footer {
+    margin-top: 15rem;
     border-top: 1px solid #ddd;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -464,13 +465,16 @@ span button {
     color: #72a7a6;
   }
 
-  @media (max-width: 600px) {
-    footer {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: 
-        "i s m";
-    }
+  @media (min-width: 545px) {
+   footer { 
+    margin-top: 10em;
+    padding: 1em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "i s m";
+    grid-column-gap: 0px;
   }
+}
   
 
 
