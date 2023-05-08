@@ -1,4 +1,5 @@
 import express from 'express'
+import { get } from '../lib/data-access.js'
 
 const partners = express.Router()
 
@@ -9,6 +10,11 @@ const options = {
 	styles: '/styles/start.css',
 }
 
-partners.get('/partners', (request, response) => response.render('index', options))
+partners.get('/partners', async (request, response) => {
+	const getresponse = await get('website')
+	console.log(getresponse);
+
+	response.render('index', options)
+})
 
 export default partners
