@@ -3,17 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 body {
     font-family: var(--body-font);
-    background-color: var(--wit);   
+    background-color: var(--wit);
 }
-<<<<<<< Updated upstream
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-body {
-    font-family: var(--body-font);
-    background-color: var(--wit);   
-}
-=======
->>>>>>> Stashed changes
 :root {
     /* CUSTOM PROPERTIES */
     /* Colours for specific allergies */
@@ -31,7 +23,9 @@ body {
     --donkerblauw: #152a45;
     --wit: #ffffff;
     --zwart: #121212;
-    --licht-grijs: #888682;
+    --grijs: #888682;
+    --mini-nav-grijs: #a9a1a1;
+    --licht-grijs: #eaeaea;
 
     /* Font Family */
     --body-font: "Montserrat";
@@ -43,9 +37,72 @@ body {
 }
 /* Header zenit*/   
 
-<<<<<<< Updated upstream
 /* Header */   
 header {
+
+/* MAIN CONTENT */
+.checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.mini-nav > a {
+    font-style: var(--mini-nav-grijs);
+    text-decoration: none;
+}
+
+.mini-nav-links {
+    color: var(--mini-nav-grijs);
+    font-size: 0.7em;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+/* Warning banner */
+.warning {
+    font-size: 1em;
+    background-color: var(--ei-kleur);
+    border-left: 5px solid var(--donkerblauw);
+    margin: 1em;
+    padding: 0.5em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.warning-desc > span {
+    font-weight: 900;
+}
+
+.page-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-left: 0.7em;
+    text-align: left;
+}
+
+.buttons {
+    margin-top: 0.4em;
+    font-weight: 500;
+    padding: 1em;
+}
+
+.check-out-order {
+    background-color: var(--pinda-kleur);
+    color: var(--wit);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.125em;
+    text-decoration: none;
+    border-radius: 1.875em;
+    margin-bottom: 1em;
+    transition: 0.3s;
+}
+
+/* Header  Zenit*/
+.header-zenit {
     width: 100vw;
     height: 3.5rem;
 =======
@@ -53,28 +110,25 @@ header {
 .headerzenit{
     width: 100%;
     height: 4rem;
->>>>>>> Stashed changes
     background-color: var(--ei-kleur);
     position: relative;
     padding: 1rem;
 }
 
-p{
+/* ik heb even die p class gele-banner gegeven, roelie */
+p.gele-banner {
     color: var(--zwart);
     text-align: center;
-<<<<<<< Updated upstream
     font-size: 1.4rem;
     font-weight: 300;
-=======
     font-size: 1.5em;
->>>>>>> Stashed changes
     padding: 1.2em auto;
     width: 100%;
 }
 
-<<<<<<< Updated upstream
-/* NAV + LOGO */   
-.logo{
+
+/* NAV + LOGO */
+.logo {
     width: 5rem;
 }
 .navbar-items {
@@ -91,8 +145,8 @@ p{
     color: var(--zwart);
     font-size: 1.2rem;
 }
- 
- /* Footer */
+
+/* Footer */
 footer {
     background-color: var(--pinda-kleur);
     width: 100vw;
@@ -101,9 +155,9 @@ footer {
     justify-content: center;
     align-items: center;
     color: var(--wit);
- }
- 
- footer nav {
+}
+
+footer nav {
     max-width: 100vw;
     width: 100%;
     height: 100%;
@@ -114,81 +168,73 @@ footer {
     padding-bottom: 3rem;
     font-size: 1.5rem;
     text-align: center;
- }
- 
- footer nav div {
+}
+
+footer nav div {
     padding-left: 60px;
     padding-top: 20px;
- }
- 
- footer nav div span {
+}
+
+footer nav div span {
     font-weight: 900;
     padding: 5px;
- }
- 
- footer nav div ul {
+}
+
+footer nav div ul {
     padding: 5px;
     list-style: none;
- }
- 
- footer nav div ul li{
+}
+
+footer nav div ul li {
     padding-top: 7px;
     padding-bottom: 7px;
- }
- 
- footer nav div ul li a{
+}
+
+footer nav div ul li a {
     color: var(--wit);
     text-decoration: none;
- }
- @media screen and (min-width: 950px) {
-    footer  nav {
+}
+@media screen and (min-width: 950px) {
+    footer nav {
         grid-template-columns: repeat(4, 1fr);
     }
- 
+
     footer nav div {
         padding-top: 0px;
     }
- }
- @media screen and (max-width: 550px) {
-    footer  nav {
+}
+@media screen and (max-width: 550px) {
+    footer nav {
         grid-template-columns: repeat(2, 1fr);
     }
- 
+
     footer nav div {
         padding-top: 0px;
     }
- }
- @media screen and (max-width: 350px) {
-    footer  nav {
+}
+@media screen and (max-width: 350px) {
+    footer nav {
         grid-template-columns: repeat(1, 1fr);
-
     }
- 
+
     footer nav div {
         padding-top: 0px;
-
     }
- }
- 
- @media screen and (max-width: 800px) {
-     .navbar-items {
-         display: none;
-     }
-     .header{ 
-        padding: 0 3rem 0 6rem;
-     }
-     .p{
-        font: 0.75rem;
-     }
- }
- 
- @media screen and (min-width: 800px) {
-     .navbar-icon-items {
-         display: none;
-     }
- }
+}
 
-=======
+@media screen and (max-width: 800px) {
+    .navbar-items {
+        display: none;
+    }
+    .header {
+        padding: 0 3rem 0 6rem;
+    }
+    .p {
+        font: 0.75rem;
+    }
+}
+
+
 /* NAVBAR */
 
 .nav-container {
@@ -315,120 +361,139 @@ nav {
 .person:hover {
     color: var(--pinda-kleur);
 }
->>>>>>> Stashed changes
+
+@media screen and (min-width: 800px) {
+    .navbar-icon-items {
+        display: none;
+    }
+}
 
 /* R20222 product-pagina CSS gedeelte */
 
 /* header gedeelte */
-.product-pagina-img{
+.product-pagina-img {
     width: 80%;
     height: auto;
     position: relative;
     left: -2.5rem;
 }
-.product-pagina-h1{
-    margin:1.5rem;
+.placeholder-img {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.product-pagina-h1 {
+    margin: 1.5rem;
     font-size: 1.5rem;
     color: var(--donkerblauw);
 }
-.section-header-product-page{
+.section-header-product-page {
     display: flex;
 }
-.price-checkout-container{
+.price-checkout-container {
     display: flex;
     flex-direction: column;
-    width:fit-content;
-    
+    width: fit-content;
     align-items: center;
-    position:absolute;
-    right:1rem;
+    position: absolute;
+    right: 1rem;
     margin-top: 2rem;
 }
-.checkout-button{
+.checkout-button {
     background-color: var(--donkerblauw);
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top:.5rem;
+    padding-top: 0.5rem;
     margin-top: 1rem;
     right: 1rem;
     border-radius: 3rem;
 }
-.product-price{
-    color:var(--donkerblauw);
+.product-price {
+    color: var(--donkerblauw);
     font-size: 2rem;
     font-weight: 200;
 }
 
 /* beschrijving gedeelte */
-.product-beschrijving{
+.product-beschrijving {
     color: var(--donkerblauw);
     border: 4px solid var(--pinda-kleur);
     border-radius: 1rem;
-    margin:1rem;
+    margin: 1rem;
     padding: 1rem;
 }
-.product-beschrijving > h1, .product-stappenplan > h1{
-    margin-bottom:1rem;
-}
-.product-beschrijving > ul, .product-beschrijving > p{
-    list-style-type: none;
+.product-beschrijving > h1,
+.product-stappenplan > h1 {
     margin-bottom: 1rem;
 }
-.product-beschrijving > li{
+.product-beschrijving > ul,
+.product-beschrijving > p {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    max-width: 40rem;
+}
+.product-beschrijving > li {
     margin-bottom: 5rem;
+    max-width: 40rem;
 }
 
 /* stappenplan gedeelte */
 
-.product-stappenplan{
+.product-stappenplan {
     color: var(--donkerblauw);
     border: 4px solid var(--ei-kleur);
     border-radius: 1rem;
-    margin:1rem;
+    margin: 1rem;
     padding: 1rem;
 }
-.product-stappenplan > p{
+.product-stappenplan > p {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    max-width: 40rem;
 }
 
 /* laatste knoppen */
 
-.last-buttons{
-    display:flex;
+.last-buttons {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
     font-weight: 500;
 }
-.last-buttons > a{
+.voeg-toe {
+    color: var(--donkerblauw);
+    border: 1px solid var(--donkerblauw);
+    border-radius: 3rem;
+    text-align: center;
+    padding: 1rem;
+    width: 19rem;
+    margin-bottom: 1rem;
     text-decoration: none;
 }
-.voeg-toe{
-    color:var(--donkerblauw);
-    border: 1px solid var(--donkerblauw);
-    border-radius:3rem;
-    text-align: center;
-    padding:1rem;
-    width:19rem;
-    margin-bottom:1rem;
-}
-.nu-kopen{
-    color:var(--wit);
+.nu-kopen {
+    color: var(--wit);
     background-color: var(--donkerblauw);
-    border-radius:3rem;
+    border-radius: 3rem;
     text-align: center;
-    padding:1rem;
-    width:19rem;
+    padding: 1rem;
+    width: 19rem;
+    text-decoration: none;
+}
+.else-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
 }
 
 /* desktop versie */
-.voeg-toe:hover{
-    color:var(--wit);
+.voeg-toe:hover {
+    color: var(--wit);
     background-color: var(--donkerblauw);
 }
-.nu-kopen:hover{
-    color:var(--donkerblauw);
+.nu-kopen:hover {
+    color: var(--donkerblauw);
     background-color: var(--wit);
     border: 1px solid var(--donkerblauw);
 }
@@ -587,3 +652,415 @@ ul {
   }
 
 
+=======
+@media screen and (min-width: 50em) {
+    .product-pagina-img {
+        /* max-width:38rem; */
+        max-width: 30rem;
+    }
+    .product-pagina-h1 {
+        font-size: 3rem;
+        max-width: 20rem;
+        position: absolute;
+        top: 15rem;
+        left: calc(50% - 5rem);
+        font-weight: 500;
+    }
+    .price-checkout-container {
+        margin-top: 4.5rem;
+        margin-right: 2rem;
+        scale: 125%;
+    }
+}
+
+@media screen and (min-width: 63em) {
+    .product-pagina-img {
+        left: 0;
+        margin-left: 1rem;
+    }
+
+    .product-beschrijving {
+        width: 45%;
+    }
+    .product-stappenplan {
+        width: 45%;
+    }
+    .product-pagina-flex-container {
+        display: flex;
+        margin-top: 1rem;
+    }
+    .last-buttons {
+        width: 45%;
+        position: relative;
+        left: calc(50% + 2rem);
+    }
+    .voeg-toe,
+    .nu-kopen {
+        width: 100%;
+    }
+    .else-buttons {
+        width: 45%;
+    }
+}
+
+.continue-shop {
+    border: 2px solid var(--pinda-kleur);
+    color: var(--pinda-kleur);
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.125em;
+    text-decoration: none;
+    border-radius: 1.875em;
+}
+
+.present {
+    background-color: var(--licht-grijs);
+    margin: 1em;
+    padding: 1em;
+}
+
+.present-title {
+    font-size: 1.2em;
+}
+
+.present-desc {
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.present-desc-2 {
+    margin-top: 1em;
+    font-weight: 500;
+}
+
+.present-desc-2 > span {
+    font-weight: 700;
+}
+
+.progress {
+    width: 100%;
+    background-color: var(--wit);
+    border-radius: 1em;
+}
+
+.bar {
+    width: 42.7%;
+    height: 30px;
+    background-color: var(--pinda-kleur);
+    border-radius: 1em;
+}
+
+/* Section overview order  */
+.overview-order {
+    margin: 0.5em;
+}
+
+.border {
+    border: 2px solid rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 1em 1em 1em;
+}
+
+.product-img {
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.product-title {
+    font-size: 1em;
+    margin: -5em 1em 0 6em;
+}
+
+.edit-buttons {
+    font-size: 0.8em;
+    margin: 0.8em 0em 1em 7.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-buttons > a {
+    color: var(--pinda-kleur);
+    font-weight: 500;
+}
+
+.price {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-more-amount {
+    padding: 1em;
+    margin: -2.3em 0em 0em 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.min,
+.amount,
+.plus {
+    display: inline-block;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.min,
+.plus {
+    width: 1.9em;
+    height: 1.9em;
+    border: none;
+    color: var(--wit);
+    background-color: var(--pinda-kleur);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount {
+    font-weight: 600;
+    margin: 0em 0.5em 0em 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Coupon */
+.coupon-code {
+    background-color: var(--licht-grijs);
+    margin: 2em 1em 1em 1em;
+    padding: 1em;
+}
+
+.coupon-code > h2 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.coupon-field {
+    font-weight: 500;
+    height: 2em;
+    width: 100%;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.coupon-field:focus::placeholder {
+    color: transparent;
+}
+
+.apply-code {
+    font-size: 1em;
+    background-color: var(--pinda-kleur);
+    color: var(--wit);
+    font-weight: 500;
+    height: 3.125em;
+    width: 100%;
+    border: none;
+    border-radius: 1.875em;
+}
+
+/* Overview shopping cart with total costs */
+.overview-costs {
+    background-color: var(--licht-grijs);
+    padding: 1em;
+    margin: -10em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-left {
+    font-size: 1em;
+    text-align: left;
+    margin-right: auto;
+}
+
+.title-right {
+    font-size: 1em;
+    text-align: right;
+    margin-left: auto;
+    margin-top: -1.2em;
+}
+
+.line-divider {
+    border-bottom: 2px solid rgb(186, 186, 186);
+    margin: 1em 0 1em 0;
+}
+
+.delivery-options {
+    color: var(--pinda-kleur);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.finish-order {
+    margin: 1em 0 0.4em 0;
+    font-weight: 500;
+}
+
+.finish-order-button {
+    background-color: var(--pinda-kleur);
+    color: var(--wit);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.125em;
+    text-decoration: none;
+    border-radius: 1.875em;
+}
+
+/* Invisible table for desktop */
+.mobile-overview-product {
+    visibility: hidden;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 500px) {
+    .page-title {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .warning {
+        margin: 1em;
+        padding: 1em;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    .page-title {
+        font-size: 2.25em;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        margin-top: -3.5em;
+        margin-bottom: -5em;
+        position: absolute;
+        right: 1em;
+    }
+
+    .buttons > a {
+        width: 15em;
+    }
+
+    .overview-order {
+        margin-top: 2em;
+        margin-bottom: 8em;
+    }
+
+    .gap {
+        display: flex;
+        gap: 1em;
+    }
+
+    .present,
+    .coupon-code {
+        flex: 1;
+    }
+
+    .coupon-code {
+        max-width: 20em;
+    }
+
+    .border {
+        position: absolute;
+        top: 42em;
+        right: 3em;
+        transform: translateY(-50%);
+        width: 20em;
+        margin-bottom: 2em;
+        width: 100%;
+        visibility: hidden;
+    }
+
+    .overview-costs {
+        position: absolute;
+        top: 42em;
+        right: 0.5em;
+        transform: translateY(-50%);
+        margin-top: 2em;
+        margin-bottom: 2em;
+        flex-shrink: 0;
+        width: 20em;
+    }
+
+    .side-by-side {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    /* Table visibile for desktop */
+    .mobile-overview-product {
+        border-collapse: collapse;
+        margin: 1.1em 1em 0 1em;
+        visibility: visible;
+        flex-shrink: 1;
+        width: 34em;
+    }
+
+    .mobile-overview-product th {
+        border-bottom: 1px solid var(--donkerblauw);
+        padding: 5px;
+        background: var(--pinda-kleur);
+    }
+
+    .mobile-overview-product td {
+        text-align: center;
+        padding: 5px;
+        background: var(--wit);
+        color: var(--donkerblauw);
+    }
+
+    .product-title {
+        margin: 1em 1em 1em 1em;
+    }
+
+    .add-more-amount {
+        margin-left: -0.5em;
+        margin-top: -0.1em;
+    }
+
+    .space > h2 {
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .checkout {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .buttons {
+        right: 10.4em;
+    }
+
+    .overview-costs {
+        right: 5.5em;
+    }
+
+    .overview-order {
+        margin-bottom: 10em;
+    }
+
+    .mobile-overview-product {
+        width: 42em;
+    }
+}
