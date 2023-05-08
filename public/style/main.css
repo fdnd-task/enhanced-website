@@ -357,18 +357,41 @@ main>section:nth-of-type(1) p {
 
 .wrapper {
     background-color: lightgray;
-    height: 10em;
-    position: relative;  
-    align-items: center;
+    max-width: 70em;
+    width: 100%;
+    position: relative;
+
 }
 
-.carousel{
+.wrapper i{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child{
+    left: 0;
+}
+
+.wrapper i:last-child{
+    right: 0;
+}
+
+.wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3));
+    cursor: pointer;
+    gap: .5em;
+    overflow: auto;
+    margin: 0 1.5em;
 }
 
-.book{
+.carousel .book{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
     height: 10em;
     width: 7em;
     background-color: #58ab3c;
