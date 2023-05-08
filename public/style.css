@@ -93,7 +93,8 @@ color:red;
 /* HOME PAGE */
 .zoekveld-text{
     text-align: center;
-    padding: 0 370px 0 370px;
+    margin: auto;
+    width: 59%;
 }
 
 .overzichtspagina-section{
