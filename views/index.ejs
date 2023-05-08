@@ -1,4 +1,7 @@
 <%- include('./partials/head.ejs') %>
-
-<a href="/checkout">Checkout pagina</a>
+    <% categories.forEach(category => { %>
+        <% if(category.titel === "Pinda" || category.titel === "Ei" ){ %>
+            <a href="/pinda-ei?categorieId=<%= category.id %>"><%= category.titel %></a>
+        <% } %>
+    <% }); %>
 <%- include('./partials/foot.ejs') %>

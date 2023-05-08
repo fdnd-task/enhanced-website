@@ -23,63 +23,106 @@
             <a href="#" class="continue-shop">Verder winkelen</a>
         </div>
     </header>
+
     <!-- Header end -->
 
     <!-- Section overview order start -->
     <section class="overview-order">
         <!-- Product -->
-        <div class="border">
-            <div class="overview-product">
-                <img src="/img/pinda-3-stappen.png" class="product-img" alt="Product titel afbeelding" width="60em" height="60em" />
-                <h2 class="product-title">Mijn eerste pinda in 3 stappen</h2>
+        <div class="gap">
+            <!-- Present -->
+            <div class="present">
+                <h2 class="present-title">Gratis cadeau!</h2>
+                <p class="present-desc">Bij besteding van &euro; 35,00 of meer.</p>
 
-                <div class="edit-buttons">
-                    <a href="#" class="edit">Bewerken &vert; </a>
-                    <a href="#" class="delete">Verwijderen</a>
+                <div class="progress">
+                    <div class="bar"></div>
                 </div>
 
-                <h2 class="price">&euro; 14,95</h2>
+                <p class="present-desc-2">Besteed &euro; <span>20,05</span> meer en ontvang een <span>gratis cadeau</span> voor je mini!</p>
+            </div>
 
-                <div class="add-more-amount">
-                    <button class="min"><i class="fa-solid fa-minus" style="color: #ffffff"></i></button>
-                    <p class="amount">1</p>
-                    <button class="plus"><i class="fa-solid fa-plus" style="color: #ffffff"></i></button>
+            <div class="border">
+                <div class="overview-product">
+                    <img src="/img/pinda-3-stappen.png" class="product-img" alt="Product titel afbeelding" width="60em" height="60em" />
+                    <h2 class="product-title"><%= product.titel %></h2>
+
+                    <div class="edit-buttons">
+                        <a href="#" class="edit">Bewerken &vert;</a>
+                        <a href="#" class="delete"> Verwijderen</a>
+                    </div>
+
+                    <h2 class="price">&euro; 14,95</h2>
+
+                    <div class="add-more-amount">
+                        <button class="min"><i class="fa-solid fa-minus" style="color: #ffffff"></i></button>
+                        <p class="amount">1</p>
+                        <button class="plus"><i class="fa-solid fa-plus" style="color: #ffffff"></i></button>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Coupon -->
+            <div class="coupon-code">
+                <h2>Kortingscode</h2>
+                <form action="#" class="add-coupon-code">
+                    <input class="coupon-field" type="text" placeholder="Voer je code in" title="Voer je code in" />
+                    <input class="apply-code" type="submit" value="Toepassen" title="Pas je code toe" />
+                </form>
             </div>
         </div>
 
-        <!-- Coupon -->
-        <div class="coupon-code">
-            <h2>Kortingscode</h2>
-            <form action="#" class="add-coupon-code">
-                <input class="coupon-field" type="text" placeholder="Voer je code in" title="Voer je code in" />
-                <input class="apply-code" type="submit" value="Toepassen" title="Pas je code toe" />
-            </form>
-        </div>
+        <!-- Overview desktop version -->
+        <div class="side-by-side">
+            <table class="mobile-overview-product">
+                <thead>
+                    <tr>
+                        <th>Artikel</th>
+                        <th>Artikel prijs</th>
+                        <th>Hoeveelheid</th>
+                        <th>Totaal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="/img/pinda-3-stappen.png" class="product-img" alt="Product titel afbeelding" width="60em" height="60em" /></td>
+                        <td><h2 class="price">&euro; 14,95</h2></td>
+                        <td>
+                            <div class="add-more-amount">
+                                <button class="min"><i class="fa-solid fa-minus" style="color: #ffffff"></i></button>
+                                <p class="amount">1</p>
+                                <button class="plus"><i class="fa-solid fa-plus" style="color: #ffffff"></i></button>
+                            </div>
+                        </td>
+                        <td class="space"><h2 class="price">&euro; 14,95</h2></td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <!-- Overview shopping cart with total costs start -->
-        <div class="overview-costs">
-            <h2 class="title-left">Overzicht</h2>
-            <h2 class="title-right">1 ARTIKEL</h2>
+            <!-- Overview shopping cart with total costs start -->
+            <div class="overview-costs">
+                <h2 class="title-left">Overzicht</h2>
+                <h2 class="title-right">1 ARTIKEL</h2>
 
-            <div class="line-divider"></div>
+                <div class="line-divider"></div>
 
-            <h2 class="title-left">Subtotaal:</h2>
-            <h2 class="title-right">&euro; 14,95</h2>
+                <h2 class="title-left">Subtotaal:</h2>
+                <h2 class="title-right">&euro; 14,95</h2>
 
-            <h2 class="title-left">Levering:</h2>
-            <h2 class="title-right">&euro; 3,95</h2>
+                <h2 class="title-left">Levering:</h2>
+                <h2 class="title-right">&euro; 4,15</h2>
 
-            <a href="#" class="delivery-options">Aflever opties</a>
+                <a href="#" class="delivery-options">Aflever opties</a>
 
-            <div class="line-divider"></div>
+                <div class="line-divider"></div>
 
-            <h2 class="title-left">Totaal bestelling:</h2>
-            <h2 class="title-right">&euro; 18,90</h2>
+                <h2 class="title-left">Totaal bestelling:</h2>
+                <h2 class="title-right">&euro; 19,10</h2>
 
-            <!-- <button class="check-out-button">Bestelling afrekenen</button> -->
-            <div class="finish-order">
-                <a href="#" class="finish-order-button">Bestelling afrekenen</a>
+                <!-- <button class="check-out-button">Bestelling afrekenen</button> -->
+                <div class="finish-order">
+                    <a href="#" class="finish-order-button">Bestelling afrekenen</a>
+                </div>
             </div>
         </div>
     </section>
