@@ -15,12 +15,11 @@ form.form-reservate input {
 }
 
 form.form-reservate {
-	border: var(--u-nano) solid var(--c-accent-25);
-	width: 100%;
-	display: block;
-	padding: var(--u-medium);
-	box-shadow: 0 var(--u-small) var(--u-small) 0
-		rgba(0, 0, 0, 0.33);
+    border: var(--u-nano) solid var(--c-accent-25);
+    width: 100%;
+    display: block;
+    padding: var(--u-medium);
+    box-shadow: 0 var(--u-small) var(--u-small) 0 rgba(0,0,0,0.33);
 }
 
 fieldset {
@@ -46,7 +45,31 @@ fieldset {
 }
 
 .form-button-submit:hover {
-	background-color: red;
+    background-color: red;
+}   
+
+.form-button-submit:focus {
+    background-color: red;
+}   
+
+/* EXTRA SMALL SCREEN 560px */
+@media (min-width: 20em) {
+
+    form.form-reservate {
+        width: 20em;
+    }
+    
+    }
+
+    /* SMALL SCREEN 560px */
+@media (min-width: 35em) {
+
+        /* ========= FORM ========= */
+
+        .studyplace {
+            width: 20em;
+            display: block;
+        }
 }
 
 .form-button-submit:focus {
@@ -56,6 +79,9 @@ fieldset {
 /* SMALL SCREEN 560px */
 @media (min-width: 35em) {
 	/* ========= FORM ========= */
+    form.form-reservate {
+        width: 25em;
+    }
 
 	.studyplace {
 		width: 20em;

@@ -110,6 +110,8 @@ server.get("/reserveren", (request, response) => {
 		.then((response) => response.json())
 		.catch((err) => err);
 	response.render("reserveren", data);
+
+	console.log(urlId)
 });
 
 // Maakt een route voor de studieplek reserveringspagina
