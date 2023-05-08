@@ -44,6 +44,12 @@ const urlDefault = "special:all";
 const urlKey = `${process.env.KEY}`;
 const urlOutput = "&refine=true&output=json";
 
+// opbouw url activiteiten en Cursus
+const activityURL = urlBase + '/search/?q=special:all%20table:activiteiten&authorization=' + process.env.authorization + '&output=json'
+const courseURL = urlBase + '/search/?q=special:all%20table:jsonsrc&authorization=' + process.env.authorization + '&output=json'
+
+
+
 const defaultUrl =
 	urlBase + urlSearch + urlQuery + urlDefault + space + bookItems + urlKey + urlOutput;
 
@@ -62,8 +68,8 @@ server.get("/item", async (request, response) => {
 	let uniqueQuery = "?id=";
 	let urlId = request.query.id || "|oba-catalogus|279240";
 
-	const itemUrl = 
-	urlBase + urlSearch + uniqueQuery + urlId + urlKey + urlOutput;
+	const itemUrl =
+		urlBase + urlSearch + uniqueQuery + urlId + urlKey + urlOutput;
 
 	const data = await fetch(itemUrl)
 		.then((response) => response.json())
@@ -79,8 +85,54 @@ server.get("/reserveren", (request, response) => {
 
 // Maakt een route voor de studieplek reserveringspagina
 server.get("/reserveer-een-studieplek", (request, response) => {
-		response.render("reserveer-een-studieplek");
+	response.render("reserveer-een-studieplek");
 });
+
+
+
+//Maakt een route voor de activiteiten pagina
+server.get('/activiteiten', (request, response) => {
+	fetchJson(activityURL).then((data) => {
+		let dataClone = structuredClone(data);
+
+		if (request.query.titles) {
+			dataClone.results.titles = dataClone.results.titles.filter(function (title) {
+				return results.titles.includes(request.query.titles)
+			})
+		}
+
+		response.render('activiteiten-cursus', dataClone)
+	});
+});
+
+
+
+// Maakt route voor de cursussen pagina
+server.get('/cursussen', (request, response) => {
+	fetchJson(courseURL).then((data) => {
+		let dataClone = structuredClone(data);
+
+		if (request.query.titles) {
+
+			dataClone.results.titles = dataClone.results.titles.filter(function (title) {
+
+				return results.titles.includes(request.query.titles)
+			})
+		}
+
+		response.render('activiteiten-cursus', dataClone)
+	});
+});
+
+
+
+
+
+//Maakt route voor de Over Ons pagina
+
+
+
+
 
 /**
  * fetchJson() is a wrapper for the experimental node fetch api. It fetches the url
@@ -88,7 +140,7 @@ server.get("/reserveer-een-studieplek", (request, response) => {
  * @param {*} url the api endpoint to address
  * @returns the json response from the api endpoint
  */
- export async function fetchJson(url, payload = {}) {
+export async function fetchJson(url, payload = {}) {
 	return await fetch(url, payload)
 		.then((response) => response.json())
 		.catch((error) => error);
@@ -96,13 +148,12 @@ server.get("/reserveer-een-studieplek", (request, response) => {
 
 export async function postJson(url, body) {
 	return await fetch(url, {
-		method: "post",
-		body: JSON.stringify(body),
-		headers: {
-			"Content-Type": "application/json",
-		},
-	})
+			method: "post",
+			body: JSON.stringify(body),
+			headers: {
+				"Content-Type": "application/json",
+			},
+		})
 		.then((response) => response.json())
 		.catch((error) => error);
 }
-
