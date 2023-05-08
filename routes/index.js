@@ -9,7 +9,10 @@ const baseurl = `${process.env.API_URL}`;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  const { query } = req
+  console.log(query.orderBy);
   let smartUrl = url 
+  if (req.query) smartUrl = `${smartUrl}?orderBy=${query.orderBy}`
   console.log(smartUrl)
 
   fetchJson(url).then((data) => {
