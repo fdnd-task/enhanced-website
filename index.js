@@ -1,7 +1,7 @@
 import express from 'express'
 
-// const url = "https://zoeken.oba.nl/api/v1/search/";
-
+const url = "https://api.oba.fdnd.nl/api/v1/vestigingen";
+const urlDefault = "?first=100";
 
 // Maak een nieuwe express app
 const app = express()
@@ -17,9 +17,13 @@ app.use(express.urlencoded({ extended: true }))
 
 // Maak een route voor de index pagina
 app.get('/', (request, response) => {
+  const vestigingUrl = url + urlDefault;
 
-    fetchJson().then((data) => {
-        response.render('index', data)
+  console.log(vestigingUrl);
+
+    fetchJson(vestigingUrl).then((data) => {
+      console.log(data);
+        response.render('index', {vestigingen: data.vestigingen})
     })
    
 })
@@ -31,7 +35,7 @@ app.get("/detail", (request, response) => {
     })
 });
 
-
+// Maak een route voor de succes pagina
 app.get('succes', (request, response) => {
     fetchJson().then((data) => {
         response.render('succes', data)

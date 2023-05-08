@@ -15,81 +15,27 @@
     </section>
 
     <section class="overzichtspagina-section overzicht">
+
+        <% vestigingen.forEach(result=> { %>
+
         <div class="skewed">
             <div class="text">
                 <small>Vestiging</small>
-                <h2>OBA Roelof Hartplein</h2>
+                <h2><%= result.naam %></h2>
                 <p>
-                    Aantal studeerplekken: 150
+                    Aantal studeerplekken: <%= result.studieplekken %>
                 </p>
-                <a href="/detail ">Lees meer </a>
+                <a href="/detail?id=<%= result.id %>">Lees meer </a>
             </div>
             <div class="image">
                 <div>
-                    <img src="https://media.graphassets.com/VwMnUsECTYe18QHwPQ6E" alt="boek">
+                    <img src="<%= result.foto.original %>" alt="boek">
                 </div>
             </div>
         </div>
-        <div class="skewed">
-            <div class="text">
-                <small>Vestiging</small>
-                <h2>OBA Linneaus</h2>
-                <p>
-                    Aantal studeerplekken: 150
-                </p>
-                <a href="/detail ">Lees meer </a>
-            </div>
-            <div class="image">
-                <div>
-                    <img src="https://media.graphassets.com/xYWst3QEqEN8FzIA54ZQ" alt="boek">
-                </div>
-            </div>
-        </div>
-        <div class="skewed">
-            <div class="text">
-                <small>Vestiging</small>
-                <h2>OBA Oosterdok</h2>
-                <p>
-                    Aantal studeerplekken: 150
-                </p>
-                <a href="/detail ">Lees meer </a>
-            </div>
-            <div class="image">
-                <div>
-                    <img src="https://media.graphassets.com/7E2PyKD9RweDN2WLTS3N" alt="boek">
-                </div>
-            </div>
-        </div>
-        <div class="skewed">
-            <div class="text">
-                <small>Vestiging</small>
-                <h2>OBA Javaplein</h2>
-                <p>
-                    Aantal studeerplekken: 150
-                </p>
-                <a href="/detail ">Lees meer</a>
-            </div>
-            <div class="image">
-                <div>
-                    <img src="https://media.graphassets.com/ICeSBv51Rdy7QNWBkH8C" alt="boek">
-                </div>
-            </div>
-        </div>
-        <div class="skewed">
-            <div class="text">
-                <small>Vestiging</small>
-                <h2>OBA Waterlandplein</h2>
-                <p>
-                    Aantal studeerplekken: 150
-                </p>
-                <a href="/detail ">Lees meer </a>
-            </div>
-            <div class="image">
-                <div>
-                    <img src="https://media.graphassets.com/MPHt6e0dTwiDY6zrWv1s" alt="boek">
-                </div>
-            </div>
-        </div>
+
+        <% }) %>
+
     </section>
 
     <%- include('./partials/foot') %>
