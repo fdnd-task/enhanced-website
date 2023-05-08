@@ -1,0 +1,35 @@
+<%- include('./partials/head') %>
+
+<!-- De opmaak van de header  -->
+<%- include('./partials/header') %>
+
+<link rel="stylesheet" href="./style/reservations.css" />
+
+<main>
+    <section>
+        <h1>Reserveer een studieplek</h1>
+    </section>
+    <section class="section-studyplace">
+        <form class="form-reservate">
+            <fieldset>
+                <label for="id" hidden>Id</label>
+                <input id="id" readonly type="text" placeholder="clgnqhzv4fww00busvww4olcn" hidden>
+                <legend>Datum & tijd</legend>
+                <label for="beginTijd">
+                    Wanneer wilt u reserveren?
+                </label>
+                <input id="beginTijd" type="datetime-local" required />
+            </fieldset>
+            <fieldset>
+                <legend>Locatie</legend>
+                <label for="vestiging">Bij welke vestiging wilt u reserveren?</label>
+                <select>
+                    <option id="vestiging">OBA Oostdok</option>
+                </select>
+            </fieldset>
+            <button class="form-button-submit" type="submit">Verzenden</button>
+        </form>
+    </section>
+</main>
+
+<%- include('./partials/foot') %>

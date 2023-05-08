@@ -1,0 +1,34 @@
+<%- include('./partials/head') %>
+
+<!-- De opmaak van de header  -->
+<%- include('./partials/header') %>
+
+<link rel="stylesheet" href="./style/reservations.css" />
+
+<main>
+    <section class="section-studyplace">
+        <h1>Reserveer dit exemplaar</h1>
+        <form class="form-reservate">
+            <fieldset>
+                <legend>Persoonlijke gegevens</legend>
+                <label for="id">oba ID</label>
+                <input id="id"  />
+                <label for="date">
+                    Wat is uw naam?
+                </label>
+                <input id="text" required />
+            </fieldset>
+            <fieldset>
+                <legend>Datum & tijd</legend>
+                <label for="date">Wanneer wilt u dit exemplaar lenen?</label>
+                <input type="date" id="date" required />
+                </select>
+            </fieldset>
+            <button class="form-button-submit" type="submit">Verzenden</button>
+        </fieldset>
+        </form>
+        <img src="" />
+    </section>
+</main>
+
+<%- include('./partials/foot') %>
