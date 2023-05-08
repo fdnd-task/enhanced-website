@@ -1,5 +1,4 @@
 import express from 'express'
-import { get } from '../lib/data-access.js'
 
 const partners = express.Router()
 
