@@ -5,14 +5,14 @@
     <header class="top-page">
         <!-- Mini navigation -->
         <div class="mini-nav">
-            <a class="mini-nav-links" href="/index">Home</a>
+            <a class="mini-nav-links" href="/">Home</a>
             <i class="fa-solid fa-chevron-right fa-2xs" style="color: #a9a1a1"></i>
-            <a class="mini-nav-links" href="/checkout">Winkelwagen</a>
+            <a class="mini-nav-links" href="#">Winkelwagen</a>
         </div>
 
         <!-- Free shipment warning  -->
         <div class="warning">
-            <p class="warning-desc">Bestel voor <span>€5,53</span> meer en ontvang <span>gratis standaard levering.</span></p>
+            <p class="warning-desc">Bestel voor <span>&euro;5.53</span> meer en ontvang <span>gratis standaard levering.</span></p>
         </div>
 
         <h1 class="page-title">Je winkelwagen</h1>
@@ -33,26 +33,28 @@
             <!-- Present -->
             <div class="present">
                 <h2 class="present-title">Gratis cadeau!</h2>
-                <p class="present-desc">Bij besteding van &euro; 35,00 of meer.</p>
+                <p class="present-desc">Bij besteding van &euro;35.00 of meer.</p>
 
                 <div class="progress">
                     <div class="bar"></div>
                 </div>
 
-                <p class="present-desc-2">Besteed &euro; <span>20,05</span> meer en ontvang een <span>gratis cadeau</span> voor je mini!</p>
+                <p class="present-desc-2">Besteed <span>&euro;20.05</span> meer en ontvang een <span>gratis cadeau</span> voor je mini!</p>
             </div>
 
             <div class="border">
                 <div class="overview-product">
-                    <img src="/img/pinda-3-stappen.png" class="product-img" alt="Product titel afbeelding" width="60em" height="60em" />
-                    <h2 class="product-title"><%= product.titel %></h2>
+                    <picture>
+                        <img src="<%= data.product.plaatjes[0].smallAsWebP %>" class="product-img" alt="Product titel afbeelding" width="80em" height="60em" />
+                    </picture>
+                    <h2 class="product-title"><%= data.product.titel %></h2>
 
                     <div class="edit-buttons">
                         <a href="#" class="edit">Bewerken &vert;</a>
                         <a href="#" class="delete"> Verwijderen</a>
                     </div>
 
-                    <h2 class="price">&euro; 14,95</h2>
+                    <h2 class="price">&euro;<%= data.product.prijs %></h2>
 
                     <div class="add-more-amount">
                         <button class="min"><i class="fa-solid fa-minus" style="color: #ffffff"></i></button>
@@ -78,6 +80,7 @@
                 <thead>
                     <tr>
                         <th>Artikel</th>
+                        <th>Product naam</th>
                         <th>Artikel prijs</th>
                         <th>Hoeveelheid</th>
                         <th>Totaal</th>
@@ -85,8 +88,15 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/img/pinda-3-stappen.png" class="product-img" alt="Product titel afbeelding" width="60em" height="60em" /></td>
-                        <td><h2 class="price">&euro; 14,95</h2></td>
+                        <td>
+                            <picture>
+                                <img src="<%= data.product.plaatjes[0].smallAsWebP %>" class="product-img" alt="Product titel afbeelding" width="80em" height="60em" />
+                            </picture>
+                        </td>
+                        <td>
+                            <h2 class="product-title"><%= data.product.titel %></h2>
+                        </td>
+                        <td><h2 class="price">&euro;<%= data.product.prijs %></h2></td>
                         <td>
                             <div class="add-more-amount">
                                 <button class="min"><i class="fa-solid fa-minus" style="color: #ffffff"></i></button>
@@ -94,7 +104,7 @@
                                 <button class="plus"><i class="fa-solid fa-plus" style="color: #ffffff"></i></button>
                             </div>
                         </td>
-                        <td class="space"><h2 class="price">&euro; 14,95</h2></td>
+                        <td class="space"><h2 class="price">&euro;<%= data.product.prijs %></h2></td>
                     </tr>
                 </tbody>
             </table>
@@ -107,17 +117,17 @@
                 <div class="line-divider"></div>
 
                 <h2 class="title-left">Subtotaal:</h2>
-                <h2 class="title-right">&euro; 14,95</h2>
+                <h2 class="title-right">&euro;<%= data.product.prijs %></h2>
 
                 <h2 class="title-left">Levering:</h2>
-                <h2 class="title-right">&euro; 4,15</h2>
+                <h2 class="title-right">&euro;4.15</h2>
 
                 <a href="#" class="delivery-options">Aflever opties</a>
 
                 <div class="line-divider"></div>
 
                 <h2 class="title-left">Totaal bestelling:</h2>
-                <h2 class="title-right">&euro; 19,10</h2>
+                <h2 class="title-right">&euro;00.00</h2>
 
                 <!-- <button class="check-out-button">Bestelling afrekenen</button> -->
                 <div class="finish-order">
@@ -127,59 +137,6 @@
         </div>
     </section>
     <!-- Section overview order end -->
-
-    <!-- Recommended products start -->
-    <!-- <section class="featured-products-section">
-        <div class="featured-products-row">
-            <h2 class="featured-title">Aanbevolen producten</h2>
-            <div class="item">
-                <img src="/img/pinda-6-stappen.png" class="img-product-1" alt="Product 1 afbeelding" width="80em" height="80em" />
-                <h2 class="title-product-1">Mijn eerste pinda in 6 stappen</h2>
-                <h2 class="featured-products-price">&euro; 14,95</h2>
-                <ul class="star-review">
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                </ul>
-
-                <a href="#" class="featured-products-button">Toevoegen aan winkelwagen</a>
-            </div>
-
-            <div class="item">
-                <img src="/img/pindaflip.png" class="img-product-2" alt="Product 2 afbeelding" width="80em" height="80em" />
-                <h2 class="title-product-2">Pinda flips</h2>
-                <h2 class="featured-products-price">&euro; 1,99</h2>
-                <ul class="star-review">
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #d9d9d9"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #d9d9d9"></i></li>
-                </ul>
-
-                <a href="#" class="featured-products-button">Toevoegen aan winkelwagen</a>
-            </div>
-
-            <div class="item">
-                <img src="/img/pinda-opvolgkit.png" class="img-product-3" alt="Product 3 afbeelding" width="120em" height="80em" />
-                <h2 class="title-product-3">Pinda opvolgkit</h2>
-                <h2 class="featured-products-price">&euro; 19,95</h2>
-                <ul class="star-review">
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #f4eb35"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-star" style="color: #d9d9d9"></i></li>
-                </ul>
-
-                <a href="#" class="featured-products-button">Toevoegen aan winkelwagen</a>
-            </div>
-        </div>
-    </section> -->
-    <!-- Recommended products end -->
 </main>
 
 <%- include('./partials/foot') %>
-
