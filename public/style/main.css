@@ -242,12 +242,12 @@ dt dd {
 
 /* image and graphics */
 
-img {
-    transform: perspective(20em) rotateY(20deg);
+.item-image {
+    transform: perspective(20em) rotateY(8deg);
     transition: var(--a-default);
 }
 
-img:hover {
+.item-image:hover {
     transform: perspective(20em) rotateY(0deg);
 }
 
