@@ -1,7 +1,9 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Performance Matters oba
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+<img width="408" alt="logo-oba" src="https://user-images.githubusercontent.com/94745953/236790054-ef3dbbb0-634b-4ab1-a6fd-4059f59713a7.png">
+
+[Bezoek de oba site](https://uninterested-shirt-seal.cyclic.app/)
 
 
 ## Inhoudsopgave
@@ -14,8 +16,10 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
+![CD4C69B9-BB73-4A29-8DE4-C875DC73297C](https://user-images.githubusercontent.com/94745953/236788424-0f177e4b-6cfa-497b-bd35-d4d7246b428f.jpg)
+
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
+
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Gebruik
