@@ -1,6 +1,7 @@
 import express from "express";
 
-// const url = "https://zoeken.oba.nl/api/v1/search/";
+const url = "https://api.oba.fdnd.nl/api/v1/vestigingen";
+const urlDefault = "?first=100";
 
 // Maak een nieuwe express app
 const app = express();
@@ -15,27 +16,22 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Maak een route voor de index pagina
-app.get("/", (request, response) => {
-  fetchJson().then((data) => {
-    response.render("index", data);
-  });
-});
+app.get('/', (request, response) => {
+  const vestigingUrl = url + urlDefault;
 
-// Maak een route voor de detail pagina
-app.get("/detail", (request, response) => {
-  fetchJson().then((data) => {
-    response.render("detail", data);
-  });
-});
+
+    fetchJson(vestigingUrl).then((data) => {
+    
+        response.render('index', {vestigingen: data.vestigingen})
+    })
+   
+})
+
+
 // set up van bodyparser om te redirecten naar de success.ejs pagina
 import bodyParser from 'body-parser';
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/success", (request, response) => {
-  fetchJson().then((data) => {
-    response.render("success", data);
-  });
-});
 // Define the '/success' route
 app.post('/success', (req, res) => {
   const { name, seatNumber, date, time } = req.body;
@@ -47,6 +43,26 @@ app.get("/reserveren", (request, response) => {
     response.render("reserveren", data);
   });
 });
+
+// Maak een route voor de detail pagina
+app.get("/detail", async (request, response) => {
+  let id = request.query.id; 
+  const uniqueUrl = url + "?id=" + id;
+
+    const data = await fetch(uniqueUrl)
+        .then((response) => response.json())
+        .catch((err) => err);
+    response.render("detail", data);  
+
+});
+
+// Maak een route voor de succes pagina
+app.get('succes', (request, response) => {
+    fetchJson().then((data) => {
+        response.render('succes', data)
+    })
+})
+
 // Stel het poortnummer in en start express
 app.set("port", process.env.PORT || 8000);
 app.listen(app.get("port"), function () {
