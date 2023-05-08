@@ -1,9 +1,28 @@
 <%- include('./partials/head.ejs') %>
-    <% categories.forEach(category => { %>
+<div class="producten-beschrijving">
+    <div class="allergenen">
+        <h1 class="main-title">
+            alle producten
+        </h1>
+        <p class="omschrijving">
+            Doe altijd eerst de Vini Mini test voordat je onze producten koopt. Zo weet jij of je in 3 of 6 kleine
+            stapjes kunt beginnen met voor het eerst allergenen te geven.
+        </p>
+        <p class="advies">
+            *Overleg voor je begint altijd met een arts of het consultatiebureau*
+        </p>
+    </div>
 
-        <% if(category.titel === "Pinda" || category.titel === "Ei" ){ %>
-            <a href="/pinda-ei?categorieId=<%= category.id %>"><%= category.titel %></a>
-        <% } %>
+<main>
 
-    <% }); %>
+<div class="grid-container">
+<% categories.forEach(category => { %>
+
+    <% if(category.titel === "Pinda" || category.titel === "Ei" ){ %>
+        <img class="article-img" src="/<%=category.titel%>.jpg" alt="Allergenen icons">
+        <a href="/pinda-ei?categorieId=<%= category.id %>"><%= category.titel %></a>
+    <% } %>
+
+<% }); %>
+</div>
 <%- include('./partials/foot.ejs') %>

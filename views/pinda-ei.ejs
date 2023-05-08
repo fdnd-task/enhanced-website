@@ -1,9 +1,23 @@
 <%- include('./partials/head.ejs') %>
 
 
-<% data.producten.forEach(product => { %>
-        <a href="/product-pagina?id=<%= product.id %>"><%= product.titel %></a>
-<% }); %>
 
+        <div class="grid-container">
+
+        <% data.producten.forEach(product => { %>
+                <article>
+
+            <h2>
+                <%= product.titel%>
+            </h2>
+            <p>
+                <a href="/product-pagina?id=<%= product.id %>"><%= product.titel %></a>
+            </p>
+        <% }); %>
+        </article>
+</div>
+
+    
 
 <%- include('./partials/foot.ejs') %>
+
