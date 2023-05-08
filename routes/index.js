@@ -12,19 +12,26 @@ router.get('/', function(req, res, next) {
   let smartUrl = url 
 
   let size = req.query.size || '1'
-  let orderBy = req.query.orderBy || 'name'
-  let direction
 
   
-  let role = req.query.role
+
+  // console.log(smartUrl)
+
+  // if(req.query.town == "Amsterdam"){
+  //   fetchJson(url).then((data) => {
+
+  //     res.render('index', Object.fromEntries(Object.entries(data).filter(([word]) => word.town == "Amsterdam")));
   
-
-  let squadUrl = url + '?size=' + size + '&direction=' + direction + "&role=" + role
-
-  console.log(smartUrl)
-
+  //   })
+  // }
   fetchJson(url).then((data) => {
+
     res.render('index', data)
+    console.log(Object.values(data))
+
+    // for (const [key, value] of Object.entries(data)) {
+    // }
+
   })
 });
 
@@ -56,17 +63,17 @@ router.post('/', (request, response) => {
   const url1 = `${baseurl}/reservations`
   postJson(url1, request.body).then((data) => {
     let newReservation = { ... request.body}
-    console.log(JSON.stringify(data))
+    // console.log(JSON.stringify(data))
 
    if (data.success) {
         response.redirect('/?reservationPosted')
-        console.log("yep")
+        // console.log("yep")
 
     }
     else {
     const errorMessage = data.message
     const newData = { error: errorMessage, values: newReservation }
-    console.log(newData)
+    // console.log(newData)
     }
   })
 })
