@@ -47,8 +47,6 @@ const urlOutput = "&refine=true&output=json";
 const defaultUrl =
 	urlBase + urlSearch + urlQuery + urlDefault + space + bookItems + urlKey + urlOutput;
 
-
-
 // Maakt een route voor de index
 server.get("/", (request, response) => {
 	fetchJson(defaultUrl).then((data) => {
@@ -74,12 +72,55 @@ server.get("/item", async (request, response) => {
 // Maakt een route voor de reguliere reserveringspagina
 
 server.get("/reserveren", (request, response) => {
-	response.render("reserveren");
+	let uniqueQuery = "?id=";
+	let urlId = request.query.id || "|oba-catalogus|279240";
+
+	const reserveUrl = 
+	urlBase + urlSearch + uniqueQuery + urlId + urlKey + urlOutput;
+
+	const data = fetch(reserveUrl)
+		.then((response) => response.json())
+		.catch((err) => err);
+	response.render("reserveren", data);
 });
 
 // Maakt een route voor de studieplek reserveringspagina
 server.get("/reserveer-een-studieplek", (request, response) => {
-		response.render("reserveer-een-studieplek");
+		const baseurl = "https://api.oba.fdnd.nl/api/v1";
+		const url = `${baseurl}/studieplekReserveringen`;
+	
+		fetchJson(url).then((data) => {
+			response.render("reserveer-een-studieplek", data);
+		});
+});
+
+// Verstuurt de data van de studieplek naar de API
+server.post("/reserveer-een-studieplek", (request, response) => {
+	const baseurl = "https://api.oba.fdnd.nl/api/v1";
+	const url = `${baseurl}/studieplekReserveringen`;
+
+	postJson(url, request.body).then((data) => {
+		let newReservation = {
+			...request.body,
+		};
+
+		console.log(data)
+
+		if (data.success) {
+			response.redirect("/");
+		} else {
+			const errormessage = `${data.message}: Mogelijk komt dit door het id die al bestaat.`;
+			const newdata = {
+				error: errormessage,
+				values: newReservation,
+			};
+
+			response.render("reserveer-een-studieplek", newdata);
+		}
+
+		console.log(JSON.stringify(data.errors));
+
+	});
 });
 
 /**

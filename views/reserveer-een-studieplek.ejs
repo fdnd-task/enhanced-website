@@ -12,18 +12,20 @@
     <section class="section-studyplace">
         <form class="form-studyplace">
             <fieldset>
+                <label for="id" hidden>Id</label>
+                <input id="id" readonly type="text" placeholder="clgnqhzv4fww00busvww4olcn" hidden>
                 <legend>Datum & tijd</legend>
-                <label for="date">
+                <label for="beginTijd">
                     Wanneer wilt u reserveren?
                 </label>
-                <input id="date" type="datetime-local" required />
+                <input id="beginTijd" type="datetime-local" required />
             </fieldset>
             <fieldset>
                 <legend>Locatie</legend>
-                <label>Bij welke vestiging wilt u reserveren?</label>
+                <label for="vestiging">Bij welke vestiging wilt u reserveren?</label>
                 <select>
-                <option></option>
-            </select>
+                    <option id="vestiging">OBA Oostdok</option>
+                </select>
             </fieldset>
             <button class="form-button-submit" type="submit">Verzenden</button>
         </form>
