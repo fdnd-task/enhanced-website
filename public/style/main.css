@@ -266,7 +266,7 @@ h1 {
 
 h2 {
     font-size: var(--u-default);
-    margin: 0.5em 0;
+    margin: 1em 0;
 }
 
 p {
@@ -393,9 +393,25 @@ main>section:nth-of-type(1) p {
     max-width: 30em;
 }
 
-main > section:nth-of-type(2) div{
+/* Slidebar */
+
+.wrapper {
     background-color: lightgray;
     height: 10em;
+    position: relative;  
+    align-items: center;
+}
+
+.carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3));
+}
+
+.book{
+    height: 10em;
+    width: 7em;
+    background-color: #58ab3c;
 }
 
 /* ======================= FORM ======================= */
