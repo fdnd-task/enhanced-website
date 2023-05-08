@@ -15,9 +15,8 @@ app.set("views", "./views");
 app.use(express.static("public"));
 
 // Maak een route voor de index
-app.get("/", (request, response) => {
+app.get("/product", (request, response) => {
   let productenUrl = url;
-
   fetchJson(productenUrl).then((data) => {
     response.render("producten", data);
   });
@@ -34,15 +33,25 @@ app.get("/detail", (request, response) => {
   });
 });
 
-// Stel het poortnummer in waar express op gaat luisteren
-app.set("port", process.env.PORT || 8000);
+app.get('/proces', (request, response) => {
+  response.render('proces')
+})
+
+app.get('/agenda', function (req, res) {
+  res.render('agenda')
+})
+
+// Stel het poortnummer in en start express
+app.set('port', process.env.PORT || 8000)
+app.listen(app.get('port'), function () {
+  console.log(`Application started on http://localhost:${app.get('port')}`)
+})
 
 // Start express op, haal het ingestelde poortnummer op
 app.listen(app.get("port"), function () {
   // Toon een bericht in de console en geef het poortnummer door
   console.log(`Application started on http://localhost:${app.get("port")}`);
 });
-
 async function fetchJson(url, payload = {}) {
   return await fetch(url, payload)
     .then((response) => response.json())

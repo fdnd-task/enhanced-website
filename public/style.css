@@ -1,24 +1,9 @@
+
 /* IMPORTS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap");
 
 
 /*....Producten titel....*/
-
-:root {
-  --geel: #f4eb34;
-  --groen: #72a7a6;
-  --black: #000;
-  --wit: #ffffff;
-  --licht-grijs: #eee;
-  --donker-grijs: #ccc;
-  --lichtblauw: #e4f2f2;
-  --donkerblauw: #b5dbdc;
-  --font: "Montserrat";
-}
-
-body {
-  font-family: var(--font);
-}
 
 .productenTitel {
   color: var(--groen);
@@ -215,3 +200,182 @@ span button {
     }
   }
    */
+=======
+:root {
+  --yellow: #f4eb34;
+  --lightGreen: #72a7a5;
+  --white: white;
+  --black: black;
+  --red: red;
+  --groen: #72a7a6;
+  --black: #000;
+  --wit: #ffffff;
+  --licht-grijs: #eee;
+  --donker-grijs: #ccc;
+  --lichtblauw: #e4f2f2;
+  --donkerblauw: #b5dbdc;
+  --font: "Montserrat";
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+/* --------------------------- HEADER */
+
+nav {
+  display: flex;
+  justify-content: space-between; /* this will position the shopping.png on the left and the toggle on the right */
+  align-items: center; /* this will vertically center the logo */
+}
+
+
+nav img.logo {
+  margin: 0 auto; /* this will horizontally center the logo */
+  width: 85px;
+  height: 60px;
+}
+
+nav a.profielIcon img {
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+/* Styles for the menu */
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--yellow);
+  padding: 1rem;
+  display: none;
+}
+
+.menu.show {
+  display: block;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 10em;
+}
+
+.menu li {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+/* Styles for the toggle button */
+.toggle {
+  display: inline-block;
+}
+
+.toggle img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* Styles for the close button */
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+}
+
+.close img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/* Styles for the logo and navbar */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: auto;
+  text-decoration: none;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ------------------ AccountOverzicht, Mini | Profiel */
+
+.container {
+  text-align: center;
+}
+
+.box1,
+.box2 {
+  margin: 20px;
+  border: 1px solid #72a7a5;
+  vertical-align: top;
+}
+
+.box1 {
+  background-color: #72a7a5;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.box2 {
+  background-color: var(--white);
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--lightGreen);
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+ul li span {
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  background-color: var(--lightGreen);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 10px auto;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid var(--lightGreen);
+}
+
