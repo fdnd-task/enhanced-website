@@ -10,11 +10,6 @@ const options = {
 	styles: 'start.css',
 }
 
-partners.get('/partners', async (request, response) => {
-	const getresponse = await get('website')
-	console.log(getresponse);
-
-	response.render('index', options)
-})
+partners.get('/partners', async (request, response) => response.render('index', options))
 
 export default partners
