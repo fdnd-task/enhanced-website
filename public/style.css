@@ -35,102 +35,23 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /* Header zenit*/   
 
-/* Header */   
-header {
-
-/* MAIN CONTENT */
-.checkout {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Header */
-.mini-nav > a {
-    font-style: var(--mini-nav-grijs);
-    text-decoration: none;
-}
-
-.mini-nav-links {
-    color: var(--mini-nav-grijs);
-    font-size: 0.7em;
-    margin-top: 1em;
-    padding: 1em;
-}
-
-/* Warning banner */
-.warning {
-    font-size: 1em;
-    background-color: var(--ei-kleur);
-    border-left: 5px solid var(--donkerblauw);
-    margin: 1em;
-    padding: 0.5em;
-    margin-top: 1.5em;
-    margin-bottom: 2em;
-}
-
-.warning-desc > span {
-    font-weight: 900;
-}
-
-.page-title {
-    font-size: 1.5em;
-    font-weight: 700;
-    padding-left: 0.7em;
-    text-align: left;
-}
-
-.buttons {
-    margin-top: 0.4em;
-    font-weight: 500;
-    padding: 1em;
-}
-
-.check-out-order {
-    background-color: var(--pinda-kleur);
-    color: var(--wit);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 3.125em;
-    text-decoration: none;
-    border-radius: 1.875em;
-    margin-bottom: 1em;
-    transition: 0.3s;
-}
-
-/* Header  Zenit*/
-.header-zenit {
-    width: 100vw;
-    height: 3.5rem;
-=======
 /* NAV + LOGO zenit*/   
 .headerzenit{
-    width: 100%;
+    /* width: 100%; */
     height: 4rem;
     background-color: var(--ei-kleur);
     position: relative;
     padding: 1rem;
 }
 
-/* ik heb even die p class gele-banner gegeven, roelie */
-p.gele-banner {
-    color: var(--zwart);
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 300;
-    font-size: 1.5em;
-    padding: 1.2em auto;
-    width: 100%;
-}
-
-
-/* NAV + LOGO */
+/* NAV + LOGO zenit */
 .logo {
     width: 5rem;
 }
+
 .navbar-items {
     height: 5rem;
     width: 100vw;
@@ -146,81 +67,7 @@ p.gele-banner {
     font-size: 1.2rem;
 }
 
-/* Footer */
-footer {
-    background-color: var(--pinda-kleur);
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--wit);
-}
-
-footer nav {
-    max-width: 100vw;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-footer nav div {
-    padding-left: 60px;
-    padding-top: 20px;
-}
-
-footer nav div span {
-    font-weight: 900;
-    padding: 5px;
-}
-
-footer nav div ul {
-    padding: 5px;
-    list-style: none;
-}
-
-footer nav div ul li {
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-
-footer nav div ul li a {
-    color: var(--wit);
-    text-decoration: none;
-}
-@media screen and (min-width: 950px) {
-    footer nav {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    footer nav div {
-        padding-top: 0px;
-    }
-}
-@media screen and (max-width: 550px) {
-    footer nav {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    footer nav div {
-        padding-top: 0px;
-    }
-}
-@media screen and (max-width: 350px) {
-    footer nav {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    footer nav div {
-        padding-top: 0px;
-    }
-}
+/* zenit nav + index + categorienpagina */
 
 @media screen and (max-width: 800px) {
     .navbar-items {
@@ -306,11 +153,6 @@ nav {
     cursor: pointer;
 }
 
-.show-menu {
-    right: 5;
-}
-
-
 .main-title {
     text-align: center;
     margin-top: 4rem;
@@ -368,9 +210,10 @@ nav {
     }
 }
 
+
 /* R20222 product-pagina CSS gedeelte */
 
-/* header gedeelte */
+/* header gedeelte roelie */
 .product-pagina-img {
     width: 80%;
     height: auto;
@@ -413,7 +256,7 @@ nav {
     font-weight: 200;
 }
 
-/* beschrijving gedeelte */
+/* beschrijving gedeelte roelie */
 .product-beschrijving {
     color: var(--donkerblauw);
     border: 4px solid var(--pinda-kleur);
@@ -437,7 +280,7 @@ nav {
     max-width: 40rem;
 }
 
-/* stappenplan gedeelte */
+/* stappenplan gedeelte roelie */
 
 .product-stappenplan {
     color: var(--donkerblauw);
@@ -452,7 +295,7 @@ nav {
     max-width: 40rem;
 }
 
-/* laatste knoppen */
+/* laatste knoppen roelie */
 
 .last-buttons {
     display: flex;
@@ -487,7 +330,7 @@ nav {
     margin: 1rem;
 }
 
-/* desktop versie */
+/* desktop versie roelie */
 .voeg-toe:hover {
     color: var(--wit);
     background-color: var(--donkerblauw);
@@ -498,164 +341,9 @@ nav {
     border: 1px solid var(--donkerblauw);
 }
 
-/* nieuwsbrief */
-.input-container {
-    display: flex;
-    width: 50rem;
-    margin-bottom: 15px;
-    margin-left: 35vw;
-}
-.input-container a{
-    font-size: 3rem;
-}
-
-.icon{
-  padding: 30px;
-  background: var(--pinda-kleur);
-  color: var(--wit);
-  min-width: 30px;
-  text-align: center;
-  font-size: 5rem;
-}
- /*nieuwsbrief form */
-
-.input-field {
-width: 50vw;
-padding: 30px;
-outline: none;
-font-size: 1.5rem;
-}
-
-.input-field:focus {
-  border: 3px solid var(--pinda-kleur);
-}
-h5{
-color: var(--pinda-kleur);
-font-size: 1.5rem;
-text-align: center;
-
-}
-h6{
-font-weight: 400;
-font-size: 1.5em;
-text-align: center;
-
-}
-.buttonzenit{
-background-color: var(--pinda-kleur);
-color: var(--wit);
-padding: 25px 20px;
-border: none;
-cursor: pointer;
-width: 31.5vw;
-opacity: 0.9;
-font-size: 1.5rem;
-margin-left: 35vw;
-
-}
-.buttonzenit :hover{
-  opacity: 1;
-    
-}
- /* Footer zenit */
- .footer {
-    background-color: var(--pinda-kleur);
-    padding: 1em 1em;
-    width: 100vw;
-    list-style: none;
-
-  }
-  
-  .footer-title {
-    color: var(--wit);
-    margin-bottom: 0.8em;
-    margin-top: 2em;
-    font-size: 2rem;
-
-  }
-  
-  .footer-link {
-    text-decoration:none;
-    color: var(--wit);
-    font-weight: 300;
-    line-height: 2.5;
-    font-size: 2rem;
-  }
-  
-  .copyright {
-    color: var(--wit);
-    font-weight: 500;
-    font-size: 0.8em;
-    margin-top: 2em;
-  }
-ul {
-    display: block;
-    list-style-type: none;
-   
-}
-   
-  /* 
-@media screen and (max-width: 500px) {
-    avbsnar a {
-      float: none;
-      display: block;
-    }
-  }
-
-@media screen and (max-width: 1000px) {
-    onav{
-        display: none;
-    }
-   ooavbar-items {
-        display: none;
-    }
-    
-}
-
-
-@media screen and (min-width: 800px) {
-    .ssnavbar-icon-items {
-        display: none;
-    }
-    0nav{
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-  /* FOOTER */
-  footer {
-    width: 100vw;
-    margin-top: 2em;
-  }
-
-  .footer-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    margin-bottom: 2em;
-  }
-
-  .footer-title {
-    font-size: 2em;
-  }
-
-  .footer-link {
-    font-size: 1.8em;
-    line-height: 2.5em;
-  }
-
-  .copyright {
-    font-size: 1em;
-    margin-left: 15em;
-  }
-
-
-=======
+/* mediaqueries roelie */
 @media screen and (min-width: 50em) {
     .product-pagina-img {
-        /* max-width:38rem; */
         max-width: 30rem;
     }
     .product-pagina-h1 {
@@ -702,6 +390,69 @@ ul {
         width: 45%;
     }
 }
+
+/* MAIN CONTENT Amber */
+.checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Amber */
+.mini-nav > a {
+    font-style: var(--mini-nav-grijs);
+    text-decoration: none;
+}
+
+.mini-nav-links {
+    color: var(--mini-nav-grijs);
+    font-size: 0.7em;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+/* Warning banner Amber */
+.warning {
+    font-size: 1em;
+    background-color: var(--ei-kleur);
+    border-left: 5px solid var(--donkerblauw);
+    margin: 1em;
+    padding: 0.5em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.warning-desc > span {
+    font-weight: 900;
+}
+
+.page-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-left: 0.7em;
+    text-align: left;
+}
+
+.buttons {
+    margin-top: 0.4em;
+    font-weight: 500;
+    padding: 1em;
+}
+
+.check-out-order {
+    background-color: var(--pinda-kleur);
+    color: var(--wit);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.125em;
+    text-decoration: none;
+    border-radius: 1.875em;
+    margin-bottom: 1em;
+    transition: 0.3s;
+}
+
+/* nog meer code van Amber */
 
 .continue-shop {
     border: 2px solid var(--pinda-kleur);
@@ -921,12 +672,12 @@ ul {
     border-radius: 1.875em;
 }
 
-/* Invisible table for desktop */
+/* Invisible table for desktop Amber*/
 .mobile-overview-product {
     visibility: hidden;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES Amber*/
 @media only screen and (min-width: 500px) {
     .page-title {
         font-size: 2em;
@@ -1006,7 +757,7 @@ ul {
         gap: 1em;
     }
 
-    /* Table visibile for desktop */
+    /* Table visibile for desktop Amber*/
     .mobile-overview-product {
         border-collapse: collapse;
         margin: 1.1em 1em 0 1em;
@@ -1064,3 +815,173 @@ ul {
         width: 42em;
     }
 }
+
+
+/* nieuwsbrief zenit */
+.input-container {
+    display: flex;
+    width: 50rem;
+    margin-bottom: 15px;
+    margin-left: 35vw;
+}
+.input-container a{
+    font-size: 3rem;
+}
+
+.icon{
+  padding: 30px;
+  background: var(--pinda-kleur);
+  color: var(--wit);
+  min-width: 30px;
+  text-align: center;
+  font-size: 5rem;
+}
+ /*nieuwsbrief form zenit*/
+
+.input-field {
+width: 50vw;
+padding: 30px;
+outline: none;
+font-size: 1.5rem;
+}
+
+.input-field:focus {
+  border: 3px solid var(--pinda-kleur);
+}
+h5{
+color: var(--pinda-kleur);
+font-size: 1.5rem;
+text-align: center;
+
+}
+h6{
+font-weight: 400;
+font-size: 1.5em;
+text-align: center;
+
+}
+.buttonzenit{
+background-color: var(--pinda-kleur);
+color: var(--wit);
+padding: 25px 20px;
+border: none;
+cursor: pointer;
+width: 31.5vw;
+opacity: 0.9;
+font-size: 1.5rem;
+margin-left: 35vw;
+
+}
+.buttonzenit :hover{
+  opacity: 1;
+    
+}
+
+/* Footer zenit */
+footer {
+    background-color: var(--pinda-kleur);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--wit);
+}
+
+footer nav {
+    max-width: 100vw;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+footer nav div {
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+footer nav div span {
+    font-weight: 900;
+    padding: 5px;
+}
+
+footer nav div ul {
+    padding: 5px;
+    list-style: none;
+}
+
+footer nav div ul li {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+footer nav div ul li a {
+    color: var(--wit);
+    text-decoration: none;
+}
+@media screen and (min-width: 950px) {
+    footer nav {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer nav div {
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 550px) {
+    footer nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer nav div {
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 350px) {
+    footer nav {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer nav div {
+        padding-top: 0px;
+    }
+}
+
+
+  /* 
+@media screen and (max-width: 500px) {
+    avbsnar a {
+      float: none;
+      display: block;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    onav{
+        display: none;
+    }
+   ooavbar-items {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width: 800px) {
+    .ssnavbar-icon-items {
+        display: none;
+    }
+    0nav{
+        display: none;
+    }
+}
+*/
+
+
+
