@@ -1,17 +1,9 @@
 <%- include('./partials/head.ejs') %>
+    <% categories.forEach(category => { %>
 
+        <% if(category.titel === "Pinda" || category.titel === "Ei" ){ %>
+            <a href="/pinda-ei?categorieId=<%= category.id %>"><%= category.titel %></a>
+        <% } %>
 
-
-
-<% categories.forEach(category => { %>
-
-    <% if(category.titel === "Pinda" || category.titel === "Ei" ){ %>
-        <a href="/pinda-ei?categorieId=<%= category.id %>"><%= category.titel %></a>
-    <% } %>
-
-<% }); %>
-
-
-
-
-
+    <% }); %>
+<%- include('./partials/foot.ejs') %>
