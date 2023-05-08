@@ -27,18 +27,26 @@ app.get("/detail", (request, response) => {
     response.render("detail", data);
   });
 });
+// set up van bodyparser om te redirecten naar de success.ejs pagina
+import bodyParser from 'body-parser';
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.get("/success", (request, response) => {
   fetchJson().then((data) => {
     response.render("success", data);
   });
 });
+// Define the '/success' route
+app.post('/success', (req, res) => {
+  const { name, seatNumber, date, time } = req.body;
+  res.render('success', { name, seatNumber, date, time });
+});
+
 app.get("/reserveren", (request, response) => {
   fetchJson().then((data) => {
     response.render("reserveren", data);
   });
 });
-
-
 // Stel het poortnummer in en start express
 app.set("port", process.env.PORT || 8000);
 app.listen(app.get("port"), function () {
@@ -46,7 +54,7 @@ app.listen(app.get("port"), function () {
 });
 
 /**
- * Wraps the fetch api and returns the response body parsed through json
+ * Wraps the fetch api and return s the response body parsed through json
  * @param {*} url the api endpoint to address
  * @returns the json response from the api endpoint
  */
