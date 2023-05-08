@@ -8,3 +8,9 @@
   font-size: 2.25rem;
 }
 
+.page__content {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+}
+
