@@ -621,41 +621,12 @@ ul {
         display: none;
     }
 }
-
-@media screen and (min-width: 1024px) {
-
-  /* FOOTER */
-  footer {
-    width: 100vw;
-    margin-top: 2em;
-  }
-
-  .footer-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    margin-bottom: 2em;
-  }
-
-  .footer-title {
-    font-size: 2em;
-  }
-
-  .footer-link {
-    font-size: 1.8em;
-    line-height: 2.5em;
-  }
-
-  .copyright {
-    font-size: 1em;
-    margin-left: 15em;
-  }
+*/
 
 
 
 @media screen and (min-width: 50em) {
     .product-pagina-img {
-        /* max-width:38rem; */
         max-width: 30rem;
     }
     .product-pagina-h1 {
