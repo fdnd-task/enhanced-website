@@ -10,13 +10,17 @@
 
 .menu--bar {
   flex-flow: row nowrap;
-  border-radius: var(--border-radius);
   overflow: hidden;
+  height: fit-content;
+  background: white;
 }
 
 .menu__menu-item {
   padding: 1rem;
   background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
 }
 
 .menu__menu-item:first-child,

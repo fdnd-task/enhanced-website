@@ -130,18 +130,6 @@ body {
   color: var(--text-color);
 }
 
-.body__header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  padding: 1rem var(--body-padding);
-  background: white;
-}
-
-.logo {
-  height: 50px;
-}
-
 @media (min-width: 36rem) {
   :root {
     --max-screen-width: var(--breakpoint-sm);

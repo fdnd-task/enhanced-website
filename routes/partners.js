@@ -7,7 +7,7 @@ const options = {
 	path: '/partners',
 	title: 'partners',
 	template: './partners.ejs',
-	styles: '/styles/start.css',
+	styles: 'start.css',
 }
 
 partners.get('/partners', async (request, response) => {
