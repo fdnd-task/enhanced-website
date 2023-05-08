@@ -301,46 +301,6 @@ button:focus-visible {
     outline: 0;
 }
 
-/* form */
-
-form.form-studyplace, form.form-reservate {
-    border: var(--u-nano) solid var(--c-accent-25);
-    width: 100%;
-    display: block;
-    padding: var(--u-medium);
-    box-shadow: 0 var(--u-small) var(--u-small) 0 rgba(0,0,0,0.33);
-}
-
-fieldset {
-    border: var(--u-nano) solid var(--c-accent-50);
-    display: flex;
-    flex-direction: column;
-}
-
-.form-studyplace, .form-reservate label {
-    margin-bottom: var(--u-small);
-}
-
-.form-studyplace, .form-reservate input {
-    margin-bottom: var(--u-default);
-}
-
-.form-studyplace, .form-reservate button {
-    background-color: var(--c-accent-100);
-    color: var(--c-default);
-    margin: var(--u-default) 0;
-    padding: var(--u-medium) var(--u-default);
-    transition: var(--a-quick) ease-in-out;
-}
-
-.form-studyplace, .form-reservate button:hover {
-    background-color: red;
-}   
-
-.form-studyplace, .form-reservate button:focus {
-    background-color: red;
-}   
-
 /* Amsterdam background / searchbar */
 .search-container{
     background-image: url("/assets/Amsterdam.jpg");
@@ -412,22 +372,6 @@ main>section:nth-of-type(1) p {
     height: 10em;
     width: 7em;
     background-color: #58ab3c;
-}
-
-/* ======================= FORM ======================= */
-
-.studyplace {
-    width: 10em;
-    display: block;
-}
-
-fieldset {
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    margin-bottom: var(--u-default);
 }
 
 /* ======================= FOOTER ======================= */
@@ -505,10 +449,6 @@ footer {
 /* EXTRA SMALL SCREEN 560px */
 @media (min-width: 20em) {
 
-form.form-studyplace {
-    width: 20em;
-}
-
 }
 
 /* SMALL SCREEN 560px */
@@ -521,20 +461,13 @@ form.form-studyplace {
         width: 22em;
         margin: 0;
     }
-
-        /* ========= FORM ========= */
-
-        .studyplace {
-            width: 20em;
-            display: block;
-        }
 }
 
 /* SMALL MEDIUM SCREEN 600px */
 
 @media (min-width: 37.5em) {
 
-    form.form-studyplace {
+    form.form-studyplace, form.form-reservate {
         width: 25em;
     }
 
