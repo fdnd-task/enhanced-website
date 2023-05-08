@@ -1,18 +1,19 @@
 /* Montserrat */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-
-* {
-    margin: 0;
-    padding: 0;
+body {
     font-family: var(--body-font);
+    background-color: var(--wit);   
 }
+<<<<<<< Updated upstream
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 body {
     font-family: var(--body-font);
     background-color: var(--wit);   
 }
+=======
+>>>>>>> Stashed changes
 :root {
     /* CUSTOM PROPERTIES */
     /* Colours for specific allergies */
@@ -36,11 +37,23 @@ body {
     --body-font: "Montserrat";
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Header zenit*/   
 
+<<<<<<< Updated upstream
 /* Header */   
 header {
     width: 100vw;
     height: 3.5rem;
+=======
+/* NAV + LOGO zenit*/   
+.headerzenit{
+    width: 100%;
+    height: 4rem;
+>>>>>>> Stashed changes
     background-color: var(--ei-kleur);
     position: relative;
     padding: 1rem;
@@ -49,12 +62,17 @@ header {
 p{
     color: var(--zwart);
     text-align: center;
+<<<<<<< Updated upstream
     font-size: 1.4rem;
     font-weight: 300;
+=======
+    font-size: 1.5em;
+>>>>>>> Stashed changes
     padding: 1.2em auto;
     width: 100%;
 }
 
+<<<<<<< Updated upstream
 /* NAV + LOGO */   
 .logo{
     width: 5rem;
@@ -170,6 +188,134 @@ footer {
      }
  }
 
+=======
+/* NAVBAR */
+
+.nav-container {
+    max-width: 100vw;
+    background-color: var(--wit);
+}
+
+.logo {
+    width: 8rem;
+}
+
+nav {
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    text-align: left;
+}
+
+.nav-menu {
+    position: relative;
+}
+
+.icons-right {
+    display: block;
+}
+
+
+@media screen and (max-width: 767px) {
+    .nav-menu {
+        position: fixed;
+        background-color: var(--wit);
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+        padding: 3rem;
+        transition: .4s;
+        z-index: 5;
+    }
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+
+.nav-link {
+    color: var(--donkerblauw);
+    font-weight: 400;
+    font-size: 1.5em;  
+    padding: 3rem;
+
+}
+
+.nav-link:hover {
+    color: var(--pinda-kleur);
+}
+
+.nav-close {
+    display: block;
+    margin-left: 6em;
+    font-size: 1.5rem;
+    color: var(--donkerblauw);
+    cursor: pointer;
+}
+
+.show-menu {
+    right: 5;
+}
+
+
+.main-title {
+    text-align: center;
+    margin-top: 4rem;
+    color: var(--pinda-kleur);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+
+.omschrijving {
+    border-top: 5px solid var(--pinda-kleur);
+    padding-top: 9px;
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
+    line-height: 1.3;
+    margin-top: .75em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.advies{
+    font-size: 1.5rem;
+    padding-left: 2.3rem;
+    margin-top: 1rem;
+    font-style: italic;
+    font-weight: 1000;
+    text-align: center;
+}
+
+/* ICONS */
+.shoppingcart,
+.person {
+    background-color: transparent;
+    border: none;
+    color: var(--donkerblauw);
+    position: relative;
+}
+
+.shoppingcart:hover {
+    color: var(--pinda-kleur);
+    font-size: 5rem;
+
+}
+
+.person:hover {
+    color: var(--pinda-kleur);
+}
+>>>>>>> Stashed changes
 
 /* R20222 product-pagina CSS gedeelte */
 
@@ -286,3 +432,158 @@ footer {
     background-color: var(--wit);
     border: 1px solid var(--donkerblauw);
 }
+
+/* nieuwsbrief */
+.input-container {
+    display: flex;
+    width: 50rem;
+    margin-bottom: 15px;
+    margin-left: 35vw;
+}
+.input-container a{
+    font-size: 3rem;
+}
+
+.icon{
+  padding: 30px;
+  background: var(--pinda-kleur);
+  color: var(--wit);
+  min-width: 30px;
+  text-align: center;
+  font-size: 5rem;
+}
+ /*nieuwsbrief form */
+
+.input-field {
+width: 50vw;
+padding: 30px;
+outline: none;
+font-size: 1.5rem;
+}
+
+.input-field:focus {
+  border: 3px solid var(--pinda-kleur);
+}
+h5{
+color: var(--pinda-kleur);
+font-size: 1.5rem;
+text-align: center;
+
+}
+h6{
+font-weight: 400;
+font-size: 1.5em;
+text-align: center;
+
+}
+.buttonzenit{
+background-color: var(--pinda-kleur);
+color: var(--wit);
+padding: 25px 20px;
+border: none;
+cursor: pointer;
+width: 31.5vw;
+opacity: 0.9;
+font-size: 1.5rem;
+margin-left: 35vw;
+
+}
+.buttonzenit :hover{
+  opacity: 1;
+    
+}
+ /* Footer zenit */
+ .footer {
+    background-color: var(--pinda-kleur);
+    padding: 1em 1em;
+    width: 100vw;
+    list-style: none;
+
+  }
+  
+  .footer-title {
+    color: var(--wit);
+    margin-bottom: 0.8em;
+    margin-top: 2em;
+    font-size: 2rem;
+
+  }
+  
+  .footer-link {
+    text-decoration:none;
+    color: var(--wit);
+    font-weight: 300;
+    line-height: 2.5;
+    font-size: 2rem;
+  }
+  
+  .copyright {
+    color: var(--wit);
+    font-weight: 500;
+    font-size: 0.8em;
+    margin-top: 2em;
+  }
+ul {
+    display: block;
+    list-style-type: none;
+   
+}
+   
+  /* 
+@media screen and (max-width: 500px) {
+    avbsnar a {
+      float: none;
+      display: block;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    onav{
+        display: none;
+    }
+   ooavbar-items {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width: 800px) {
+    .ssnavbar-icon-items {
+        display: none;
+    }
+    0nav{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+  /* FOOTER */
+  footer {
+    width: 100vw;
+    margin-top: 2em;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-bottom: 2em;
+  }
+
+  .footer-title {
+    font-size: 2em;
+  }
+
+  .footer-link {
+    font-size: 1.8em;
+    line-height: 2.5em;
+  }
+
+  .copyright {
+    font-size: 1em;
+    margin-left: 15em;
+  }
+
+
