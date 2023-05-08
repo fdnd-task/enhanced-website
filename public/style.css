@@ -1,0 +1,381 @@
+
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap");
+
+
+/*....Producten titel....*/
+
+.productenTitel {
+  color: var(--groen);
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.productContainer {
+  display: grid;
+  --columns: 1;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  /* text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px var(--groen);
+  margin: 20px;
+  padding: 20px;
+  max-width: 18em; */
+}
+
+.product {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px var(--groen);
+  margin: 20px;
+  padding: 20px;
+  max-width: 18em;
+}
+
+.productBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.productData {
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+}
+
+.productName {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--groen);
+}
+
+.productPrice {
+  color: var(--black);
+  font-weight: 500;
+}
+
+
+
+.foto {
+  max-width: 18em;
+  border-radius: 5%;
+}
+
+  /*---- MediaQuery -- RESPONSIVE!! ---- */
+@media all and (min-width: 700px) {
+  .productContainer{
+    --columns: 2;
+  }
+}
+@media all and (min-width: 1000px) {
+  .productContainer{
+    --columns: 3;
+  }
+}
+@media all and (min-width: 1200px) {
+  .productContainer{
+    --columns: 4;
+  }
+}
+
+  /*....Footer....*/
+footer {
+  background-color: #f5f5f5;
+  margin-top: 10em;
+  padding: 1em 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "i s m";
+  grid-column-gap: 0px;
+}
+
+h2 {
+  color: #72a7a6;
+}
+
+
+.info {
+  grid-area: i;
+}
+
+.social {
+  grid-area: s;
+}
+
+.footerMenu {
+  grid-area: m;
+}
+
+
+/*  ========== DETAIL PAGE ========= */
+.detail-title {
+  font-size: 1.2rem;
+  color: var(--groen);
+  margin-top: 2rem;
+  margin-left: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+span p {
+  font-size: 1em;
+  line-height: 1.4rem;
+  text-align: left;
+  font-weight: 300;
+  color: var(--geel);
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+span ul {
+  display: none;
+}
+
+span li {
+  margin-bottom: 0.5em;
+  color: var(--geel);
+}
+
+.image-detail {
+  width: 100%;
+  height: auto;
+  max-width: 50vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-price {
+  margin-left: 1.2rem;
+  color: var(--groen);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+}
+
+span button {
+  margin-left: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.detail-container { 
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px var(--groen);
+  margin: 20px;
+  padding: 20px;
+  max-width: 50em;
+}
+
+/* .grid-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+} */
+
+/*...... werkt niet.....*/
+.description_product {
+  color: var(--black);
+}
+
+  /* ---- MediaQuery -- RESPONSIVE!! ----
+  @media all and (min-width: 450px) {
+    .detail-container { 
+      max-width: 25em;
+    }
+  }
+  @media all and (min-width: 600px) {
+    .detail-container { 
+      max-width: 35em;
+    }
+  }
+  @media all and (min-width: 750px) {
+    .detail-container { 
+      max-width: 45em;
+    }
+  }
+   */
+=======
+:root {
+  --yellow: #f4eb34;
+  --lightGreen: #72a7a5;
+  --white: white;
+  --black: black;
+  --red: red;
+  --groen: #72a7a6;
+  --black: #000;
+  --wit: #ffffff;
+  --licht-grijs: #eee;
+  --donker-grijs: #ccc;
+  --lichtblauw: #e4f2f2;
+  --donkerblauw: #b5dbdc;
+  --font: "Montserrat";
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+/* --------------------------- HEADER */
+
+nav {
+  display: flex;
+  justify-content: space-between; /* this will position the shopping.png on the left and the toggle on the right */
+  align-items: center; /* this will vertically center the logo */
+}
+
+
+nav img.logo {
+  margin: 0 auto; /* this will horizontally center the logo */
+  width: 85px;
+  height: 60px;
+}
+
+nav a.profielIcon img {
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+/* Styles for the menu */
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--yellow);
+  padding: 1rem;
+  display: none;
+}
+
+.menu.show {
+  display: block;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 10em;
+}
+
+.menu li {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+/* Styles for the toggle button */
+.toggle {
+  display: inline-block;
+}
+
+.toggle img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* Styles for the close button */
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+}
+
+.close img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/* Styles for the logo and navbar */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: auto;
+  text-decoration: none;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ------------------ AccountOverzicht, Mini | Profiel */
+
+.container {
+  text-align: center;
+}
+
+.box1,
+.box2 {
+  margin: 20px;
+  border: 1px solid #72a7a5;
+  vertical-align: top;
+}
+
+.box1 {
+  background-color: #72a7a5;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.box2 {
+  background-color: var(--white);
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--lightGreen);
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+ul li span {
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  background-color: var(--lightGreen);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 10px auto;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid var(--lightGreen);
+}
+
