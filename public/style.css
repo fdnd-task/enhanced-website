@@ -563,9 +563,7 @@ margin-left: 35vw;
     padding: 1em 1em;
     width: 100vw;
     list-style: none;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    display:flex;
   }
   
   .footer-title {
