@@ -48,9 +48,9 @@
 }
 
 html {
-	font-family: "Amsterdam-sans-Regular","avenir", "arial", sans-serif;
-	font-variant-ligatures: common-ligatures;
-  letter-spacing: -0.016em;
+    font-family: "Amsterdam-sans-Regular", "avenir", "arial", sans-serif;
+    font-variant-ligatures: common-ligatures;
+    letter-spacing: -0.016em;
 }
 
 @font-face {
@@ -302,7 +302,7 @@ button:focus-visible {
 }
 
 /* Amsterdam background / searchbar */
-.search-container{
+.search-container {
     background-image: url("/assets/Amsterdam.jpg");
     background-image: image-set(url('/assets/Amsterdam.avif') type('image/avif'), url('/assets/Amsterdam.jpg')type('image/jpeg'));
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 76%);
@@ -339,7 +339,7 @@ main {
     margin: 2em 0;
 }
 
-main > section{
+main>section {
     width: 90%;
     margin: 0 auto;
 }
@@ -358,21 +358,52 @@ main>section:nth-of-type(1) p {
 .wrapper {
     background-color: lightgray;
     height: 10em;
-    position: relative;  
+    position: relative;
     align-items: center;
 }
 
-.carousel{
+.carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3));
 }
 
-.book{
+.book {
     height: 10em;
     width: 7em;
     background-color: #58ab3c;
 }
+
+
+/*============ CSS ACTIVITEITEN EN CURSUS TIJDELIJK==========*/
+
+/* article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main {
+    margin: 0 auto;
+    align-items: center;
+}
+
+section {
+
+    max-width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+
+} */
+
+
+
+
+
 
 /* ======================= FOOTER ======================= */
 
@@ -447,9 +478,7 @@ footer {
 }
 
 /* EXTRA SMALL SCREEN 560px */
-@media (min-width: 20em) {
-
-}
+@media (min-width: 20em) {}
 
 /* SMALL SCREEN 560px */
 @media (min-width: 35em) {
@@ -467,7 +496,8 @@ footer {
 
 @media (min-width: 37.5em) {
 
-    form.form-studyplace, form.form-reservate {
+    form.form-studyplace,
+    form.form-reservate {
         width: 25em;
     }
 
@@ -478,31 +508,31 @@ footer {
         background-size: 56vw;
     }
 
-        .search-form > input {
-            width: 18em;
-        }
+    .search-form>input {
+        width: 18em;
+    }
 
-        main > section:nth-of-type(3){
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 1.5em;
-        }
+    main>section:nth-of-type(3) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5em;
+    }
 
-        main > section:nth-of-type(3) h2{
-            text-align: center;
-        }
+    main>section:nth-of-type(3) h2 {
+        text-align: center;
+    }
 
     /* ========= FORM ========= */
 
-        .studyplace {
-            width: 25em;
-            display: block;
-        }
+    .studyplace {
+        width: 25em;
+        display: block;
+    }
 
     /* ========= FOOTER ========= */
-        .footer-col {
-            width: 50%;
-        }
+    .footer-col {
+        width: 50%;
+    }
 }
 
 /* MEDIUM SCREEN 768px */
@@ -560,14 +590,14 @@ footer {
 
     /* ========= MAIN ========= */
 
-        .search-container{
-            height: 7em;
-            background-size: 50vw;
-        }
-        
-        .search-form > input {
-            width: 20em;
-        }
+    .search-container {
+        height: 7em;
+        background-size: 50vw;
+    }
+
+    .search-form>input {
+        width: 20em;
+    }
 }
 
 /* Extra Large screen 1400px */
@@ -601,11 +631,12 @@ footer {
         height: 8em;
         background-size: 40vw;
     }
-    .search-form{
+
+    .search-form {
         top: 7.5em;
     }
 
-    .search-form > input {
+    .search-form>input {
         width: 18em;
     }
 

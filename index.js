@@ -8,7 +8,7 @@ dotenv.config();
 const server = express();
 
 // Stelt de public map in
-server.use(express.static('public'))
+server.use(express.static("public"));
 
 // Stelt het poortnummer in waar express op gaat luisteren
 server.set("port", process.env.PORT || 8000);
@@ -44,8 +44,27 @@ const urlDefault = "special:all";
 const urlKey = `${process.env.KEY}`;
 const urlOutput = "&refine=true&output=json";
 
+// opbouw url activiteiten en Cursus
+const activityURL =
+	urlBase +
+	"/search/?q=special:all%20table:activiteiten&authorization=" +
+	process.env.authorization +
+	"&output=json";
+const courseURL =
+	urlBase +
+	"/search/?q=special:all%20table:jsonsrc&authorization=" +
+	process.env.authorization +
+	"&output=json";
+
 const defaultUrl =
-	urlBase + urlSearch + urlQuery + urlDefault + space + bookItems + urlKey + urlOutput;
+	urlBase +
+	urlSearch +
+	urlQuery +
+	urlDefault +
+	space +
+	bookItems +
+	urlKey +
+	urlOutput;
 
 // Maakt een route voor de index
 server.get("/", (request, response) => {
@@ -56,12 +75,16 @@ server.get("/", (request, response) => {
 
 // Maakt een route voor de detailpagina
 server.get("/item", async (request, response) => {
-
 	let uniqueQuery = "?id=";
 	let urlId = request.query.id || "|oba-catalogus|279240";
 
-	const itemUrl = 
-	urlBase + urlSearch + uniqueQuery + urlId + urlKey + urlOutput;
+	const itemUrl =
+		urlBase +
+		urlSearch +
+		uniqueQuery +
+		urlId +
+		urlKey +
+		urlOutput;
 
 	const data = await fetch(itemUrl)
 		.then((response) => response.json())
@@ -75,8 +98,13 @@ server.get("/reserveren", (request, response) => {
 	let uniqueQuery = "?id=";
 	let urlId = request.query.id || "|oba-catalogus|279240";
 
-	const reserveUrl = 
-	urlBase + urlSearch + uniqueQuery + urlId + urlKey + urlOutput;
+	const reserveUrl =
+		urlBase +
+		urlSearch +
+		uniqueQuery +
+		urlId +
+		urlKey +
+		urlOutput;
 
 	const data = fetch(reserveUrl)
 		.then((response) => response.json())
@@ -85,43 +113,88 @@ server.get("/reserveren", (request, response) => {
 });
 
 // Maakt een route voor de studieplek reserveringspagina
-server.get("/reserveer-een-studieplek", (request, response) => {
+server.get(
+	"/reserveer-een-studieplek",
+	(request, response) => {
 		const baseurl = "https://api.oba.fdnd.nl/api/v1";
 		const url = `${baseurl}/studieplekReserveringen`;
-	
+
 		fetchJson(url).then((data) => {
 			response.render("reserveer-een-studieplek", data);
 		});
-});
+	}
+);
 
 // Verstuurt de data van de studieplek naar de API
-server.post("/reserveer-een-studieplek", (request, response) => {
-	const baseurl = "https://api.oba.fdnd.nl/api/v1";
-	const url = `${baseurl}/studieplekReserveringen`;
+server.post(
+	"/reserveer-een-studieplek",
+	(request, response) => {
+		const baseurl = "https://api.oba.fdnd.nl/api/v1";
+		const url = `${baseurl}/studieplekReserveringen`;
 
-	postJson(url, request.body).then((data) => {
-		let newReservation = {
-			...request.body,
-		};
-
-		console.log(data)
-
-		if (data.success) {
-			response.redirect("/");
-		} else {
-			const errormessage = `${data.message}: Mogelijk komt dit door het id die al bestaat.`;
-			const newdata = {
-				error: errormessage,
-				values: newReservation,
+		postJson(url, request.body).then((data) => {
+			let newReservation = {
+				...request.body,
 			};
 
-			response.render("reserveer-een-studieplek", newdata);
+			console.log(data);
+
+			if (data.success) {
+				response.redirect("/");
+			} else {
+				const errormessage = `${data.message}: Mogelijk komt dit door het id die al bestaat.`;
+				const newdata = {
+					error: errormessage,
+					values: newReservation,
+				};
+
+				response.render(
+					"reserveer-een-studieplek",
+					newdata
+				);
+			}
+
+			console.log(JSON.stringify(data.errors));
+		});
+	}
+);
+
+//Maakt een route voor de activiteiten pagina
+server.get("/activiteiten", (request, response) => {
+	fetchJson(activityURL).then((data) => {
+		let dataClone = structuredClone(data);
+
+		if (request.query.titles) {
+			dataClone.results.titles =
+				dataClone.results.titles.filter(function (title) {
+					return results.titles.includes(
+						request.query.titles
+					);
+				});
 		}
 
-		console.log(JSON.stringify(data.errors));
-
+		response.render("activiteiten-cursus", dataClone);
 	});
 });
+
+// Maakt route voor de cursussen pagina
+server.get("/cursussen", (request, response) => {
+	fetchJson(courseURL).then((data) => {
+		let dataClone = structuredClone(data);
+
+		if (request.query.titles) {
+			dataClone.results.titles =
+				dataClone.results.titles.filter(function (title) {
+					return results.titles.includes(
+						request.query.titles
+					);
+				});
+		}
+		response.render("activiteiten-cursus", dataClone);
+	});
+});
+
+//Maakt route voor de Over Ons pagina
 
 /**
  * fetchJson() is a wrapper for the experimental node fetch api. It fetches the url
@@ -129,7 +202,7 @@ server.post("/reserveer-een-studieplek", (request, response) => {
  * @param {*} url the api endpoint to address
  * @returns the json response from the api endpoint
  */
- export async function fetchJson(url, payload = {}) {
+export async function fetchJson(url, payload = {}) {
 	return await fetch(url, payload)
 		.then((response) => response.json())
 		.catch((error) => error);
@@ -146,4 +219,3 @@ export async function postJson(url, body) {
 		.then((response) => response.json())
 		.catch((error) => error);
 }
-
