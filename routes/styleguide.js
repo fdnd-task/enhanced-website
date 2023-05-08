@@ -110,6 +110,7 @@ const options = {
 	path: '/styleguide',
 	title: 'styleguide',
 	template: './styleguide.ejs',
+	styles: '/styles.styleguide.css',
 }
 
 styleguide.get('/styleguide', async (request, response) => response.redirect('/styleguide/introductie'))

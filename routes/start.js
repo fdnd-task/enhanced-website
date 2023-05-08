@@ -6,7 +6,7 @@ const options = {
 	path: '/',
 	title: 'Start',
 	template: './start.ejs',
-	style: '/styles/start.css',
+	styles: '/styles/start.css',
 }
 
 startPage.get('/', (request, response) => response.render('index', options))
