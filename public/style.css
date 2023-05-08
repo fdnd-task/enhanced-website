@@ -284,3 +284,89 @@ footer{
 .active{
     color: var(--primary) !important;
 }
+
+
+
+
+
+
+
+
+/* DETAIL PAGE CSS */
+.detail-image{
+    width: 500px;
+}
+
+.detail-h1{
+    text-align: center;
+}
+
+.detail-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .detail-plek{
+   text-align: right;
+   margin-right: 20%;
+}
+
+.detail-sub{
+    margin-left: 25%;
+}
+
+.detail-button{
+    margin-left: 300px;
+} */
+
+
+
+/* LOL */
+
+.detail-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.detail-sub {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .detail-label {
+    flex: 1 0 100%;
+    margin-bottom: 10px;
+  }
+  
+  .detail-input {
+    flex: 1 0 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .detail-label {
+      flex: 1 0 30%;
+      margin-bottom: 0;
+      /* text-align: right; */
+      padding-right: 20px;
+    }
+    
+    .detail-input {
+      flex: 1 0 70%;
+      margin-bottom: 0;
+    }
+    
+    .detail-button {
+      flex: 1 0 100%;
+    }
+    
+    .detail-plek {
+      flex: 1 0 100%;
+    }
+  }
+  
