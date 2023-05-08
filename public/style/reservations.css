@@ -1,3 +1,32 @@
+/* ======================= MAIN ======================= */
+.section-studyplace {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-studyplace article {
+    width: 100%;
+}
+
+.section-studyplace picture {
+    display: block;
+    padding: var(--u-default);
+}
+
+.section-studyplace .item-image {
+    margin: auto;
+    display: block;
+    height: 12.5em;
+}
+
+.section-studyplace h1 {
+    margin: var(--u-default) auto;
+}
+
+.section-studyplace form {
+    margin: 0 auto;
+}
+
 /* ======================= FORM ======================= */
 
 .studyplace {
@@ -56,7 +85,7 @@ fieldset {
 @media (min-width: 20em) {
 
     form.form-reservate {
-        width: 20em;
+        width: fit-content;
     }
     
     }
@@ -100,4 +129,22 @@ fieldset {
 		width: 25em;
 		display: block;
 	}
+}
+
+/* MEDIUM SCREEN 768px */
+@media (min-width: 48em) {
+
+    .section-studyplace {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .section-studyplace article {
+        grid-template-columns: 2fr 3fr;
+    }  
+
+    .section-studyplace .item-image {
+        height: 20em;
+    }
+
 }

@@ -7,6 +7,13 @@
 
 <main>
     <section class="section-studyplace">
+        <article>
+        <picture>
+			<source srcset="" />
+			<img class="item-image" src="<%= results[0].coverimages[1] %>" alt="" />
+		</picture>
+        </article>
+        <article>
         <h1>Reserveer dit exemplaar</h1>
         <form class="form-reservate" action="/reserveren" method="post">
             <fieldset>
@@ -37,10 +44,10 @@
 					name="date"
 					value="<%= locals.reservations?.date ?? '' %>"
 				/>
-				<button class="execute" type="submit" value="reserveren">reserveren</button>
+				<button class="form-button-submit" type="submit" value="reserveren">reserveren</button>
 			</fieldset>
         </form>
-        <img src="" />
+        </article>
     </section>
 </main>
 

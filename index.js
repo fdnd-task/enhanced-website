@@ -98,9 +98,25 @@ server.get("/item", async (request, response) => {
 });
 
 // Maakt een route voor de reguliere reserveringspagina
-server.get("/reserveren", (request, response) => {
+server.get("/reserveren", async (request, response) => {
 	const baseurl = "https://api.oba.fdnd.nl/api/v1";
 	const url = `${baseurl}/reserveringen`;
+
+	let uniqueQuery = "?id=";
+	let urlId = request.query.id || "|oba-catalogus|279240";
+
+	const itemUrl =
+		urlBase +
+		urlSearch +
+		uniqueQuery +
+		urlId +
+		urlKey +
+		urlOutput;
+
+	const data = await fetch(itemUrl)
+		.then((response) => response.json())
+		.catch((err) => err);
+	response.render("reserveren", data);
 
 	fetchJson(url).then((data) => {
 		response.render("reserveren", data);
