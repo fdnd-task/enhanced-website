@@ -127,7 +127,7 @@ color:red;
 }
 
 .skewed {
-    width: 42em;
+    width: 37em;
     color: white;
     display: flex;
     background: #B22222;
@@ -176,8 +176,8 @@ color:red;
 }
 
 .skewed .image {
-    width: 59%;
-    height: 17em;
+    width: 78%;
+    height: 15em;
     position: relative;
     overflow: hidden;
 }
