@@ -1,3 +1,4 @@
+import './helpers/fontawesome.js'
 
 import express from 'express'
 import compression from 'compression'
@@ -8,6 +9,7 @@ import newChecklist from './routes/new-checklist.js'
 import partners from './routes/partners.js'
 import styleguide from './routes/styleguide.js'
 import notFoundPage from './routes/not-found.js'
+import { fontawesome } from './helpers/fontawesome.js'
 
 const { env } = process
 const server = express()
@@ -23,6 +25,8 @@ server.use(helmet())
 server.use(express.static('public'))
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
+
+fontawesome(server)
 
 /* Routes */
 server.get('/', startPage)
