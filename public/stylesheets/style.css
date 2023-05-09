@@ -124,7 +124,7 @@ main{
 
 }
 
-#stick-top > img{
+#stick-top > a > img{
     margin-left: 50%;
     transform: translateX(-50%);
     width: 15em;

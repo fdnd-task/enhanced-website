@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const url = `${process.env.API_URL}/smartzones`;
+const url = `${process.env.API_URL}/smartzones?first=100`;
 const baseurl = `${process.env.API_URL}`;
 
 
@@ -9,32 +9,48 @@ const baseurl = `${process.env.API_URL}`;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  let smartUrl = url 
 
-  let size = req.query.size || '1'
-
-  
-
-  // console.log(smartUrl)
-
-  // if(req.query.town == "Amsterdam"){
-  //   fetchJson(url).then((data) => {
-
-  //     res.render('index', Object.fromEntries(Object.entries(data).filter(([word]) => word.town == "Amsterdam")));
-  
-  //   })
-  // }
   fetchJson(url).then((data) => {
 
     res.render('index', data)
-    console.log(Object.values(data))
-
-    // for (const [key, value] of Object.entries(data)) {
-    // }
 
   })
+
+
 });
 
+router.get('/filtered', function(req, res, next) {
+
+  fetchJson(url).then((data) => {
+
+    let filtered;
+    
+  
+    if(req.query){
+        filtered = Object.values(data.smartzones).filter(value => (value.town.includes(req.query.town) && value.utilization.includes(req.query.utilization) && value.size == req.query.size) || (value.town.includes(req.query.town) && value.utilization.includes(req.query.utilization)) || value.town.includes(req.query.town) || value.utilization.includes(req.query.utilization) || value.size == req.query.size )
+        res.render('index', {smartzones: filtered});
+        console.log(data.smartzones[1].utilization)
+  }
+  // else if(req.query.town == "Rotterdam"){
+  //   filtered = Object.values(data.smartzones).filter(value => value.town == "Rotterdam")
+  //   res.render('index', {smartzones: filtered});
+  //   console.log("ba")
+  // }
+  // else if(req.query.town == "Utrecht"){
+  //   filtered = Object.values(data.smartzones).filter(value => value.town == "Utrecht")
+  //   res.render('index', {smartzones: filtered});
+  //   console.log("ba")
+  // }
+  // else if(req.query.town == "Schiedam"){
+  //   filtered = Object.values(data.smartzones).filter(value => value.town == "Schiedam")
+  //   res.render('index', {smartzones: filtered});
+  //   console.log("ba")
+  // }
+  // else{
+  //   res.render('index', data)
+  // }
+  })
+});
 
 // router.post('/', (request, response) => {
   
