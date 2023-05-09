@@ -66,11 +66,52 @@
 .header-methodes h1{
   color: var(--text-color);
   font-family: var(--rigid);
+  margin-left: 2em;
 }
 
 .filter-search-container{
     margin-bottom: 2em;
+    margin-left: 5em;
 }
+
+.filter-search-container input {
+    border: none;
+    font-size: 20px;
+}
+
+.search-button{
+    border: none;
+    background-color: white;
+}
+
+.search-button i{
+    font-size: 22px;
+}
+
+.search-button i:hover{
+    color: var(--interactive-el-color);
+}
+
+
+
+.categories-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-left: -2em;
+}
+
+.categories-container ul{
+    list-style: none;
+}
+
+
+.categories-container img{
+    height: auto;
+    width: 100%;
+}
+
 
 .overviewpage-main{
     display: flex;
@@ -162,6 +203,22 @@
     height: auto;
     width: 4em;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    background-color: var(--text-color-var01);
+    color: var(--text-color-var04);
+    margin-top: 4em;
+}
+
+footer h3{
+    margin-left: 1em;
+    font-family: var(--broodtekst);
+    font-size: 16px;
+}
+
 
 
 
