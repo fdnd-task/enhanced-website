@@ -165,6 +165,19 @@ server.get(
 	}
 );
 
+// Maakt een route voor de studieplek reserveringspagina om vestiging foto's in te laden
+server.get(
+	"/reserveer-een-studieplek",
+	(request, response) => {
+		const baseurl = "https://api.oba.fdnd.nl/api/v1";
+		const url = `${baseurl}/vestigingen?clgnoumd6fttt0buw6rwa00pa`;
+
+		fetchJson(url).then((data) => {
+			response.render("reserveer-een-studieplek", data);
+		});
+	}
+);
+
 // Verstuurt de data van de studieplek naar de API
 server.post(
 	"/reserveer-een-studieplek",
