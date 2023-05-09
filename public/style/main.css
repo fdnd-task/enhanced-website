@@ -241,6 +241,10 @@ dt dd {
 }
 
 /* image and graphics */
+.item-img {
+    transform: perspective(20em) rotateY(20deg);
+    transition: var(--a-default);
+}
 
 .item-image {
     transform: perspective(20em) rotateY(8deg);
@@ -440,6 +444,10 @@ section {
     padding: 1rem;
 
 } */
+
+
+
+
 
 /* ======================= FOOTER ======================= */
 

@@ -1,6 +1,7 @@
 // Importeert basis modules uit npm
 import express from "express";
 import dotenv from "dotenv";
+import bodyParser from 'body-parser';
 
 dotenv.config();
 
@@ -15,6 +16,10 @@ server.set("port", process.env.PORT || 8000);
 
 // Activeert het .env bestand
 dotenv.config();
+
+// Handelt de formulieren af
+server.use(bodyParser.urlencoded({ extended: true }));
+server.use(bodyParser.json());
 
 // Stel in hoe express gebruikt kan worden
 server.set("view engine", "ejs");
@@ -93,12 +98,14 @@ server.get("/item", async (request, response) => {
 });
 
 // Maakt een route voor de reguliere reserveringspagina
+server.get("/reserveren", async (request, response) => {
+	const baseurl = "https://api.oba.fdnd.nl/api/v1";
+	const url = `${baseurl}/reserveringen`;
 
-server.get("/reserveren", (request, response) => {
 	let uniqueQuery = "?id=";
 	let urlId = request.query.id || "|oba-catalogus|279240";
 
-	const reserveUrl =
+	const itemUrl =
 		urlBase +
 		urlSearch +
 		uniqueQuery +
@@ -106,12 +113,43 @@ server.get("/reserveren", (request, response) => {
 		urlKey +
 		urlOutput;
 
-	const data = fetch(reserveUrl)
+	const data = await fetch(itemUrl)
 		.then((response) => response.json())
 		.catch((err) => err);
 	response.render("reserveren", data);
 
-	console.log(urlId)
+	fetchJson(url).then((data) => {
+		response.render("reserveren", data);
+	});
+});
+
+// Verstuurt de data naar de API
+server.post("/reserveren", (request, response) => {
+	const baseurl = "https://api.oba.fdnd.nl/api/v1";
+	const url = `${baseurl}/reserveringen`;
+
+	postJson(url, request.body).then((data) => {
+		let newReservation = {
+			...request.body,
+		};
+
+		console.log(data)
+
+		if (data.success) {
+			response.redirect("/");
+		} else {
+			const errormessage = `${data.message}: Mogelijk komt dit door het id die al bestaat.`;
+			const newdata = {
+				error: errormessage,
+				values: newReservation,
+			};
+
+			response.render("reserveren", newdata);
+		}
+
+		console.log(JSON.stringify(data.errors));
+		console.log(request.body);
+	});
 });
 
 // Maakt een route voor de studieplek reserveringspagina
