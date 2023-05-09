@@ -15,21 +15,23 @@
         <h2> Onze nieuwe aanwinsten</h2>
 
         <div class="wrapper">
-            <i class="material-symbols-outlined">
+            <i class=" arrow-carousel material-symbols-outlined">
                 chevron_left
             </i>
 
             <ul class="carousel">
                 <% results.forEach(result => { %>
                 <li class="book">
-                    <a href="">
-                        <img src="<%= result.coverimages %> " alt="result.titles[0]">
+                    <a href="" class="book-a">
+                        <picture class="book-picture">
+                            <img src="<%= result.coverimages %> " alt="result.titles[0]">
+                        </picture>
                     </a>
                 </li>
                 <% }); %>
             </ul>
             
-            <i class="material-symbols-outlined">
+            <i class=" arrow-carousel material-symbols-outlined">
                 chevron_right
             </i>
         </div>

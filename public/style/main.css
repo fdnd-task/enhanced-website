@@ -371,32 +371,49 @@ main>section:nth-of-type(1) p {
 
 .wrapper i:first-child{
     left: 0;
+    margin-right: calc( 40px * -1);
 }
 
 .wrapper i:last-child{
     right: 0;
+    margin-left: calc( 40px * -1);
 }
 
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
     cursor: pointer;
-    gap: 1.5em;
+    gap: .7em;
     overflow: auto;
     margin: 0 1.5em;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
 }
 
 .carousel .book{
-    display: flex;
-    align-items: center;
-    background-color: #58ab3c;
+    width: 8.5em;
 }
 
-.carousel > img{
-    width: auto;
-    height: 9em;
+.book-a{
+    display: flex;
+    perspective: 1000px;
+}
+
+.book-picture{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    transform: rotateY(-20deg);
+}
+
+.carousel img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: .7;
     object-fit: cover;
-    aspect-ratio: 7/9;
 }
 
 /*============ CSS ACTIVITEITEN EN CURSUS TIJDELIJK==========*/
@@ -423,11 +440,6 @@ section {
     padding: 1rem;
 
 } */
-
-
-
-
-
 
 /* ======================= FOOTER ======================= */
 
