@@ -391,7 +391,6 @@ main>section:nth-of-type(1) p {
     overflow: auto;
     margin: 0 2.5em;
     padding: 1.5em;
-    border-bottom: 1px solid var(--c-accent-75);
 }
 
 .carousel::-webkit-scrollbar{
@@ -428,6 +427,17 @@ main>section:nth-of-type(1) p {
 
 .carousel img:hover{
     box-shadow: 3px 5px 20px -15px rgb(0, 0, 0);
+}
+
+/* section combo selection  */
+
+section:nth-of-type(3) img{
+    width: 100%;
+    max-width: 20em;
+}
+
+section:nth-of-type(3) p{
+    padding-top: 1em;
 }
 
 /*============ CSS ACTIVITEITEN EN CURSUS TIJDELIJK==========*/
@@ -574,6 +584,17 @@ footer {
 
     main>section:nth-of-type(3) h2 {
         text-align: center;
+    }
+
+    main>section:nth-of-type(3) article {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main>section:nth-of-type(3) article p,  section:nth-of-type(3) img {
+        max-width: 20em;
     }
 
     /* ========= FORM ========= */
