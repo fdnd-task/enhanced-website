@@ -11,7 +11,7 @@ const content = {
 			{
 				title: 'Titel',
 				description: 'Omschrijving van het voorbeeld',
-				code: hljs.highlight("Hier komt code", { language: 'xml' })
+				code: "<p>Hier komt code</p>"
 			}
 		]
 	},
@@ -22,37 +22,37 @@ const content = {
 			{
 				title: 'Kop 1',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<h1>Kop 1</h1>", { language: 'xml' })
+				code: "<h1>Kop 1</h1>"
 			},
 			{
 				title: 'Kop 2',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<h2>Kop 2</h2>", { language: 'xml' })
+				code: "<h2>Kop 2</h2>"
 			},
 			{
 				title: 'Kop 3',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<h3>Kop 3</h3>", { language: 'xml' })
+				code: "<h3>Kop 3</h3>"
 			},
 			{
 				title: 'Kop 4',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<h4>Kop 4</h4>", { language: 'xml' })
+				code: "<h4>Kop 4</h4>"
 			},
 			{
 				title: 'Kop 5',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<h5>Kop 5</h5>", { language: 'xml' })
+				code: "<h5>Kop 5</h5>"
 			},
 			{
 				title: 'Kop 5',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<h6>Kop 6</h6>", { language: 'xml' })
+				code: "<h6>Kop 6</h6>"
 			},
 			{
 				title: 'Paragraaf',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<p>Paragraaf</p>", { language: 'xml' })
+				code: "<p>Paragraaf</p>"
 			},
 		]
 	},
@@ -63,42 +63,42 @@ const content = {
 			{
 				title: 'Primaire knop',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<button class=\"button\">\n\t<span class=\"button__icon\"><i class=\"fa fa-check\" ></i></span>\n\t<span class=\"button__label\">Een knop</span>\n</button>", { language: 'xml' })
+				code: "<button class=\"button\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Secondaire knop',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<button class=\"button button--secondary\">\n\t<span class=\"button__icon\"><i class=\"fa fa-check\" ></i></span>\n\t<span class=\"button__label\">Een knop</span>\n</button>", { language: 'xml' })
+				code: "<button class=\"button button--secondary\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Plain knop',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<button class=\"button button--plain\">\n\t<span class=\"button__icon\"><i class=\"fa fa-check\" ></i></span>\n\t<span class=\"button__label\">Een knop</span>\n</button>", { language: 'xml' })
+				code: "<button class=\"button button--plain\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Waarschuwings knop',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<button class=\"button button--warning\">\n\t<span class=\"button__icon\"><i class=\"fa fa-check\" ></i></span>\n\t<span class=\"button__label\">Een knop</span>\n</button>", { language: 'xml' })
+				code: "<button class=\"button button--warning\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Gevaar knop',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<button class=\"button button--danger\">\n\t<span class=\"button__icon\"><i class=\"fa fa-check\" ></i></span>\n\t<span class=\"button__label\">Een knop</span>\n</button>", { language: 'xml' })
+				code: "<button class=\"button button--danger\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Info knop',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<button class=\"button button--help\">\n\t<span class=\"button__icon\"><i class=\"fa fa-check\" ></i></span>\n\t<span class=\"button__label\">Een knop</span>\n</button>", { language: 'xml' })
+				code: "<button class=\"button button--help\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Success knop',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<button class=\"button button--success\">\n\t<span class=\"button__icon\"><i class=\"fa fa-check\" ></i></span>\n\t<span class=\"button__label\">Een knop</span>\n</button>", { language: 'xml' })
+				code: "<button class=\"button button--success\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Help knop',
 				description: 'Dit is een voorbeeld',
-				code: hljs.highlight("<button class=\"button button--info\">\n\t<span class=\"button__icon\"><i class=\"fa fa-check\" ></i></span>\n\t<span class=\"button__label\">Een knop</span>\n</button>", { language: 'xml' })
+				code: "<button class=\"button button--info\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 		]
 	}
