@@ -341,10 +341,12 @@ button:focus-visible {
 /* ======================= MAIN ======================= */
 main {
     margin: 2em 0;
+    width: 90%;
+    margin: 0 auto;
 }
 
 main>section {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -431,9 +433,20 @@ main>section:nth-of-type(1) p {
 
 /* section combo selection  */
 
+section:nth-of-type(3){
+    padding: 1em 0;
+}
+
 section:nth-of-type(3) img{
     width: 100%;
     max-width: 20em;
+}
+
+section:nth-of-type(4) img{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 2em 0;
 }
 
 section:nth-of-type(3) p{
@@ -478,7 +491,6 @@ section {
 
 footer {
     background: #111;
-    opacity: 0.6;
     background-image: url("/public/assets/Amsterdam.webp");
     padding: 70px 0;
     z-index: 1;
@@ -577,6 +589,7 @@ footer {
     }
 
     main>section:nth-of-type(3) {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1.5em;
@@ -668,6 +681,10 @@ footer {
 
     /* ========= MAIN ========= */
 
+    main>section:nth-of-type(1) p {
+        max-width: 42em;
+    }
+
     .search-container {
         height: 7em;
         background-size: 50vw;
@@ -676,7 +693,15 @@ footer {
     .search-form>input {
         width: 20em;
     }
-}
+
+    main>section:nth-of-type(3) {
+        width: 100%;
+    }
+
+    .wrapper .carousel{
+        margin: 0 1.5em;
+        padding: .5em;
+    }
 
 /* Extra Large screen 1400px */
 @media (min-width:88em) {
@@ -717,5 +742,7 @@ footer {
     .search-form>input {
         width: 18em;
     }
+
+}
 
 }
