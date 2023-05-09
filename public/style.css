@@ -76,6 +76,45 @@
     margin-left: 5em;
 }
 
+.filter-search-container input {
+    border: none;
+    font-size: 20px;
+}
+
+.search-button{
+    border: none;
+    background-color: white;
+}
+
+.search-button i{
+    font-size: 22px;
+}
+
+.search-button i:hover{
+    color: var(--interactive-el-color);
+}
+
+
+
+.categories-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-left: -2em;
+}
+
+.categories-container ul{
+    list-style: none;
+}
+
+
+.categories-container img{
+    height: auto;
+    width: 100%;
+}
+
+
 .overviewpage-main{
     display: flex;
     flex-direction: column;
