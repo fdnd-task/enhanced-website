@@ -58,47 +58,47 @@ const content = {
 	},
 	knoppen: {
 		title: 'Knoppen',
-		intro: 'Welkom bij Knoppen',
+		intro: 'Welkom bij Knoppen. Hier kun je voorbeelden vinden van de verschillende knoppen die je kunt gebruiken.',
 		examples: [
 			{
 				title: 'Primaire knop',
-				description: 'Dit is een voorbeeld',
+				description: 'Dit is de knop die je normaal gebruikt met de primaire kleur.',
 				code: "<button class=\"button\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Secondaire knop',
-				description: 'Dit is een voorbeeld',
+				description: 'Dit is de knop die je gebruikt wanneer je wilt dat die minder opvalt.',
 				code: "<button class=\"button button--secondary\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Plain knop',
-				description: 'Dit is een voorbeeld',
+				description: 'Dit is een knop die een neutrale kleur heeft.',
 				code: "<button class=\"button button--plain\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Waarschuwings knop',
-				description: 'Dit is een voorbeeld',
+				description: 'Dit is een knop die je gebruikt wanneer je wilt waarschuwen voor de actie die je gaat uitvoeren.',
 				code: "<button class=\"button button--warning\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Gevaar knop',
-				description: 'Dit is een voorbeeld',
+				description: 'Dit is een knop die je gebruikt wanneer je een onomkeerbare actie gaat uitvoeren.',
 				code: "<button class=\"button button--danger\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Info knop',
-				description: 'Dit is een voorbeeld',
-				code: "<button class=\"button button--help\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
+				description: 'Dit is een knop die je gebruikt ',
+				code: "<button class=\"button button--info\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
 				title: 'Success knop',
-				description: 'Dit is een voorbeeld',
+				description: 'Dit is een knop die je gebruikt wanneer je positieve actie gaat uitvoeren.',
 				code: "<button class=\"button button--success\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 			{
-				title: 'Help knop',
-				description: 'Dit is een voorbeeld',
-				code: "<button class=\"button button--info\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
+				title: 'Hulp knop',
+				description: 'Dit is een knop die je gebruikt wanneer je de aandacht naar deze knop wilt trekken.',
+				code: "<button class=\"button button--help\">\n\t<span class=\"button__icon\"><%- icon(\"check\") %></span>\n\t<span class=\"button__label\">Knop</span>\n</button>"
 			},
 		]
 	}
