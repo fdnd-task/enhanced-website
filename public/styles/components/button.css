@@ -3,6 +3,7 @@
   font-size: 1rem;
   display: inline-flex;
   flex-flow: row nowrap;
+  align-items: center;
   gap: 0.5em;
   background: var(--color);
   border: 1px solid var(--color);
