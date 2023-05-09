@@ -389,8 +389,9 @@ main>section:nth-of-type(1) p {
     cursor: pointer;
     gap: .7em;
     overflow: auto;
-    margin: 0 1.5em;
-    scrollbar-width: none;
+    margin: 0 2.5em;
+    padding: 1.5em;
+    border-bottom: 1px solid var(--c-accent-75);
 }
 
 .carousel::-webkit-scrollbar{
@@ -409,15 +410,24 @@ main>section:nth-of-type(1) p {
 .book-picture{
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 100%;
+    flex-basis: 110%;
     transform: rotateY(-20deg);
+    transition: all .2s ease-in-out;
+}
+
+.book-picture:hover{
+    transform: scale(1.1);
 }
 
 .carousel img{
     width: 100%;
     height: auto;
-    aspect-ratio: .7;
-    object-fit: cover;
+    aspect-ratio: 1 / 1.5;
+    box-shadow: 3px 5px 20px -10px #333;
+}
+
+.carousel img:hover{
+    box-shadow: 3px 5px 20px -15px rgb(0, 0, 0);
 }
 
 /*============ CSS ACTIVITEITEN EN CURSUS TIJDELIJK==========*/
@@ -602,6 +612,9 @@ footer {
 
     /* ========= MAIN ========= */
 
+    .wrapper {
+        max-width: 100%;
+    }
     /* ========= FOOTER========= */
 
     .footer-col {
