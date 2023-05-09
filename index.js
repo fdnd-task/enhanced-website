@@ -247,7 +247,19 @@ server.get("/cursussen", (request, response) => {
 	});
 });
 
-//Maakt route voor de Over Ons pagina
+//Maakt route voor de Vestigingen pagina
+server.get(
+	"/vestigingen",
+	(request, response) => {
+		const baseurl = "https://api.oba.fdnd.nl/api/v1";
+		const url = `${baseurl}/vestigingen`;
+
+		fetchJson(url).then((data) => {
+			response.render("vestigingen", data);
+		});
+	}
+);
+
 
 /**
  * fetchJson() is a wrapper for the experimental node fetch api. It fetches the url
