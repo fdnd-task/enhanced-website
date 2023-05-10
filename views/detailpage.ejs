@@ -10,7 +10,7 @@
 
 <div class="nav">
     <a href="#beschrijving">Beschrijving</a>
-    <a href="#stappenplanbutton">Stappenplan</a>
+    <a href="#stappen">Stappenplan</a>
     <a href="#categorieen">Categorieën</a>
     <a href="#voorbeelden">Voorbeelden</a>
 </div>
@@ -22,13 +22,10 @@
         <%- method.description.html %>  
         <img src="<%- method.template.url %>" alt="Method Template">  
     </section>
-    <div class="buttondeel">
-     <button id="stappenplanbutton">
-        <h2>Stappenplan</h2>
-        <img src="/pijl-hexagon-naar-beneden.svg" alt="Pijl naar beneden">
-     </button>
-    </div>
-    <div id="stappen" class="stappen">
+
+    
+    <h2>Stappenplan</h2>
+    <section id="stappen">
         <ol>
             <% method.steps.forEach(step => { %>
                 <li>
@@ -40,7 +37,8 @@
             <% }) %>
         </ol>
             
-    </div>
+    </section>
+    <button class=""></button>
     <section id="categorieen">
         <% method.categories.forEach(category => { %>
             <ul>
