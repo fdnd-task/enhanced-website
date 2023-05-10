@@ -14,3 +14,19 @@
     <script src="/client-side.js" defer></script>
   </head>
   <body>
+
+    <% try { if (container) { %>
+      <div class="container">
+    <% } } catch (error) {  %>
+      <% return %>
+    <% } %>
+
+    <header>
+      <a href=""><img src="" alt="" class="logo"></a>
+      <section class="right">
+        <button><img src="" alt="" class="search"></button>
+        <a href="" class="over">Over</a>
+        <a href="" class="blog">Blog</a>
+        <button><img src="" alt="" class="profiel"></button>
+      </section>
+    </header>

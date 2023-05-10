@@ -53,8 +53,156 @@
     --rigid: rigid-square, sans-serif;
     --broodtekst: "yrsa", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 
+    /* index variables */
+    --hexagon-radius: 3rem;
+    --hexagon-width: 16rem;
+    --hexagon-height: 18rem;
+    --hexagon-padding: 1rem;
+
+    --card-border-width: 0.3rem;
+
+    --line-gap: -3rem;
+
 }
 
+
+
+
+/* index styling */
+
+body.index {
+  background-color: white;
+}
+
+main.index {
+  /* dit ziet er ingewikkeld uit, maar dit is de layout nodig voor een hexagon patroon */
+  display: flex;
+  flex-direction: column;
+  gap: var(--line-gap);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(var(--hexagon-width) * 3.5);
+  background-color: var(--interactive-el-color-var03);
+}
+
+section.line-1 {
+  width: calc(var(--hexagon-width) * 3.5);
+  height: var(--hexagon-height);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 0.5fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+section.line-2 {
+  width: calc(var(--hexagon-width) * 3.5);
+  height: var(--hexagon-height);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 0.5fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: calc(var(--line-gap));
+}
+
+.hexagon-dark {
+  display: block;
+  margin-left: calc(-0.5 * var(--hexagon-radius));
+  margin-right: calc(-0.5 * var(--hexagon-radius));
+  margin-top: calc(-0.5 * var(--hexagon-radius));
+  margin-bottom: calc(-0.5 * var(--hexagon-radius));
+  width: calc(var(--hexagon-width) + var(--hexagon-radius));
+  height: calc(var(--hexagon-height) + var(--hexagon-radius));
+  background-color: var(--interactive-el-color-var01);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 1;
+}
+
+.hexagon-light {
+  display: block;
+  margin: 0;
+  width: var(--hexagon-width);
+  height: var(--hexagon-height);
+  background-color: var(--interactive-el-color-var03);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 0;
+}
+
+.hexagon-half-left {
+  display: block;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(100% 0, 100% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon-half-right {
+  display: block;
+  -webkit-clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+}
+
+.hexagon-half-dark-left {
+  width: calc(0.5 * (var(--hexagon-width) + var(--hexagon-radius)));
+  height: calc(var(--hexagon-height) + var(--hexagon-radius));
+  margin-left: calc(-0.5 * var(--hexagon-radius));
+  margin-top: calc(-0.5 * var(--hexagon-radius));
+  margin-bottom: calc(-0.5 * var(--hexagon-radius));
+  background-color: var(--interactive-el-color-var01);
+  z-index: 1;
+}
+
+.hexagon-half-light-right {
+  width: calc(0.5 * var(--hexagon-width));
+  height: var(--hexagon-height);
+  margin: 0;
+  background-color: var(--interactive-el-color-var03);
+  z-index: 0;
+}
+
+.label-card {
+  margin: auto;
+  left: calc(50% - (width / 2));
+  top: calc(50% - (height / 2));
+  background-color: var(--background-color);
+  width: calc(var(--hexagon-width) - var());
+}
+
+.card-border {
+  margin: calc((var(--hexagon-padding) * 2) - var(--card-border-width)) auto;
+  padding-left: var(--card-border-width);
+  padding-top: var(--card-border-width);
+  width: calc(var(--card-border-width) + (var(--hexagon-width) - var(--hexagon-padding)));
+  height: calc(var(--card-border-width) + (var(--hexagon-height) - var(--hexagon-padding)));
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: black;
+}
+
+.content-card {
+  left: calc(50% - (width / 2));
+  top: calc(50% - (height / 2));
+  width: calc(var(--hexagon-width) - var(--hexagon-padding));
+  height: calc(var(--hexagon-height) - var(--hexagon-padding));
+  display: flex;
+  flex-direction: column;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: var(--interactive-el-color-var04);
+  border-radius: 5px;
+}
+
+.content-card>h3 {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.5rem;
+}
 
 /* overviewpage styling */
 
@@ -76,11 +224,12 @@
 }
 
 .overviewpage-header a:hover{
-    color: var(--interactive-el-color);
+    color:var(--interactive-el-color);
 }
 
 .links {
     margin-right: 3em;
+
 }
 
 
@@ -174,7 +323,7 @@ hr{
     width: 100%;
     border-radius: 6px;
     -webkit-box-shadow: 12px 9px 11px -6px rgba(0, 0, 0, 0.37);
-        box-shadow: 12px 9px 11px -6px rgba(0, 0, 0, 0.37);
+    box-shadow: 12px 9px 11px -6px rgba(0, 0, 0, 0.37);
 }
 
 
