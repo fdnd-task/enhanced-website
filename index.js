@@ -81,7 +81,7 @@ server.get("/", (request, response) => {
 // Maakt een route voor de detailpagina
 server.get("/item", async (request, response) => {
 	let uniqueQuery = "?id=";
-	let urlId = request.query.id || "|oba-catalogus|279240";
+	let urlId = request.query.id || "";
 
 	const itemUrl =
 		urlBase +

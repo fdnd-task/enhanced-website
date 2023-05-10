@@ -22,9 +22,9 @@
             <ul class="carousel">
                 <% results.forEach(result => { %>
                 <li class="book">
-                    <a href="/item?<%= results[0].id %>" class="book-a">
+                    <a href="/item?id=<%= result.id %>" class="book-a">
                         <picture class="book-picture">
-                            <img src="<%= result.coverimages %> " alt="result.titles[0]">
+                            <img src="<%= result.coverimages %> " alt="<%= result.titles[0] %>">
                         </picture>
                     </a>
                 </li>
