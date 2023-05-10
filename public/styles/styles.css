@@ -186,6 +186,16 @@ body > main {
 .body-footer {
   padding: 1rem var(--body-padding);
   background: var(--primary-color);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.body-footer > section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
 }
 
 @media (min-width: 36rem) {
