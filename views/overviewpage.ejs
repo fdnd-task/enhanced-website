@@ -1,11 +1,33 @@
-<!-- Er staat hier container:false, omdat ik voor een bepaalde fuctionaliteit  -->
+<!-- Er staat hier container:false, omdat deze door index verwacht wordt. Dit is nodig voor bepaalde functionaliteit in de index pagina. -->
 <%- include('./head', {container:false}) %>
 
-<main>
-  <section class="filter-container">
-    <div class="stripe"></div>
-  </section>
 
+<header class="header-methodes">
+  <h1>Tekenmethodes</h1>
+
+ <section class="filter-search-container">
+      <div class="searchbar">
+      <label class="label-search" for="site-search"></label>
+      <form method="get" action="" class="search-form"></form>
+         <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input class="searchBar" type="search" id="site-search" name="q"  placeholder="zoeken..."/>
+      </form>
+      <hr>
+     </div>
+         
+     <div class="categories-container">
+      <ul><li><img src="/Communiceren-en-presenteren-icon.png" alt=".."></li></ul>
+      <ul><li><img src="/Creatief-denken-icon.png" alt=".."></li></ul>
+      <ul><li><img src="/Leren-over-anderen-icon.png" alt=".."></li></ul>
+      <ul><li><img src="/Leren-over-jezelf-en-reflecteren-icon.png" alt=".."></li></ul>
+      <ul><li><img src="/onderzoeken-en-begrijpen-icon.png" alt=".."></li></ul>
+      <ul><li><img src="/organiseren-en-plannen-icon.png" alt=".."></li></ul>
+     </div>
+  </section>
+</header>
+
+
+<main class="overviewpage-main">
 
     <section class="method-container">
         
@@ -13,21 +35,34 @@
         <article class="method-card <%= method.categories[0].title.replaceAll(" ", "-") %>">
           <a href="./detailpage/<%= method.slug %>?id=<%= method.id %>">
            <% if (method.template?.url) { %> 
-            <img class="method-img" src="<%= method.template?.url %>" alt="<%= method.title %>">
+            <img class="method-img" src="<%= method.template?.url %>" loading="lazy" alt="<%= method.title %>">
            <% } else { %>
             <img  class="method-img" src="/placeholder.png" alt="Placeholder" />
            <% } %>
+           <div class="method-name"><%= method.title %><img class="arrow" src="/arrows-left.png" loading="lazy" alt="pijltjes naar rechts"></div>
          </a>
         </article> 
       <% }) %>
     
     </section>
 
+  <section class="load-more">
+    <button class="load-more-button">Laad Meer</button>
+ </section>
+
+
+  <section class="add-method-text">
+    <h2>Wil je zelf een tekenmethode toevoegen aan onze verzameling?</h2>
+    <img src="/pen-potlood.png" alt="pen en potlood illustratie">
+ </section>
+
 </main>
 
 
 
-
-
+<footer>
+   <h3>Visual Thinking in het HBO</h3>
+  <h3>© Charley Muhren, 2023</h3>
+</footer>
 
 <%- include('./foot') %>
