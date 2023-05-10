@@ -1,10 +1,10 @@
-header {
+body > header {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-header .logo-container {
+body > header .logo-container {
   padding: 0.5rem var(--body-padding);
   background-color: #fff;
   z-index: 3;
@@ -14,13 +14,13 @@ header .logo-container {
   align-items: center;
 }
 
-header .logo {
+body > header .logo {
   width: 100%;
   max-width: 193px;
   padding: 0.5rem;
 }
 
-header .menu {
+body > header .menu {
   border: none;
   background-color: var(--primary-color);
   color: #fff;
@@ -31,7 +31,7 @@ header .menu {
   cursor: pointer;
 }
 
-header .nav-js-style {
+body > header .nav-js-style {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -44,36 +44,40 @@ header .nav-js-style {
   );
 }
 
-header .nav-active {
+body > header .nav-active {
   transform: translate(0, 100%);
 }
 
-header .nav-container {
+body > header .nav-container {
   z-index: 2;
 }
 
-header nav {
+body > header nav {
   position: relative;
   background-color: white;
 }
 
-header .nav-design {
+body > header nav .menu__menu-item {
+  padding: 0.5rem 1rem;
+}
+
+body > header .nav-design {
   margin: 1rem var(--body-padding);
   border-radius: 6px;
 }
 
-header ul {
+body > header ul {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.5rem 0;
 }
 
-header ul li {
+body > header ul li {
   list-style-type: none;
 }
 
-header ul li a {
+body > header ul li a {
   text-decoration: none;
   color: black;
   width: 100%;
@@ -81,11 +85,11 @@ header ul li a {
   display: block;
 }
 
-header ul li a:is(:hover, :focus) {
+body > header ul li a:is(:hover, :focus) {
   color: var(--primary-color);
 }
 
-header ul li button {
+body > header ul li button {
   border: none;
   background: none;
   cursor: pointer;
@@ -96,7 +100,7 @@ header ul li button {
   font-family: Regular, san-serif;
 }
 
-header .search-bar {
+body > header .search-bar {
   position: absolute;
   bottom: 0;
   transform: translate(0, 150%);
@@ -108,24 +112,24 @@ header .search-bar {
   font-family: Regular, san-serif;
 }
 
-header .search-bar-js {
+body > header .search-bar-js {
   transform: translate(0, 200%);
 }
 
-header .search-bar-active {
+body > header .search-bar-active {
   transform: translate(0, 150%);
 }
 
-header .curve {
+body > header .curve {
   height: 3rem;
   display: none;
 }
 
-header .hero {
+body > header .hero {
   height: 100vh;
   height: 100svh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/vervoerregio-amsterdam-header.jpg");
+    url("../images/vervoerregio-amsterdam-body > header.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -137,7 +141,7 @@ header .hero {
   max-height: 1080px;
 }
 
-header .hero .hero-title {
+body > header .hero .hero-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,13 +149,13 @@ header .hero .hero-title {
   padding: 4rem 1rem 4rem 1rem;
 }
 
-header .bottom-bar {
+body > header .bottom-bar {
   width: 100%;
   /* bottom: 0;
   position: absolute; */
 }
 
-header .bottom-bar-verloop {
+body > header .bottom-bar-verloop {
   height: 2em;
   background: rgb(185, 0, 95);
   background: linear-gradient(
@@ -161,7 +165,7 @@ header .bottom-bar-verloop {
   );
 }
 
-header .bottom-bar-box {
+body > header .bottom-bar-box {
   height: 4em;
   background: rgb(185, 0, 95);
   background: linear-gradient(
@@ -172,7 +176,7 @@ header .bottom-bar-box {
 }
 
 @media screen and (min-width: 450px) {
-  header nav ul {
+  body > header nav ul {
     flex-direction: row;
     justify-content: space-between;
     padding: 0.3rem 0;
@@ -180,25 +184,24 @@ header .bottom-bar-box {
 }
 
 @media screen and (min-width: 770px) {
-  header {
+  body > header {
     flex-direction: row;
   }
 
-  header .logo-container {
-    padding: 0.5rem 1rem 0.5rem var(--body-padding) ;
-
+  body > header .logo-container {
+    padding: 0.5rem 1rem 0.5rem var(--body-padding);
   }
 
-  header .logo {
+  body > header .logo {
     max-width: none;
     width: 120%;
   }
 
-  header .menu {
+  body > header .menu {
     display: none;
   }
 
-  header .nav-container {
+  body > header .nav-container {
     position: relative;
     height: 100%;
     width: 100%;
@@ -206,28 +209,28 @@ header .bottom-bar-box {
     transform: translate(0);
   }
 
-  header nav {
+  body > header nav {
     margin: 0;
     border-radius: 0;
     padding: 0.3rem 1rem 0.3rem 1rem;
     padding-right: var(--body-padding);
   }
 
-  header .nav-design {
+  body > header .nav-design {
     margin: 0;
     border-radius: 0;
   }
 
-  header nav ul {
+  body > header nav ul {
     justify-content: flex-end;
     padding: 0;
   }
 
-  header nav ul li {
+  body > header nav ul li {
     padding: 0;
   }
 
-  header .search-bar {
+  body > header .search-bar {
     left: auto;
     transform: translate(0, 150%);
     max-width: 350px;
@@ -235,7 +238,8 @@ header .bottom-bar-box {
     bottom: 0;
   }
 
-  header .curve {
+  body > header .curve {
     display: block;
   }
 }
+
