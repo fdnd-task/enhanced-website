@@ -168,12 +168,13 @@ body > main {
   aspect-ratio: 2/1;
   background: transparent;
   border-top-left-radius: 2.5em;
-  box-shadow: -2.5em -4.25em 0 white;
+  box-shadow: 0 -4.25em 0 white;
   z-index: 1;
 }
 
 .body-header__image > svg {
   height: 3rem;
+  z-index: 2;
 }
 
 .body-header__nav {
