@@ -1,27 +1,44 @@
-h1 {
+h1,
+.h1 {
   font-size: 2.25rem;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 2rem;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 1.5rem;
 }
 
-h4 {
+h4,
+.h4 {
   font-size: 1.25rem;
 }
 
-h5 {
+h5,
+.h5 {
   font-size: 1.125rem;
 }
 
-h6 {
+h6,
+.h6 {
   font-size: 1rem;
 }
 
-p {
+p,
+.p {
   font-size: 1rem;
 }
+
+.h1--white,
+.h2--white,
+.h3--white,
+.h4--white,
+.h5--white,
+.h6--white {
+  color: white;
+}
+

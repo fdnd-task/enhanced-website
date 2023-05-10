@@ -18,6 +18,8 @@
 .menu__menu-item {
   /* padding: 1rem; */
   background-color: white;
+  color: black;
+  text-decoration: none;
   display: flex;
   flex-flow: row nowrap;
   gap: 0.5rem;
