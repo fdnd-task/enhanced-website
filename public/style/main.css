@@ -311,7 +311,9 @@ button:focus-visible {
 /* Amsterdam background / searchbar */
 .search-container {
     background-image: url("/assets/index-images/Amsterdam.jpg");
-    background-image: image-set(url('/assets/index-images/Amsterdam.avif') type('image/avif'), url('/assets/index-images/Amsterdam.jpg')type('image/jpeg'));
+    background-image: image-set(
+                        url('/assets/index-images/Amsterdam.avif') type('image/avif'), 
+                        url('/assets/index-images/Amsterdam.webp') type('image/webp'));
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 76%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -371,31 +373,13 @@ main>section:nth-of-type(1) p {
     margin: 0 auto;
 }
 
-.wrapper i{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.wrapper i:first-child{
-    left: 0;
-    margin-right: calc( 40px * -1);
-}
-
-.wrapper i:last-child{
-    right: 0;
-    margin-left: calc( 40px * -1);
-}
-
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
     cursor: pointer;
-    gap: .7em;
+    gap: 1.7em;
     overflow: auto;
-    margin: 0 2.5em;
-    padding: 1.5em;
+    padding: 1.5em 0;
 }
 
 .carousel::-webkit-scrollbar{
@@ -494,7 +478,6 @@ section {
 
 footer {
     background: #111;
-    background-image: url("/public/assets/Amsterdam.webp");
     padding: 70px 0;
     z-index: 1;
 }
