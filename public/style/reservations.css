@@ -9,8 +9,10 @@
 }
 
 .section-studyplace picture {
+    width: fit-content;
     display: block;
     padding: var(--u-default);
+    margin: auto;
 }
 
 .section-studyplace .item-image {
@@ -66,6 +68,7 @@ fieldset {
 }
 
 .form-button-submit {
+    width: fit-content;
 	background-color: var(--c-accent-100);
 	color: var(--c-default);
 	margin: var(--u-default) 0;
@@ -80,6 +83,12 @@ fieldset {
 .form-button-submit:focus {
     background-color: red;
 }   
+
+/* Image */
+
+.reservate-image {
+    border-radius: var(--u-small);
+}
 
 /* EXTRA SMALL SCREEN 560px */
 @media (min-width: 20em) {
