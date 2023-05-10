@@ -1,0 +1,25 @@
+<%- include('./partials/head.ejs') %>
+
+<section class="detail-main">
+    <h1><%= vestigingen[0].naam %></h1>
+    <p><%= vestigingen[0].adres %></p>
+    <div>
+        <img class="detail-image" src="<%= vestigingen[0].foto.originalAsWebP %>" alt="Roelof image">
+    </div>
+    
+</section>
+
+<section class="detail-section">
+    <h1 class="detail-h1">Reserveer hier je studieplek!</h1>
+    <article class="detail-sub">
+      <p class="detail-label">Datum:</p>
+      <input type="date" class="detail-input">
+      <p class="detail-label">Aantal personen:</p>
+      <input type="number" class="detail-input">
+      <button class="detail-button">Reserveer</button>
+      <p class="detail-plek">Plek beschikbaar: 10</p>
+    </article>
+  </section>
+
+
+<%- include('./partials/foot.ejs') %>
