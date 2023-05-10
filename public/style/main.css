@@ -242,21 +242,12 @@ dt dd {
 
 /* image and graphics */
 
-<<<<<<< HEAD
 .item-img {
     transform: perspective(20em) rotateY(20deg);
     transition: var(--a-default);
 }
 
 .item-img:hover {
-=======
-.item-image {
-    transform: perspective(20em) rotateY(8deg);
-    transition: var(--a-default);
-}
-
-.item-image:hover {
->>>>>>> main
     transform: perspective(20em) rotateY(0deg);
 }
 
@@ -384,35 +375,24 @@ main>section:nth-of-type(1) p {
 }
 
 
-/*============ CSS ACTIVITEITEN EN CURSUS TIJDELIJK==========*/
+/*============ CSS ACTIVITEITEN EN CURSUS CAROUSEL==========*/
 
-<<<<<<< HEAD
-=======
-/* article {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-main {
+.activiteit-cursus {
+    width: 80%;
     margin: 0 auto;
-    align-items: center;
+    display: flex;
+
+    flex-direction: row;
+
 }
 
-section {
-
-    max-width: 100%;
-    height: auto;
-    display: inline-flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-
-} */
-
->>>>>>> main
-
+.carousel-item {
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 216, 216);
+    border-radius: 5px;
+}
 
 
 

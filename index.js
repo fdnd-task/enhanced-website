@@ -196,6 +196,19 @@ server.get("/cursussen", (request, response) => {
 	});
 });
 
+
+// Carousel JS VOOR Activiteiten en Cursussen
+
+
+
+
+
+
+
+
+
+
+
 //Maakt route voor de Over Ons pagina
 
 /**
@@ -212,12 +225,12 @@ export async function fetchJson(url, payload = {}) {
 
 export async function postJson(url, body) {
 	return await fetch(url, {
-		method: "post",
-		body: JSON.stringify(body),
-		headers: {
-			"Content-Type": "application/json",
-		},
-	})
+			method: "post",
+			body: JSON.stringify(body),
+			headers: {
+				"Content-Type": "application/json",
+			},
+		})
 		.then((response) => response.json())
 		.catch((error) => error);
 }

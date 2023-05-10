@@ -6,12 +6,14 @@
     <%results.forEach(result => { %>
   
         <article>
+          <div class="carousel-item">
           <img src="<%= result.coverimages %>" alt="activiteit-cursus">
-          <h4> <%= result.titles[0] %></h4>
-          <% if (result.authors) { %>
+         <h4> <%= result.titles[0] %></h4>
+          <!-- <% if (result.authors) { %>
           <h5> <%= result.authors %></h5>
           <% } %>
-          <p> <%= result.summaries[0] %></p>
+          <p> <%= result.summaries[0] %></p> --> 
+        </div>
         </article>
     
     <% }) %>
@@ -19,5 +21,7 @@
 
     
 </section>
+
+
 
 <%- include('./partials/foot.ejs') %>
