@@ -368,6 +368,10 @@ main>section:nth-of-type(1) p {
     max-width: 30em;
 }
 
+.succes {
+    padding: var(--u-default);
+}
+
 /* Slidebar */
 
 .wrapper {
