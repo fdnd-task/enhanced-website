@@ -1,85 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('./partials/head.ejs') %>
   <head>
-    <meta charset="UTF-8" />
     <title>Studieplek gereserveerd</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-      }
-
-      .container {
-        min-width: 300px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        align-items: center;
-        align-content: center;
-      }
-
-      h1 {
-        font-size: 32px;
-        margin-bottom: 20px;
-        text-align: center;
-        color: rgb(255, 0, 0);
-      }
-
-      h2 {
-        
-        margin-bottom: 10px;
-        color: rgb(0, 0, 0);
-      }
-      h3 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        text-align: center;
-        color: #333;
-      }
-
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      li {
-        font-size: 18px;
-        margin-bottom: 10px;
-        color: #666;
-      }
-
-      .btn {
-        display: inline-block;
-        margin: 20px 0;
-        padding: 10px 20px;
-        background-color: #ff0000;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: all 0.3s ease-in-out;
-      }
-
-      .btn:hover {
-        background-color: #000000;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-      }
-    </style>
   </head>
-  <body>
-    <div class="container">
-      <h1>Goed nieuws!</h1>
-      <h2>Het is u gelukt om uw studieplek te reserveren.</h2>
-      <p>Here are the details of your booking:</p>
-      <ul>
-        <li>Seat Number: <%= seatNumber %></li>
-        <li>Date: <%= date %></li>
-        <li>Time: <%= time %></li>
+  <body class="body-success">
+    <div class="container-success">
+      <h1 class="h1-success">Goed nieuws!</h1>
+      <h2 class="h2-success">Het is u gelukt om uw studieplek te reserveren.</h2>
+      <p class="p-success" >Hier kunt u alle details zien over uw gereserveerde plek</p>
+      <ul class="ul-success">   
+        <li class="li-success">Seat Number: <%= seatNumber %></li>
+        <li class="li-success">Date: <%= date %></li>
+        <li class="li-success">Time: <%= time %></li>
       </ul>
 
-      <h3>Wij wensen u een fijne studiesessie!</h3>
-      <a href="/" class="btn">Terug naar Home</a>
+      <h3 class="h3-success">Wij wensen u een fijne studiesessie!</h3>
+      <a href="/" class="btn-success">Terug naar Home</a>
     </div>
   </body>
-</html>
+  <canvas id="confetti" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 999999;"></canvas>
+
+  <%- include('./partials/foot.ejs') %>

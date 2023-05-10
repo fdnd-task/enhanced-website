@@ -1,5 +1,5 @@
 import express from "express";
-
+      
 const url = "https://api.oba.fdnd.nl/api/v1/vestigingen";
 const urlDefault = "?first=100";
 
