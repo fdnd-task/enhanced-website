@@ -482,7 +482,6 @@ function sortShow(){
 }
 
 function filterShow(){
-  console.log("1")
   if(filterStyling.classList.contains("filterHidden")){
     filterStyling.classList.toggle("filterStyle");
     filterStyling.classList.remove("filterHidden");
@@ -490,7 +489,6 @@ function filterShow(){
   else{
     filterStyling.classList.toggle("filterStyle");
     filterStyling.classList.add("filterHidden");
-    console.log("2")
   }
 }
 
