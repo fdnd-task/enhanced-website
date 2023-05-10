@@ -64,7 +64,13 @@
     --line-gap: -3rem;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
+body{
+    margin: 0;
+}
 
 
 
@@ -470,6 +476,11 @@ footer h3{
     font-size: 1.5em;
 }
 
+.main-detailpage img{
+    width: 15em;
+    height: auto;
+}
+
 .main-detailpage h1{
     color: var(--text-color);;
 }
@@ -481,6 +492,11 @@ footer h3{
 }
 .main-detailpage h4{
     color: var(--text-color);;
+}
+
+.beschrijving{
+    display: flex;
+    flex-direction: column;
 }
 
 blockquote{

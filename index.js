@@ -144,3 +144,13 @@ export async function postJson(url, body) {
     .then((response) => response.json())
     .catch((error) => error);
 }
+
+
+// lees meer functie detailpagina
+
+let stappenplan = document.querySelector("stappen");
+stappenplan.addEventListener("click", toonStappenplan);
+
+function toonStappenplan(){
+  const
+}
