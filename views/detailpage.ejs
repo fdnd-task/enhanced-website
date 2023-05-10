@@ -1,7 +1,7 @@
 <%- include('./head') %>
 
 
-<a href="views\overviewpage.ejs"> 
+<a href="/overviewpage"> 
     <div class="backtab">
         <img src="/arrow-back.png" alt="back arrow">
         <h3>Tekenmethodes</h3>
@@ -18,9 +18,12 @@
 
 <div class="main-detailpage">
     <h1><%- method.title %></h1>
-    <section id="beschrijving">
-        <%- method.description.html %>
+    <section class="beschrijving" id="beschrijving">
+        <%- method.description.html %>  
+        <img src="<%- method.template.url %>" alt="Method Template">  
     </section>
+
+    
     <h2>Stappenplan</h2>
     <section id="stappen">
         <ol>
@@ -35,14 +38,13 @@
         </ol>
             
     </section>
+    <button class=""></button>
     <section id="categorieen">
-        <ul>
-            <% method.categories.forEach(category => { %>
-                <li> <%- category.title %>
-                </li>
-
-            <% }) %>
+        <% method.categories.forEach(category => { %>
+            <ul>
+                <%- category.title %>
         </ul>
+            <% }) %>
     </section>
     <section id="voorbeelden">
     

@@ -54,7 +54,13 @@
     --broodtekst: "yrsa", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
+body{
+    margin: 0;
+}
 
 /* overviewpage styling */
 
@@ -212,6 +218,11 @@
     font-size: 1.5em;
 }
 
+.main-detailpage img{
+    width: 15em;
+    height: auto;
+}
+
 .main-detailpage h1{
     color: var(--text-color);;
 }
@@ -223,6 +234,11 @@
 }
 .main-detailpage h4{
     color: var(--text-color);;
+}
+
+.beschrijving{
+    display: flex;
+    flex-direction: column;
 }
 
 blockquote{
