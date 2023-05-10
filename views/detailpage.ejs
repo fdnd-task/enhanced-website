@@ -1,0 +1,53 @@
+<%- include('./head', {container:false}) %>
+
+
+<a href="/overviewpage"> 
+    <div class="backtab">
+        <img src="/arrow-back.png" alt="back arrow">
+        <h3>Tekenmethodes</h3>
+    </div>
+</a>
+
+<div class="nav">
+    <a href="#beschrijving">Beschrijving</a>
+    <a href="#stappen">Stappenplan</a>
+    <a href="#categorieen">Categorieën</a>
+    <a href="#voorbeelden">Voorbeelden</a>
+</div>
+
+
+<div class="main-detailpage">
+    <h1><%- method.title %></h1>
+    <section class="beschrijving" id="beschrijving">
+        <%- method.description.html %>  
+        <img src="<%- method.template.url %>" alt="Method Template">  
+    </section>
+
+    
+    <h2>Stappenplan</h2>
+    <section id="stappen">
+        <ol>
+            <% method.steps.forEach(step => { %>
+                <li>
+                    <h4><%- step.title %></h4>
+                    <div>
+                        <%- step.description.html %>
+                    </div>
+                </li>
+            <% }) %>
+        </ol>
+            
+    </section>
+    <button class=""></button>
+    <section id="categorieen">
+        <% method.categories.forEach(category => { %>
+            <ul>
+                <%- category.title %>
+        </ul>
+            <% }) %>
+    </section>
+    <section id="voorbeelden">
+    
+    </section>
+</div>
+<%- include('./foot') %>
