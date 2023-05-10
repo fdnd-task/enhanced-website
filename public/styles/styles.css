@@ -142,7 +142,7 @@ body {
 body > main {
   flex: 1;
 }
-
+/*
 .body-header {
   display: flex;
   justify-content: space-between;
@@ -182,7 +182,7 @@ body > main {
   padding-inline: 2.5rem var(--body-padding);
   z-index: 2;
 }
-
+ */
 .body-footer {
   padding: 1rem var(--body-padding);
   background: var(--primary-color);
