@@ -11,11 +11,11 @@ const baseurl = `${process.env.API_URL}`;
 router.get('/', function(req, res, next) {
   const { query } = req
   console.log(query.orderBy);
-  let smartUrl = url 
-  if (req.query) smartUrl = `${smartUrl}?orderBy=${query.orderBy}`
-  console.log(smartUrl)
+  let orderBy = req.query.orderBy || 'publishedAt'
+  let smartUrl = url + '?orderBy=' + orderBy + '&direction=ASC'
 
-  fetchJson(url).then((data) => {
+  fetchJson(smartUrl).then((data) => {
+    console.log(smartUrl)
     res.render('index', data)
   })
 });
@@ -48,17 +48,14 @@ router.post('/', (request, response) => {
   const url1 = `${baseurl}/reservations`
   postJson(url1, request.body).then((data) => {
     let newReservation = { ... request.body}
-    console.log(JSON.stringify(data))
 
    if (data.success) {
         response.redirect('/?reservationPosted')
-        console.log("yep")
 
     }
     else {
     const errorMessage = data.message
     const newData = { error: errorMessage, values: newReservation }
-    console.log(newData)
     }
   })
 })

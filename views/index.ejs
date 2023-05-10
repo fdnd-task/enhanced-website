@@ -63,12 +63,11 @@
                         <label for="75Filter">&lt; 75%</label></li>
                     <li class="sortHidden">
                         <p>Sorteer op: </p>
-                        <a href="/orderBy=name" button class="sortSize">naam</button>
+                        <a href="/?orderBy=name" button class="sortSize">naam</button>
                     </li>
                     <% for(let i = 0; i < smartzones.length; i++){ %>
                       <li class="zoneInfo">
                         <p>Smartzone: <span> <%= smartzones[i].name %> </span></p>
-                              <%- console.log(smartzones[i].reservations[i]) %>
                               
                           
                         <p>Locatie: <span> <%= smartzones[i].town %> </span></p>
