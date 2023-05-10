@@ -156,6 +156,10 @@ server.get(
 	}
 );
 
+server.get("/succes", (request, response) => {
+		response.render("succes");
+});
+
 // Maakt een route voor de studieplek reserveringspagina om vestiging foto's in te laden
 server.get(
 	"/reserveer-een-studieplek",
