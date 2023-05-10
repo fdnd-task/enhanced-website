@@ -75,11 +75,13 @@
     text-decoration: none;
 }
 
+.overviewpage-header a:hover{
+    color: var(--interactive-el-color);
+}
+
 .links {
     margin-right: 3em;
 }
-
-
 
 
 .header-methodes h1{
