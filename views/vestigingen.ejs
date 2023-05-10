@@ -9,16 +9,30 @@
     </section>
     <section class="locations">
     <% vestigingen.forEach(vestiging => { %>
-		<article>
+        <article>
             <picture>
-                <source media="(min-width: 20em)" srcset="<%= vestiging.foto.small %>" />
-                <source media="(min-width: 20em)" srcset="<%= vestiging.foto.smallAsWebP %>" />
-                <source media="(min-width: 48em)" srcset="<%= vestiging.foto.original %>" />
-                <source media="(min-width: 48em)" srcset="<%= vestiging.foto.originalAsWebP %>" />
-                <img src="<%= vestiging.foto.original %>" srcset="<%= vestiging.foto.small %>, <%= vestiging.foto.smallAsWebP %>, <%= vestiging.foto.original %>, <%= vestiging.foto.originalAsWebP %>" sizes="(min-width: 20em)" />
-            </picture>
+                <source 
+                    media="(min-width: 20em)" 
+                    srcset="<%= vestiging.foto.smallAsWebP %>, <%= vestiging.foto.small %>" 
+                    type="image/jpeg, image/webp"
+                    width="1920"
+                    height="1080"  />
+                <source media="(min-width: 48em)" srcset="<%= vestiging.foto.original %>, <%= vestiging.foto.originalAsWebP %>" type="image/jpeg,image/webp" />
+                <img 
+                    src="<%= vestiging.foto.smallAsWebP %>" 
+                    alt="Vestiging <%= vestiging.naam %>" 
+                    width="300" 
+                    height="300" 
+                    loading="lazy"
+                    srcset="
+                    <%= vestiging.foto.smallAsWebP %> 320w, 
+                    <%= vestiging.foto.originalAsWebP %> 640w, 
+                    <%= vestiging.foto.original %> 1280w" 
+                    sizes="(min-width: 20em) 100vw" />
+            </picture>            
             <h2><%= vestiging.naam %></h2>
-		</article>
+        </article>
+        
 		<% }); %>
     </section>
 </main>
