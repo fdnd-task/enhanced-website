@@ -8,67 +8,72 @@
 <hr>
 
 
-
+<!-- producten-->
     <section class="product section" id="products">
-        <!-- Geldt voor alle producten van Vini Mini -->
         <% data.producten.forEach(product => { %>
 
                 <div class="product-container bg-grid">
                     <div class="product class=">
-                        <!-- deze linkt naar de detailpagina van een product -->
                         <a href="/product-pagina?id=<%= product.id %>"><%= product.titel %></a>
                     </a>
                         <div class="product-box">
                         </div>
-                        <!-- dit zorgt ervoor dat je plaatjes uit de database krijgt, ook als er geen plaatje is ingevoerd -->
-                
-
+                           <!-- Producten img lazy-->
                                 <% if(product.plaatjes.length) { %>
-                                    <img
-                                    srcset="/product-pagina?id=<%= product.id %>1x, /product-pagina?id=<%= product.id %>2x"
-                                    src="<%= product.plaatjes[0].url %>”
-                                    alt="Placeholder pinda-ei”
-                                    class="plaat"
-                                    />
-                                <!-- Als er bij een product geen url naar een plaatje is, laat dan deze placeholder image zien-->
-                               
-                                <% }else{ %>
-                                    <img
-                                    srcset="/product?detailId=<%= product.id %>1x, /product?detailId=<%= product.id %>2x"
-                                    src="/img/placeholder.png”
-                                    alt="Placeholder pinda-ei”
-                                    class="plaat"
-                                    />
-                                    <% } %>
+                             
+                                    <picture>
+                                        <source
+                                          type="image/webp"
+                                          data-srcset="lazy_400.webp 400w, 
+                                            lazy_800.webp 800w"
+                                          data-sizes="100w"
+                                        />
+                                        <img
+                                        src="<%= product.plaatjes[0].url %>"
+                                          alt="Placeholder pinda-ei"
+                                          class="plaat"
+                                          data-src="lazy.jpg"
+                                          data-srcset="lazy_400.jpg 400w, 
+                                            lazy_800.jpg 800w"
+                                          data-sizes="100w"
+                                          width="<%= product.plaatjes[0].width %>"
+                                          height="<%= product.plaatjes[0].height %>"
+                                        />
+                                      </picture>
 
+                                      <% }else{ %>
 
+                                      <picture>
+                                        <source
+                                          type="image/webp"
+                                          data-srcset="lazy_400.webp 400w, 
+                                            lazy_800.webp 800w"
+                                          data-sizes="100w"
+                                        />
+                                        <img
+                                        srcset="/img/placeholder.png"
+                                        src="/product?detailId=<%= product.id %>"
+                                          alt="Placeholder pinda-ei"
+                                          class="plaat"
+                                          data-src="lazy.jpg"
+                                          data-srcset="lazy_400.jpg 400w, 
+                                            lazy_800.jpg 800w"
+                                          data-sizes="100w"
+                                          width="300px"
+                                          height="300px"
+                                        />
+                                      </picture>
+
+                                      <% } %>
+
+                                   <!-- Product prijs-->
                                     <div class="product-data">
                                         <h3 class="product-name">
-                                            <!-- laat de product titel zien op de pagina-->
                                             € <%= product.prijs %>
                                         </h3> 
                            </div>
                     </div>
                 </div>
                 <% }); %>
-<!-- l
-                @media screen and (min-width: 768px) {
-
-                    .product-container .product .product-box{
-                    grid-template-columns: repeat(4, 1fr);
-                    width: calc(100% - 5rem);
-                  }
-                
-                  .section-title {
-                    margin: 5rem 0 .5rem 3rem;
-                  }
-                
-                  .section-all {
-                    margin-bottom: 1rem;
-                    margin-left: 3rem;
-                  }
-                }
-    -->
-
 <%- include('./partials/foot.ejs') %>
 

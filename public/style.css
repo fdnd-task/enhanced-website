@@ -171,8 +171,9 @@ nav{
 .grid-container{
     display: flex;
     flex-direction: row;
-    grid-column-gap: 2rem;
     color: var(--pinda-kleur);
+    flex-wrap: wrap;
+    justify-content: center;
 
 
 }
@@ -200,15 +201,16 @@ font-size: 1rem;
 }
 /* update zenit*/ 
 
-  .section {
+.section {
     display: flex;
     flex-direction: row;
     grid-column-gap: 2rem;
-    margin: 1rem;
-  
-  }
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .product-container {
-    width: 30rem;
+    width: 25rem;
     height: 18rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -434,7 +436,7 @@ font-size: 1rem;
     }
     .voeg-toe,
     .nu-kopen {
-        width: 100%;
+        width: 92%;
     }
     .else-buttons {
         width: 45%;
@@ -970,7 +972,7 @@ form {
 
 
 }
-
+ /*loader */
 #preloader{
     background: #E5EFF1 url(img/loader.gif) no-repeat center center;
     background-size: 13%;
