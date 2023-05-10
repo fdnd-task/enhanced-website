@@ -1,7 +1,12 @@
 /* ======================= MAIN ======================= */
+main > section:nth-of-type(1) {
+    height: auto;
+}
+
 .section-studyplace {
     display: flex;
     flex-direction: column;
+    padding-bottom: 8em;
 }
 
 .section-studyplace article {
@@ -143,9 +148,13 @@ fieldset {
 /* MEDIUM SCREEN 768px */
 @media (min-width: 48em) {
 
+    main > section:nth-of-type(1) {
+        height: auto;
+    }
+
     .section-studyplace {
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 1fr;
     }
 
     .section-studyplace article {
@@ -155,5 +164,10 @@ fieldset {
     .section-studyplace .item-image {
         height: 20em;
     }
+}
 
+@media (min-width: 60em) {
+    .section-studyplace {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 }
