@@ -19,7 +19,6 @@ app.use(express.urlencoded({ extended: true }));
 // Use map "public" to serve static files
 app.use(express.static("public"));
 
-
 // --- Rendering the index page: ---
 app.get("/", (request, response) => {
   response.render("index");
@@ -58,11 +57,10 @@ app.get("/detailpage/:slug", (request, response) => {
   fetchJson(detailPageUrl).then((data) => {
     // Use the fetchJson function to retrieve the data for the comments page
     fetchJson(commentsPageUrl).then((data2) => {
-
       // Combine the data from both responses into a single object
       const combinedData = {
-        method: data.method,   // Data from the detail page
-        comments: data2.comments,   // Data from the comments page
+        method: data.method, // Data from the detail page
+        comments: data2.comments, // Data from the comments page
       };
 
       // Log the combined data
@@ -89,7 +87,6 @@ app.post("/detailpage/:slug", (request, response) => {
 
   // Use the postJson function to post the comment data to the specified URL
   postJson(url, request.body).then((data) => {
-
     // Create a copy of the request body
     let newComment = { ...request.body };
 
@@ -145,12 +142,11 @@ export async function postJson(url, body) {
     .catch((error) => error);
 }
 
-
 // lees meer functie detailpagina
 
-let stappenplan = document.querySelector("stappen");
-stappenplan.addEventListener("click", toonStappenplan);
+// let stappenplan = document.querySelector("stappen");
+// stappenplan.addEventListener("click", toonStappenplan);
 
-function toonStappenplan(){
-  const
-}
+// function toonStappenplan(){
+//   const
+// }

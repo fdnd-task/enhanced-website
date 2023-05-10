@@ -19,6 +19,12 @@
       <img src="/logo1.svg" loading="lazy" alt="Visual Thinking in Het HBO">
     </header>
 
+     <% try { if (container) { %>
+      <div class="container">
+    <% } } catch (error) {  %>
+      <% return %>
+    <% } %>
+
     <header>
       <a href=""><img src="" alt="" class="logo"></a>
       <section class="right">
