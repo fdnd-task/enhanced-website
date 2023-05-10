@@ -142,11 +142,3 @@ export async function postJson(url, body) {
     .catch((error) => error);
 }
 
-// lees meer functie detailpagina
-
-// let stappenplan = document.querySelector("stappen");
-// stappenplan.addEventListener("click", toonStappenplan);
-
-// function toonStappenplan(){
-//   const
-// }

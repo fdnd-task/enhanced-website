@@ -497,6 +497,45 @@ footer h3{
     color: var(--text-color);;
 }
 
+.stappen{
+    display: none;
+}
+
+.stappen.toon{
+    display: block;
+}
+
+.buttondeel{
+    display: flex;
+    justify-content: center;
+
+}
+
+#stappenplanbutton{
+    font: var(--rigid);
+    border-radius: 30px;
+    background-color: white;
+    border: 0px;
+    transition: 1s;
+}
+
+#stappenplanbutton:hover{
+    cursor: pointer;
+}
+
+#stappenplanbutton img{
+    width: 3em;
+    height: 3em;
+}
+
+#stappenplanbutton img:hover{
+    width: 3.5em;
+    height: 3.5em;
+    transform: translateY(-0.5em);
+    transition: 1s;
+    
+}
+
 .beschrijving{
     display: flex;
     flex-direction: column;
@@ -505,6 +544,7 @@ footer h3{
 blockquote{
     font-weight: bolder;
 }
+
 ol{
     list-style-type: none;
 }
