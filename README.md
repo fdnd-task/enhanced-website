@@ -16,7 +16,6 @@
   * 📠 [Licentie](#licentie)
 
 ## 📝 Beschrijving
-
 Als team hebben wij een responsive website gebouwd voor onze opdrachtgever Oba waarbij verschillende performance technieken zijn toegepast.
 Wij hebben de website gebouwd met server- side code Node en gebruik gemaakt van de API om informatie op te halen zoals boeken, activiteiten en cursussen. 
 Voor de client side opmaak hebben wij gebruikt gemaakt van Ejs-HTML, CSS.
@@ -50,7 +49,6 @@ Voor server side performance:
 - CLS (visual stability)
 
 ## 📲 Installatie
->>>>>>> main
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
 ## NPM
 Voordat wij aan dit project gingen werken hebben wij eerst NPM install gedaan omdat we met REST API en Databases gingen werken. Wanneer je npm install uitvoert, leest npm het package.json-bestand in de hoofdmap van je project, dat de afhankelijkheden voor het project vermeldt. Vervolgens downloadt en installeert het die afhankelijkheden in de node_modules map in het project. In de terminal van Visual Studio Code zijn er een aantal commando's voor gebruikt om het NPM init te initialiseren, installeren NPM install en testen met NPM start. In de map Node_Modules hebben wij Nodemon geactiveerd om bij iedere aanpassing die wij hebben opgeslagen in de server te laten verversen. Hiervoor gebruiken wij het commando NPM install Nodemon.
