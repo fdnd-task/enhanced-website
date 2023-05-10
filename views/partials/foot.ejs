@@ -1,16 +1,26 @@
-<!--Nieuwsbrief-->
-<form action="/action_page.php">
-  <h5>Nieuwsbrief</h5>
-  <h6>Blijf je op de hoogte van het laatste nieuws over de eerste 1000 dagen en voedselallergie?</h6>
-  <div class="input-container">
-    <a href="#"><i class="fa fa-envelope icon"></i></a>
-    <input class="input-field" type="text" placeholder="Email" name="email">
-  </div>
+</main>
+  <!--Nieuwsbrief-->
+  <form action="/action_page.php">
+    <div class="container">
+      <h6>Nieuwsbrief</h6>
+      <p class="nieuws">Blijf je op de hoogte van het laatste nieuws over de eerste 1000 dagen en voedselallergie?
+  </p>
+    </div>
+  
+    <div class="container">
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="text" placeholder="Email address" name="mail" required>
+      <label>
+        <input type="checkbox" checked="checked" name="subscribe"> Onthoud Mij Gegevens
+      </label>
+    </div>
+  
+    <div class="container">
+      <input type="submit" value="Registreer">
+    </div>
+  </form>
 
-  <button type="submit" class="buttonzenit">Registreer</button>
-</form>
-
-<footer>
+  <footer>
     <div class="footer">
         <div class="footer-container">
             <ul>
@@ -36,8 +46,11 @@
                 <li><a href="" class="footer-link">Facebook</a></li>
                 <li><a href="" class="footer-link">Youtube</a></li>
             </ul>
+
         </div>
 </footer>
+<script src="/script.js" defer></script>
 
 </body>
+
 </html>
