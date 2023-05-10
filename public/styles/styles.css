@@ -129,9 +129,29 @@ body {
   color: var(--text-color);
 }
 
+main {
+  margin-top: 3rem;
+}
+
 .body-header {
-  padding: 1rem var(--body-padding);
   display: flex;
+  justify-content: space-between;
+  margin-bottom: -3rem;
+}
+
+.body-header__image {
+  background: white;
+  padding-block: 1rem;
+  padding-inline: var(--body-padding) 4rem;
+}
+
+.body-header__image > svg {
+  height: 4rem;
+}
+
+.body-header__nav {
+  flex: 1;
+  padding-right: var(--body-padding);
 }
 
 @media (min-width: 36rem) {
