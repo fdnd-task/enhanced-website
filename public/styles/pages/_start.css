@@ -1,37 +1,20 @@
-.hero {
-  height: 100vh;
-  height: 100svh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/vervoerregio-amsterdam-header.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 400px;
-  max-height: 1080px;
-}
-
 header {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.logo-container {
-  padding: 0.5rem;
+header .logo-container {
+  padding: 0.5rem var(--body-padding);
   background-color: #fff;
   z-index: 3;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s ease-out;
 }
 
-.logo {
+header .logo {
   width: 100%;
   max-width: 193px;
   padding: 0.5rem;
@@ -48,7 +31,7 @@ header .menu {
   cursor: pointer;
 }
 
-.nav-js-style {
+header .nav-js-style {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -61,22 +44,21 @@ header .menu {
   );
 }
 
-.nav-active {
+header .nav-active {
   transform: translate(0, 100%);
 }
 
-.nav-container {
+header .nav-container {
   z-index: 2;
 }
 
-nav {
+header nav {
   position: relative;
   background-color: white;
-  transition: all 0.3s ease-out;
 }
 
-.nav-design {
-  margin: 1rem;
+header .nav-design {
+  margin: 1rem var(--body-padding);
   border-radius: 6px;
 }
 
@@ -114,51 +96,62 @@ header ul li button {
   font-family: Regular, san-serif;
 }
 
-.search-bar {
+header .search-bar {
   position: absolute;
   bottom: 0;
-  left: 1rem;
   transform: translate(0, 150%);
-  width: calc(100% - 2rem);
+  width: 100%;
   padding: 0.4rem;
   border: none;
   border-radius: 6px;
   font-size: 16px;
   font-family: Regular, san-serif;
-  transition: all 0.3s ease-out;
 }
 
-.search-bar-js {
-  left: 0;
-  width: 100%;
+header .search-bar-js {
   transform: translate(0, 200%);
 }
 
-.search-bar-active {
+header .search-bar-active {
   transform: translate(0, 150%);
 }
 
-.curve {
+header .curve {
   height: 3rem;
   display: none;
 }
 
-.hero .hero-title {
+header .hero {
+  height: 100vh;
+  height: 100svh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/vervoerregio-amsterdam-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+  max-height: 1080px;
+}
+
+header .hero .hero-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
   padding: 4rem 1rem 4rem 1rem;
-  transition: all 0.3s ease-out;
 }
 
-.bottom-bar {
+header .bottom-bar {
   width: 100%;
   /* bottom: 0;
   position: absolute; */
 }
 
-.bottom-bar-verloop {
+header .bottom-bar-verloop {
   height: 2em;
   background: rgb(185, 0, 95);
   background: linear-gradient(
@@ -168,7 +161,7 @@ header ul li button {
   );
 }
 
-.bottom-bar-box {
+header .bottom-bar-box {
   height: 4em;
   background: rgb(185, 0, 95);
   background: linear-gradient(
@@ -178,7 +171,7 @@ header ul li button {
   );
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 450px) {
   header nav ul {
     flex-direction: row;
     justify-content: space-between;
@@ -186,20 +179,26 @@ header ul li button {
   }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 770px) {
   header {
     flex-direction: row;
   }
 
-  .logo {
-    max-width: none;
+  header .logo-container {
+    padding: 0.5rem 1rem 0.5rem var(--body-padding) ;
+
   }
 
-  .menu {
+  header .logo {
+    max-width: none;
+    width: 120%;
+  }
+
+  header .menu {
     display: none;
   }
 
-  .nav-container {
+  header .nav-container {
     position: relative;
     height: 100%;
     width: 100%;
@@ -207,13 +206,14 @@ header ul li button {
     transform: translate(0);
   }
 
-  nav {
+  header nav {
     margin: 0;
     border-radius: 0;
     padding: 0.3rem 1rem 0.3rem 1rem;
+    padding-right: var(--body-padding);
   }
 
-  .nav-design {
+  header .nav-design {
     margin: 0;
     border-radius: 0;
   }
@@ -227,39 +227,15 @@ header ul li button {
     padding: 0;
   }
 
-  header nav ul li a,
-  header nav ul li button {
-    padding: 0.5rem 0.3rem;
-  }
-
-  .search-bar {
+  header .search-bar {
     left: auto;
     transform: translate(0, 150%);
-    max-width: 445px;
-    right: 1rem;
+    max-width: 350px;
+    right: var(--body-padding);
     bottom: 0;
   }
 
-  .curve {
+  header .curve {
     display: block;
   }
 }
-
-@media screen and (min-width: 950px) {
-  .logo-container {
-    padding-left: 10%;
-  }
-
-  nav {
-    padding-right: 10%;
-  }
-
-  .search-bar {
-    right: 10%;
-  }
-
-  .hero .hero-title {
-    padding: 4rem 10%;
-  }
-}
-

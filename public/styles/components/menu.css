@@ -16,7 +16,7 @@
 }
 
 .menu__menu-item {
-  padding: 1rem;
+  /* padding: 1rem; */
   background-color: white;
   display: flex;
   flex-flow: row nowrap;

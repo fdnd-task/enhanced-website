@@ -129,11 +129,6 @@ body {
   color: var(--text-color);
 }
 
-.body-header {
-  padding: 1rem var(--body-padding);
-  display: flex;
-}
-
 @media (min-width: 36rem) {
   :root {
     --max-screen-width: var(--breakpoint-sm);
