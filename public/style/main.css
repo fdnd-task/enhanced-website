@@ -408,10 +408,11 @@ main>section:nth-of-type(1) p {
 }
 
 .carousel img{
-    width: 100%;
+    width: 8em;
     height: auto;
     aspect-ratio: 1 / 1.5;
     box-shadow: 3px 5px 20px -10px #333;
+    background-color: var(--c-accent-25);
 }
 
 .carousel img:hover{
