@@ -9,16 +9,24 @@
     </section>
     <section class="locations">
     <% vestigingen.forEach(vestiging => { %>
-		<article>
+        <article>
             <picture>
-                <source media="(min-width: 20em)" srcset="<%= vestiging.foto.small %>" />
-                <source media="(min-width: 20em)" srcset="<%= vestiging.foto.smallAsWebP %>" />
-                <source media="(min-width: 48em)" srcset="<%= vestiging.foto.original %>" />
-                <source media="(min-width: 48em)" srcset="<%= vestiging.foto.originalAsWebP %>" />
-                <img src="<%= vestiging.foto.original %>" srcset="<%= vestiging.foto.small %>, <%= vestiging.foto.smallAsWebP %>, <%= vestiging.foto.original %>, <%= vestiging.foto.originalAsWebP %>" sizes="(min-width: 20em)" />
-            </picture>
+                <source 
+                    media="(min-width: 20em)" 
+                    srcset="<%= vestiging.foto.small %>, <%= vestiging.foto.smallAsWebP %>" 
+                    type="image/jpeg,image/webp"
+                    width="1920"
+                    height="1080"  />
+                <img 
+                    src="<%= vestiging.foto.smallAsWebP %>" 
+                    alt="Vestiging <%= vestiging.naam %>"
+                    width="300"
+                    height="300"
+                />
+            </picture>            
             <h2><%= vestiging.naam %></h2>
-		</article>
+        </article>
+        
 		<% }); %>
     </section>
 </main>
