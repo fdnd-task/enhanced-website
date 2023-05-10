@@ -312,13 +312,13 @@ hr{
 .method-card {
     border-left: var(--interactive-el-color) 11px solid;
     border-radius: 6px;
+    height: 15em;
+    width: 20em;
 }
 
 .method-card a {
     display: flex;
     flex-direction: column;
-    height: 15em;
-    width: 20em;
     color: var(--text-color);
     text-decoration: none;
 }
@@ -333,12 +333,14 @@ hr{
 
 
 .method-name{
+    margin-top: 0.5em;
     display: flex;
     justify-content: space-between;
     font-family: var(--rigid);
     font-size: 18px;
     font-weight: bold;
 }
+
 
 .arrow{
     height: 1em;
@@ -383,6 +385,7 @@ hr{
 }
 
 footer {
+    height: 5em;
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -390,6 +393,8 @@ footer {
     color: var(--text-color-var04);
     margin-top: 4em;
 }
+
+
 
 footer h3{
     margin-left: 1em;
