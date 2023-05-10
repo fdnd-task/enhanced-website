@@ -40,6 +40,9 @@
     --c-accent-150: #333;
     --c-invert: #111;
     --c-succes: #58ab3c;
+
+    /* Schaduwen & effecten */
+    --fx-default-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1), 0px 1px 1px -2px rgba(0, 0, 0, 0.12), 0px 2px 4px -5px rgba(0, 0, 0, 0.2);
 }
 
 ::selection {
@@ -241,13 +244,17 @@ dt dd {
 }
 
 /* image and graphics */
-
 .item-img {
     transform: perspective(20em) rotateY(20deg);
     transition: var(--a-default);
 }
 
-.item-img:hover {
+.item-image {
+    transform: perspective(20em) rotateY(8deg);
+    transition: var(--a-default);
+}
+
+.item-image:hover {
     transform: perspective(20em) rotateY(0deg);
 }
 
@@ -337,10 +344,12 @@ button:focus-visible {
 /* ======================= MAIN ======================= */
 main {
     margin: 2em 0;
+    width: 90%;
+    margin: 0 auto;
 }
 
 main>section {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -356,29 +365,106 @@ main>section:nth-of-type(1) p {
 /* Slidebar */
 
 .wrapper {
-    background-color: lightgray;
-    height: 10em;
+    max-width: 70em;
+    width: 100%;
     position: relative;
-    align-items: center;
+    margin: 0 auto;
 }
 
-.carousel {
+.wrapper i {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child {
+    left: 0;
+    margin-right: calc(40px * -1);
+}
+
+.wrapper i:last-child {
+    right: 0;
+    margin-left: calc(40px * -1);
+}
+
+.wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3));
+    cursor: pointer;
+    gap: .7em;
+    overflow: auto;
+    margin: 0 2.5em;
+    padding: 1.5em;
 }
 
-.book {
-    height: 10em;
-    width: 7em;
-    background-color: #58ab3c;
+.carousel::-webkit-scrollbar {
+    display: none;
 }
 
+.carousel .book {
+    width: 8.5em;
+}
+
+.book-a {
+    display: flex;
+    perspective: 1000px;
+}
+
+.book-picture {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 110%;
+    transform: rotateY(-20deg);
+    transition: all .2s ease-in-out;
+}
+
+.book-picture:hover {
+    transform: scale(1.1);
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1.5;
+    box-shadow: 3px 5px 20px -10px #333;
+}
+
+.carousel img:hover {
+    box-shadow: 3px 5px 20px -15px rgb(0, 0, 0);
+}
+
+/* section combo selection  */
+
+section:nth-of-type(3) {
+    padding: 1em 0;
+}
+
+section:nth-of-type(3) img {
+    width: 100%;
+    max-width: 20em;
+}
+
+section:nth-of-type(4) img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 2em 0;
+}
+
+section:nth-of-type(3) p {
+    padding-top: 1em;
+}
 
 /*============ CSS ACTIVITEITEN EN CURSUS CAROUSEL==========*/
 
-.activiteit-cursus {
-    width: 80%;
+/* article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main {
     margin: 0 auto;
     display: flex;
 
@@ -386,13 +472,18 @@ main>section:nth-of-type(1) p {
 
 }
 
-.carousel-item {
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(216, 216, 216);
-    border-radius: 5px;
-}
+section {
+
+    max-width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+
+} */
+
 
 
 
@@ -406,7 +497,6 @@ main>section:nth-of-type(1) p {
 
 footer {
     background: #111;
-    opacity: 0.6;
     background-image: url("/public/assets/Amsterdam.webp");
     padding: 70px 0;
     z-index: 1;
@@ -505,6 +595,7 @@ footer {
     }
 
     main>section:nth-of-type(3) {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1.5em;
@@ -512,6 +603,18 @@ footer {
 
     main>section:nth-of-type(3) h2 {
         text-align: center;
+    }
+
+    main>section:nth-of-type(3) article {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main>section:nth-of-type(3) article p,
+    section:nth-of-type(3) img {
+        max-width: 20em;
     }
 
     /* ========= FORM ========= */
@@ -550,6 +653,10 @@ footer {
 
     /* ========= MAIN ========= */
 
+    .wrapper {
+        max-width: 100%;
+    }
+
     /* ========= FOOTER========= */
 
     .footer-col {
@@ -580,7 +687,15 @@ footer {
         margin: auto;
     }
 
+    .search-form>input {
+        width: 24em;
+    }
+
     /* ========= MAIN ========= */
+
+    main>section:nth-of-type(1) p {
+        max-width: 42em;
+    }
 
     .search-container {
         height: 7em;
@@ -590,46 +705,56 @@ footer {
     .search-form>input {
         width: 20em;
     }
-}
 
-/* Extra Large screen 1400px */
-@media (min-width:88em) {
-
-    /* ========= MAIN ========= */
-    main>section:nth-of-type(1) {
-        height: 8em;
-        background-size: 40vw;
-
+    main>section:nth-of-type(3) {
+        width: 100%;
     }
 
-    header nav {
-        display: flex;
+    .wrapper .carousel {
+        margin: 0 1.5em;
+        padding: .5em;
     }
 
-    header .menu {
-        display: none;
-    }
+    /* Extra Large screen 1400px */
+    @media (min-width:88em) {
 
-    header details {
-        display: none;
-    }
+        /* ========= MAIN ========= */
+        main>section:nth-of-type(1) {
+            height: 8em;
+            background-size: 40vw;
 
-    .item {
-        width: 50vw;
-    }
+        }
 
-    /* ========= MAIN ========= */
-    .search-container {
-        height: 8em;
-        background-size: 40vw;
-    }
+        header nav {
+            display: flex;
+        }
 
-    .search-form {
-        top: 7.5em;
-    }
+        header .menu {
+            display: none;
+        }
 
-    .search-form>input {
-        width: 18em;
+        header details {
+            display: none;
+        }
+
+        .item {
+            width: 50vw;
+        }
+
+        /* ========= MAIN ========= */
+        .search-container {
+            height: 8em;
+            background-size: 40vw;
+        }
+
+        .search-form {
+            top: 7.5em;
+        }
+
+        .search-form>input {
+            width: 28em;
+        }
+
     }
 
 }

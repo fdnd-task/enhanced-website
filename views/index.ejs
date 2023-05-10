@@ -15,50 +15,37 @@
         <h2> Onze nieuwe aanwinsten</h2>
 
         <div class="wrapper">
+            <i class=" arrow-carousel material-symbols-outlined">
+                chevron_left
+            </i>
+
             <ul class="carousel">
+                <% results.forEach(result => { %>
                 <li class="book">
-                    <a href="">
-                        <img src="" alt="">
+                    <a href="/item?id=<%= result.id %>" class="book-a">
+                        <picture class="book-picture">
+                            <img src="<%= result.coverimages %> " alt="<%= result.titles[0] %>">
+                        </picture>
                     </a>
-                    <h1> boek 1</h1>
                 </li>
-
-                <li class="book">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <h1> boek 2</h1>
-                </li>
-
-                <li class="book">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <h1> boek 3</h1>
-                </li>
-
-                <li class="book">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <h1> boek 4</h1>
-                </li>
-
-                <li class="book">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <h1> boek 5</h1>
-                </li>
+                <% }); %>
             </ul>
+            
+            <i class=" arrow-carousel material-symbols-outlined">
+                chevron_right
+            </i>
         </div>
     </section>
 
     <section>
         <article>
             <h2> E-books en luisterboeken </h2>
-            <a href="">
-                <img src="" alt="">
+            <a href="https://www.oba.nl/collectie/ebooks_en_luisterboeken.html">
+                <picture>
+                    <source srcset="/assets/oba-content-img1.avif" type="image/avif"/>
+                    <source srcset="/assets/oba-content-img1.webp" type="image/webp"/>
+                    <img src="/assets/oba-content-img1.jpg" alt="e-books en luisterboeken">
+                </picture>
             </a>
             <p> 
                 Als lid van de OBA heb je toegang tot duizenden e-books en luisterboeken uit de landelijke Bibliotheek. 
@@ -66,18 +53,26 @@
             </p>
         </article>
         <article>
-            <h2> Passend lezen </h2>
-            <a href="">
-                <img src="" alt="">
+            <h2> Digitale bronnen </h2>
+            <a href="https://www.oba.nl/collectie/digitale-bronnen.html">
+                <picture>
+                    <source srcset="/assets/oba-content-img2.avif" type="image/avif"/>
+                    <source srcset="/assets/oba-content-img2.webp" type="image/webp"/>
+                    <img src="/assets/oba-content-img2.jpg" alt="Passend lezen">
+                </picture>
             </a>
             <p> 
-                Ging je vroeger ook graag zitten voor een goed boek of je favoriete tijdschrift? En gaat dat nu niet meer omdat je een leesbeperking hebt? Dan helpt Passend Lezen je! 
+                In de OBA maak je gratis gebruik van uiteenlopende digitale bronnen. Ook als je geen lid bent. Ben je wel lid? Dan kan je vaak thuis ook de digitale bronnen raadplegen.
             </p>
         </article>
         <article>
             <h2> Leesclub </h2>
-            <a href="">
-                <img src="" alt="">
+            <a href="https://www.oba.nl/collectie/leesclubs.html">
+                <picture>
+                    <source srcset="/assets/oba-content-img3.avif" type="image/avif"/>
+                    <source srcset="/assets/oba-content-img3.webp" type="image/webp"/>
+                    <img src="/assets/oba-content-img3.jpg" alt="Leesclub">
+                </picture>
             </a>
             <p> 
                 Ben je op zoek naar een leesclub bij jou in de buurt? De OBA brengt je graag in contact met andere boekliefhebbers. 
@@ -87,7 +82,9 @@
     </section>
 
     <section>
-        <h2> Tips van de Oba</h2>
+        <picture>
+            <img src="/assets/oba-footer-img.jpg" alt="Tips van Oba">
+        </picture>
     </section>
 </main>
 
