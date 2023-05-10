@@ -1,4 +1,3 @@
-
 // laad meer knop
 
 // lees meer functie detailpagina
@@ -8,7 +7,8 @@ stappenplan.addEventListener("click", toonStappenplan);
 // Dit deel toggled de class "toon" waarop display none staat
 function toonStappenplan() {
   document.getElementById("stappen").classList.toggle("toon");
-  
+}
+
 // filter
 
 const searchBar = document.getElementById("site-search");
