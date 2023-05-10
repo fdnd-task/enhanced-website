@@ -1,33 +1,67 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# ✨Performance Matters Vini Mini ✨
+<img width="755" alt="Schermafbeelding 2023-05-10 om 18 56 13" src="https://github.com/r20222/performance-matters-optimized-website/assets/112856019/b177e612-efba-4273-bc27-2df71ef241c0">
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Inhoudsopgave
 
-  * [Beschrijving](#beschrijving)
-  * [Gebruik](#gebruik)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Bronnen](#bronnen)
+  * [Beschrijving🥚🥜](#beschrijving)
+  * [Gebruik👥](#gebruik)
+  * [Kenmerken📋](#kenmerken)
+  * [Installatie🛠️](#installatie)
+  * [Bronnen🌐](#bronnen)
   * [Licentie](#licentie)
+  
 
-## Beschrijving
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+## Beschrijving🥚🥜
 
-## Gebruik
-<!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+Het doel van deze sprint is om een goed Performance (Optimized) en toegankelijk website te maken voor de opdrachtgever. De opdrachtgevers zijn Vini Mini. Vini Mini verkoopt producten om vroegtijdig allergenen te voorkomen bij baby's en kinderen. We hebben een productpagina gemaakt met producten die Vini Mini verkoop en je kan de gekozen producten afrekeken bij de checkoutpagina. 
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+<img width="549" alt="Schermafbeelding 2023-05-10 om 19 05 06" src="https://github.com/r20222/performance-matters-optimized-website/assets/112856019/679bab00-6185-46f1-accc-417fa24dca75">
 
-## Installatie
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+>https://kind-lime-walrus-robe.cyclic.app
 
-## Bronnen
+## Gebruik👥
 
+**USERSTORYS**
+
+Voor onze groepsopdracht hebben wij besloten om verschillende userstories te gebruiken. Wij hebben gebruik gemaakt van een projectboard en daar alle userstories en issues beschreven.
+
+`#23. Als ouder wil ik een overzicht zien van alle voedingssupplement producten, zodat ik kan achterhalen of er een geschikt product voor mijn Vini Mini bij zit.`
+
+`#20. Als ouder wil ik van een product informatie en het stappenplan kunnen bekijken, zodat ik kan beslissen of ik een product wil kopen.`
+## Kenmerken📋
+Dit project is gemaakt met Node, Express, EJS en REST API. Wij hebben gebruik gemaakt van progressive enhancement. Deze aanpak begint met een eenvoudige, toegankelijke versie van de website die werkt op alle apparaten. Hierna hebben wij meerdere geavanceerde functies en visuele elementen toegevoegd voor gebruikers die over modernere apparaten en browsers beschikken. Hierdoor kan iedereen de inhoud van de website bekijken en gebruiken maar voor gebruikers met nieuwere apparaten zal de website meer functionaliteit hebben.
+
+## Installatie🛠️
+
+1.Installeer` Node.`
+
+2.Fork deze leertaak.
+
+3.Code klonen naar Github Desktop.
+
+4.Code open in VSCode of een andere editor.
+
+5.Terminal open.
+
+6`.Npm install` (typen in je terminal, daarna enter druken).
+
+7.`gitignore `(aparte file aanmaken (VSCode, editor) en dan node_modules schrijven in de file)
+
+8.Npm start (typen in je terminal).
+
+9.`Localhost:8000` (live link om je website te zien, link van de server).
+
+10.Project live zetten met `Cyclic.sh.`
+
+## Bronnen 🌐
+>https://github.com/fdnd-agency/vini-mini
+
+>https://api.vinimini.fdnd.nl
+
+>https://pagespeed.web.dev/analysis/https-vinimini-nl/q94ylxdkbn?form_factor=desktop
+
+>https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
