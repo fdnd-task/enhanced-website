@@ -310,10 +310,10 @@ button:focus-visible {
 
 /* Amsterdam background / searchbar */
 .search-container {
-    background-image: url("/assets/index-images/Amsterdam.jpg");
+    background-image: url("/assets/index-images/Amsterdam.webp");
     background-image: image-set(
                         url('/assets/index-images/Amsterdam.avif') type('image/avif'), 
-                        url('/assets/index-images/Amsterdam.webp') type('image/webp'));
+                        url('/assets/index-images/Amsterdam.jpg') type('image/jpeg'));
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 76%);
     background-size: cover;
     background-repeat: no-repeat;
