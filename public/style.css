@@ -59,9 +59,28 @@
 /* overviewpage styling */
 
 .overviewpage-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: 10%;
     margin-bottom: 2em;
 }
+
+.overviewpage-header a{
+    color: var(--text-color);
+    font-family: var(--rigid);
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+.links {
+    margin-right: 3em;
+}
+
+
+
 
 .header-methodes h1{
   color: var(--text-color);
@@ -92,6 +111,10 @@
     color: var(--interactive-el-color);
 }
 
+hr{
+ width: 90%;
+ margin-left: -0.3em;
+}
 
 
 .categories-container{
