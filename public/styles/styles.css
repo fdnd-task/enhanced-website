@@ -129,6 +129,20 @@ body {
   color: var(--text-color);
 }
 
+body {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.body-header,
+.body-footer {
+  flex: 0;
+}
+
+body > main {
+  flex: 1;
+}
+
 .body-header {
   display: flex;
   justify-content: space-between;
@@ -166,6 +180,11 @@ body {
   flex: 1;
   padding-inline: 2.5rem var(--body-padding);
   z-index: 2;
+}
+
+.body-footer {
+  padding: 1rem var(--body-padding);
+  background: var(--primary-color);
 }
 
 @media (min-width: 36rem) {
