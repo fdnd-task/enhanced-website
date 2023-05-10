@@ -34,85 +34,89 @@ body {
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+
 }
 
 /* Header zenit*/   
-
-/* NAV + LOGO zenit*/   
-.headerzenit{
-    /* width: 100%; */
-    height: 4rem;
+/* update*/ 
+.zenit{
+    width: 100%; 
+    height: 3rem;
     background-color: var(--ei-kleur);
     position: relative;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+/* update*/ 
+.para{
+color: var(zwart);
+font-size: 16px;
+padding-top: 1rem;
+font-weight: 300;
+text-transform: uppercase;
+text-align: center;
+align-items: center;
 
+}
 /* NAV + LOGO zenit */
+/* update*/ 
 .logo {
-    width: 5rem;
-}
-
-.navbar-items {
-    height: 5rem;
-    width: 100vw;
+    width: 85%;
+    height: auto;
+    justify-content: flex-start;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
 }
 
-.nav-content {
-    text-decoration: none;
-    color: var(--zwart);
-    font-size: 1.2rem;
-}
-
-/* zenit nav + index + categorienpagina */
-
-@media screen and (max-width: 800px) {
-    .navbar-items {
-        display: none;
-    }
-    .header {
-        padding: 0 3rem 0 6rem;
-    }
-    .p {
-        font: 0.75rem;
-    }
-}
-
-
-/* NAVBAR */
-
-.nav-container {
-    max-width: 100vw;
-    background-color: var(--wit);
-}
-
-.logo {
-    width: 8rem;
-}
-
-nav {
-    height: 8rem;
-    display: flex;
-    flex-direction: row;
+nav{
+    display: flex; 
+    flex-flow:row nowrap;
     justify-content: space-around;
     align-items: center;
+    background-color: #fff;
+    width: 100vw;
+    box-shadow: -1px 0px 8px rgba(14, 55, 63, 0.15);
+
+}
+
+.nav-links{
     flex: 1;
-    text-align: left;
+    text-align: center;
 }
 
-.nav-menu {
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2em;
     position: relative;
+    letter-spacing: 0.1em;
 }
 
-.icons-right {
-    display: block;
+.nav-links ul li a{
+    color: var(--zwart);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+
 }
 
+.nav-links ul li a:hover{
+    color: var(--pinda-kleur);
+}
+.navbar a {
+    text-align: center;
+    color: var(--zwart);
+    text-decoration: none;
+    font-size: 25px;
+    padding:15px;
 
-@media screen and (max-width: 767px) {
+}
+.navbar a:hover {
+    color: var(--pinda-kleur);
+ }
+
+
+ @media screen and (max-width: 767px) {
     .nav-menu {
         position: fixed;
         background-color: var(--wit);
@@ -125,91 +129,131 @@ nav {
         transition: .4s;
         z-index: 5;
     }
+    .para{
+        font-size: 12px;
+    }
+    .nav-links ul li{
+        font-size: 10px;
+    }
 }
-
-.nav-list {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5em;
-}
-
-.nav-link {
-    color: var(--donkerblauw);
-    font-weight: 400;
-    font-size: 1.5em;  
-    padding: 3rem;
-
-}
-
-.nav-link:hover {
-    color: var(--pinda-kleur);
-}
-
-.nav-close {
-    display: block;
-    margin-left: 6em;
-    font-size: 1.5rem;
-    color: var(--donkerblauw);
-    cursor: pointer;
-}
+/* update zenit*/ 
 
 .main-title {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     color: var(--pinda-kleur);
     text-transform: uppercase;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: bolder;
+
 }
 
-
 .omschrijving {
-    border-top: 5px solid var(--pinda-kleur);
     padding-top: 9px;
     margin-left: 2.3rem;
     margin-right: 2.3rem;
     line-height: 1.3;
     margin-top: .75em;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 16px;
 }
 
 
 .advies{
-    font-size: 1.5rem;
+    font-size: 16px;
     padding-left: 2.3rem;
     margin-top: 1rem;
     font-style: italic;
     font-weight: 1000;
     text-align: center;
 }
-
-/* ICONS */
-.shoppingcart,
-.person {
-    background-color: transparent;
-    border: none;
-    color: var(--donkerblauw);
-    position: relative;
-}
-
-.shoppingcart:hover {
+.grid-container{
+    display: flex;
+    flex-direction: row;
     color: var(--pinda-kleur);
-    font-size: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
 
 }
-
-.person:hover {
+.container-test{
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 2rem;
+    height: 15rem;
+    width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: -1px 1px 1px 2px rgba(14, 55, 63, 0.15);
     color: var(--pinda-kleur);
+    align-items: center;
 }
+.container-test a{
+text-align: center;
+margin-bottom: 1.5rem;
+font-size: 1rem;   
+ color: var(--pinda-kleur);
 
-@media screen and (min-width: 800px) {
-    .navbar-icon-items {
-        display: none;
-    }
+
 }
+/* update zenit*/ 
 
+.section {
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 2rem;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product-container {
+    width: 25rem;
+    height: 18rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: -1px 2px 3px 3px rgba(14, 55, 63, 0.15);
+  
+  }
+
+.product {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--pinda-kleur);
+    text-align: center;
+}
+  
+  .product a {
+    margin-top: 1.2em;
+    font-size: 1.1rem;
+    color: var(--pinda-kleur);
+    text-align: center;
+    transition: none;
+
+  
+  }
+  .product:hover {
+    transform: translateY(-.2rem);
+  }
+
+  .plaat{
+   width: 275px;
+   height: 200px;
+   align-items: center;
+  }
+
+  .product-data {
+    text-align:start;
+  }
+  
+  .product-name {
+    font-size: 1rem;
+    color: var(--pinda-kleur);
+  }
+ 
+  
 
 /* R20222 product-pagina CSS gedeelte */
 
@@ -392,7 +436,7 @@ nav {
     }
     .voeg-toe,
     .nu-kopen {
-        width: 100%;
+        width: 92%;
     }
     .else-buttons {
         width: 45%;
@@ -826,170 +870,116 @@ nav {
 
 
 /* nieuwsbrief zenit */
-.input-container {
-    display: flex;
-    width: 50rem;
-    margin-bottom: 15px;
-    margin-left: 35vw;
-}
-.input-container a{
-    font-size: 3rem;
-}
-
-.icon{
-  padding: 30px;
-  background: var(--pinda-kleur);
-  color: var(--wit);
-  min-width: 30px;
-  text-align: center;
-  font-size: 5rem;
-}
- /*nieuwsbrief form zenit*/
-
-.input-field {
-width: 50vw;
-padding: 30px;
-outline: none;
-font-size: 1.5rem;
-}
-
-.input-field:focus {
-  border: 3px solid var(--pinda-kleur);
-}
-h5{
-color: var(--pinda-kleur);
-font-size: 1.5rem;
-text-align: center;
-
-}
-h6{
-font-weight: 400;
-font-size: 1.5em;
-text-align: center;
-
-}
-.buttonzenit{
-background-color: var(--pinda-kleur);
-color: var(--wit);
-padding: 25px 20px;
-border: none;
-cursor: pointer;
-width: 31.5vw;
-opacity: 0.9;
-font-size: 1.5rem;
-margin-left: 35vw;
-
-}
-.buttonzenit :hover{
-  opacity: 1;
-    
-}
-
-/* Footer zenit */
-footer {
-    background-color: var(--pinda-kleur);
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--wit);
-}
-
-footer nav {
-    max-width: 100vw;
+form {
+    border: 3px solid rgb(255, 255, 255);
+  }
+  h6{
+  color:var(--pinda-kleur);
+  text-align:center;
+  font-size:25px;
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+  }
+  .nieuws{
+  color:var(--zwart);
+  text-align:center;
+  font-size:16px;
+  }
+  .container {
+    padding: 20px;
+  }
+  
+  input[type=text], input[type=submit] {
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-footer nav div {
-    padding-left: 60px;
-    padding-top: 20px;
-}
-
-footer nav div span {
-    font-weight: 900;
-    padding: 5px;
-}
-
-footer nav div ul {
-    padding: 5px;
-    list-style: none;
-}
-
-footer nav div ul li {
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-
-footer nav div ul li a {
-    color: var(--wit);
-    text-decoration: none;
-}
-@media screen and (min-width: 950px) {
-    footer nav {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    footer nav div {
-        padding-top: 0px;
-    }
-}
-@media screen and (max-width: 550px) {
-    footer nav {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    footer nav div {
-        padding-top: 0px;
-    }
-}
-@media screen and (max-width: 350px) {
-    footer nav {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    footer nav div {
-        padding-top: 0px;
-    }
-}
-
-
-  /* 
-@media screen and (max-width: 500px) {
-    avbsnar a {
-      float: none;
-      display: block;
-    }
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+   
+  }
+  label{
+   font-size:16px;
+   }
+  input[type=submit] {
+    background-color: var(--pinda-kleur);
+    color: white;
+    font-size: 16px;
+   border-radius: 25px; 
+ }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
   }
 
-@media screen and (max-width: 1000px) {
-    onav{
-        display: none;
-    }
-   ooavbar-items {
-        display: none;
-    }
-    
+/* Footer zenit */
+
+.footer {
+    background-color: var(--pinda-kleur);
+    padding: 1em 1em;
+  }
+  
+  .footer-title {
+    color: var(--wit);
+    margin-bottom: 0.8em;
+    margin-top: 2em;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: var(--wit);
+    font-weight: 300;
+    line-height: 2.5;
+  }
+  
+  .copyright {
+    color: var(--donkerblauw);
+    font-weight: 500;
+    font-size: 0.8em;
+    margin-top: 2em;
+  }
+  @media screen and (min-width: 1024px) {
+ /* FOOTER zenit */
+ footer {
+    width: 100vw;
+    margin-top: 2em;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-bottom: 2em;
+  }
+
+  .footer-title {
+    font-size: 1.5em;
+  }
+
+  .footer-link {
+    font-size: 1.1em;
+    line-height: 2.5em;
+  }
+
+  .copyright {
+    font-size: 1em;
+    margin-left: 15em;
+  }
+
+
 }
+ /*loader */
+#preloader{
+    background: #E5EFF1 url(img/loader.gif) no-repeat center center;
+    background-size: 13%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
 
 
-@media screen and (min-width: 800px) {
-    .ssnavbar-icon-items {
-        display: none;
-    }
-    0nav{
-        display: none;
-    }
 }
-*/
-
-
-

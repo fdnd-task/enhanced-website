@@ -1,23 +1,79 @@
 <%- include('./partials/head.ejs') %>
-
-
-
-        <div class="grid-container">
-
-        <% data.producten.forEach(product => { %>
-                <article>
-
-            <h2>
-                <%= product.titel%>
-            </h2>
-            <p>
-                <a href="/product-pagina?id=<%= product.id %>"><%= product.titel %></a>
-            </p>
-        <% }); %>
-        </article>
+<!-- test home link -->
+<div class="mini-nav">
+    <a class="mini-nav-links" href="/">Home</a>
+    <i class="fa-solid fa-chevron-right fa-2xs" style="color: #a9a1a1"></i>
+    <a class="mini-nav-links" href="/">Producten</a>
 </div>
+<hr>
 
-    
 
+<!-- producten-->
+    <section class="product section" id="products">
+        <% data.producten.forEach(product => { %>
+
+                <div class="product-container bg-grid">
+                    <div class="product class=">
+                        <a href="/product-pagina?id=<%= product.id %>"><%= product.titel %></a>
+                    </a>
+                        <div class="product-box">
+                        </div>
+                           <!-- Producten img lazy-->
+                                <% if(product.plaatjes.length) { %>
+                             
+                                    <picture>
+                                        <source
+                                          type="image/webp"
+                                          data-srcset="lazy_400.webp 400w, 
+                                            lazy_800.webp 800w"
+                                          data-sizes="100w"
+                                        />
+                                        <img
+                                        src="<%= product.plaatjes[0].url %>"
+                                          alt="Placeholder pinda-ei"
+                                          class="plaat"
+                                          data-src="lazy.jpg"
+                                          data-srcset="lazy_400.jpg 400w, 
+                                            lazy_800.jpg 800w"
+                                          data-sizes="100w"
+                                          width="<%= product.plaatjes[0].width %>"
+                                          height="<%= product.plaatjes[0].height %>"
+                                        />
+                                      </picture>
+
+                                      <% }else{ %>
+
+                                      <picture>
+                                        <source
+                                          type="image/webp"
+                                          data-srcset="lazy_400.webp 400w, 
+                                            lazy_800.webp 800w"
+                                          data-sizes="100w"
+                                        />
+                                        <img
+                                        srcset="/img/placeholder.png"
+                                        src="/product?detailId=<%= product.id %>"
+                                          alt="Placeholder pinda-ei"
+                                          class="plaat"
+                                          data-src="lazy.jpg"
+                                          data-srcset="lazy_400.jpg 400w, 
+                                            lazy_800.jpg 800w"
+                                          data-sizes="100w"
+                                          width="300px"
+                                          height="300px"
+                                        />
+                                      </picture>
+
+                                      <% } %>
+
+                                   <!-- Product prijs-->
+                                    <div class="product-data">
+                                        <h3 class="product-name">
+                                            € <%= product.prijs %>
+                                        </h3> 
+                           </div>
+                    </div>
+                </div>
+                <% }); %>
 <%- include('./partials/foot.ejs') %>
 
