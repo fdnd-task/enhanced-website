@@ -35,7 +35,7 @@
                 <picture>
                     <source srcset="/assets/index-images/oba-content-img1.avif" type="image/avif"/>
                     <source srcset="/assets/index-images/oba-content-img1.webp" type="image/webp"/>
-                    <img src="/assets/index-images/oba-content-img1.jpg" alt="e-books en luisterboeken">
+                    <img src="/assets/index-images/oba-content-img1.jpg" alt="e-books en luisterboeken" loading="lazy">
                 </picture>
             </a>
             <p> 
@@ -49,7 +49,7 @@
                 <picture>
                     <source srcset="/assets/index-images/oba-content-img2.avif" type="image/avif"/>
                     <source srcset="/assets/index-images/oba-content-img2.webp" type="image/webp"/>
-                    <img src="/assets/index-images/oba-content-img2.jpg" alt="Passend lezen">
+                    <img src="/assets/index-images/oba-content-img2.jpg" alt="Passend lezen" loading="lazy">
                 </picture>
             </a>
             <p> 
@@ -62,7 +62,7 @@
                 <picture>
                     <source srcset="/assets/index-images/oba-content-img3.avif" type="image/avif"/>
                     <source srcset="/assets/index-images/oba-content-img3.webp" type="image/webp"/>
-                    <img src="/assets/index-images/oba-content-img3.jpg" alt="Leesclub">
+                    <img src="/assets/index-images/oba-content-img3.jpg" alt="Leesclub" loading="lazy">
                 </picture>
             </a>
             <p> 
@@ -74,12 +74,13 @@
 
     <section>
         <picture>
-            <source srcset="/assets/index-images/oba-footer-img.avif" type="image/avif"/>
-                <source sizes="(max-width: 608px) 100vw, 608px"
-                        srcset="darth-1280w.avif 1280w,darth-640w.avif 640w,darth-320w.avif 320w”
-                        type="image/avif" />
-            <source srcset="/assets/index-images/oba-footer-img.webp" type="image/webp"/>
-            <img src="/assets/index-images/oba-footer-img.jpg" alt="Tips van Oba">
+                <source
+                        srcset="/assets/index-images/oba-footer-img-large.avif 1280w,
+                                /assets/index-images/oba-footer-img-medium.avif 740w,
+                                /assets/index-images/oba-footer-img.small.avif 320w"
+                        type="image/avif"/>
+            <!-- <source srcset="/assets/index-images/oba-footer-img.webp" type="image/webp"/> -->
+            <img src="/assets/index-images/oba-footer-img.jpg" alt="Tips van Oba" loading="lazy" />
         </picture>
     </section>
 </main>
