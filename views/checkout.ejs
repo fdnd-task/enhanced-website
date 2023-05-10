@@ -46,7 +46,16 @@
             <div class="border">
                 <div class="overview-product">
                     <picture>
-                        <img src="<%= data.product.plaatjes[0].smallAsWebP %>" class="product-img" alt="Product titel afbeelding" width="80em" height="60em" />
+                        <source srcset="<%= data.product.plaatjes[0].smallAsWebP %>" type="image/webp" />
+                        <source srcset="<%= data.product.plaatjes[0].small %>" type="image/jpeg" />
+                        <img
+                            src="<%= data.product.plaatjes[0].small %>"
+                            class="product-img"
+                            alt="Product titel afbeelding"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            width="80em"
+                            height="60em"
+                        />
                     </picture>
                     <h2 class="product-title"><%= data.product.titel %></h2>
 
@@ -91,7 +100,16 @@
                     <tr>
                         <td>
                             <picture>
-                                <img src="<%= data.product.plaatjes[0].smallAsWebP %>" class="product-img" alt="Product titel afbeelding" width="80em" height="60em" />
+                                <source srcset="<%= data.product.plaatjes[0].smallAsWebP %>" type="image/webp" />
+                                <source srcset="<%= data.product.plaatjes[0].small %>" type="image/jpeg" />
+                                <img
+                                    src="<%= data.product.plaatjes[0].small %>"
+                                    class="product-img"
+                                    alt="Product titel afbeelding"
+                                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    width="80em"
+                                    height="60em"
+                                />
                             </picture>
                         </td>
                         <td>
