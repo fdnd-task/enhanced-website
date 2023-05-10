@@ -27,7 +27,13 @@ router.get('/filtered', function(req, res, next) {
     
   
     if(req.query){
-        filtered = Object.values(data.smartzones).filter(value => (value.town.includes(req.query.town) && value.utilization.includes(req.query.utilization) && value.size == req.query.size) || (value.town.includes(req.query.town) && value.utilization.includes(req.query.utilization)) || value.town.includes(req.query.town) || value.utilization.includes(req.query.utilization) || value.size == req.query.size )
+        filtered = Object.values(data.smartzones).filter(value => {
+          return (value.town.includes(req.query.town) && value.utilization.includes(req.query.utilization) && value.size == req.query.size) 
+          || (value.town.includes(req.query.town) && value.utilization.includes(req.query.utilization)) 
+          || value.town.includes(req.query.town) 
+          || value.utilization.includes(req.query.utilization) 
+          || value.size == req.query.size
+        })
         res.render('index', {smartzones: filtered});
         console.log(data.smartzones[1].utilization)
   }
