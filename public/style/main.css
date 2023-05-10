@@ -40,6 +40,9 @@
     --c-accent-150: #333;
     --c-invert: #111;
     --c-succes: #58ab3c;
+
+    /* Schaduwen & effecten */
+    --fx-default-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1), 0px 1px 1px -2px rgba(0, 0, 0, 0.12), 0px 2px 4px -5px rgba(0, 0, 0, 0.2);
 }
 
 ::selection {
@@ -341,10 +344,12 @@ button:focus-visible {
 /* ======================= MAIN ======================= */
 main {
     margin: 2em 0;
+    width: 90%;
+    margin: 0 auto;
 }
 
 main>section {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -375,32 +380,80 @@ main>section:nth-of-type(1) p {
 
 .wrapper i:first-child{
     left: 0;
+    margin-right: calc( 40px * -1);
 }
 
 .wrapper i:last-child{
     right: 0;
+    margin-left: calc( 40px * -1);
 }
 
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
     cursor: pointer;
-    gap: 1.5em;
+    gap: .7em;
     overflow: auto;
-    margin: 0 1.5em;
+    margin: 0 2.5em;
+    padding: 1.5em;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
 }
 
 .carousel .book{
-    display: flex;
-    align-items: center;
-    background-color: #58ab3c;
+    width: 8.5em;
 }
 
-.carousel > img{
-    width: auto;
-    height: 9em;
-    object-fit: cover;
-    aspect-ratio: 7/9;
+.book-a{
+    display: flex;
+    perspective: 1000px;
+}
+
+.book-picture{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 110%;
+    transform: rotateY(-20deg);
+    transition: all .2s ease-in-out;
+}
+
+.book-picture:hover{
+    transform: scale(1.1);
+}
+
+.carousel img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1.5;
+    box-shadow: 3px 5px 20px -10px #333;
+}
+
+.carousel img:hover{
+    box-shadow: 3px 5px 20px -15px rgb(0, 0, 0);
+}
+
+/* section combo selection  */
+
+section:nth-of-type(3){
+    padding: 1em 0;
+}
+
+section:nth-of-type(3) img{
+    width: 100%;
+    max-width: 20em;
+}
+
+section:nth-of-type(4) img{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 2em 0;
+}
+
+section:nth-of-type(3) p{
+    padding-top: 1em;
 }
 
 /*============ CSS ACTIVITEITEN EN CURSUS TIJDELIJK==========*/
@@ -441,7 +494,6 @@ section {
 
 footer {
     background: #111;
-    opacity: 0.6;
     background-image: url("/public/assets/Amsterdam.webp");
     padding: 70px 0;
     z-index: 1;
@@ -540,6 +592,7 @@ footer {
     }
 
     main>section:nth-of-type(3) {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1.5em;
@@ -547,6 +600,17 @@ footer {
 
     main>section:nth-of-type(3) h2 {
         text-align: center;
+    }
+
+    main>section:nth-of-type(3) article {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main>section:nth-of-type(3) article p,  section:nth-of-type(3) img {
+        max-width: 20em;
     }
 
     /* ========= FORM ========= */
@@ -585,6 +649,9 @@ footer {
 
     /* ========= MAIN ========= */
 
+    .wrapper {
+        max-width: 100%;
+    }
     /* ========= FOOTER========= */
 
     .footer-col {
@@ -615,7 +682,15 @@ footer {
         margin: auto;
     }
 
+    .search-form>input {
+        width: 24em;
+    }
+
     /* ========= MAIN ========= */
+
+    main>section:nth-of-type(1) p {
+        max-width: 42em;
+    }
 
     .search-container {
         height: 7em;
@@ -625,7 +700,15 @@ footer {
     .search-form>input {
         width: 20em;
     }
-}
+
+    main>section:nth-of-type(3) {
+        width: 100%;
+    }
+
+    .wrapper .carousel{
+        margin: 0 1.5em;
+        padding: .5em;
+    }
 
 /* Extra Large screen 1400px */
 @media (min-width:88em) {
@@ -664,7 +747,9 @@ footer {
     }
 
     .search-form>input {
-        width: 18em;
+        width: 28em;
     }
+
+}
 
 }
