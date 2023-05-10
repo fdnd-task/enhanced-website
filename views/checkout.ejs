@@ -1,0 +1,160 @@
+<%- include('./partials/head') %>
+
+<main class="checkout">
+    <!-- Header start -->
+    <header class="top-page">
+        <!-- Mini navigation -->
+        <div class="mini-nav">
+            <a class="mini-nav-links" href="/">Home</a>
+            <i class="fa-solid fa-chevron-right fa-2xs" style="color: #a9a1a1"></i>
+            <a class="mini-nav-links" href="#">Winkelwagen</a>
+        </div>
+
+        <!-- Free shipment warning  -->
+        <div class="warning">
+            <p class="warning-desc">Bestel voor <span>&euro;5.53</span> meer en ontvang <span>gratis standaard levering.</span></p>
+        </div>
+
+        <h1 class="page-title">Je winkelwagen</h1>
+
+        <!-- Buttons for checkout and continue shopping -->
+        <div class="buttons">
+            <a href="#" class="check-out-order">Bestelling afrekenen</a>
+            <a href="#" class="continue-shop">Verder winkelen</a>
+        </div>
+    </header>
+
+    <!-- Header end -->
+
+    <!-- Section overview order start -->
+    <section class="overview-order">
+        <!-- Product -->
+        <div class="gap">
+            <!-- Present -->
+            <div class="present">
+                <h2 class="present-title">Gratis cadeau!</h2>
+                <p class="present-desc">Bij besteding van &euro;35.00 of meer.</p>
+
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+
+                <p class="present-desc-2">Besteed <span>&euro;20.05</span> meer en ontvang een <span>gratis cadeau</span> voor je mini!</p>
+            </div>
+
+            <div class="border">
+                <div class="overview-product">
+                    <picture>
+                        <source srcset="<%= data.product.plaatjes[0].smallAsWebP %>" type="image/webp" />
+                        <source srcset="<%= data.product.plaatjes[0].small %>" type="image/jpeg" />
+                        <img
+                            src="<%= data.product.plaatjes[0].small %>"
+                            class="product-img"
+                            alt="Product titel afbeelding"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            width="80em"
+                            height="60em"
+                        />
+                    </picture>
+                    <h2 class="product-title"><%= data.product.titel %></h2>
+
+                    <div class="edit-buttons">
+                        <a href="#" class="edit">Bewerken &vert;</a>
+                        <a href="#" class="delete"> Verwijderen</a>
+                    </div>
+
+                    <h2 class="price">&euro;<%= data.product.prijs %></h2>
+
+                    <div class="add-more-amount">
+                        <button class="min"><i class="fa-solid fa-minus" style="color: #ffffff"></i></button>
+                        <p class="amount">1</p>
+                        <button class="plus"><i class="fa-solid fa-plus" style="color: #ffffff"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coupon -->
+            <div class="coupon-code">
+                <h2>Kortingscode</h2>
+                <form action="#" class="add-coupon-code">
+                    <input class="coupon-field" type="text" placeholder="Voer je code in" title="Voer je code in" />
+                    <input class="apply-code" type="submit" value="Toepassen" title="Pas je code toe" />
+                </form>
+            </div>
+        </div>
+
+        <!-- Overview desktop version -->
+        <div class="side-by-side">
+            <table class="mobile-overview-product">
+                <thead>
+                    <tr>
+                        <th>Artikel</th>
+                        <th>Product naam</th>
+                        <th>Artikel prijs</th>
+                        <th>Hoeveelheid</th>
+                        <th>Totaal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <picture>
+                                <source srcset="<%= data.product.plaatjes[0].smallAsWebP %>" type="image/webp" />
+                                <source srcset="<%= data.product.plaatjes[0].small %>" type="image/jpeg" />
+                                <img
+                                    src="<%= data.product.plaatjes[0].small %>"
+                                    class="product-img"
+                                    alt="Product titel afbeelding"
+                                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    width="80em"
+                                    height="60em"
+                                />
+                            </picture>
+                        </td>
+                        <td>
+                            <h2 class="product-title"><%= data.product.titel %></h2>
+                        </td>
+                        <td><h2 class="price">&euro;<%= data.product.prijs %></h2></td>
+                        <td>
+                            <div class="add-more-amount">
+                                <button class="min"><i class="fa-solid fa-minus" style="color: #ffffff"></i></button>
+                                <p class="amount">1</p>
+                                <button class="plus"><i class="fa-solid fa-plus" style="color: #ffffff"></i></button>
+                            </div>
+                        </td>
+                        <td class="space"><h2 class="price">&euro;<%= data.product.prijs %></h2></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Overview shopping cart with total costs start -->
+            <div class="overview-costs">
+                <h2 class="title-left">Overzicht</h2>
+                <h2 class="title-right">1 ARTIKEL</h2>
+
+                <div class="line-divider"></div>
+
+                <h2 class="title-left">Subtotaal:</h2>
+                <h2 class="title-right">&euro;<%= data.product.prijs %></h2>
+
+                <h2 class="title-left">Levering:</h2>
+                <h2 class="title-right">&euro;4.15</h2>
+
+                <a href="#" class="delivery-options">Aflever opties</a>
+
+                <div class="line-divider"></div>
+
+                <h2 class="title-left">Totaal bestelling:</h2>
+                <h2 class="title-right">&euro;00.00</h2>
+
+                <!-- <button class="check-out-button">Bestelling afrekenen</button> -->
+                <div class="finish-order">
+                    <a href="#" class="finish-order-button">Bestelling afrekenen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section overview order end -->
+</main>
+
+<%- include('./partials/foot') %>

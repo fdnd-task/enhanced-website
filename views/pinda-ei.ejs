@@ -1,0 +1,9 @@
+<%- include('./partials/head.ejs') %>
+
+
+<% data.producten.forEach(product => { %>
+        <a href="/product-pagina?id=<%= product.id %>"><%= product.titel %></a>
+<% }); %>
+
+
+<%- include('./partials/foot.ejs') %>
