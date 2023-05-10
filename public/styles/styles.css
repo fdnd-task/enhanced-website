@@ -162,7 +162,7 @@ body > main {
   content: "";
   position: absolute;
   left: 100%;
-  transform: translate(-1em, 2.2em);
+  transform: translate(-1em, 2.25em);
   width: auto;
   height: 100%;
   aspect-ratio: 2/1;
