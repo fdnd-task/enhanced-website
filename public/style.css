@@ -157,19 +157,18 @@ hr{
 }
 
 .method-card {
-    display: flex;
-    flex-direction: column;
-    height: 15em;
-    width: 20em;
-    border-left:var(--interactive-el-color) 11px solid;
+    border-left: var(--interactive-el-color) 11px solid;
     border-radius: 6px;
 }
 
 .method-card a {
+    display: flex;
+    flex-direction: column;
+    height: 15em;
+    width: 20em;
     color: var(--text-color);
     text-decoration: none;
 }
-
 
 .method-img {
     height: 15em;
@@ -207,7 +206,6 @@ hr{
     width: auto;
     margin-bottom: 2em;
 }
-
 
 .add-method-text{
     display: flex;
