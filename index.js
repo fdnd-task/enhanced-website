@@ -228,7 +228,7 @@ server.get("/activiteiten", (request, response) => {
 				});
 		}
 
-		response.render("activiteiten-cursus", dataClone);
+		response.render("activiteiten", dataClone);
 	});
 });
 
@@ -245,7 +245,7 @@ server.get("/cursussen", (request, response) => {
 					);
 				});
 		}
-		response.render("activiteiten-cursus", dataClone);
+		response.render("cursussen", dataClone);
 	});
 });
 
