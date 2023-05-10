@@ -12,24 +12,17 @@
         <article>
             <picture>
                 <source 
-                    media="(min-width: 20em)" 
-                    srcset="<%= vestiging.foto.smallAsWebP %>, <%= vestiging.foto.small %>" 
-                    type="image/jpeg, image/webp"
-                    width="1920"
-                    height="1080"  />
-                <source media="(min-width: 48em)" srcset="<%= vestiging.foto.original %>, <%= vestiging.foto.originalAsWebP %>" type="image/jpeg,image/webp" />
-                <img 
-                    src="<%= vestiging.foto.smallAsWebP %>" 
-                    alt="Vestiging <%= vestiging.naam %>" 
-                    width="300" 
-                    height="300" 
-                    loading="lazy"
-                    srcset="
-                    <%= vestiging.foto.smallAsWebP %> 320w, 
-                    <%= vestiging.foto.originalAsWebP %> 640w, 
-                    <%= vestiging.foto.original %> 1280w" 
-                    sizes="(min-width: 20em) 100vw" />
-            </picture>            
+                    media="(min-width: 20em)"
+                    sizes="(max-width: 768px) 100vw, 768px"
+                    srcset="<%= vestiging.foto.originalAsWebP %>, <%= vestiging.foto.smallAsWebP %>, <%= vestiging.foto.smallAsWebP %> 320w" 
+                    type="image/webp" /> 
+                <source 
+                    media="(min-width: 20em)"
+                    sizes="(max-width: 768px) 100vw, 768px"
+                    srcset="<%= vestiging.foto.original %> 1280w, <%= vestiging.foto.small %> 640w, <%= vestiging.foto.small %> 320w"
+                    type="image/jpeg"/>
+                <img src="<%= vestiging.foto.original %>" alt="<%= vestiging.naam %>" width="300" height="300" />
+            </picture> 
             <h2><%= vestiging.naam %></h2>
         </article>
         
