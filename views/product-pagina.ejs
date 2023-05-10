@@ -7,11 +7,26 @@
 
 
 <section class="section-header-product-page">
-    <% if(data.product.plaatjes.length !== 0) { %>   
-        <img class="product-pagina-img" src="<%= data.product.plaatjes[0].url %>" alt="<%= data.product.titel %>" width="<%= data.product.plaatjes[0].width %>" height="<%= data.product.plaatjes[0].height %>">
+
+    <!-- Responsive images roelie test -->
+    <!-- Het picture element is nodig om de afbeeldingen responsive te maken -->
+<picture>
+    <% if(data.product.plaatjes.length !== 0) { %>  
+         <!-- Het source element is nodig om verschillende bronnen te definieren, afhankelijk van de schermbreedte.  -->
+         <!-- media geeft de minimale schermbreedte aan die nodig is voor die specifieke afbeelding -->
+         <!-- srcset bevat de url naar de afbeelding -->
+         <!-- als laatste staat ook nog een img element, die is voor als de andere niet van toepassing zijn -->
+         <!-- lazy loading helpt layout shifting tegen te gaan -->
+         <source media="(min-width: 1024px)" class="webp" type="image/webp" srcset="<%= data.product.plaatjes[0].originalAsWebP %>?w=1024" width="1024px">
+         <source media="(min-width: 768px)" class="webp"  type="image/webp" srcset="<%= data.product.plaatjes[0].originalAsWebP %>?w=768" width="768px">
+         <img class="product-pagina-img" src="<%= data.product.plaatjes[0].originalAsWebP %>?w=480" alt="<%= data.product.titel %>" width="<%= data.product.plaatjes[0].width %>" height="<%= data.product.plaatjes[0].height %>" loading="lazy">
+
     <% } else { %>
-        <img class="placeholder-img" src="/img/placeholder.png" alt="<%= data.product.titel %>">
+        <source media="(min-width: 1024px)" class="webp"  srcset="/img/placeholder.png?w=1024">
+        <source media="(min-width: 768px)" class="webp"  srcset="/img/placeholder.png?w=768">
+        <img class="placeholder-img" src="/img/placeholder.png?w=480" alt="<%= data.product.titel %>" loading="lazy">
     <% } %>    
+</picture>
 
     <div class="price-checkout-container">
         <h2 class="product-price">€<%= data.product.prijs %></h2>
