@@ -2,9 +2,9 @@
 
 <!-- test home link -->
 <div class="mini-nav">
-    <a class="mini-nav-links" href="/">Home</a>
+    <a class="mini-nav-links" aria-label="home link" href="/">Home</a>
     <i class="fa-solid fa-chevron-right fa-2xs" style="color: #a9a1a1"></i>
-    <a class="mini-nav-links" href="/">Producten</a>
+    <a class="mini-nav-links" aria-label="producten pagina" href="/">Producten</a>
 </div>
 <hr>
 
@@ -33,10 +33,10 @@
 
     <div class="price-checkout-container">
         <h2 class="product-price">€<%= data.product.prijs %></h2>
-        <a class="checkout-button" href="/checkout?id=<%= data.product.id %>">
+        <a class="checkout-button" aria-label="check out" href="/checkout?id=<%= data.product.id %>">
             <img src="/img/shop.svg" alt="shopping-cart">
         </a>
-    </ul>
+    </div>
 </section>
 
 <h1 class="product-pagina-h1"><%= data.product.titel %></h1>
@@ -58,16 +58,16 @@
         </section>
     <% } else { %>
         <section class="else-buttons">
-            <a class="voeg-toe" href="#">VOEG TOE AAN WINKELWAGEN</a>
-            <a class="nu-kopen" href="/checkout?id=<%= data.product.id %>">NU KOPEN</a>
+            <a class="voeg-toe" aria-label="voeg toe" href="#">VOEG TOE AAN WINKELWAGEN</a>
+            <a class="nu-kopen" aria-label="nu kopen" href="/checkout?id=<%= data.product.id %>">NU KOPEN</a>
         </section>
     <% }; %>
 </div>
 
 <% if(data.product.schema){ %>
     <section class="last-buttons">
-        <a class="voeg-toe" href="#">VOEG TOE AAN WINKELWAGEN</a>
-        <a class="nu-kopen" href="/checkout?id=<%= data.product.id %>">NU KOPEN</a>
+        <a class="voeg-toe" aria-label="voeg toe" href="#">VOEG TOE AAN WINKELWAGEN</a>
+        <a class="nu-kopen" aria-label="nu kopen" href="/checkout?id=<%= data.product.id %>">NU KOPEN</a>
     </section>
 <% }; %>
 
