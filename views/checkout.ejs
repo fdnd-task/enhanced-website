@@ -45,6 +45,8 @@
 
             <div class="border">
                 <div class="overview-product">
+
+                    <% if(data.product.plaatjes.length !== 0 && data.product.plaatjes[0].smallAsWebP) { %>  
                     <picture>
                         <source srcset="<%= data.product.plaatjes[0].smallAsWebP %>" type="image/webp" />
                         <source srcset="<%= data.product.plaatjes[0].small %>" type="image/jpeg" />
@@ -56,7 +58,14 @@
                             width="80em"
                             height="60em"
                         />
+                    </picture> 
+                    <% } else { %>
+                    <picture>
+                        <source media="(min-width: 1024px)" class="webp"  srcset="/img/placeholder.png?w=1024">
+                        <source media="(min-width: 768px)" class="webp"  srcset="/img/placeholder.png?w=768">
+                        <img class="placeholder-img" src="/img/placeholder.png?w=480" alt="<%= data.product.titel %>" loading="lazy">
                     </picture>
+                        <% } %> 
                     <h2 class="product-title"><%= data.product.titel %></h2>
 
                     <div class="edit-buttons">
@@ -99,6 +108,7 @@
                 <tbody>
                     <tr>
                         <td>
+                            <% if(data.product.plaatjes.length !== 0 && data.product.plaatjes[0].smallAsWebP) { %> 
                             <picture>
                                 <source srcset="<%= data.product.plaatjes[0].smallAsWebP %>" type="image/webp" />
                                 <source srcset="<%= data.product.plaatjes[0].small %>" type="image/jpeg" />
@@ -111,6 +121,13 @@
                                     height="60em"
                                 />
                             </picture>
+                            <% } else { %>
+                            <picture>
+                                <source media="(min-width: 1024px)" class="webp"  srcset="/img/placeholder.png?w=1024">
+                                <source media="(min-width: 768px)" class="webp"  srcset="/img/placeholder.png?w=768">
+                                <img class="placeholder-img" src="/img/placeholder.png?w=480" alt="<%= data.product.titel %>" loading="lazy">
+                            </picture>
+                            <% } %> 
                         </td>
                         <td>
                             <h2 class="product-title"><%= data.product.titel %></h2>
