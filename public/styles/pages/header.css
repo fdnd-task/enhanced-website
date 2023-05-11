@@ -1,0 +1,244 @@
+body > header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+body > header .logo-container {
+  padding: 0.5rem var(--body-padding);
+  background-color: #fff;
+  z-index: 3;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body > header .logo {
+  width: 100%;
+  max-width: 193px;
+  padding: 0.5rem;
+}
+
+body > header .menu {
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+body > header .nav-js-style {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+body > header .nav-active {
+  transform: translate(0, 100%);
+}
+
+body > header .nav-container {
+  z-index: 2;
+}
+
+body > header nav {
+  position: relative;
+  background-color: white;
+}
+
+body > header nav .menu__menu-item {
+  padding: 0.5rem 1rem;
+}
+
+body > header .nav-design {
+  margin: 1rem var(--body-padding);
+  border-radius: 6px;
+}
+
+body > header ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+body > header ul li {
+  list-style-type: none;
+}
+
+body > header ul li a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+body > header ul li a:is(:hover, :focus) {
+  color: var(--primary-color);
+}
+
+body > header ul li button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: left;
+  font-family: Regular, san-serif;
+}
+
+body > header .search-bar {
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 150%);
+  width: 100%;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Regular, san-serif;
+}
+
+body > header .search-bar-js {
+  transform: translate(0, 200%);
+}
+
+body > header .search-bar-active {
+  transform: translate(0, 150%);
+}
+
+body > header .curve {
+  height: 3rem;
+  display: none;
+}
+
+body > header .hero {
+  height: 100vh;
+  height: 100svh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/vervoerregio-amsterdam-body > header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+  max-height: 1080px;
+}
+
+body > header .hero .hero-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 4rem 1rem 4rem 1rem;
+}
+
+body > header .bottom-bar {
+  width: 100%;
+  /* bottom: 0;
+  position: absolute; */
+}
+
+body > header .bottom-bar-verloop {
+  height: 2em;
+  background: rgb(185, 0, 95);
+  background: linear-gradient(
+    90deg,
+    rgba(185, 0, 95, 1) 0%,
+    rgba(227, 0, 89, 0) 100%
+  );
+}
+
+body > header .bottom-bar-box {
+  height: 4em;
+  background: rgb(185, 0, 95);
+  background: linear-gradient(
+    90deg,
+    rgba(185, 0, 95, 1) 0%,
+    rgba(227, 0, 89, 1) 100%
+  );
+}
+
+@media screen and (min-width: 450px) {
+  body > header nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  body > header {
+    flex-direction: row;
+  }
+
+  body > header .logo-container {
+    padding: 0.5rem 1rem 0.5rem var(--body-padding);
+  }
+
+  body > header .logo {
+    max-width: none;
+    width: 120%;
+  }
+
+  body > header .menu {
+    display: none;
+  }
+
+  body > header .nav-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: none;
+    transform: translate(0);
+  }
+
+  body > header nav {
+    margin: 0;
+    border-radius: 0;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    padding-right: var(--body-padding);
+  }
+
+  body > header .nav-design {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  body > header nav ul {
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  body > header nav ul li {
+    padding: 0;
+  }
+
+  body > header .search-bar {
+    left: auto;
+    transform: translate(0, 150%);
+    max-width: 377px;
+    right: var(--body-padding);
+    bottom: 0;
+  }
+
+  body > header .curve {
+    display: block;
+  }
+}

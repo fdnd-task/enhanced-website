@@ -1,0 +1,18 @@
+{
+	"knoppen": {
+		"slug": "knoppen",
+		"title": "Knoppen",
+		"examples": [
+			{
+				"title": "Primaire knop",
+				"html": [
+					"<button class=\"button\">",
+					"\t<span class=\"button__icon\"><i class=\"fa fa-check\" ></i></span>",
+					"\t<span class=\"button__label\">Een knop</span>",
+					"</button>"
+				],
+				"css": ""
+			}
+		]
+	}
+}

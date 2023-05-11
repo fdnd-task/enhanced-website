@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#D4005B" />
+
+    <meta name="keywords" content="Vervoerregio Amsterdam wcag" />
+    <meta name="description" content="Vervoerregio Amsterdam wcag" />
+    <meta
+      name="author"
+      content="Luuk Brauckmann, Sascha Davidson, Tom Poortman"
+    />
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/pages/header.css" />
+    <link rel="stylesheet" href="/styles/pages/<%= styles %>" />
+
+    <link rel="stylesheet" href="/styles/default.min.css" />
+    <link rel="stylesheet" href="/styles/svg-with-js.min.css" />
+
+    <script src="/scripts/scripts.js" defer></script>
+
+    <title><%- title %></title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <main><%- include(template) %></main>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
+

@@ -1,0 +1,43 @@
+{
+	"name": "sprint-10-leertaak",
+	"version": "1.0.0",
+	"description": "Vervoerregio Amsterdam",
+	"main": "index.js",
+	"type": "module",
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/luukbrauckmann/sprint-10-leertaak.git"
+	},
+	"keywords": [
+		"NodeJS",
+		"Express"
+	],
+	"author": "Luuk Brauckmann, Sascha Davidson, Tom Poortman",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/luukbrauckmann/sprint-10-leertaak/issues"
+	},
+	"homepage": "https://github.com/luukbrauckmann/sprint-10-leertaak#readme",
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.4.0",
+		"@fortawesome/free-solid-svg-icons": "^6.4.0",
+		"compression": "^1.7.4",
+		"ejs": "^3.1.9",
+		"express": "^4.18.2",
+		"helmet": "^6.1.5",
+		"highlight.js": "^11.8.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
+}

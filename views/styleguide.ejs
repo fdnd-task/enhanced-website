@@ -1,0 +1,59 @@
+<div class="styleguide">
+  <nav class="menu">
+    <a class="menu__menu-item" href="/styleguide/introductie">Introductie</a>
+    <a class="menu__menu-item" href="/styleguide/typografie">Typografie</a>
+    <a class="menu__menu-item" href="/styleguide/knoppen">Knoppen</a>
+  </nav>
+
+  <section class="page">
+    <header class="page__header">
+      <nav class="breadcrumbs">
+        <a class="breadcrumbs__item">
+          <span class="breadcrumbs__item__icon"> <%- icon('code') %> </span>
+          <span class="breadcrumbs__item__label">Styleguide</span>
+        </a>
+      </nav>
+      <h1><%- content.title %></h1>
+    </header>
+
+    <div class="page__content">
+      <p><%- content.intro %></p>
+
+      <% for (let example of content.examples) { %>
+      <article class="card example-card">
+        <header class="card__header">
+          <h2><%- example.title %></h2>
+        </header>
+
+        <div class="card__content">
+          <article class="styleguide-example">
+            <header class="styleguide-example__header">
+              <h3>Beschrijving</h3>
+            </header>
+            <div class="styleguide-example__content">
+              <%- example.description %>
+            </div>
+          </article>
+          <article class="styleguide-example">
+            <header class="styleguide-example__header">
+              <h3>Voorbeeld</h3>
+            </header>
+            <div class="styleguide-example__content">
+              <pre><%- example.code %></pre>
+            </div>
+          </article>
+          <article class="styleguide-example">
+            <header class="styleguide-example__header">
+              <h3>HTML</h3>
+            </header>
+            <div class="styleguide-example__content">
+              <pre><code><%- highlight(example.code) %></code></pre>
+            </div>
+          </article>
+        </div>
+      </article>
+      <% } %>
+    </div>
+  </section>
+</div>
+
