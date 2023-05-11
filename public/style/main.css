@@ -278,10 +278,12 @@ h1 {
 h2 {
     font-size: var(--u-default);
     margin: 1em 0;
+    font-weight: bold;
 }
 
 p {
     margin-bottom: var(--u-default);
+    max-width: 30em;
 }
 
 /* Interactions */
@@ -372,7 +374,6 @@ pre {
     display: flex;
     flex-direction: column;
 }
-
 .succes {
     padding: var(--u-default);
 }
@@ -395,7 +396,7 @@ pre {
     margin: 0 auto;
 }
 
-.wrapper .carousel{
+.wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
     cursor: pointer;
@@ -415,20 +416,20 @@ pre {
     pointer-events: none;
 }
 
-.carousel::-webkit-scrollbar{
+.carousel::-webkit-scrollbar {
     display: none;
 }
 
-.carousel .book{
+.carousel .book {
     width: 8.5em;
 }
 
-.book-a{
+.book-a {
     display: flex;
     perspective: 1000px;
 }
 
-.book-picture{
+.book-picture {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 110%;
@@ -436,7 +437,7 @@ pre {
     transition: all .2s ease-in-out;
 }
 
-.book-picture:hover{
+.book-picture:hover {
     transform: scale(1.1);
 }
 
@@ -448,17 +449,17 @@ pre {
     background-color: var(--c-accent-25);
 }
 
-.carousel img:hover{
+.carousel img:hover {
     box-shadow: 3px 5px 20px -15px rgb(0, 0, 0);
 }
 
 /* section combo selection  */
 
-section:nth-of-type(3){
+section:nth-of-type(3) {
     padding: 1em 0;
 }
 
-section:nth-of-type(3) img{
+section:nth-of-type(3) img {
     width: 100%;
 }
 
@@ -469,9 +470,11 @@ section:nth-of-type(4) img{
     width: 100%;
 }
 
-section:nth-of-type(3) p{
+section:nth-of-type(3) p {
     padding-top: 1em;
 }
+
+/*============ CSS ACTIVITEITEN EN CURSUS ==========*/
 
 /* ======================= FOOTER ======================= */
 
@@ -595,7 +598,8 @@ footer {
         align-items: center;
     }
 
-    main>section:nth-of-type(3) article p,  section:nth-of-type(3) img {
+    main>section:nth-of-type(3) article p,
+    section:nth-of-type(3) img {
         max-width: 20em;
     }
 
@@ -638,6 +642,7 @@ footer {
     /* .wrapper {
         max-width: 100%;
     } */
+  
     /* ========= FOOTER========= */
 
     .footer-col {
@@ -696,46 +701,46 @@ footer {
         padding: .5em;
     } */
 
-/* Extra Large screen 1400px */
-@media (min-width:88em) {
+    /* Extra Large screen 1400px */
+    @media (min-width:88em) {
 
-    /* ========= MAIN ========= */
-    main>section:nth-of-type(1) {
-        height: 8em;
-        background-size: 40vw;
+        /* ========= MAIN ========= */
+        main>section:nth-of-type(1) {
+            height: 8em;
+            background-size: 40vw;
+
+        }
+
+        header nav {
+            display: flex;
+        }
+
+        header .menu {
+            display: none;
+        }
+
+        header details {
+            display: none;
+        }
+
+        .item {
+            width: 50vw;
+        }
+
+        /* ========= MAIN ========= */
+        .search-container {
+            height: 8em;
+            background-size: 40vw;
+        }
+
+        .search-form {
+            top: 7.5em;
+        }
+
+        .search-form>input {
+            width: 28em;
+        }
 
     }
-
-    header nav {
-        display: flex;
-    }
-
-    header .menu {
-        display: none;
-    }
-
-    header details {
-        display: none;
-    }
-
-    .item {
-        width: 50vw;
-    }
-
-    /* ========= MAIN ========= */
-    .search-container {
-        height: 8em;
-        background-size: 40vw;
-    }
-
-    .search-form {
-        top: 7.5em;
-    }
-
-    .search-form>input {
-        width: 28em;
-    }
-
-}
 
 }

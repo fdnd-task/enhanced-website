@@ -18,7 +18,9 @@ server.set("port", process.env.PORT || 8000);
 dotenv.config();
 
 // Handelt de formulieren af
-server.use(bodyParser.urlencoded({ extended: true }));
+server.use(bodyParser.urlencoded({
+	extended: true
+}));
 server.use(bodyParser.json());
 
 // Stel in hoe express gebruikt kan worden
@@ -221,7 +223,7 @@ server.get("/activiteiten", (request, response) => {
 				});
 		}
 
-		response.render("activiteiten-cursus", dataClone);
+		response.render("activiteiten", dataClone);
 	});
 });
 
@@ -238,7 +240,7 @@ server.get("/cursussen", (request, response) => {
 					);
 				});
 		}
-		response.render("activiteiten-cursus", dataClone);
+		response.render("cursussen", dataClone);
 	});
 });
 
@@ -270,12 +272,12 @@ export async function fetchJson(url, payload = {}) {
 
 export async function postJson(url, body) {
 	return await fetch(url, {
-		method: "post",
-		body: JSON.stringify(body),
-		headers: {
-			"Content-Type": "application/json",
-		},
-	})
+			method: "post",
+			body: JSON.stringify(body),
+			headers: {
+				"Content-Type": "application/json",
+			},
+		})
 		.then((response) => response.json())
 		.catch((error) => error);
 }
