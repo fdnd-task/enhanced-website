@@ -402,6 +402,7 @@ pre {
     gap: 1.7em;
     overflow: auto;
     padding: 1.5em 0;
+    direction: rtl;
     scroll-behavior: smooth;
 }
 
