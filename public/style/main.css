@@ -244,6 +244,10 @@ dt dd {
 }
 
 /* image and graphics */
+img {
+    background-color: var(--c-accent-50);
+}
+
 .item-img {
     transform: perspective(20em) rotateY(20deg);
     transition: var(--a-default);
@@ -312,8 +316,10 @@ button:focus-visible {
 
 /* Amsterdam background / searchbar */
 .search-container {
-    background-image: url("/assets/Amsterdam.jpg");
-    background-image: image-set(url('/assets/Amsterdam.avif') type('image/avif'), url('/assets/Amsterdam.jpg')type('image/jpeg'));
+    background-image: url("/assets/index-images/Amsterdam.webp");
+    background-image: image-set(
+                        url('/assets/index-images/Amsterdam.avif') type('image/avif'), 
+                        url('/assets/index-images/Amsterdam.jpg') type('image/jpeg'));
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 76%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -364,40 +370,50 @@ main>section:nth-of-type(1) p {
     max-width: 30em;
 }
 
+pre {
+    display: flex;
+    flex-direction: column;
+}
+.succes {
+    padding: var(--u-default);
+}
+
 /* Slidebar */
 
+
+.wrapper svg{
+    width: 2.8em;
+    height: 2.8em;
+    line-height: 2.8em;
+    cursor: pointer;
+    padding: .5em;
+}
+
 .wrapper {
-    max-width: 70em;
+    display: flex;
     width: 100%;
     position: relative;
     margin: 0 auto;
-}
-
-.wrapper i {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.wrapper i:first-child {
-    left: 0;
-    margin-right: calc(40px * -1);
-}
-
-.wrapper i:last-child {
-    right: 0;
-    margin-left: calc(40px * -1);
 }
 
 .wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
     cursor: pointer;
-    gap: .7em;
+    gap: 1.7em;
     overflow: auto;
-    margin: 0 2.5em;
-    padding: 1.5em;
+    padding: 1.5em 0;
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.carousel.dragging .book{
+    pointer-events: none;
 }
 
 .carousel::-webkit-scrollbar {
@@ -425,11 +441,12 @@ main>section:nth-of-type(1) p {
     transform: scale(1.1);
 }
 
-.carousel img {
-    width: 100%;
+.carousel img{
+    width: 8em;
     height: auto;
     aspect-ratio: 1 / 1.5;
     box-shadow: 3px 5px 20px -10px #333;
+    background-color: var(--c-accent-25);
 }
 
 .carousel img:hover {
@@ -444,14 +461,13 @@ section:nth-of-type(3) {
 
 section:nth-of-type(3) img {
     width: 100%;
-    max-width: 20em;
 }
 
-section:nth-of-type(4) img {
+section:nth-of-type(4) img{
+    display: flex;
+    margin: 2em 0;
+    justify-content: center;
     width: 100%;
-    margin: 0 auto;
-    display: block;
-    padding: 2em 0;
 }
 
 section:nth-of-type(3) p {
@@ -459,13 +475,6 @@ section:nth-of-type(3) p {
 }
 
 /*============ CSS ACTIVITEITEN EN CURSUS ==========*/
-
-
-
-
-
-
-
 
 /* ======================= FOOTER ======================= */
 
@@ -476,9 +485,7 @@ section:nth-of-type(3) p {
 
 footer {
     background: #111;
-    background-image: url("/public/assets/Amsterdam.webp");
     padding: 70px 0;
-    z-index: 1;
 }
 
 .row {
@@ -632,10 +639,10 @@ footer {
 
     /* ========= MAIN ========= */
 
-    .wrapper {
+    /* .wrapper {
         max-width: 100%;
-    }
-
+    } */
+  
     /* ========= FOOTER========= */
 
     .footer-col {
@@ -689,10 +696,10 @@ footer {
         width: 100%;
     }
 
-    .wrapper .carousel {
+    /* .wrapper .carousel{
         margin: 0 1.5em;
         padding: .5em;
-    }
+    } */
 
     /* Extra Large screen 1400px */
     @media (min-width:88em) {

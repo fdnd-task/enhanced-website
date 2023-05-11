@@ -18,15 +18,17 @@
         <form class="form-reservate" action="/reserveren" method="post">
             <fieldset>
 				<legend>Persoonlijke gegevens</legend>
-				<label for="obaId">oba ID nummer</label>
+                <pre>
+				<label for="obaId" hidden>oba ID nummer</label>
 				<input
-					required
-					id="obaId"
-					type="text"
-					name="obaId"
-					value=""
-                    
+                    required
+                    hidden
+                    id="obaId"
+                    type="text"
+                    name="obaId"
+                    value="<%= results[0].id %>"
 				/>
+                </pre>
 				<label for="userName">Wat is uw voornaam?</label>
 				<input
 					required

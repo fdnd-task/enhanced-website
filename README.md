@@ -66,9 +66,14 @@ Voor dit project hebben wij .env gebruikt omdat wij met echte data gingen werken
 Om ervoor te zorgen dat iedereen toegang heeft tot het project, hebben wij de methode "progressive enhancement" gebruikt. Hierbij hebben we eerst de inhoud van de webpagina opgebouwd met behulp van HTML, geïntegreerd in EJS. Vervolgens heb ik functionaliteit toegevoegd door middel met de GET en POST-methode. Voor CSS hebben we diverse CSS-stijlen gebruikt om de website te stijlen in de huisstijl van OBA. 
 
 
-## 💾Bronnen
+## 💾 Bronnen
+- MDN documents
+- Pagespeed insights
+- Lighthouse 
+- Can i use
+- DOC (instructions)
 
 
-## 📠Licentie
+## 📠 Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).

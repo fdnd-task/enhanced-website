@@ -131,26 +131,17 @@ server.post("/reserveren", (request, response) => {
 	const url = `${baseurl}/reserveringen`;
 
 	postJson(url, request.body).then((data) => {
-		let newReservation = {
-			...request.body,
-		};
-
-		console.log(data)
-
-		if (data.success) {
-			response.redirect("/");
-		} else {
-			const errormessage = `${data.message}: Mogelijk komt dit door het id die al bestaat.`;
-			const newdata = {
-				error: errormessage,
-				values: newReservation,
-			};
-
-			response.render("reserveren", newdata);
+		let newReservering = { ... request.body }
+		console.log(newReservering);
+		if (data.id) {
+		  response.redirect('/succes') 
+		  console.log("werkt!")
+		  
+	
+		} else{
+		  response.redirect('/succes')
 		}
 
-		console.log(JSON.stringify(data.errors));
-		console.log(request.body);
 	});
 });
 
@@ -166,6 +157,10 @@ server.get(
 		});
 	}
 );
+
+server.get("/succes", (request, response) => {
+		response.render("succes");
+});
 
 // Maakt een route voor de studieplek reserveringspagina om vestiging foto's in te laden
 server.get(
