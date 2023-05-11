@@ -270,11 +270,6 @@ font-size: 1rem;
 /* header gedeelte roelie */
 
 /* test responsive img roelie */
-.webp{
-    aspect-ratio: 3/4;
-    object-fit: cover;
-}
-
 
 .product-pagina-img {
     width: 80%;
@@ -326,8 +321,8 @@ font-size: 1rem;
     margin: 1rem;
     padding: 1rem;
 }
-.product-beschrijving > h1,
-.product-stappenplan > h1 {
+.product-beschrijving > h2,
+.product-stappenplan > h2 {
     margin-bottom: 1rem;
 }
 .product-beschrijving > ul,
