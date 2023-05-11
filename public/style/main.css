@@ -379,8 +379,17 @@ pre {
 
 /* Slidebar */
 
+
+.wrapper svg{
+    width: 2.8em;
+    height: 2.8em;
+    line-height: 2.8em;
+    cursor: pointer;
+    padding: .5em;
+}
+
 .wrapper {
-    max-width: 70em;
+    display: flex;
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -394,6 +403,16 @@ pre {
     overflow: auto;
     padding: 1.5em 0;
     direction: rtl;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.carousel.dragging .book{
+    pointer-events: none;
 }
 
 .carousel::-webkit-scrollbar{
@@ -441,48 +460,18 @@ section:nth-of-type(3){
 
 section:nth-of-type(3) img{
     width: 100%;
-    max-width: 20em;
 }
 
 section:nth-of-type(4) img{
+    display: flex;
+    margin: 2em 0;
+    justify-content: center;
     width: 100%;
-    margin: 0 auto;
-    display: block;
-    padding: 2em 0;
 }
 
 section:nth-of-type(3) p{
     padding-top: 1em;
 }
-
-/*============ CSS ACTIVITEITEN EN CURSUS TIJDELIJK==========*/
-
-/* article {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-main {
-    margin: 0 auto;
-    align-items: center;
-}
-
-section {
-
-    max-width: 100%;
-    height: auto;
-    display: inline-flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-
-} */
-
-
-
-
 
 /* ======================= FOOTER ======================= */
 
@@ -494,7 +483,6 @@ section {
 footer {
     background: #111;
     padding: 70px 0;
-    z-index: 1;
 }
 
 .row {
@@ -541,21 +529,6 @@ footer {
 }
 
 /* ======================= MEDIA QUERYS ======================= */
-
-@media (prefers-contrast: more) {
-    :root {
-        --c-primary-150: #600;
-        --c-primary-100: #600;
-        --c-primary-50: #fcd9d9;
-        --c-default: #fff;
-        --c-accent-25: #fff;
-        --c-accent-50: #333;
-        --c-accent-75: #333;
-        --c-accent-100: #333;
-        --c-accent-150: #333;
-        --c-invert: #111;
-    }
-}
 
 @media (prefers-reduced-motion) {
 
@@ -662,9 +635,9 @@ footer {
 
     /* ========= MAIN ========= */
 
-    .wrapper {
+    /* .wrapper {
         max-width: 100%;
-    }
+    } */
     /* ========= FOOTER========= */
 
     .footer-col {
@@ -718,10 +691,10 @@ footer {
         width: 100%;
     }
 
-    .wrapper .carousel{
+    /* .wrapper .carousel{
         margin: 0 1.5em;
         padding: .5em;
-    }
+    } */
 
 /* Extra Large screen 1400px */
 @media (min-width:88em) {
