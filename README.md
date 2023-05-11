@@ -67,6 +67,11 @@ Om ervoor te zorgen dat iedereen toegang heeft tot het project, hebben wij de me
 
 
 ## 💾Bronnen
+- MDN documents
+- Pagespeed insights
+- Lighthouse 
+- Can i use
+- DOC (instructions)
 
 
 ## 📠Licentie
