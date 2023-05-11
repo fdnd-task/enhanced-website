@@ -13,7 +13,13 @@
 
     <section>
         <h2> Onze nieuwe aanwinsten</h2>
+
         <div class="wrapper">
+            <a id="left" class=" arrow arrow-left">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="50" height="50" transform="rotate(180)" viewBox="0 0 512 512">
+                    <path d="M146.662 26.814 358.221 238.27c10.755 10.222 10.755 26.193 0 36.414L146.662 486.139" style="fill:none;stroke:#000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131"/>
+                </svg>
+            </a>
             <ul class="carousel">
                 <% results.forEach(result => { %>
                 <li class="book">
@@ -25,7 +31,12 @@
                 </li>
                 <% }); %>
             </ul>
-        </div> 
+            <a id="right" class=" arrow arrow-right">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="50" height="50" viewBox="0 0 512 512">
+                    <path d="M146.662 26.814 358.221 238.27c10.755 10.222 10.755 26.193 0 36.414L146.662 486.139" style="fill:none;stroke:#000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131"/>
+                </svg>
+            </a>
+        </div>
     </section>
 
     <section>
@@ -35,7 +46,7 @@
                 <picture>
                     <source srcset="/assets/index-images/oba-content-img1.avif" type="image/avif"/>
                     <source srcset="/assets/index-images/oba-content-img1.webp" type="image/webp"/>
-                    <img src="/assets/index-images/oba-content-img1.jpg" alt="e-books en luisterboeken">
+                    <img src="/assets/index-images/oba-content-img1.jpg" alt="e-books en luisterboeken" loading="lazy">
                 </picture>
             </a>
             <p> 
@@ -49,7 +60,7 @@
                 <picture>
                     <source srcset="/assets/index-images/oba-content-img2.avif" type="image/avif"/>
                     <source srcset="/assets/index-images/oba-content-img2.webp" type="image/webp"/>
-                    <img src="/assets/index-images/oba-content-img2.jpg" alt="Passend lezen">
+                    <img src="/assets/index-images/oba-content-img2.jpg" alt="Passend lezen" loading="lazy">
                 </picture>
             </a>
             <p> 
@@ -62,7 +73,7 @@
                 <picture>
                     <source srcset="/assets/index-images/oba-content-img3.avif" type="image/avif"/>
                     <source srcset="/assets/index-images/oba-content-img3.webp" type="image/webp"/>
-                    <img src="/assets/index-images/oba-content-img3.jpg" alt="Leesclub">
+                    <img src="/assets/index-images/oba-content-img3.jpg" alt="Leesclub" loading="lazy">
                 </picture>
             </a>
             <p> 
@@ -74,9 +85,13 @@
 
     <section>
         <picture>
-            <source srcset="/assets/index-images/oba-footer-img.avif" type="image/avif"/>
-            <source srcset="/assets/index-images/oba-footer-img.webp" type="image/webp"/>
-            <img src="/assets/index-images/oba-footer-img.jpg" alt="Tips van Oba">
+                <source
+                        srcset="/assets/index-images/oba-footer-img-large.avif 1280w,
+                                /assets/index-images/oba-footer-img-medium.avif 740w,
+                                /assets/index-images/oba-footer-img.small.avif 320w"
+                        type="image/avif"/>
+            <!-- <source srcset="/assets/index-images/oba-footer-img.webp" type="image/webp"/> -->
+            <img src="/assets/index-images/oba-footer-img.jpg" alt="Tips van Oba" loading="lazy" />
         </picture>
     </section>
 </main>
