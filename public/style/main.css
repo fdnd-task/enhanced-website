@@ -374,8 +374,17 @@ main>section:nth-of-type(1) p {
 
 /* Slidebar */
 
+
+.wrapper svg{
+    width: 2.8em;
+    height: 2.8em;
+    line-height: 2.8em;
+    cursor: pointer;
+    padding: .5em;
+}
+
 .wrapper {
-    max-width: 70em;
+    display: flex;
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -388,6 +397,16 @@ main>section:nth-of-type(1) p {
     gap: 1.7em;
     overflow: auto;
     padding: 1.5em 0;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.carousel.dragging .book{
+    pointer-events: none;
 }
 
 .carousel::-webkit-scrollbar{
@@ -505,21 +524,6 @@ footer {
 
 /* ======================= MEDIA QUERYS ======================= */
 
-@media (prefers-contrast: more) {
-    :root {
-        --c-primary-150: #600;
-        --c-primary-100: #600;
-        --c-primary-50: #fcd9d9;
-        --c-default: #fff;
-        --c-accent-25: #fff;
-        --c-accent-50: #333;
-        --c-accent-75: #333;
-        --c-accent-100: #333;
-        --c-accent-150: #333;
-        --c-invert: #111;
-    }
-}
-
 @media (prefers-reduced-motion) {
 
     /* styles to apply if the user's settings are set to reduced motion */
@@ -625,9 +629,9 @@ footer {
 
     /* ========= MAIN ========= */
 
-    .wrapper {
+    /* .wrapper {
         max-width: 100%;
-    }
+    } */
     /* ========= FOOTER========= */
 
     .footer-col {
@@ -681,10 +685,10 @@ footer {
         width: 100%;
     }
 
-    .wrapper .carousel{
+    /* .wrapper .carousel{
         margin: 0 1.5em;
         padding: .5em;
-    }
+    } */
 
 /* Extra Large screen 1400px */
 @media (min-width:88em) {
