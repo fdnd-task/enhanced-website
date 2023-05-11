@@ -368,6 +368,11 @@ main>section:nth-of-type(1) p {
     max-width: 30em;
 }
 
+pre {
+    display: flex;
+    flex-direction: column;
+}
+
 .succes {
     padding: var(--u-default);
 }
