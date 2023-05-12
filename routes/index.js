@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var filters = require('ctc-module')
-const url = `${process.env.API_URL}/smartzones?first=100`;
+
+const url = `${process.env.API_URL}/smartzones`;
 const baseurl = `${process.env.API_URL}`;
 
 
@@ -15,26 +15,32 @@ router.get('/', function(req, res, next) {
   let smartUrl = url + '?orderBy=' + orderBy + '&direction=ASC' 
 
   fetchJson(smartUrl).then((data) => {
-
-  fetchJson(url).then((data) => {
-
+    console.log(smartUrl)
     res.render('index', data)
-
-  })
-
-
-});
-
-router.get('/filtered', function(req, res, next) {
-
-  fetchJson(url).then((data) => {
-    
-        res.render('index', {smartzones: filters(req, data)});
-        console.log(filters(req, data));
-
   })
 });
 
+
+// router.post('/', (request, response) => {
+  
+
+  
+
+//   postJson(url1, request.body).then((data) => {
+//     let newZone = { ... request.body }
+//     console.log(data)
+//     if (data.success) {
+//       response.redirect('/?memberPosted=true') 
+//       // TODO: squad meegeven, message meegeven
+//       // TODO: Toast meegeven aan de homepagina
+
+//     } else {
+//       const errormessage = `${data.message}: Mogelijk komt dit door de slug die al bestaat.`
+//       const newdata = { error: errormessage, values: newZone }
+
+//       }
+//   })
+// })
 
 router.post('/', (request, response) => {
   request.body.timeStart = request.body.dateStart + 'T' + request.body.timeStart + ':00Z';
@@ -43,16 +49,13 @@ router.post('/', (request, response) => {
   postJson(url1, request.body).then((data) => {
     let newReservation = { ... request.body}
 
-
    if (data.success) {
         response.redirect('/?reservationPosted')
-
 
     }
     else {
     const errorMessage = data.message
     const newData = { error: errorMessage, values: newReservation }
-
     }
   })
 })
