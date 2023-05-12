@@ -20,13 +20,13 @@ var sortFunc = document.querySelector(".sortFunc");
 var sortLoc = document.querySelector(".sortLoc"); 
 var sortStyling = document.querySelector(".sortHidden");
 var sortButton = document.querySelector("#sort-button");
-var filterStyling = document.querySelector(".filterStyle");
+var filterStyling = document.querySelector(".filterHidden");
 var filterButton = document.querySelector("#filter-button");
 var dynamicFill = document.querySelectorAll(".dynamicCard");
 var searchForm = document.querySelector("#search-form");
 let exitButton = document.querySelector(".exitButton");
 let reserveForm = document.querySelector("#reserve-form");
-let reserveButton = document.querySelectorAll(".reserveButton");
+let reserveButton = document.querySelector(".reserveButton");
 
 const media1 = window.matchMedia('(max-width: 980px)');
 const media2 = window.matchMedia('(min-width: 980px)');
@@ -262,7 +262,7 @@ async function setMarkers(map){
           infoWindow.close();
       });
       } 
-    }
+
 
 
 
@@ -396,53 +396,53 @@ async function setMarkers(map){
 //   });
 // }
 // initSort();
-// function filterTest(){
+function filterTest(){
   
-//   for (let i = 0; i < checkboxes.length; i++){
-//     checkboxes[i].addEventListener("change", () =>{
-//       if(checkboxes[i].name == "filterLoc" && checkboxes[i].checked){
-//         let locCheck = smartzones.filter(location => location.town == checkboxes[i].value);
-//         depopulate();
-//         populate(locCheck);
-//         depopDynamic();
-//         dynamicFill[i].textContent = checkboxes[i].value;
-//         dynamicFill[i].style.display = "inline";
-//       }
-//       else if(checkboxes[i].name == "filterFunc" && checkboxes[i].checked){
-//         let funcCheck = smartzones.filter(functionality => functionality.function == checkboxes[i].value);
-//         console.log(checkboxes[i].value)
-//         depopulate();
-//         populate(funcCheck);
-//         depopDynamic();
-//         dynamicFill[i].textContent = checkboxes[i].value;
-//         dynamicFill[i].style.display = "inline";
-//       }
-//       else if(checkboxes[i].name == "filterGrootte" && checkboxes[i].checked){
-//         let sizeCheck = smartzones.filter(area => area.size == checkboxes[i].value);
-//         depopulate();
-//         populate(sizeCheck);
-//         depopDynamic();
-//         dynamicFill[i].textContent = checkboxes[i].value;
-//         dynamicFill[i].style.display = "inline";
-//       }
-//       else if(checkboxes[i].name == "filterGebruik" && checkboxes[i].checked){
-//         let usageCheck = smartzones.filter(usage => parseInt(usage.utilization) < parseInt(checkboxes[i].value));
-//         depopulate();
-//         populate(usageCheck);
-//         depopDynamic();
-//         dynamicFill[i].textContent = checkboxes[i].value;
-//         dynamicFill[i].style.display = "inline";
-//       }
-//       else{
-//         depopulate();
-//         populate(smartzones);
-//         depopDynamic();
-//       }
-//     });
-//   }
-//   }
-//   filterTest();
-// }
+  for (let i = 0; i < checkboxes.length; i++){
+    checkboxes[i].addEventListener("change", () =>{
+      if(checkboxes[i].name == "filterLoc" && checkboxes[i].checked){
+        let locCheck = smartzones.filter(location => location.town == checkboxes[i].value);
+        depopulate();
+        populate(locCheck);
+        depopDynamic();
+        dynamicFill[i].textContent = checkboxes[i].value;
+        dynamicFill[i].style.display = "inline";
+      }
+      else if(checkboxes[i].name == "filterFunc" && checkboxes[i].checked){
+        let funcCheck = smartzones.filter(functionality => functionality.function == checkboxes[i].value);
+        console.log(checkboxes[i].value)
+        depopulate();
+        populate(funcCheck);
+        depopDynamic();
+        dynamicFill[i].textContent = checkboxes[i].value;
+        dynamicFill[i].style.display = "inline";
+      }
+      else if(checkboxes[i].name == "filterGrootte" && checkboxes[i].checked){
+        let sizeCheck = smartzones.filter(area => area.size == checkboxes[i].value);
+        depopulate();
+        populate(sizeCheck);
+        depopDynamic();
+        dynamicFill[i].textContent = checkboxes[i].value;
+        dynamicFill[i].style.display = "inline";
+      }
+      else if(checkboxes[i].name == "filterGebruik" && checkboxes[i].checked){
+        let usageCheck = smartzones.filter(usage => parseInt(usage.utilization) < parseInt(checkboxes[i].value));
+        depopulate();
+        populate(usageCheck);
+        depopDynamic();
+        dynamicFill[i].textContent = checkboxes[i].value;
+        dynamicFill[i].style.display = "inline";
+      }
+      else{
+        depopulate();
+        populate(smartzones);
+        depopDynamic();
+      }
+    });
+  }
+  }
+  filterTest();
+}
   
 
 
@@ -492,7 +492,7 @@ function filterShow(){
   }
 }
 
-filterShow();
+
 // function classToggle(element, class1, class2){
 //   if(element.classList.contains(class1)){
 //     element.classList.toggle(class2);
@@ -529,9 +529,7 @@ buttonSlide.addEventListener("click", classSlide);
 sortButton.addEventListener("click", sortShow);
 filterButton.addEventListener("click", filterShow);
 exitButton.addEventListener("click", toggleReserve);
-for(let i = 0; i < reserveButton.length; i++){
-  reserveButton[i].addEventListener("click", toggleReserve);
-}
+reserveButton.addEventListener("click", toggleReserve);
 
 // https://developers.google.com/maps/documentation/javascript
 // https://support.google.com/mymaps/answer/3024454?hl=en&co=GENIE.Platform%3DDesktop#:~:text=Create%20a%20map,map%20a%20name%20and%20description.

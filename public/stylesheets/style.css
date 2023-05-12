@@ -124,7 +124,7 @@ main{
 
 }
 
-#stick-top > a > img{
+#stick-top > img{
     margin-left: 50%;
     transform: translateX(-50%);
     width: 15em;
@@ -178,7 +178,7 @@ li> p{
 .buttonHolder{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     gap: 0.75em
 }
@@ -198,6 +198,7 @@ li> div> button{
 
 #top-holder{
     width: 100%;
+    padding-left: 2em;
 }
 
 #top-holder > button{
@@ -374,38 +375,10 @@ main > form{
     z-index: 2;
     
 }
-
-#filter-form{
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-#filter-form > label{
-    transform: translateY(1em);
-}
-
-#filter-form > p{
+form> label{
     font-weight: bold;
 }
-#reserved > label{
-    font-weight: bold;
 
-}
-
-input[type="submit"]{
-    padding: 0.5em;
-    background: linear-gradient(to right, rgba(79,81,201,1) 0%, rgba(79,81,201,1) 40%, rgba(79,81,201,1) 44%, rgba(133,34,199,1) 100%);
-    color: white;
-    border-radius: 40px;
-    border: none;
-    outline: var(--main-ctc-color) solid 2px;
-    background-color: white;
-    cursor: pointer;
-    max-height: 3.5em;
-    width: 6em;
-    font-weight: bold;
-    margin-top: 1em;
-}
 section{
     margin-top: 15em;
     position: absolute;
