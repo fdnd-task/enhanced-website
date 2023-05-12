@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-
-const url = `${process.env.API_URL}/smartzones`;
+var filters = require('ctc-module')
+const url = `${process.env.API_URL}/smartzones?first=100`;
 const baseurl = `${process.env.API_URL}`;
 
 
@@ -16,8 +16,18 @@ router.get('/', function(req, res, next) {
 
   console.log(smartUrl)
   fetchJson(smartUrl).then((data) => {
-    console.log(smartUrl)
     res.render('index', data)
+
+});
+});
+
+router.get('/filtered', function(req, res, next) {
+
+  fetchJson(url).then((data) => {
+    
+        res.render('index', {smartzones: filters(req, data)});
+        console.log(filters(req, data));
+
   })
 });
 
@@ -29,13 +39,16 @@ router.post('/', (request, response) => {
   postJson(url1, request.body).then((data) => {
     let newReservation = { ... request.body}
 
+
    if (data.success) {
         response.redirect('/?reservationPosted')
+
 
     }
     else {
     const errorMessage = data.message
     const newData = { error: errorMessage, values: newReservation }
+
     }
   })
 })

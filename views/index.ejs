@@ -17,50 +17,51 @@
             <div id="side-wrapper">
                 <ul id="big-list">
                     <div id="stick-top">
-                        <img src="/images/CTC_FULL_BLUE.png" alt="CTC brand logo">
+                        <a href="/"><img src="/images/CTC_FULL_BLUE.png" alt="CTC brand logo"></a>
                         <div class="buttonHolder" id="top-holder">
                             <button id="sort-button">Sorteer</button>
                             <button id="filter-button">Filter</button>
                         </div>
                     </div>
 
-                    <li class="filterHidden">
-                        <p>Filter Op: </p>
-                        <% for(let i = 0; i < 14; i++){ %>
-                        <span class="dynamicCard"></span>
-                            <% } %>
-                        <p>Locatie: </p>
-                        <input type="checkbox" name="filterLoc" value="distance" id="distanceFilter">
-                        <label for="distanceFilter">&lt; 5 km </label>
-                        <input type="checkbox" name="filterLoc" value="Utrecht" id="utrFilter">
-                        <label for="utrFilter">Utrecht</label>
-                        <input type="checkbox" name="filterLoc" value="Schiedam" id="schieFilter">
-                        <label for="schieFilter">Schiedam</label>
-                        <input type="checkbox" name="filterLoc" value="Amsterdam" id="amsFilter">
-                        <label for="amsFilter">Amsterdam</label>
-                        <input type="checkbox" name="filterLoc" value="Rotterdam" id="rotFilter">
-                        <label for="rotFilter">Rotterdam</label>
-                        <p>Functie: </p>
-                        <input type="checkbox" name="filterFunc" value="Parkeren" id="parkFilter">
-                        <label for="parkFilter">Parkeren</label>
-                        <input type="checkbox" name="filterFunc" value="Laden en lossen" id="loadFilter">
-                        <label for="loadFilter">Laden en Lossen</label>
-                        <input type="checkbox" name="filterFunc" value="Deelmobiliteit" id="deelFilter">
-                        <label for="deelFilter">Deelmobiliteit</label>
-                        <p>Grootte: </p>
-                        <input type="checkbox" name="filterGrootte" value="1 plek" id="kleinFilter">
-                        <label for="kleinFilter">1 plek</label>
-                        <input type="checkbox" name="filterGrootte" value="1,5 plek" id="midFilter">
-                        <label for="midFilter">1.5 plek</label>
-                        <input type="checkbox" name="filterGrootte" value="2 plek" id="bigFilter">
-                        <label for="bigFilter">2 plek</label>
-                        <p>Gebruik: </p>
-                        <input type="checkbox" name="filterGebruik" value="25" id="25Filter">
-                        <label for="25Filter">&lt; 25%</label>
-                        <input type="checkbox" name="filterGebruik" value="50" id="50Filter">
-                        <label for="50Filter">&lt; 50%</label>
-                        <input type="checkbox" name="filterGebruik" value="75" id="75Filter">
-                        <label for="75Filter">&lt; 75%</label></li>
+
+                    <li class="filterStyle">
+
+                        <form action="filtered" method="get" id="filter-form">
+                            <p>Filter Op: </p>
+                            <% for(let i = 0; i < 14; i++){ %>
+                            <span class="dynamicCard"></span>
+                                <% } %>
+                            <p>Locatie: </p>
+                            <!-- <input type="checkbox" name="filterLoc" value="distance" id="distanceFilter">
+                            <label for="distanceFilter">&lt; 5 km </label> -->
+                            <label for="utrFilter">Utrecht</label>
+                            <input type="checkbox" name="town" value="Utrecht" id="utrFilter">
+                            <label for="schieFilter">Schiedam</label>
+                            <input type="checkbox" name="town" value="Schiedam" id="schieFilter">
+                            <label for="amsFilter">Amsterdam</label>
+                            <input type="checkbox" name="town" value="Amsterdam" id="amsFilter">
+                            <label for="rotFilter">Rotterdam</label>
+                            <input type="checkbox" name="town" value="Rotterdam" id="rotFilter">
+                            <p>Functie: </p>
+                            <label for="parkFilter">Parking</label>
+                            <input type="checkbox" name="utilization" value="parking" id="parkFilter">
+                            <label for="loadFilter">Meeting Point</label>
+                            <input type="checkbox" name="utilization" value="meetingpoint" id="loadFilter">
+                            <label for="deelFilter">Market</label>
+                            <input type="checkbox" name="utilization" value="market" id="deelFilter">
+                            <p>Grootte: </p>
+                            <label for="kleinFilter">1 plek</label>
+                            <input type="checkbox" name="size" value="1" id="kleinFilter">
+                            <label for="midFilter">1.5 plek</label>
+                            <input type="checkbox" name="size" value="1,5" id="midFilter">
+                            <label for="bigFilter">2 plek</label>
+                            <input type="checkbox" name="size" value="2" id="bigFilter">
+                            <input type="submit">
+                        </form>
+                    </li>
+
+
                     <li class="sortHidden">
                         <p>Sorteer op: </p>
                         <a href="/?orderBy=name&direction=ASC" class="sortSize">naam</a>
@@ -68,13 +69,14 @@
                     <% for(let i = 0; i < smartzones.length; i++){ %>
                       <li class="zoneInfo">
                         <p>Smartzone: <span> <%= smartzones[i].name %> </span></p>
+
                               
                           
                         <p>Locatie: <span> <%= smartzones[i].town %> </span></p>
                         <p>Adres: <span> <%= smartzones[i].address %> </span></p>
-                        <p>Functie: <span><%= smartzones[i].utilization %></span></p>
-                        <!-- <p>Grootte: <span> <%= smartzones[i].size %> </span></p> -->
-                        <p>Gebruik: <span class="useJSON"></span></p>
+                        <% let stringified = smartzones[i].utilization.toString() %>
+                        <p>Functie: <span><%= stringified.charAt(0).toUpperCase() + stringified.slice(1) %></span></p>
+                        <p>Grootte: <span> <%= smartzones[i].size %> </span></p>
                         <div class="buttonHolder">
                             <button class="selectButton">Selecteer</button>
                             <button class="reserveButton">Reserveer</button>
@@ -89,7 +91,7 @@
 
         <section id="reserve-form" class="reserveHidden">
             <img src="/images/close-window.png" class="exitButton">
-            <form action="/" method="post">
+            <form action="/" method="post" id="reserved">
                 <label for="userInput">Username: </label>
                 <input type="text" name="author" id="userInput">
 
