@@ -516,6 +516,7 @@ section > img{
     }
 }
 
+
 @media screen and (max-width: 580px) {
     #map{
         width: 25em;
