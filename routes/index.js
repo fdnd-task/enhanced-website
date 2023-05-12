@@ -12,8 +12,9 @@ router.get('/', function(req, res, next) {
   const { query } = req
   console.log(query.orderBy);
   let orderBy = req.query.orderBy || 'publishedAt'
-  let smartUrl = url + '?orderBy=' + orderBy + '&direction=ASC' 
+  let smartUrl = url + '&orderBy=' + orderBy + '&direction=ASC' 
 
+  console.log(smartUrl)
   fetchJson(smartUrl).then((data) => {
     console.log(smartUrl)
     res.render('index', data)
@@ -23,6 +24,8 @@ router.get('/', function(req, res, next) {
 
 // router.post('/', (request, response) => {
   
+
+});
 
   
 
