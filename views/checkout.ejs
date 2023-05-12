@@ -5,9 +5,9 @@
     <header class="top-page">
         <!-- Mini navigation -->
         <div class="mini-nav">
-            <a class="mini-nav-links" href="/">Home</a>
+            <a class="mini-nav-links" href="/" aria-label="Klik hier om terug te gaan naar de homepagina">Home</a>
             <i class="fa-solid fa-chevron-right fa-2xs" style="color: #a9a1a1"></i>
-            <a class="mini-nav-links" href="#">Winkelwagen</a>
+            <a class="mini-nav-links" href="#" aria-label="Klik hier om naar de winkelwagen te gaan">Winkelwagen</a>
 
         </div>
 
@@ -20,8 +20,8 @@
 
         <!-- Buttons for checkout and continue shopping -->
         <div class="buttons">
-            <a href="#" class="check-out-order">Bestelling afrekenen</a>
-            <a href="#" class="continue-shop">Verder winkelen</a>
+            <a href="#" class="check-out-order" aria-label="Klik hier om de bestelling af te rekenen">Bestelling afrekenen</a>
+            <a href="#" class="continue-shop" aria-label="Klik hier om verder te winkelen">Verder winkelen</a>
         </div>
     </header>
 
@@ -69,8 +69,8 @@
                     <h2 class="product-title"><%= data.product.titel %></h2>
 
                     <div class="edit-buttons">
-                        <a href="#" class="edit">Bewerken &vert;</a>
-                        <a href="#" class="delete"> Verwijderen</a>
+                        <a href="#" class="edit" aria-label="Klik hier om je winkelwagen aan te passen">Bewerken &vert;</a>
+                        <a href="#" class="delete" aria-label="Klik hier om je product te verwijderen"> Verwijderen</a>
                     </div>
 
                     <h2 class="price">&euro;<%= data.product.prijs %></h2>
@@ -158,7 +158,7 @@
                 <h2 class="title-left">Levering:</h2>
                 <h2 class="title-right">&euro;4.15</h2>
 
-                <a href="#" class="delivery-options">Aflever opties</a>
+                <a href="#" class="delivery-options" aria-label="Klik hier om de aflever opties te bekijken">Aflever opties</a>
 
                 <div class="line-divider"></div>
 
@@ -167,7 +167,7 @@
 
                 <!-- <button class="check-out-button">Bestelling afrekenen</button> -->
                 <div class="finish-order">
-                    <a href="#" class="finish-order-button">Bestelling afrekenen</a>
+                    <a href="#" class="finish-order-button" aria-label="Klik hier om je afbeelding af te rekenen">Bestelling afrekenen</a>
                 </div>
             </div>
         </div>
