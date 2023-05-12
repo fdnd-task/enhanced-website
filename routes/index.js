@@ -12,23 +12,12 @@ router.get('/', function(req, res, next) {
   const { query } = req
   console.log(query.orderBy);
   let orderBy = req.query.orderBy || 'publishedAt'
-  let smartUrl = url + '?orderBy=' + orderBy + '&direction=ASC' 
+  let smartUrl = url + '&orderBy=' + orderBy + '&direction=ASC' 
 
   fetchJson(smartUrl).then((data) => {
-<<<<<<< HEAD
     res.render('index', data)
 
 });
-=======
-
-  fetchJson(url).then((data) => {
-
-    res.render('index', data)
-
-  })
-
-
->>>>>>> parent of 380519e (push)
 });
 
 router.get('/filtered', function(req, res, next) {
@@ -42,9 +31,6 @@ router.get('/filtered', function(req, res, next) {
 });
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 // router.post('/', (request, response) => {
   
 
@@ -66,9 +52,7 @@ router.get('/filtered', function(req, res, next) {
 //   })
 // })
 
->>>>>>> parent of 6e68273 (Merge branch 'main' into Fatihamca)
-=======
->>>>>>> parent of 380519e (push)
+
 router.post('/', (request, response) => {
   request.body.timeStart = request.body.dateStart + 'T' + request.body.timeStart + ':00Z';
   request.body.timeEnd = request.body.dateEnd + 'T' + request.body.timeEnd + ':00Z';    
