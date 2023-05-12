@@ -12,9 +12,8 @@ router.get('/', function(req, res, next) {
   const { query } = req
   console.log(query.orderBy);
   let orderBy = req.query.orderBy || 'publishedAt'
-  let smartUrl = url + '&orderBy=' + orderBy + '&direction=ASC' 
+  let smartUrl = url + '?orderBy=' + orderBy + '&direction=ASC' 
 
-  console.log(smartUrl)
   fetchJson(smartUrl).then((data) => {
     res.render('index', data)
 
@@ -32,6 +31,30 @@ router.get('/filtered', function(req, res, next) {
 });
 
 
+<<<<<<< HEAD
+=======
+// router.post('/', (request, response) => {
+  
+
+  
+
+//   postJson(url1, request.body).then((data) => {
+//     let newZone = { ... request.body }
+//     console.log(data)
+//     if (data.success) {
+//       response.redirect('/?memberPosted=true') 
+//       // TODO: squad meegeven, message meegeven
+//       // TODO: Toast meegeven aan de homepagina
+
+//     } else {
+//       const errormessage = `${data.message}: Mogelijk komt dit door de slug die al bestaat.`
+//       const newdata = { error: errormessage, values: newZone }
+
+//       }
+//   })
+// })
+
+>>>>>>> parent of 6e68273 (Merge branch 'main' into Fatihamca)
 router.post('/', (request, response) => {
   request.body.timeStart = request.body.dateStart + 'T' + request.body.timeStart + ':00Z';
   request.body.timeEnd = request.body.dateEnd + 'T' + request.body.timeEnd + ':00Z';    
