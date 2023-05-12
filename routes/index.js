@@ -12,17 +12,13 @@ router.get('/', function(req, res, next) {
   const { query } = req
   console.log(query.orderBy);
   let orderBy = req.query.orderBy || 'publishedAt'
-  let smartUrl = url + '?orderBy=' + orderBy + '&direction=ASC' 
+  let smartUrl = url + '&orderBy=' + orderBy + '&direction=ASC' 
 
+  console.log(smartUrl)
   fetchJson(smartUrl).then((data) => {
-
-  fetchJson(url).then((data) => {
-
     res.render('index', data)
 
-  })
-
-
+});
 });
 
 router.get('/filtered', function(req, res, next) {
