@@ -126,12 +126,23 @@ color:red;
     justify-content: center;
 }
 
-.skewed {
+.vestiging-tegel {
     width: 37em;
     color: white;
     display: flex;
     background: #B22222;
     box-shadow: 0 0 15px rbgd(0, 0, 0, 0.7);
+}
+
+.layer2 {
+    width: 24%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 27%;
+    background: hsl(0, 100%, 50%);
+    mix-blend-mode: difference;
 }
 .zoekveld-text h1{
     display: block;
@@ -143,18 +154,18 @@ color:red;
     font-weight: bold;
 }
 
-.skewed p {
+.vestiging-tegel p {
     font-size: 0.9em;
     line-height: 23px;
     color: white;
 }
 
-.skewed h2 {
+.vestiging-tegel h2 {
     margin: 0;
     color: white;
 }
 
-.skewed small{
+.vestiging-tegel small{
     color: white;
 }
 
@@ -168,25 +179,25 @@ color:red;
     color: white;
 }
 
-.skewed a {
+.vestiging-tegel a {
     color: white;
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: 2px dashed ;
 }
 
-.skewed .image {
+.vestiging-tegel .image {
     width: 78%;
     height: 15em;
     position: relative;
     overflow: hidden;
 }
 
-.skewed img {
+.vestiging-tegel img {
     width: 140%;
 }
 
-.skewed .image::before {
+.vestiging-tegel .image::before {
     content: '';
     position: absolute;
     left: -6.1em;
@@ -199,17 +210,17 @@ color:red;
 }
 
 @media screen and (max-width: 750px) {
-    .skewed {
+    .vestiging-tegel {
         display: block;
         width: 20em;
     }
-    .skewed .image, .text {
+    .vestiging-tegel .image, .text {
         width: 100%;
     }
-    .skewed img {
+    .vestiging-tegel img {
         width: 160%;
     }
-    .skewed .image::before {
+    .vestiging-tegel .image::before {
         width: 120%;
         height: 40%;
         top: -5em;
