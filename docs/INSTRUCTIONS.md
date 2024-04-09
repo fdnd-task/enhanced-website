@@ -1,6 +1,6 @@
-# Performance Matters - Optimized Website
+# Enhanced Website
 
-Ontwerp en maak met een team een website voor een opdrachtgever waarbij je verschillende performance technieken toepast.
+Ontwerp en maak een website voor een opdrachtgever waarbij je de website verrijkt volgens het principe van progressive enhancement
 
 ## Context
 Deze leertaak hoort bij sprint 10 "Performance Matters". Dit is een leertaak die je in een team uitvoert voor een opdrachtgever.
