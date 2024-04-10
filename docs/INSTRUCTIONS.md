@@ -3,38 +3,47 @@
 Ontwerp en maak een website voor een opdrachtgever waarbij je de website verrijkt volgens het principe van progressive enhancement
 
 ## Context
-Deze leertaak hoort bij sprint 10 "Performance Matters". Dit is een leertaak die je in een team uitvoert voor een opdrachtgever.
+Deze leertaak hoort bij sprint 10 "User Experience". Dit is een leertaak die je in een team of inndivueel uitvoert voor een opdrachtgever.
 
-In het college S10W1-01-Sprintplanning-Performance-Matters en de workshop S10W1-03-Samenwerken-in-Github wordt de opdracht en de werkwijze uitgelegd.
+In het college S10W1-01-Sprintplanning-USer-Experience en de workshop S10W1-03-Layout-Shift wordt de opdracht en de werkwijze uitgelegd.
 
 
 ## Doel van deze opdracht
 
+<!-- 
 Tot nu toe heb je voornamelijk alleen gewerkt aan server-side code, API's en client-side scripting. Een frontender werkt vaak samen in teams zodat je taken kunt verdelen en grote(re) opdrachten in minder tijd kunt realiseren. 
-Als je in een team werkt werk je met meerdere frontenders in één repository samen. Je zult moeten overleggen, afspreken wie waar aan gaat werken, en code en design afspraken maken. Hoe je dat op een goede manier doet leer je in deze sprint.
+Als je in een team werkt werk je met meerdere frontenders in één repository samen. Je zult moeten overleggen, afspreken wie waar aan gaat werken, en code en design afspraken maken. Hoe je dat op een goede manier doet leer je in deze sprint. 
+-->
 
 ## Werkwijze
 
-Je werkt in een team van max. 3 frontenders aan een website voor een opdrachtgever. Zorg er voor dat je duidelijk afspraken maakt en elkaar dagelijks op de hoogte houdt van vorderingen. Samen met jouw team ben je verantwoordelijk voor de planning, het samenwerkingsproces én het eindresultaat.
+<!-- 
+Je werkt in een team van max. 3 frontenders aan een website voor een opdrachtgever. Zorg er voor dat je duidelijk afspraken maakt en elkaar dagelijks op de hoogte houdt van vorderingen. Samen met jouw team ben je verantwoordelijk voor de planning, het samenwerkingsproces én het eindresultaat. 
+-->
 
 Deze opdracht gaat over alle fases van de DLC [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
 
 ### Analyseren
+
+<!-- 
 In de analysefase wordt besproken hoe jullie willen gaan [samenwerken](#samenwerken), onderzoek je wat jullie gaan maken en maak je een [planning](#planning). 
+-->
 
+<!--
 #### Samenwerken
-In de analysefase maak je als team afspraken over hoe je gaat samenwerken.
 
+ In de analysefase maak je als team afspraken over hoe je gaat samenwerken. 
 1. Fork deze leertaak en zet de _repository_ klaar voor het team zodat iedereen met dezelfde codebase kan werken.
 3. Vul een Teamcanvas in, begin met het individuele deel en bespreek jouw persoonlijke doelen met je teamgenoten.
 4. Vul vervolgens als team de andere vlakken van het Teamcanvas in.
-5. Maak afspraken over hoe jullie gaan samenwerken,  leg de afspraken vast in de _wiki_.
-
+5. Maak afspraken over hoe jullie gaan samenwerken,  leg de afspraken vast in de _wiki_. 
 #### Materiaal voor samenwerken
 
 - [How to Collaborate on GitHub](https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267)
 - [download het Team Canvas](https://github.com/fdnd-task/performance-matters-fast-website/blob/main/docs/Teamcanvas.pdf)
 - [Lees instructies over het gebruik van het Teamcanvas in de deeltaak uit sprint 1](https://github.com/fdnd-task/your-tribe-team-canvas)
+-->
+
 
 #### Planning
 In de analysefase bespreek je als team welke werkzaamheden er zijn, wie wat gaat doen en maak je een planning.
@@ -65,12 +74,14 @@ In de checklist worden verschillende technieken behandeld waarmee je een website
 4. Terwijl jullie aan de website gaan werken houden jullie in de *living-stylguide* bij wat voor HTML, CSS en/of JS voor een functionaliteit, component of de layout nodig is. Clone de bestaande *living-styleguide* naar jullie repository zodat je deze met je team kan aanvullen en aanpassen.
 5. (optioneel) Als je als team *pull-requests* goed onder de knie hebt kan je aan het eind van de sprint de aanpassingen aan de *living-styleguide* met een *pull-request* samenvoegen met het origineel dat je bij stap 1 *cloned* hebt. Let op: je moet dan afspraken maken met de andere teams die voor deze opdrachtgever werken!
 
-<!-- #### Project voor de opdrachtgever
+<!-- 
+#### Project voor de opdrachtgever
 In de ontwerpfase maak je schetsen voor de taak waar jij nu aan gaat werken. Dit doe je waarschijnlijk meerdere keren per sprint, telkens voor de nieuwe taak waar je aan werkt.
 
 1. Maak ontwerpschetsen, kies zelf het medium wat voor jou het beste werkt maar begin in ieder geval even op papier. Probeer verschillende oplossingen uit maar houd je aan de afspraken in de *living-styleguide*. Je bent klaar als je voor ogen hebt wat je gaat bouwen.
 2. Bespreek jouw ontwerp met een teamgenoot, stel eventueel je ontwerp bij op basis van de feedback die je ontvangt. Hint: Maak een issue aan!
-3. Documenteer jouw ontwerp in de wiki. -->
+3. Documenteer jouw ontwerp in de wiki. 
+-->
 
 #### Materiaal ontwerpfase
 
@@ -117,23 +128,20 @@ In de testfase controleer je of jouw aanpassingen werken zoals bedoeld.
 ## Criteria
 *Definitions of done*
 
-Focus sprint 10 - De focus van deze sprint ligt op het beter en sneller laten werken van een website en samenwerken.
-
-Doel van deze opdracht:
-
-* je leert hoe je met een team een website ontwerpt en maakt voor een opdrachtgever waarbij je verschillende performance technieken toepast
-
-Voor deze leertaak gelden de gedragscriteria:
-
-* M: Je combineert aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving
-* S: Je werkt in teams, vraagt begeleiding waar nodig en geeft feedback aan teamleden
-* S: Je draagt verantwoording voor eigen resultaten, verwerkt ontvangen feedback en wijst teamleden op hun verantwoording
-* C: Je kan ontwerpkeuzes, eigen ideeën en producten begrijpelijk overbrengen aan belanghebbenden
-* P: Je analyseert een vraag, signaleert knelpunten en volgt de aangeboden oplossingsrichting
-
 Deze opdracht is done als:
 
+<!--
 - [ ] Je hebt met een team aan de opdracht van een opdrachtgever gewerkt
-- [ ] Je website is online gepubliceerd
 - [ ] De planning, samenwerking en teamafspraken zijn gedocumenteerd in de Wiki en project-board
 - [ ] Verschillende Frontend Performance technieken zijn toegepast en gedocumenteerd in de *Living-Styleguide*
+-->
+
+
+Je hebt een website ontworpen en gemaakt met Node, Express en EJS en een REST API
+- [ ]  Je website is online gepubliceerd
+- [ ]  Je hebt je proces bijgehouden in de Wiki
+- [ ]  Je toont aan dat je in de analysefase verschillende methoden en technieken hebt ingezet om te inventariseren wat er moet gebeuren
+- [ ] Je toont aan dat je in de ontwerpfase verschillende methoden en technieken hebt ingezet die ervoor zorgen dat je precies weet wat je moet bouwen
+- [ ] Je toont aan dat je in de bouwfase verschillende server-side en client-side methoden en technieken hebt ingezet om het ontwerp te realiseren
+- [ ] Je toont aan dat je in de testfase verschillende server-side en client-side methoden en technieken hebt ingezet om te controleer jouw website voldoet aan standaarden en gebruiksvriendelijk is
+ 
