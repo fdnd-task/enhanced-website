@@ -138,10 +138,11 @@ Deze opdracht is done als:
 
 
 Je hebt een website ontworpen en gemaakt met Node, Express en EJS en een REST API
-- [ ]  Je website is online gepubliceerd
-- [ ]  Je hebt je proces bijgehouden in de Wiki
-- [ ]  Je toont aan dat je in de analysefase verschillende methoden en technieken hebt ingezet om te inventariseren wat er moet gebeuren
+- [ ] Je website is online gepubliceerd
+- [ ] Je hebt je proces bijgehouden in de Wiki
+- [ ] Je toont aan dat je in de analysefase verschillende methoden en technieken hebt ingezet om te inventariseren wat er moet gebeuren
 - [ ] Je toont aan dat je in de ontwerpfase verschillende methoden en technieken hebt ingezet die ervoor zorgen dat je precies weet wat je moet bouwen
 - [ ] Je toont aan dat je in de bouwfase verschillende server-side en client-side methoden en technieken hebt ingezet om het ontwerp te realiseren
 - [ ] Je toont aan dat je in de testfase verschillende server-side en client-side methoden en technieken hebt ingezet om te controleer jouw website voldoet aan standaarden en gebruiksvriendelijk is
+- [ ] Je hebt client-side Javascirpt gebruikt om de interface te verrijken
  
