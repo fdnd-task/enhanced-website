@@ -5,7 +5,7 @@ Ontwerp en maak een website voor een opdrachtgever waarbij je de website verrijk
 ## Context
 Deze leertaak hoort bij sprint 10 "User Experience". Dit is een leertaak die je in indivueel of in een team uitvoert voor een opdrachtgever.
 
-In het college S10W1-01-Sprintplanning-USer-Experience en de workshop S10W1-03-Layout-Shift wordt de opdracht en de werkwijze uitgelegd.
+In het college S10W1-01-Sprintplanning-User-Experience en de workshop S10W1-03-Layout-Shift wordt de opdracht en de werkwijze uitgelegd.
 
 
 ## Doel van deze opdracht
