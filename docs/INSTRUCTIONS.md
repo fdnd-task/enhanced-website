@@ -35,23 +35,6 @@ Bijvoorbeeld: grip krijgen op een taak door het inventarisatie van bestaande inf
 4. Bespreek met het projectteam wat je aan werk verwacht en maak aantekeningen. (wat komt je bekend voor, wat heb je al vaker gedaan of wat lijkt je lastig)
 5. Bedenk en schets met je projectteam hoe je User Generated Content client-side kan posten met een fetch. 
 
-### Inrichten ontwikkelomgeving
-1. Fork deze leertaak en clone het naar je systeem.
-2. Installeer de Node ontwikkelomgeving en installeer de packages die je nodig hebt. Maak de files en folders aan die je nodig hebt op de Node server.
-3. Refactor de code uit sprint 8 en 9 voordat je verder gaat bouwen. Kopieer de code uit voorgaande sprints en refactor je Node en Express, de HTML en CSS:
- 
-#### Node & Express (server.js)
-- Volgorde van routes is hetzelfde als de sitemap
-- GET & POST routes staan bij elkaar
-
-#### HTML (EJS)
-- Volgorde van de HTML elementen is hetzelfde als de pagina structuur
-- Orden de HTML van groot-naar-klein, eerst de container elementen en daarna de geneste elementen
-
-#### CSS
-- Volgorde van de CSS komt overeen met de volgorde van de HTML
-- Orden de CSS is van generiek-naar-specifiek, generieke styling staat bovenaan
-
 
 
 ## Ontwerpen
@@ -75,6 +58,24 @@ Schets op basis van de wireflow een UML diagram met pseudo-code voor het client-
 
 ### Bouwen
 In de bouwfase realiseer je de beslissingen uit de ontwerpfase. 
+
+### Inrichten ontwikkelomgeving
+1. Fork deze leertaak en clone het naar je systeem.
+2. Installeer de Node ontwikkelomgeving en installeer de packages die je nodig hebt. Maak de files en folders aan die je nodig hebt op de Node server.
+3. Refactor de code uit sprint 8 en 9 voordat je verder gaat bouwen. Kopieer de code uit voorgaande sprints en refactor je Node en Express, de HTML en CSS:
+ 
+#### Node & Express (server.js)
+- Volgorde van routes is hetzelfde als de sitemap
+- GET & POST routes staan bij elkaar
+
+#### HTML (EJS)
+- Volgorde van de HTML elementen is hetzelfde als de pagina structuur
+- Orden de HTML van groot-naar-klein, eerst de container elementen en daarna de geneste elementen
+
+#### CSS
+- Volgorde van de CSS komt overeen met de volgorde van de HTML
+- Orden de CSS is van generiek-naar-specifiek, generieke styling staat bovenaan
+
 
 #### Progressive Enhancement
 Je werkt volgens het principe van Progressive Enhancement:
