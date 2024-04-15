@@ -3,7 +3,7 @@
 Ontwerp en maak een website voor een opdrachtgever waarbij je de website verrijkt volgens het principe van progressive enhancement
 
 ## Context
-Deze leertaak hoort bij sprint 10 "User Experience". Dit is een leertaak die je in indivueel of in een team uitvoert voor een opdrachtgever.
+Deze leertaak hoort bij sprint 10 "User Experience". Dit is een leertaak die je individueel of in een team uitvoert voor een opdrachtgever.
 
 In het college S10W1-01-Sprintplanning-User-Experience en de workshop S10W1-03-Layout-Shift wordt de opdracht en de werkwijze uitgelegd.
 
@@ -13,25 +13,25 @@ In het college S10W1-01-Sprintplanning-User-Experience en de workshop S10W1-03-L
 Je leert hoe je een interactieve website kan ontwerpen en maken die je met client-side scripting kan verrijken.
 
 Met Progressive Enhancement kun je er voor zorgen dat een website het altijd doet. 
-Eerst bouw je de core functionality in HTML, zo nodig met server-side rendering. De content layer. Zodatdje website het in de meest eenvoudige vorm goed doet.
-Daarna voeg je CSS toe voor de Presentation layer. 
+Eerst bouw je de Core Functionality in HTML, zo nodig met server-side rendering. De content layer. Zodat je website het in de meest eenvoudige vorm goed doet.
+Daarna voeg je CSS toe voor de Presentation Layer. 
 Tot slot voeg je extra enhancements toe om de User Experience te verbeteren. 
 
 ## Werkwijze
 
-Ontwerp en maak een interactieve functionaliteit voor je opdrachtgever. Hiervoor moet je data opslaan met een formulier en POST en ga je client-side de website verrijken met loading states, feedback en succes states. 
+Ontwerp en maak een interactieve functionaliteit voor je opdrachtgever. Hiervoor moet je data opslaan met een formulier en POST en ga je client-side de website verrijken met loading states, feedback en success states. 
 
 Deze opdracht gaat over alle fases van de DLC [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
 
 ## Analyseren
 In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren.
 
-Bijvoorbeeld: grip krijgen op een taak door het inventarisatie van bestaande informatie, analyseren van de feedback die je in de sprint reciew hebt gekregen, planning, maken van een todo lijst en bepalen van definitions of done.
+Bijvoorbeeld: grip krijgen op een taak door het inventarisatie van bestaande informatie, analyseren van de feedback die je in de sprint review hebt gekregen, planning, maken van een todo lijst en bepalen van definitions of done.
 
 ### Sprintplanning
 1. Lees de instructies van deze leertaak zorgvuldig door
 2. Bekijk de verschillende fases van de DLC en wat je per fase gaat doen
-3. Bekijk de planning van sprint 10 en wat je per week gaat doen
+3. Bekijk de [planning van sprint 10](https://programma.fdnd.nl/data-driven-web/user-experience) en wat je per week gaat doen
 4. Bespreek met het projectteam wat je aan werk verwacht en maak aantekeningen. (wat komt je bekend voor, wat heb je al vaker gedaan of wat lijkt je lastig)
 5. Bedenk en schets met je projectteam hoe je User Generated Content client-side kan posten met een fetch. 
 
@@ -83,7 +83,7 @@ Je werkt volgens het principe van Progressive Enhancement:
 3. Daarna voeg je client-side JS toe om de User Experience te verbeteren. (Client-side scripting)
 
 #### Performance
-Je breidt deze sprint je code uit verschillende technieken om ervoor te zorgen dat de website een goede  Performance heeft, zoals het voorkomen van layout shifts, toepassen van perceived perfomance en loading hints aan de browser in HTML, en het toepassen van repsonsive images.
+Je breidt deze sprint je code uit verschillende technieken om ervoor te zorgen dat de website een goede  Performance heeft, zoals het voorkomen van layout shifts, toepassen van perceived performance en loading hints aan de browser in HTML, en het toepassen van responsive images.
 
 
 #### Bronnen bouwfase
