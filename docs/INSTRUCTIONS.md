@@ -12,8 +12,11 @@ In het college S10W1-01-Sprintplanning-User-Experience en de workshop S10W1-03-L
 
 Je leert hoe je een interactieve website kan ontwerpen en maken die je met client-side scripting kan verrijken.
 
-Met Progressive Enhancement kun je er voor zorgen dat een website het altijd doet. Eerst bouw je de core functionality in HTML, zo nodig met server-side rendering. De content layer. Zo zorg je er voor dat je website het in de meest eenvoudige vorm goed doet.
-Daarna voeg je CSS. Tot slot voeg je extra enhancements toe om de User Experience te verbeteren. 
+Met Progressive Enhancement kun je er voor zorgen dat een website het altijd doet. 
+Eerst bouw je de core functionality in HTML, zo nodig met server-side rendering. De content layer. Zodatdje website het in de meest eenvoudige vorm goed doet.
+Daarna voeg je CSS toe voor de Presentation layer. 
+Tot slot voeg je extra enhancements toe om de User Experience te verbeteren. 
+
 ## Werkwijze
 
 Ontwerp en maak een interactieve functionaliteit voor je opdrachtgever. Hiervoor moet je data opslaan met een formulier en POST en ga je client-side de website verrijken met loading states, feedback en succes states. 
