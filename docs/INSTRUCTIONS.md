@@ -11,6 +11,7 @@ In het college S10W1-01-Sprintplanning-User-Experience en de workshop S10W1-03-L
 ## Doel van deze opdracht
 
 Je leert hoe je een interactieve website kan ontwerpen en maken die je met client-side scripting kan verrijken.
+Volgens het principe van Progressive Enhancement
 
 ## Werkwijze
 
