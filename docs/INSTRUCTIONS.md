@@ -33,8 +33,7 @@ Bijvoorbeeld: grip krijgen op een taak door het inventarisatie van bestaande inf
 2. Bekijk de verschillende fases van de DLC en wat je per fase gaat doen
 3. Bekijk de planning van sprint 10 en wat je per week gaat doen
 4. Bespreek met het projectteam wat je aan werk verwacht en maak aantekeningen. (wat komt je bekend voor, wat heb je al vaker gedaan of wat lijkt je lastig)
-5. Kies een user story over User Generated Content uit de backlog van het project waar je aan gaat werken, of schrijf er zelf een
-6. Bedenk en schets met je projectteam per user story hoe je data client-side kan posten met een fetch. 
+5. Bedenk en schets met je projectteam hoe je User Generated Content client-side kan posten met een fetch. 
 
 ### Inrichten ontwikkelomgeving
 1. Fork deze leertaak en clone het naar je systeem.
