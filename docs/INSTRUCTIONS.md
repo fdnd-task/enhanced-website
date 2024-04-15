@@ -38,7 +38,7 @@ Bijvoorbeeld: grip krijgen op een taak door het inventarisatie van bestaande inf
 ### Inrichten ontwikkelomgeving
 1. Fork deze leertaak en clone het naar je systeem.
 2. Installeer de Node ontwikkelomgeving en installeer de packages die je nodig hebt. Maak de files en folders aan die je nodig hebt op de Node server.
-3. Refactor de code uit sprint 8 en 9 voordat je verder gaat bouwen. Kopieer de code uit voorgaande sprints en refactor het server.js file, de HTML en CSS:
+3. Refactor de code uit sprint 8 en 9 voordat je verder gaat bouwen. Kopieer de code uit voorgaande sprints en refactor je Node en Express, de HTML en CSS:
  
 #### Node & Express (server.js)
 - Volgorde van routes is hetzelfde als de sitemap
