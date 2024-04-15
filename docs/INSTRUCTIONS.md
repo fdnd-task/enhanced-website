@@ -26,7 +26,7 @@ Deze opdracht gaat over alle fases van de DLC [analyseren](#analyseren), [ontwer
 ## Analyseren
 In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren.
 
-Bijvoorbeeld: grip krijgen op een taak door het inventarisatie van bestaande informatie, interface audit, interface inventory, planning, maken van een todo lijst en bepalen van definitions of done.
+Bijvoorbeeld: grip krijgen op een taak door het inventarisatie van bestaande informatie, analyseren van de feedback die je in de sprint reciew hebt gekregen, planning, maken van een todo lijst en bepalen van definitions of done.
 
 ### Sprintplanning
 1. Lees de instructies van deze leertaak zorgvuldig door
