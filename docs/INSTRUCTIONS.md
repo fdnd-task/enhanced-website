@@ -89,6 +89,7 @@ Je breidt deze sprint je code uit verschillende technieken om ervoor te zorgen d
 
 #### Bronnen bouwfase
 
+* [Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [Frontend Performance Checklist van Smashing Magazine](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/).
 - [Frontend Performance Checklist - Assets Optimizations](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#assets-optimizations)
 - [Frontend Performance Checklist - Delivery Optimizations](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#delivery-optimizations)
