@@ -3,7 +3,7 @@
 Ontwerp en maak een interactieve website die snel laadt en prettig te gebruiken is.
 
 ## Context
-Deze leertaak hoort bij sprint 10 "User Experience". Dit is een leertaak die uitvoert voor een opdrachtgever.
+Deze leertaak hoort bij Sprint 10 "User Experience". Dit is een leertaak die je uitvoert voor een opdrachtgever.
 
 ## Doel van deze opdracht
 
