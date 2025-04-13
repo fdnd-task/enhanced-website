@@ -18,7 +18,7 @@ Dese sprint ga je de feedback van de opdrachtgever verwerken en bouw je verder a
 Deze leertaak wordt behandeld in Sprint 10. Er worden verschillende workshops aangeboden:
 
 - [Sprint Planning](sprint-planning.md)
-- [Core Web Vitals](core-web-vitals.md)
+- [Performance](performance.md)
 - [Layout Shift](layout-shift.md)
 - [Perceived Performance](perceived-performance.md)
 - [Responsive Images](responsive-images.md)
