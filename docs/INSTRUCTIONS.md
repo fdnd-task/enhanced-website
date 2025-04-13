@@ -1,6 +1,6 @@
 # Enhanced Website
 
-Ontwerp en maak een website voor een opdrachtgever waarbij je de website verrijkt volgens het principe van progressive enhancement
+Ontwerp en maak een interactieve website die snel laadt en prettig te gebruiken is.
 
 ## Context
 Deze leertaak hoort bij sprint 10 "User Experience". Dit is een leertaak die uitvoert voor een opdrachtgever.

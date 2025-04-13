@@ -1,6 +1,6 @@
 
 # Enhanced website
-Ontwerp en maak een website voor een opdrachtgever waarbij je de website verrijkt volgens het principe van progressive enhancement
+Ontwerp en maak een interactieve website die snel laadt en prettig te gebruiken is.
 
 De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/enhanced-website/blob/main/docs/INSTRUCTIONS.md)
 
