@@ -38,20 +38,55 @@ https://web.dev/why-speed-matters/
 
 ## Opdracht Break the Web
 
-Onderzoek met een groepje onderstaande features. Dat betekent uitvogelen wat het voor impact heeft op de sites die je kent en normaal gebruikt. Kies verschillende sites in je directe omgeving: van je werkgever, lokale vereniging of de cafetaria om de hoek.
+We gaan het Web laten 'breken' door features van het platform bewust uit te zetten. Internet snelheid, afbeeldingen, custom fonts, kleur, muis en JavaScript.
+
+<!--
+- Onderzoek met een groepje van 3 alle _features_
+- Elke student doet een Performance test en onderzoekt Internet snelheid
+- Elke student kiest 2 andere _features_ om te onderzoeken
+- Elke student kiest een apart site om te onderzoeken
+- Maak als groep een presentatie en presenteer jullie bevindingen aan de squad
+-->
+
+Onderzoek met je tafel een van onderstaande features. Dat betekent uitvogelen wat het voor impact heeft op de sites die je kent en normaal gebruikt. Kies verschillende sites in je directe omgeving: van je werkgever, lokale vereniging of de cafetaria om de hoek.
+
+Maak als groep een presentatie en presenteer jullie bevindingen aan de squad. 
+Maak een presentatie met daarin: 
+- Leg uit hoe je de feature kan testen
+- Onderzoek de problemen, cijfers en/of meningen
+- Bedenk ook hoe je de problemen zou kunnen oplossen 
+
 
 Je krijgt hiervoor 1 uur de tijd, daarna vertel je je bevindingen aan de squad.
 
 
-- Performance test & Internet snelheid
-- Afbeeldingen
-- Custom fonts/icon fonts
-- Kleur & kleurenblindheid
-- Muis/Trackpad
-- JavaScript (volledig)
-- Content/Ad blockers
+1. Internet snelheid
+2. Afbeeldingen
+3. Custom fonts/icon fonts
+4. Kleur & kleurenblindheid
+5. Muis/Trackpad
+6. JavaScript (volledig)
+7. Content/Ad blockers
 
 
+### Internet snelheid
+Onderzoek hoe websites werken als iemand met een hele lage internet snelheid een website bezoekt. 
 
+### Afbeeldingen
+Onderzoek wat er gebeurt als plaatjes niet kunnen worden getoond. 
 
+### Custom fonts/Icon fonts
+Onderzoek wat er gebeurt als custom fonts niet kunnen worden geladen en/of getoond. Of dat een icon font niet goed werkt. Werkt de site nog naar behoren?
+
+### Kleur & kleurenblindheid
+Onderzoek of een website het nog goed doet als er geen kleur kan worden getoond, of als een gebruiker kleurenblind is. 
+
+### Muis/Trackpad
+Onderzoek of je een site nog wel goed kan bedienen als je geen muis of trackpad kan gebruiken.
+
+### JavaScript (volledig)
+Onderzoek wat er gebeurt als JavaScript uit staat, het niet goed doet of wordt geblokkeerd in verband met veiligheids-instellingen. Doet alles het nog? Werk het menu goed? Kun je formulieren nog wel gebuiken?
+
+### Content/Ad blockers
+Onderzoek wat er gebeurt als content en/of ad blockers aan staan. 
 
