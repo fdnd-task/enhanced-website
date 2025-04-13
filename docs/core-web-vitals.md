@@ -5,33 +5,23 @@
 Core Web Vitals is de manier hoe je de performance van een website kan meten. 
 Over performance.
 
-De Core Web Vitals hebben betrekking op de _loading performance_, de _interactivity_ en de _visual stability_ van een pagina. Deze Core Web Vitals zijn dus goed voor de gebuiker.
-
+De Core Web Vitals hebben betrekking op de _loading performance_, de _interactivity_ en de _visual stability_ van een pagina. Deze Core Web Vitals zijn dus goed voor de gebuiker. Zo zegt Léonie Watson van het W3C. 
 
 > Accessibility == Performance
 
-Zegt Léonie Watson van het W3C. 
+In het artikel [Why Does Speed Matter van web.dev](https://web.dev/why-speed-matters/ ) staat geschreven waarom performance zo belangrijk is: 
 
 **Performance gaat over mensen. Voor slecht presterende sites en applicaties betalen je gebruikers meer geld.**
 
 Aangezien mobiele gebruikers een groter deel van de internetgebruikers wereldwijd blijven uitmaken, is het belangrijk om in gedachten te houden dat veel van deze gebruikers toegang hebben tot internet via mobiele LTE-, 4G-, 3G- en zelfs 2G-netwerken.
 
-https://web.dev/why-speed-matters/ 
-
-
-
-**Performance gaat over User Experience.Ook voor de gebruikerservaring is snelheid van belang.**
+**Performance gaat over User Experience. Ook voor de gebruikerservaring is snelheid van belang.**
 
 Uit een consumentenonderzoek blijkt dat de stressreactie op vertragingen in mobiele snelheid vergelijkbaar is met die van het kijken naar een horrorfilm of het oplossen van een wiskundig probleem, en groter is dan wachten in een kassarij in een winkel.
 
-https://web.dev/why-speed-matters/ 
+**Performance gaat over conversie. Trage sites hebben een negatief effect op de omzet.**
 
-
-
-**Performance gaat over conversie.Trage sites hebben een negatief effect op de omzet.**
 Het behouden van gebruikers is cruciaal voor het verbeteren van conversie. Trage sites hebben een negatief effect op de omzet en het is aangetoond dat snelle sites de conversieratio's verhogen.
-
-https://web.dev/why-speed-matters/
 
 
 
