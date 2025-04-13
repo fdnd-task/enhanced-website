@@ -3,6 +3,9 @@
 ## Sprint Planning
 Instructies lezen, project plannen en Sprint Review verwerken.
 
+### Aanpak
+
+Vandaag ga je de nieuwe repository klaarzetten, de Sprint Review van de vorige sprint verwerken en plannen wat je deze sprint gaat maken. 
 
 <!-- 
 Wat ben je aan het maken? Wat wil je deze sprint bereiken? Wat wil je de opdrachtgever presenteren 
@@ -13,17 +16,33 @@ En welke onderwerpen komen daar nog bij?
 -->
 
 
-In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren.
+## Repo klaarzetten met een project board
+Fork en Clone deze leertaak. Dit keer is de _boilerplate_ leeg. Er staat niks in. Het idee is dat je alleen de code gaat overnemen die je nodig hebt. Misschien ga je wel helemaal overnieuw beginnen, dar leer je van! (doe dit nu nog niet, dit komt later wel, na de planning)
 
-Bijvoorbeeld: grip krijgen op een taak door het inventarisatie van bestaande informatie, analyseren van de feedback die je in de sprint review hebt gekregen, planning, maken van een todo lijst en bepalen van definitions of done.
+Vanmiddag in het practicum  over het opzetten van een NodeJS project met GET en POST routes kan je meekijken hoe je een project netjes kan opzetten.
 
-Lees de instructies van deze leertaak zorgvuldig door
+## Project board en planning
+Koppel het project board van de vorige sprint aan jouw repository van Sprint 10.
 
-Bekijk de [planning van sprint 10](https://programma.fdnd.nl/data-driven-web/user-experience) en wat je per week gaat doen
+### Planning maken
+Bekijk het programma van sprint 10. Maak nieuwe issues aan (of _drafts_) van de workshop onderdelen die op het programma staan. Het is een beetje een rare sprint met allemaal vrije dagen, let goed op waneer de workshops gegeven worden.
 
-Bespreek met het projectteam wat je aan werk verwacht en maak aantekeningen. (wat komt je bekend voor, wat heb je al vaker gedaan of wat lijkt je lastig)
+Aanstaande woensdag zijn we uitgenodigd voor een [Meetup over toegankelijkheid](https://www.meetup.com/inclusive-design-accessibility/events/307149158/) bij CMD. Super!
 
-Bedenk en schets met je projectteam hoe je User Generated Content client-side kan posten met een fetch. 
-Welke dingen moet je nog? Doen de UI stack states het al? Empty?
-Heb je al een client-side enhancement? Loading state? Succes state? 
-Een User test van de USer Generated content laten  plannen en linken naar de beschijving van de user test. 
+### Issues verplaatsen
+Zet je issues in je nieuwe repo aan en voeg de issues uit de vorige sprint toe aan je nieuwe repo (klik op 'transfer issue').
+
+#### Interactive functionality
+Hoe ver ben je gekomen met de User Generated Content met een POST? Heb je al client-side scripting toegepast en is het al gelukt om verschillende UI-Stack states? Is de interactie volgens het principe van Progressive Enhancement gebouwd en heb je dit getest met het Device Lab? 
+Hier kan je deze sprint mooi aan doorwerken. Als je dit al is gelukt, maak dan een issue aan voor een user test. Je kan in [sprint 5](https://github.com/fdnd-task/fix-the-flow-interactive-website/blob/main/docs/code-design-review-user-testing.md) teruglezen hoe je een goede test kan voorbereiden en afnemen.   
+
+
+### Sprint review verwerken
+Verwerk de feedback van de Sprint Review van sprint 9, maak issues van de taken waar je mee aan de slag wil deze sprint. 
+
+## Description schrijven
+Schrijf voor elk issue een goede _description_. 
+
+Schrijf voor een issue altijd een (korte) uitleg wat het issuse inhoudt en mogelijke knelpunten. Voeg een [takenlijst](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists) toe als er verschillende dingen moeten gebeuren. Label het issue met de [MoSCoW methode](https://en.wikipedia.org/wiki/MoSCoW_method). Kan je misschien een start en eind datum voor je issues bedenken?
+
+Als je een mooi issue voor jezelf hebt geschreven, laat die dan eens lezen door iemand anders. Het is de bedoeling dat je het zo schrijft dat anderen ook goed begrijpen wat je bedoelt...
