@@ -6,7 +6,7 @@ Repo klaarzetten, project plannen en Sprint Review verwerken.
 ### Aanpak
 
 Vandaag ga je de nieuwe repository klaarzetten en plannen wat je deze sprint gaat maken. 
-Daarna ga je voor jouw issues een duidelijke _description_ schrijven.
+Daarna ga je voor jouw issues duidelijke _description_ schrijven.
 
 <!-- 
 Wat ben je aan het maken? Wat wil je deze sprint bereiken? Wat wil je de opdrachtgever presenteren 
