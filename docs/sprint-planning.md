@@ -18,9 +18,9 @@ En welke onderwerpen komen daar nog bij?
 
 
 ## Repo klaarzetten
-Fork en Clone deze leertaak. Dit keer is de _boilerplate_ leeg. Er staat niks in. Het idee is dat je alleen de code gaat overnemen die je nodig hebt. Misschien ga je wel helemaal overnieuw beginnen, dar leer je van! (doe dit nu nog niet, dit komt later wel, na de planning)
+Fork en Clone deze leertaak. Dit keer is de _boilerplate_ leeg. Er staat niks in. Het idee is dat je alleen de code gaat overnemen die je nodig hebt. Misschien ga je wel helemaal overnieuw beginnen, daar leer je van! (doe dit nu nog niet, dat komt later wel, na de planning)
 
-Vanmiddag in het practicum  over het opzetten van een NodeJS project met GET en POST routes kan je meekijken hoe je een project netjes kan opzetten.
+Maandag is er een practicum over het opzetten van een NodeJS project met GET en POST routes om (nog een keer) te leren hoe je een project netjes kan opzetten.
 
 ## Project board en planning maken
 Koppel het project board van de vorige sprint aan jouw repository van Sprint 10.
