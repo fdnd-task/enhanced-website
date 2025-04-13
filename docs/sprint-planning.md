@@ -5,7 +5,8 @@ Instructies lezen, project plannen en Sprint Review verwerken.
 
 ### Aanpak
 
-Vandaag ga je de nieuwe repository klaarzetten, de Sprint Review van de vorige sprint verwerken en plannen wat je deze sprint gaat maken. 
+Vandaag ga je de nieuwe repository klaarzetten en plannen wat je deze sprint gaat maken. 
+Daarna ga je voor jouw issues een dudielijke _description_ schrijven.
 
 <!-- 
 Wat ben je aan het maken? Wat wil je deze sprint bereiken? Wat wil je de opdrachtgever presenteren 
@@ -41,7 +42,7 @@ Verwerk de feedback van de Sprint Review van sprint 9, maak issues van de taken 
 
 
 ## Description schrijven
-Schrijf voor elk issue dat je hebt aangemaakt of verplaatst een goede _description_. 
+Schrijf voor elk issue dat je hebt aangemaakt of verplaatst een duidelijke _description_. 
 
 Schrijf voor een issue altijd een (korte) uitleg wat het issuse inhoudt en mogelijke knelpunten. Voeg een [takenlijst](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists) toe als er verschillende dingen moeten gebeuren. Label het issue met de [MoSCoW methode](https://en.wikipedia.org/wiki/MoSCoW_method). Misschien kan je al een start en eind datum voor je issues bedenken? 
 
