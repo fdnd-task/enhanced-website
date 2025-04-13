@@ -33,8 +33,8 @@ Aanstaande woensdag zijn we uitgenodigd voor een [Meetup over toegankelijkheid](
 Zet je issues in je nieuwe repo aan en voeg de issues uit de vorige sprint toe aan je nieuwe repo (klik op 'transfer issue').
 
 #### Interactive functionality uit sprint 9
-Hoe ver ben je gekomen met de User Generated Content met een POST? Heb je al client-side scripting toegepast en is het al gelukt om verschillende UI-Stack states? Is de interactie volgens het principe van Progressive Enhancement gebouwd en heb je dit getest met het Device Lab? 
-Hier kan je deze sprint mooi aan doorwerken. Als je dit al is gelukt, maak dan een issue aan voor een user test. Je kan in [sprint 5](https://github.com/fdnd-task/fix-the-flow-interactive-website/blob/main/docs/code-design-review-user-testing.md) teruglezen hoe je een goede test kan voorbereiden en afnemen.   
+Hoe ver ben je gekomen met de User Generated Content met een POST uit sprint 9? Heb je al Client-Side Scripting toegepast en is het al gelukt om verschillende UI-Stack states te ontwerpen en bouwen? Is de interactie volgens het principe van Progressive Enhancement gebouwd en heb je dit getest met het Device Lab? 
+Hier kan je deze sprint mooi aan doorwerken. Als je dit allemaal al is gelukt, maak dan een issue aan voor een user test om jouw interactie te testen met een gebruiker. Je kan in [sprint 5](https://github.com/fdnd-task/fix-the-flow-interactive-website/blob/main/docs/code-design-review-user-testing.md) teruglezen hoe je een user test kan voorbereiden en afnemen.
 
 ### Sprint review verwerken
 Verwerk de feedback van de Sprint Review van sprint 9, maak issues van de taken waar je mee aan de slag wil deze sprint. 
@@ -43,6 +43,6 @@ Verwerk de feedback van de Sprint Review van sprint 9, maak issues van de taken 
 ## Description schrijven
 Schrijf voor elk issue dat je hebt aangemaakt of verplaatst een goede _description_. 
 
-Schrijf voor een issue altijd een (korte) uitleg wat het issuse inhoudt en mogelijke knelpunten. Voeg een [takenlijst](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists) toe als er verschillende dingen moeten gebeuren. Label het issue met de [MoSCoW methode](https://en.wikipedia.org/wiki/MoSCoW_method). Kan je misschien een start en eind datum voor je issues bedenken?
+Schrijf voor een issue altijd een (korte) uitleg wat het issuse inhoudt en mogelijke knelpunten. Voeg een [takenlijst](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists) toe als er verschillende dingen moeten gebeuren. Label het issue met de [MoSCoW methode](https://en.wikipedia.org/wiki/MoSCoW_method). Misschien kan je al een start en eind datum voor je issues bedenken? 
 
 Als je een mooi issue voor jezelf hebt geschreven, laat die dan eens lezen door iemand anders. Het is de bedoeling dat je het zo schrijft dat anderen ook goed begrijpen wat je bedoelt...
