@@ -30,7 +30,7 @@ Koppel het project board van de vorige sprint aan jouw repository van Sprint 10.
 ### Planning maken
 Bekijk het programma van sprint 10. Maak nieuwe issues aan (of _drafts_) van de onderwerpen die op het programma staan. Het is een beetje een rare sprint met allemaal vrije dagen, let goed op wanneer de workshops gegeven worden.
 
-Plan ook welke UI-components van de deeltaak Progressive Enhancement je deze sprint wil maken en bespreken. En hoe is het met je plannen om met de JS-Fundamentals aan de slag te gaan? En krijg je I Love Web site nog wat aandacht?
+Plan ook welke UI-components van de deeltaak Progressive Enhancement je deze sprint wil maken en bespreken. En hoe is het met je plannen om met de JS-Fundamentals aan de slag te gaan? En krijgt je I Love Web site nog wat aandacht?
 
 Aanstaande woensdag zijn we uitgenodigd voor een [Meetup over toegankelijkheid](https://www.meetup.com/inclusive-design-accessibility/events/307149158/) bij CMD. Super!
 
