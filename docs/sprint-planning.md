@@ -16,6 +16,8 @@ En welke onderwerpen komen daar nog bij?
     Planning van de komende 3 weken bekijken. 
 -->
 
+Teken een tabel op het whiteboard en noteer per persoon hoe ver je bent met: repo klaarzetten, planning en issues, description.
+
 
 ## Repo klaarzetten
 Fork en Clone deze leertaak. Dit keer is de _boilerplate_ leeg. Er staat niks in. Het idee is dat je alleen de code gaat overnemen die je nodig hebt. Misschien ga je wel helemaal overnieuw beginnen, daar leer je van! (doe dit nu nog niet, dat komt later wel, na de planning)
