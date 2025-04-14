@@ -26,9 +26,9 @@ Maandag is er een practicum over het opzetten van een NodeJS project met GET en 
 Koppel het project board van de vorige sprint aan jouw repository van Sprint 10.
 
 ### Planning maken
-Bekijk het programma van sprint 10. Maak nieuwe issues aan (of _drafts_) van de onderwerpen die op het programma staan. Het is een beetje een rare sprint met allemaal vrije dagen, let goed op waneer de workshops gegeven worden.
+Bekijk het programma van sprint 10. Maak nieuwe issues aan (of _drafts_) van de onderwerpen die op het programma staan. Het is een beetje een rare sprint met allemaal vrije dagen, let goed op wanneer de workshops gegeven worden.
 
-Plan ook welke UI-components van de deeltaak Progressive Enhancement je deze sprint wil maken en bespreken. En hoe is het met je plannen om met de JS-Fundamentals aan de slag te gaan? 
+Plan ook welke UI-components van de deeltaak Progressive Enhancement je deze sprint wil maken en bespreken. En hoe is het met je plannen om met de JS-Fundamentals aan de slag te gaan? En krijg je I Love Web site nog wat aandacht?
 
 Aanstaande woensdag zijn we uitgenodigd voor een [Meetup over toegankelijkheid](https://www.meetup.com/inclusive-design-accessibility/events/307149158/) bij CMD. Super!
 
@@ -36,7 +36,7 @@ Aanstaande woensdag zijn we uitgenodigd voor een [Meetup over toegankelijkheid](
 Zet je issues in je nieuwe repo aan en voeg de issues uit de vorige sprint waarmee je verder wil toe aan je nieuwe repo (klik op 'transfer issue').
 
 #### Interactive functionality uit sprint 9
-Hoe ver ben je gekomen met de User Generated Content met een POST uit sprint 9? Heb je al Client-Side Scripting toegepast en is het al gelukt om verschillende UI-Stack states te ontwerpen en bouwen? Is de interactie volgens het principe van Progressive Enhancement gebouwd en heb je dit getest met het Device Lab? 
+Hoe ver ben je gekomen met de User Generated Content met een POST uit Sprint 9? Heb je al Client-Side Scripting toegepast en is het al gelukt om verschillende UI-Stack states te ontwerpen en bouwen? Is de interactie volgens het principe van Progressive Enhancement gebouwd en heb je dit getest met het Device Lab? 
 Hier kan je deze sprint mooi aan doorwerken. Als je dit allemaal al is gelukt, maak dan een issue aan voor een user test om jouw interactie te testen met een gebruiker. Je kan in [sprint 5](https://github.com/fdnd-task/fix-the-flow-interactive-website/blob/main/docs/code-design-review-user-testing.md) teruglezen hoe je een user test kan voorbereiden en afnemen.
 
 ### Sprint review verwerken
