@@ -39,7 +39,7 @@ Maar er zijn nog veel meer variabelen die de performance van websites kunnen be√
 - [Why Does Speed Matter van web.dev](https://web.dev/why-speed-matters/)
 - [WPO Stats](https://wpostats.com/)
 - [Critical rendering path @ MDN](https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Critical_rendering_path)
-- Render-tree Construction, Layout, and Paint @ web.dev](https://web.dev/articles/critical-rendering-path/render-tree-construction)
+- [Render-tree Construction, Layout, and Paint @ web.dev](https://web.dev/articles/critical-rendering-path/render-tree-construction)
 
 
 ## Opdracht Break the Web
