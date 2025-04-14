@@ -33,7 +33,7 @@ Plan ook welke UI-components van de deeltaak Progressive Enhancement je deze spr
 Aanstaande woensdag zijn we uitgenodigd voor een [Meetup over toegankelijkheid](https://www.meetup.com/inclusive-design-accessibility/events/307149158/) bij CMD. Super!
 
 ### Issues verplaatsen
-Zet je issues in je nieuwe repo aan en voeg de issues uit de vorige sprint toe aan je nieuwe repo (klik op 'transfer issue').
+Zet je issues in je nieuwe repo aan en voeg de issues uit de vorige sprint waarmee je verder wil toe aan je nieuwe repo (klik op 'transfer issue').
 
 #### Interactive functionality uit sprint 9
 Hoe ver ben je gekomen met de User Generated Content met een POST uit sprint 9? Heb je al Client-Side Scripting toegepast en is het al gelukt om verschillende UI-Stack states te ontwerpen en bouwen? Is de interactie volgens het principe van Progressive Enhancement gebouwd en heb je dit getest met het Device Lab? 
