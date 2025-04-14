@@ -32,7 +32,7 @@ HTML en CSS zijn onderdeel van de _critical rendering path_. Client-side JavaScr
 
 De render tree maken gebeurt dus allemaal in de browser. En zoals jullie weten uit Sprint 9, zijn er veel verschillen tussen browsers, rendering engines en apparaten. Waar wij op werken en ontwikkelen, is niet representatief voor de rest van de wereld. De meeste apparaten zijn trager, en daar moeten we dus rekening mee houden.
 
-Maar er zijn nog veel meer variabelen die de performance van websites kunnen beïnvloeden..
+Maar er zijn nog veel meer variabelen die de performance van websites kunnen beïnvloeden, zoals je net aan de Lighthouse tests hebt gezien.
 
 ### Bronnen
 
@@ -53,7 +53,7 @@ Maak een korte presentatie met daarin:
 
 - Leg uit hoe je de feature kunt testen, veranderen of uitzetten in verschillende browsers
 - Leg uit welke extensies hiervoor ingezet kunnen worden, en hoe makkelijk die werken
-- Leg uit wat normale eindgebruikers doen; wij web developers zijn een uitzondering
+- Leg uit waar normale eindgebruikers tegenaan lopen; wij web developers zijn een uitzondering
 - Toon de problemen, cijfers, meningen en onderzoeken
 - Leg uit hoe je de problemen zou kunnen oplossen of voorkomen
 
