@@ -24,7 +24,7 @@ Voor frontenders heeft performance alles te maken met hoe browsers websites op h
 
 Zodra de render tree bekend is, kan een browser pixels gaan tekenen. En hoe eerder de browser pixels heeft getekend, des te sneller de site voelt. Oftewel: hoe eerder de browser de render tree kan maken, des te sneller de site voelt. Oftewel: hoe eerder de browser de DOM en de CSSOM heeft kunnen maken, des te sneller de site voelt. Oftewel: hoe eerder de browser de HTML en CSS tot z'n beschikking heeft, des te sneller de site voelt. Klinkt heel logisch, maar hier worden heel veel fouten mee gemaakt.
 
-<img width="800" height="373" src="dom-cssom-render-tree.png">
+<img width="800" height="373" src="dom-cssom-render-tree.png" style="background:#fff">
 
 ### Critical rendering path
 
