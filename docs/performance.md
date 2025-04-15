@@ -71,12 +71,12 @@ Je krijgt hiervoor 1 uur de tijd, daarna vertel je je bevindingen aan de squad.
 Onderzoek hoe websites werken als iemand met een hele lage internet snelheid websites bezoekt. Kun je dit zelf instellen in je browser of Operating System? Hoeveel mensen hebben toegang tot 5G? En 4G? 3G?
 
 #### Afbeeldingen
-Onderzoek wat er gebeurt als plaatjes niet kunnen worden getoond. Wanneer gebeurt dit? Is dit in te stellen? Wat als je data wilt besparen op je telefoon?
+Onderzoek wat er gebeurt als plaatjes niet kunnen worden getoond. Wanneer gebeurt dit? Is dit in te stellen? Wat als je data wilt besparen op je telefoon? Zijn er CDN's die iets veranderen aan afbeeldingen? Of Internet Service Providers die dingen optimaliseren? Gaat dat altijd goed?
 
 #### Custom fonts (Icon fonts)
-Onderzoek wat er gebeurt als custom fonts niet kunnen worden geladen en/of getoond. Of dat een icon font niet goed werkt. Werkt de site nog naar behoren? Wat krijg je te zien? Hoe makkelijk kunnen gebruikers dit zelf veranderen? Wie blokkeert Google Fonts? Of alles van Google? Zijn er populaire extensies die dit veroorzaken?
+Onderzoek wat er gebeurt als custom fonts niet kunnen worden geladen en/of getoond. Of dat een icon font niet goed werkt. Werkt de site nog naar behoren? Wat krijg je te zien? Hoe populair zijn icon fonts? Is Font Awesome niet huge? Wat als zo'n font geblokkeerd wordt? Hoe makkelijk kunnen gebruikers dit zelf veranderen? Wie blokkeert Google Fonts? Of alles van Google? Zijn er populaire extensies die dit veroorzaken? Wat doen mensen met dislexie?
 
-#### Content/Ad blockers
+#### Ad/Tracking/Analytics/Content blockers
 Onderzoek wat er gebeurt als content en/of ad blockers aan staan. Worden er delen verborgen? Welke blockers zijn populair? Wat doen die precies? Wat gebeurt er als je Google Analytics blokkeert? Hoe makkelijk kunnen gebruikers extensies hiervoor installeren in hun browser?
 
 #### JavaScript (volledig)
