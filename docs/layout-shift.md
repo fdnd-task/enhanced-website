@@ -35,7 +35,9 @@ CLS is één van de drie _Core Web Vitals_, waarmee _visuele stabiliteit_ van ee
 
 <img width="800" src="lighthouse-cls.png" alt="">
 
-CLS is een combinatie van verschillende oorzaken, met hetzelfde gevolg: Layout Shifts. De Core Web Vitals gaan over het gevolg voor de User Experience, niet over de oorzaken. Het kan best zijn dat CLS problemen worden veroorzaakt door én een groot lettertype, én een advertentie script dat rare dingen doet, én video's die pas laden nadat de pagina geladen is, én afbeeldingen die geen breedte en hoogte hebben meegekregen, én door de volgorde waarop deze allemaal geladen worden.
+De exacte berekening van de score die je krijgt van Lighthouse maakt voor nu niet uit. CLS is een combinatie van verschillende oorzaken, met hetzelfde gevolg: Layout Shifts. En een slechte User Experience.
+
+Het kan best zijn dat CLS problemen worden veroorzaakt door én een groot lettertype, én een advertentie script dat rare dingen doet, én video's die pas laden nadat de pagina geladen is, én een micro-interactie die de content laat springen, én afbeeldingen die geen breedte en hoogte hebben meegekregen, én door de volgorde waarop content geladen wordt.
 
 In de Diagnostics van een Lighthouse rapport vind je de verschillende problemen terug. Als frontender kun je een hoop doen aan deze problemen. Vandaag richten we ons op het oplossen van performance problemen die veroorzaakt worden door Layout Shifts van afbeeldingen.
 
