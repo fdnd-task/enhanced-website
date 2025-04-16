@@ -23,8 +23,7 @@ Layout Shifts worden vaak veroorzaakt door video's of afbeeldingen zonder bekend
 
 #### Bronnen
 
-- [Why Does Speed Matter van web.dev](https://web.dev/why-speed-matters/)
-
+- [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls)
 
 ### Cumulative Layout Shift
 
@@ -48,7 +47,6 @@ Je kunt in Lighthouse filteren op specifieke Web Vitals, wat voor deze opdracht 
 
 ### Bronnen
 
-- [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls)
 - [Optimize Cumulative Layout Shift](https://web.dev/articles/optimize-cls)
 - [Understand the critical path](https://web.dev/learn/performance/understanding-the-critical-path)
 - [Lighthouse performance scoring](https://developer.chrome.com/docs/lighthouse/performance/)
