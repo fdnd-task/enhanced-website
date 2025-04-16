@@ -94,6 +94,8 @@ Waardoor je toegang hebt tot wat meer eigenschappen:
 
 Gebruik het voorbeeld en de bronnen hieronder om je CLS issues rondom je dynamische afbeeldingen op te lossen.
 
+💡 Vergeet ook niet dat je met `console.log()` in NodeJS en het `json` Liquid filter kunt zien wat er in een object zit.
+
 Volgende week gaan we verder met wat meer geavanceerde onderwerpen.
 
 #### Bronnen
@@ -101,3 +103,4 @@ Volgende week gaan we verder met wat meer geavanceerde onderwerpen.
 - [Setting Height And Width On Images Is Important Again @ Smashing Magazine](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/)
 - [Files in Directus](https://directus.io/docs/api/files)
 - [Directus Fields](https://directus.io/docs/guides/connect/query-parameters#fields)
+- [Liquid json filter](https://liquidjs.com/filters/json.html)
