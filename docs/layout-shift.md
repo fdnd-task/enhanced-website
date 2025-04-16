@@ -6,9 +6,9 @@ Over het ontwerpen en bouwen van websites waarbij de layout niet verspringt bij 
 
 ### Wat is een Layout Shift?
 
-Waarschijnlijk de vervelendste en makkelijkst op te lossen oorzaak van _User Experience_ problemen rondom Performance is de _Layout Shift_:
+Waarschijnlijk de vervelendste en makkelijkst op te lossen oorzaak van _User Experience_ problemen rondom Performance is de _Layout Shift_.
 
-Als content nadat de pagina geladen en gerenderd is opeens verspringt, spreken we van een Layout Shift.
+Als content nadat de pagina geladen en gerenderd is opeens verspringt, spreken we van een Layout Shift:
 
 <img width="600" src="layout-instability2.gif" alt="">
 
@@ -45,7 +45,7 @@ Je kunt in Lighthouse filteren op specifieke Web Vitals, wat voor deze opdracht 
 
 <img width="800" src="lighthouse-cls-focus.png" alt="">
 
-### Bronnen
+#### Bronnen
 
 - [Optimize Cumulative Layout Shift](https://web.dev/articles/optimize-cls)
 - [Understand the critical path](https://web.dev/learn/performance/understanding-the-critical-path)
@@ -53,35 +53,51 @@ Je kunt in Lighthouse filteren op specifieke Web Vitals, wat voor deze opdracht 
 - [Web Vitals](https://web.dev/articles/vitals)
 
 
-### 🛠️ Opdracht Layout Shifts door afbeeldingen
+### 🛠️ Opdracht: Layout Shifts door afbeeldingen
 Doe een Lighthouse Performance test (Mobile) op je eigen project. Liefst op een pagina waar veel afbeeldingen op staan, zodat we wat problemen vinden die we kunnen gaan oplossen. _Throttle_ eventueel je netwerkverbinding (zeker als je op `localhost` test, want dan heb je geen vertraging door het netwerk). Maak een issue aan als je CLS problemen vindt. Analyseer de bevindingen van Lighthouse en voeg screenshots en mogelijke oplossingen of bronnen toe aan je analyse. Geef ook aan op welke pagina of pagina's de problemen plaatsvinden, zodat je weet om welke views het gaan. Performance problemen gaan bijna altijd over problemen in je HTML, en die zul je daar ook op moeten lossen.
 
-💡 Tip: Zijn er verschillende oorzaken voor CLS? Maak dan per oorzaak een sub-issues aan
+💡 Tip: Zijn er verschillende oorzaken voor CLS? Maak dan per oorzaak een sub-issue aan.
 
+Grote kans dat je dit probleem tegen gaat komen:
 
+<img width="800" src="lighthouse-cls-width-height.png" alt="">
 
-<!-- 
+> Image elements do not have explicit `width` and `height`
 
-- Rabo app
+In HTML is het goed om altijd `width` _en_ `height` attributen mee te geven aan een `<img>` tag. Dit voelt misschien raar, omdat dit op styling lijkt, maar je geeft de browser hiermee een hint over de _aspect ratio_ van een afbeelding. Lees voor de details vooral het artikel van Smashing Magazine hieronder.
 
-- Theorie + Onderzoekje
-- Laten zien hoe je dat in Directus + Liquid kunt fiksen -> opdracht: pas toe in de leertaak
-- Issue aanmaken -> CLS Issues testen in al je views -> fiksen
+Als je statische `<img>` tags in je code gebruikt, bijvoorbeeld voor een logo, kun je dit dus makkelijk fiksen.
 
-Voorbeeld van Layout shift die laat zien waaron dat slecht is voor de gebruikers ervaring. 
+Maar hoe weet je bij dynamische afbeeldingen, uit een database zoals Directus, nou welke afmetingen de afbeeldingen hebben? En hoe zet je die in HTML?
 
-Opdracht: Layout shifts onderzoeken? 
-Weten we websites waar een layout shift in zit die studenten kunnen uitproberen door de internetsnelheid te throttlen?
+Goed nieuws! Standaard krijg je voor afbeeldingen in Directus alleen het ID terug. `9619c5e5-27a7-4466-b014-ef9527e207cd` bijvoorbeeld. Dit kun je in je Liquid file combineren:
 
+```liquid
+<img src="https://fdnd-agency.directus.app/assets/{{ foto.id }}">
 
-Setting Height And Width On Images Is Important Again
-https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/
+```
 
-Opdracht: Spelen met width en height en de pagina laten met super traag internet.
+Je kunt in Directus niet alleen het image ID opvragen, maar via de `fields` query parameter ook alle eigenschappen van de originele afbeelding. Voor de stekjes van Bieb in Bloei kun je dit bijvoorbeeld doen:
 
-Opdracht: Dit kan ook met Directus 
-Zorg dat je de image width en height fields ook opvraagt
-`...?fields=*,image.id,image.height,image.width`
-Gebruik deze eigenschappen in je HTML views
+```
+https://fdnd-agency.directus.app/items/bib_stekjes?fields=foto.id,foto.width,foto.height
+https://fdnd-agency.directus.app/items/bib_stekjes?fields=*,foto.id,foto.width,foto.height
+https://fdnd-agency.directus.app/items/bib_stekjes?fields=*,foto.*
+```
 
--->
+Waardoor je toegang hebt tot wat meer eigenschappen:
+
+```liquid
+<img src="https://fdnd-agency.directus.app/assets/{{ foto.id }}" width="{{ foto.width }}" height="{{ foto.height }}">
+
+```
+
+Gebruik het voorbeeld en de bronnen hieronder om je CLS issues rondom je dynamische afbeeldingen op te lossen.
+
+Volgende week gaan we verder met wat meer geavanceerde onderwerpen.
+
+#### Bronnen
+
+- [Setting Height And Width On Images Is Important Again @ Smashing Magazine](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/)
+- [Files in Directus](https://directus.io/docs/api/files)
+- [Directus Fields](https://directus.io/docs/guides/connect/query-parameters#fields)
