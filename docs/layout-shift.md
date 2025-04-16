@@ -8,9 +8,11 @@ Over het ontwerpen en bouwen van websites waarbij de layout niet verspringt bij 
 
 Waarschijnlijk de vervelendste en makkelijkst op te lossen oorzaak van _User Experience_ problemen rondom Performance is de _Layout Shift_:
 
-<img width="600" src="layout-instability2.gif" alt="">
-
 Als content nadat de pagina geladen en gerenderd is opeens verspringt, spreken we van een Layout Shift.
+
+<img width="600" src="layout-instability2.gif" alt="">
+*Terwijl de gebruiker op de cancel knop wil klikken verspringt de layout waardoor per ongeluk op de bestel button wordt geklikt en de bestelling toch wordt gedaan*
+
 
 Layout Shifts worden vaak veroorzaakt door video's of afbeeldingen zonder bekende afmetingen, lettertypes die later inladen en anders renderen dan de fallback, dynamische content die client-side wordt geladen, of bijvoorbeeld advertenties die zichzelf groter of kleiner maken nadat de pagina al geladen is.
 
