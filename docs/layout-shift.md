@@ -14,7 +14,7 @@ Als content nadat de pagina geladen en gerenderd is opeens verspringt, spreken w
 
 Layout Shifts worden vaak veroorzaakt door video's of afbeeldingen zonder bekende afmetingen, lettertypes die later inladen en net even anders renderen dan de fallback, of bijvoorbeeld advertenties die zichzelf groter of kleiner maken nadat de pagina al geladen is.
 
-🛠️ Maak een kleine `layout-shift` demo in de Digital Garden van je I Love Web repo, waarin je bovenstaand probleem nabootst. Doe het hier dus bewust “verkeerd”.
+🛠️ Maak een kleine `layout-shift` demo in de Digital Garden/Learning Journal van je I Love Web repo, waarin je bovenstaand probleem nabootst. Doe het hier dus bewust “verkeerd”, om te oefenen, en om dit patroon te leren herkennen.
 
 🕵️ Tip: gebruik bijvoorbeeld `<img src="https://picsum.photos/4000">` als je een grote afbeelding wilt laden, of het driestappenplan in client-side JavaScript voor een micro-interactie.
 
