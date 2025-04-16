@@ -64,7 +64,7 @@ Grote kans dat je dit probleem tegen gaat komen:
 
 > Image elements do not have explicit `width` and `height`
 
-In HTML is het goed om altijd `width` _en_ `height` attributen mee te geven aan een `<img>` tag. Dit voelt misschien raar, omdat dit op styling lijkt, maar je geeft de browser hiermee een hint over de _aspect ratio_ van een afbeelding. Lees voor de details vooral het artikel van Smashing Magazine hieronder.
+In HTML is het goed om altijd `width` _en_ `height` attributen mee te geven aan een `<img>` tag. Dit voelt misschien raar, omdat dit op styling lijkt, maar je geeft de browser hiermee een hint over de _aspect ratio_ van een afbeelding. Hierdoor kan zelfs bij Responsive Design de browser al ruimte reserveren voor een afbeelding. De _render tree_ wordt namelijk gemaakt aan de hand van de HTML én de CSS. Lees voor de details vooral het artikel van Smashing Magazine hieronder.
 
 Als je statische `<img>` tags in je code gebruikt, bijvoorbeeld voor een logo, kun je dit dus makkelijk fiksen.
 
