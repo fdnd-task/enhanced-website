@@ -12,11 +12,11 @@ Waarschijnlijk de vervelendste en makkelijkst op te lossen oorzaak van _User Exp
 
 Als content nadat de pagina geladen en gerenderd is opeens verspringt, spreken we van een Layout Shift.
 
-Layout Shifts worden vaak veroorzaakt door video's of afbeeldingen zonder bekende afmetingen, lettertypes die later inladen en net even anders renderen dan de fallback, of bijvoorbeeld advertenties die zichzelf groter of kleiner maken nadat de pagina al geladen is.
+Layout Shifts worden vaak veroorzaakt door video's of afbeeldingen zonder bekende afmetingen, lettertypes die later inladen en anders renderen dan de fallback, dynamische content die client-side wordt geladen, of bijvoorbeeld advertenties die zichzelf groter of kleiner maken nadat de pagina al geladen is.
 
-🛠️ Maak een kleine `layout-shift` demo in de Digital Garden/Learning Journal van je I Love Web repo, waarin je bovenstaand probleem nabootst. Doe het hier dus bewust “verkeerd”, om te oefenen, en om dit patroon te leren herkennen.
+🛠️ Maak een kleine `layout-shift` demo in je Learning Journal, waarin je bovenstaand probleem nabootst. We doen het hier bewust “verkeerd”, om te oefenen, en om dit patroon te leren herkennen.
 
-🕵️ Tip: gebruik bijvoorbeeld `<img src="https://picsum.photos/4000">` als je een grote afbeelding wilt laden, of het driestappenplan in client-side JavaScript voor een micro-interactie.
+💡 Tip: gebruik bijvoorbeeld `<img src="https://picsum.photos/4000">` als je een grote afbeelding wilt laden, of het driestappenplan in client-side JavaScript voor een micro-interactie.
 
 #### Bronnen
 
@@ -25,7 +25,7 @@ Layout Shifts worden vaak veroorzaakt door video's of afbeeldingen zonder bekend
 
 ### Cumulative Layout Shift
 
-In de [Performance Audit deeltaak](https://github.com/fdnd-task/performance-audit) die je deze week hebt gedaan, kwam _Cumulative Layout Shift_ (CLS) waarschijnlijk ook al langs:
+In de [Performance Audit deeltaak](https://github.com/fdnd-task/performance-audit) kwam _Cumulative Layout Shift_ (CLS) ook al langs:
 
 <img width="800" src="cwv.png" alt="De drie Core Web Vitals: LCP, INP en CLS">
 
@@ -33,9 +33,9 @@ CLS is één van de drie _Core Web Vitals_, waarmee _visuele stabiliteit_ van ee
 
 <img width="800" src="lighthouse-cls.png" alt="">
 
-De exacte berekening maakt voor nu niet uit, maar het is belangrijk om te weten dat dit een combinatie is van verschillende oorzaken, met hetzelfde gevolg: Layout Shifts. De Core Web Vitals gaan dus over het gevolg voor de User Experience, niet over de oorzaken. Het kan best zijn dat CLS problemen worden veroorzaakt door én een groot lettertype, én een advertentie script dat rare dingen doet, én video's die pas laden nadat de pagina geladen is, én afbeeldingen die geen breedte en hoogte hebben meegekregen, én door de volgorde waarop deze allemaal geladen worden.
+CLS is een combinatie van verschillende oorzaken, met hetzelfde gevolg: Layout Shifts. De Core Web Vitals gaan over het gevolg voor de User Experience, niet over de oorzaken. Het kan best zijn dat CLS problemen worden veroorzaakt door én een groot lettertype, én een advertentie script dat rare dingen doet, én video's die pas laden nadat de pagina geladen is, én afbeeldingen die geen breedte en hoogte hebben meegekregen, én door de volgorde waarop deze allemaal geladen worden.
 
-In de Diagnostics van een Lighthouse rapport vind je dus vaak ook verschillende problemen terug. Als frontender kun je een hoop doen aan deze problemen, maar niet allemaal tegelijk. Laten we ze daarom stap voor stap aanpakken. Vandaag richten we ons op het oplossen van performance problemen die veroorzaakt worden door Layout Shifts van afbeeldingen.
+In de Diagnostics van een Lighthouse rapport vind je de verschillende problemen terug. Als frontender kun je een hoop doen aan deze problemen. Vandaag richten we ons op het oplossen van performance problemen die veroorzaakt worden door Layout Shifts van afbeeldingen.
 
 👍 Let op: het is OK om niet alle problemen in één keer op te lossen. No worries. Als je performance wilt verbeteren, doe je dit met kleine stapjes, en focus je je steeds op één gebied.
 
@@ -43,9 +43,11 @@ Je kunt in Lighthouse filteren op specifieke Web Vitals, wat voor deze opdracht 
 
 <img width="800" src="lighthouse-cls-focus.png" alt="">
 
-📐 Doe een snelle Lighthouse Performance test (Mobile) op je eigen project. Liefst op een pagina waar lekker veel afbeeldingen op staan, zodat we wat problemen vinden die we kunnen gaan oplossen. _Throttle_ eventueel je netwerkverbinding (zeker als je op `localhost` test, want dan heb je geen vertraging door het netwerk). Maak een issue aan als je CLS problemen vindt. Analyseer de bevindingen van Lighthouse, maak sub-issues van de verschillende oorzaken, en voeg screenshots en mogelijke oplossingen of bronnen toe aan je analyse. Geef ook aan op welke pagina of pagina's de problemen plaatsvinden, zodat je weet om welke views het gaan. Performance problemen gaan bijna altijd over problemen in je HTML, en die zul je daar ook op moeten lossen.
+🛠️ Doe een Lighthouse Performance test (Mobile) op je eigen project. Liefst op een pagina waar veel afbeeldingen op staan, zodat we wat problemen vinden die we kunnen gaan oplossen. _Throttle_ eventueel je netwerkverbinding (zeker als je op `localhost` test, want dan heb je geen vertraging door het netwerk). Maak een issue aan als je CLS problemen vindt. Analyseer de bevindingen van Lighthouse en voeg screenshots en mogelijke oplossingen of bronnen toe aan je analyse. Geef ook aan op welke pagina of pagina's de problemen plaatsvinden, zodat je weet om welke views het gaan. Performance problemen gaan bijna altijd over problemen in je HTML, en die zul je daar ook op moeten lossen.
 
-Nogmaals: we gaan niet alles op kunnen lossen, en dat is OK.
+💡 Tip: Zijn er verschillende oorzaken voor CLS? Maak dan per oorzaak een sub-issues aan
+
+
 
 #### Bronnen
 
