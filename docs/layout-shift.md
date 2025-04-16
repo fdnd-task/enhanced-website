@@ -68,7 +68,7 @@ Grote kans dat je dit probleem tegen gaat komen:
 
 In HTML is het goed om altijd `width` _en_ `height` attributen mee te geven aan een `<img>` tag. Dit voelt misschien raar, omdat dit op styling lijkt, maar je geeft de browser hiermee een hint over de _aspect ratio_ van een afbeelding. Hierdoor kan zelfs bij Responsive Design de browser al ruimte reserveren voor een afbeelding. De _render tree_ wordt namelijk gemaakt aan de hand van de HTML én de CSS. Lees voor de details vooral het artikel van Smashing Magazine hieronder.
 
-Als je statische `<img>` tags in je code gebruikt, bijvoorbeeld voor een logo, kun je dit dus makkelijk fiksen.
+Als je statische `<img>` tags in je code gebruikt, bijvoorbeeld voor een logo, kun je dit dus makkelijk oplossen, committen, en testen.
 
 Maar hoe weet je bij dynamische afbeeldingen, uit een database zoals Directus, nou welke afmetingen de afbeeldingen hebben? En hoe zet je die in HTML?
 
@@ -94,7 +94,7 @@ Waardoor je toegang hebt tot wat meer eigenschappen:
 
 ```
 
-Gebruik het voorbeeld en de bronnen hieronder om je CLS issues rondom je dynamische afbeeldingen op te lossen.
+Gebruik het voorbeeld en de bronnen hieronder om je CLS issues rondom je dynamische afbeeldingen op te lossen. Test na elke commit je werk opnieuw, en laat de CLS verbeteringen stap voor stap zien in je issue.
 
 💡 Vergeet ook niet dat je met `console.log()` in NodeJS en het `json` Liquid filter kunt zien wat er in een object zit.
 
