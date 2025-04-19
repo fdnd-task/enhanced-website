@@ -33,26 +33,16 @@ Deze leertaak wordt behandeld in Sprint 10. Er worden verschillende workshops aa
 Deze opdracht is done als:
 
 - [ ] Je website is online gepubliceerd
+- [ ] Je hebt een Performance audit op je website uitgevoerd, gevonden problemen gedocumenteerd en verholpen
+- [ ] Je hebt verschillende performance technieken toegepast
+- [ ] Je hebt met client-side scripting de user experience van je website verbeterd
+- [ ] Je hebt het eindresultaat gepresenteerd aan de opdrachtgever en ontwerpkeuzes beschreven in de Readme
+
+
+<!--
 - [ ] Je toont aan dat je in de analysefase verschillende methoden en technieken hebt ingezet om te inventariseren wat er moet gebeuren
 - [ ] Je toont aan dat je in de ontwerpfase verschillende methoden en technieken hebt ingezet die ervoor zorgen dat je precies weet wat je moet bouwen
 - [ ] Je toont aan dat je in de bouwfase verschillende server-side en client-side methoden en technieken hebt ingezet om het ontwerp te realiseren
 - [ ] Je toont aan dat je in de testfase verschillende methoden en technieken hebt ingezet om te testen of jouw website voldoet aan standaarden en gebruiksvriendelijk is
 - [ ] Je hebt client-side Javascript gebruikt om de interface te verrijken
-
-<!--
-Of willen we daar dingen als “je hebt een perf audit op je site gedaan en de resultaten verwerkt”
- 
-En “je hebt responsive images in je site verwerkt”
-
-“Je hebt perceived performance toegepast in je client side script” 
-je hebt je project gepland met een project board en de Moscow methode”
-
-Je hebt met client-side scripting de user experience van je website verbeterd (?)
-Je hebt verschillende performance technieken toegepast
-
-Je hebt een performane audit op je website uitgevoerd en de resultaten ...
-
-Je hebt ontwerpkeuzes gepresenteerd aan de opdrachtgever en beschreven in de readme
-
-Perf audit gedaan + gevonden problemen gedocumenteerd + verholpen
 -->
