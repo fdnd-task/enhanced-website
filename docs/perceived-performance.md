@@ -32,7 +32,7 @@ Let op. Hier moet wel een kanttekening geplaatst worden. Het is namelijk niet al
 Stéphanie Walter vertelt in haar lezing "Cheating The UX When There Is Nothing More To Optimize" dat je in de interface verschillende dingen kan doen die ervoor zorgen dat een gebruiker het gevoel heeft dat de website snel laadt en soepel werkt. Zoals loaders en _progress bars_, _micro-interactions_, _optimistic UI_, _User distractions_ en _progressive asset display_.
 
 #### Visual Time Response voor Interfaces
-De _visual time response_ is de tijd die voorbij gaat voordat er iets gebeurt. 
+De _visual time response_ is de tijd die voorbij gaat voordat er iets gebeurt. We onderscheiden 'instant response', 'normal delay', 'system is thinking' en 'do something extra' voor als het (te) lang duurt.
 
 ##### Instant response <300ms
 Als een interactie niet langer duurt dan 300 miliseconden ervaart de gebruiker dat als 'instant response', de interface reageert direct. Dit geldt voor bijvoorbeeld voor button states zoals :hover en :focus. 
