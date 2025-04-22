@@ -41,7 +41,7 @@ Als een interactie niet langer duurt dan 300 miliseconden ervaart de gebruiker d
 Als een interactie of het laden van content sneller gaat dan 2 seconden, is er geen extra feedback nodig. De gebruiker zal dan niet het gevoel krijgen dat iets te lang duurt.
 
 ##### System is thinking 2 - 5s
-Als het laden van content lander duurt dan 2 seconden, dan zal je de gebruiker feedback moeten even dat er iets gebeurt, zoals een loading spinner.
+Als het laden van content lander duurt dan 2 seconden, dan zal je de gebruiker feedback moeten even dat er iets gebeurt, een loading state.
 
 ##### Do something extra >5s
 Duurt een interactie of het laden van content langer dan 5 sconden? Dan zul je de gebruiker duidelijk moeten maken waarom iets zo lang duurt. Bijvoorbeeld bij het uploaden van content zorg je ervoor dat in de interface duidelijk is wat er gebeurt en hoe lang het nod duurt.
