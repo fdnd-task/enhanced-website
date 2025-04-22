@@ -15,7 +15,7 @@ Door verschillende performance technieken toe te passen kan je ervoor zorgen dat
 
 
 ### Skeleton screens
-In het artikel [#59 - Have you optimized for perceived performance?](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#59) vand e Frontend PErformance Checklist verschillende dingen die je kan doen om de gebruiker het gevoel te geven dat een website sneller werkt. 
+In het artikel [#59 - Have you optimized for perceived performance?](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#59) van de Frontend Performance Checklist verschillende dingen die je kan doen om de gebruiker het gevoel te geven dat een website sneller werkt. 
 
 ![Netflix Skeleton Screen](netflix-skeleton.png) 
 *Netflix Skeleton Screen*
