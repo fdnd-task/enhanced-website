@@ -13,9 +13,8 @@ Philip Walton schreef in zijn artikel over _user-centric performance_ op [web.de
 
 Door verschillende performance technieken toe te passen kan je ervoor zorgen dat een website sneller laadt. Daarnaast kan je ervoor zorgen dat de gebruiker het *gevoel* heeft dat een website sneller laadt of reageert. Dit noemen we _Perceived Performance_. Dit is het psychologische effect van het wachten. Als je de gebruiker de juiste feedback geeft, zoals loaders, micro-interacties en slimme animaties, zal die het gevoel hebben dat jouw website soepel werkt en snel laadt.
 
-
 ### Skeleton screens
-In het artikel [#59 - Have you optimized for perceived performance?](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#59) van de Frontend Performance Checklist verschillende dingen die je kan doen om de gebruiker het gevoel te geven dat een website sneller werkt. 
+In het artikel [#59 - Have you optimized for perceived performance?](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#59) van de Frontend Performance Checklist staan verschillende dingen die je kan doen om de gebruiker het gevoel te geven dat een website sneller werkt, zoals een Skeleton screen tonen.
 
 ![Netflix Skeleton Screen](netflix-skeleton.png) 
 *Netflix Skeleton Screen*
@@ -63,7 +62,7 @@ Pas Perceived Performance technieken toe op de client-side code van je POST inte
 Lees eerst het onderdeel "Have you optimized for perceived performance?" van de Frontend Performance Checklist. Maak aantekeningen in je issue.
 
 Ga daarna ontwerpen in Figma: 
-- Pas de _Visual Time Response_ toe op de interactie en loading states die je hebt gemaakt in sprint 9. 
+- Pas de _Visual Time Response_ toe op de interacties en loading states die je hebt gemaakt in sprint 9. 
 - Instant response: Ontwerp de states voor de buttons. Heb je een ease-in of ease-out animaties voor nodig voor de button states?
 - System is thinking: Ontwerp de loading animatie in de huisstijl van de opdrachtgever. Voeg zo nodig een skeleton state toe als de content (bijna) geladen wordt
 - Maak een break-down van de client-side JS en CSS die je nodig hebt. Kan je bedenken hoe je dit kan coderen? 
