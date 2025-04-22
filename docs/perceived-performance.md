@@ -7,7 +7,7 @@ Over lazy loading, loading states en hoe je er voor kan zorgen dat gebruikers ee
 
 Performance is afhankelijk van hoe snel je mobiel is, hoe snel internet je hebt, hoe snel een server reageert, hoeveel plaatjes of video's op een pagina staan, hoeveel Javascript en fonts geladen moeten worden, ... het ligt er aan ...
 
-Philip Walton schreef in een artikelen over _user-centric performance_ op [web.dev](https://web.dev/articles/user-centric-performance-metrics):
+Philip Walton schreef in zijn artikel over _user-centric performance_ op [web.dev](https://web.dev/articles/user-centric-performance-metrics):
 
 > Performance is relative.
 
