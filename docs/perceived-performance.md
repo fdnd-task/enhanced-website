@@ -7,7 +7,7 @@ Over lazy loading, loading states en hoe je er voor kan zorgen dat gebruikers ee
 
 Performance is afhankelijk van hoe snel je mobiel is, hoe snel internet je hebt, hoe snel een server reageert, hoeveel plaatjes of video's op een pagina staan, hoeveel Javascript en fonts geladen moeten worden, ... het ligt er aan ...
 
-Philip Walton schreef in een artikelen over _user-centric performance_ op [web.dev](https://web.dev/articles/user-centric-performance-metrics):
+Philip Walton schreef in zijn artikel over _user-centric performance_ op [web.dev](https://web.dev/articles/user-centric-performance-metrics):
 
 > Performance is relative.
 
@@ -15,7 +15,7 @@ Door verschillende performance technieken toe te passen kan je ervoor zorgen dat
 
 
 ### Skeleton screens
-In het artikel [Have you optimized for perceived performance?](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#59) staan in #59 verschillende dingen die je kan doen om de gebruiker het gevoel te geven dat een website sneller werkt. 
+In het artikel [#59 - Have you optimized for perceived performance?](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#59) van de Frontend Performance Checklist verschillende dingen die je kan doen om de gebruiker het gevoel te geven dat een website sneller werkt. 
 
 ![Netflix Skeleton Screen](netflix-skeleton.png) 
 *Netflix Skeleton Screen*
@@ -32,7 +32,7 @@ Let op. Hier moet wel een kanttekening geplaatst worden. Het is namelijk niet al
 Stéphanie Walter vertelt in haar lezing "Cheating The UX When There Is Nothing More To Optimize" dat je in de interface verschillende dingen kan doen die ervoor zorgen dat een gebruiker het gevoel heeft dat de website snel laadt en soepel werkt. Zoals loaders en _progress bars_, _micro-interactions_, _optimistic UI_, _User distractions_ en _progressive asset display_.
 
 #### Visual Time Response voor Interfaces
-De _visual time response_ is de tijd die voorbij gaat voordat er iets gebeurt. 
+De _visual time response_ is de tijd die voorbij gaat voordat er iets gebeurt. We onderscheiden 'instant response', 'normal delay', 'system is thinking' en 'do something extra' voor als het (te) lang duurt.
 
 ##### Instant response <300ms
 Als een interactie niet langer duurt dan 300 miliseconden ervaart de gebruiker dat als 'instant response', de interface reageert direct. Dit geldt voor bijvoorbeeld voor button states zoals :hover en :focus. 
@@ -41,10 +41,10 @@ Als een interactie niet langer duurt dan 300 miliseconden ervaart de gebruiker d
 Als een interactie of het laden van content sneller gaat dan 2 seconden, is er geen extra feedback nodig. De gebruiker zal dan niet het gevoel krijgen dat iets te lang duurt.
 
 ##### System is thinking 2 - 5s
-Als het laden van content lander duurt dan 2 seconden, dan zal je de gebruiker feedback moeten even dat er iets gebeurt, zoals een loading spinner.
+Als het laden van content lander duurt dan 2 seconden, dan zal je de gebruiker feedback moeten even dat er iets gebeurt, een loading state.
 
 ##### Do something extra >5s
-Duurt een interactie of het laden van content langer dan 5 sconden? Dan zul je de gebruiker duidelijk moeten maken waarom iets zo lang duurt. Bijvoorbeeld bij het uploaden van content zorg je ervoor dat in de interface duidelijk is wat er gebeurt en hoe lang het nod duurt.
+Duurt een interactie of het laden van content langer dan 5 sconden? Dan zul je de gebruiker duidelijk moeten maken waarom iets zo lang duurt. Bijvoorbeeld bij het uploaden van content zorg je ervoor dat in de interface duidelijk is wat er gebeurt en hoe lang het nog duurt.
 
 #### Illusies en slimme animaties 
 
