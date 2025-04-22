@@ -39,6 +39,17 @@ Uiteg dat je srcset en sizes kan gebruiken om hogere of lagere resolutie te lade
 Uitleg dat je afhankelijk van de schermgrootte een ander plaatje kan tonen. Dit doe je met het media attribute van het source elementen. 
 
 
+
+### Opdracht:  Responsive Images met de Directus API
+
+Image Optimization in Directus 
+https://learndirectus.com/image-optimization-in-directus/
+- Width and Height
+- Image Format
+- Image Quality
+
+
+
 ### Bronnen
 
 - [Do we use adaptive media loading and client hints?- Frontend Performance Checklist #21](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#21)
