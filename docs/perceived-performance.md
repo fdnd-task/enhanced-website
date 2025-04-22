@@ -60,7 +60,7 @@ Als je een progress bar naar het einde toe laat versnellen, zal de gebruiker het
 ## Opdracht Perceived Performance
 Pas Perceived Performance technieken toe op de client-side code van je POST interactie.
 
-Lees eerst het onderdeel Perceived Performance van de Frontend Performance Checklist. Maak aantekeningen in je issue.
+Lees eerst het onderdeel "Have you optimized for perceived performance?" van de Frontend Performance Checklist. Maak aantekeningen in je issue.
 
 Ga daarna ontwerpen in Figma: 
 - Pas de _Visual Time Response_ toe op de interactie en loading states die je hebt gemaakt in sprint 9. 
