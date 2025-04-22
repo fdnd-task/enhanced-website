@@ -3,76 +3,58 @@
 ## Responsive Images
 Over hoe je images kunt gebruiken in je website volgens het principe van Progressive Enhancement.
 
-# Enhanced Website
-
-## Responsive Images
-
-Over hoe je verschillende image formaten en sizes kunt gebruiken in je website om performant en progresive enhanced te werken. 
-
+Je bent vast wel eens deze twee punten tegengekomen in de lighthouse test:
+- [Server images in next-gen formates](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images)
+- [Properly size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images)
 <!--
-## Opdracht: Formaten en browserondersteuning
-- Ga op zoek naar de verschillende image formats ​die we kunnen gebruiken op het web​
-- Schrijf ze op het bord, bijv .jpg​ en hoe goed ze ondersteund worden door browsers​
-
 ## Wat zijn responsive images
 
 Responsive images helpen de browser om het beste plaatje te kiezen voor de eindgebruiker. Daarmee houdt de browser rekening met de internet snelheid, het device en de grootte van het scherm. Wij geven de browser een aantal opties en de browser kiest dan zelf wat de beste is met alle variabelen voor de eindgebruiker. We hebben hiervoor drie opties: `srcset`, `picture` in html en `image-set` in CSS (voor backgrounds).
 
-Verwerken: Uitgangspunt is het artikeltje op de Frontend Performance Checklist #21 - Do we use adaptive media loading and client hints?
+Dit zorgt voor een betere user experience en performance zie [nummer 21 op de performance checklist](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#assets-optimizations).
+
+## Opdracht: Formaten en browserondersteuning
+- Ga op zoek naar de verschillende image formats ​die we kunnen gebruiken op het web​
+- Schrijf ze op het bord, bijv .jpg​ en hoe goed ze ondersteund worden door browsers​
 
 ### Srcset
 
 We kunnen srcset gebruiken in een `<img>` element. Hiermee kunnen we de browser vertellen dat we verschillende image formats hebben, verschillende sizes en zelfs welke plaatje we het liefst willen gebruiken voor bepaalde schermgroottes.
 
-#### Verschillende formats
-```
-<img src="plaatje.jpg"
-  alt="Een plaatje"
-  srcset="
-    plaatje.avif 1000w,
-    plaatje.webp 1000w
-  "
->
-```
-
-#### Verschillende formats en groottes
-```
-<img src="plaatje-medium.jpg"
-  alt="Een plaatje"
-  srcset="
-    plaatje-large.avif 1000w,
-    plaatje-medium.avif 700w,
-    plaatje-small.avif 400w,
-    plaatje-large.webp 1000w,
-    plaatje-large.webp 700w,
-    plaatje-large.webp 400w
-  "
->
-```
-
-#### Verschillende formats, groottes en de browser vertellen welke we het liefst wanneer willen
-```
-<img src="plaatje-medium.jpg"
-  alt="Een plaatje"
-  srcset="
-    plaatje-large.avif 1000w,
-    plaatje-medium.avif 700w,
-    plaatje-small.avif 400w,
-    plaatje-large.webp 1000w,
-    plaatje-large.webp 700w,
-    plaatje-large.webp 400w
-  "
-  sizes="
-    (max-width: 600px) 400px,
-    (max-width: 800px) 700px,
-    100vw
-  " 
->
-```
+[MDN documentatie srcset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset)
 
 ### Picture
 
-Picture is een element waar we verschillende `source` aan kunnen meegeven en een default, zodat we de browser op weg helpen met de juiste afbeelding te kiezen. Picture wordt bijv ook veel voor art direction gebruikt. Denk aan een portrait foto die goed werkt op mobiel maar een andere ratio moet krijgen op desktop. 
+Picture is een element waar we verschillende `source` aan kunnen meegeven en een default, zodat we de browser op weg helpen met de juiste afbeelding te kiezen. Picture wordt ook veel voor art direction gebruikt. Denk aan een portrait foto die goed werkt op mobiel maar een andere ratio moet krijgen op desktop. 
+
+[MDN documentatie picture](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture)
+
+### Image-set
+
+We kunnen in CSS backgrounds ook responsive images gebruiken dmv image-set. Hier kun je een ook weer een lijstje aan formats meegeven zodat de browser zelf kan kiezen welke het serveert. 
+
+[MDN documentatie image-set](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set)
+
+## Hoe gebruiken we responsive images
+
+Before:
+```
+  <img src="plaatje.png" alt="Plaatje" width="400" height="300" decoding="async">
+```
+
+After:
+```
+  <picture>
+    <source type="image/avif" srcset="/plaatje.avif, /plaatje@2x.avif 2x">
+    <source type="image/webp" srcset="/plaatje.webp, /plaatje@2x.webp 2x">
+    <img src="plaatje.png" srcset="plaatje.png 2x" alt="Plaatje" width="400" height="300" decoding="async">
+  </picture>
+```
+
+#### Opdracht: `picture` element
+
+Demo bouwen met het picture element en fallback 
+Ga aan de slag met het bouwen van een demo waar je verschillende 
 
 ### Verschillende formats
 ```
@@ -101,9 +83,7 @@ Picture is een element waar we verschillende `source` aan kunnen meegeven en een
 ```
 
 
-#### Opdracht: `picture` element
 
-Demo bouwen met het picture element en fallback 
 
 
 
