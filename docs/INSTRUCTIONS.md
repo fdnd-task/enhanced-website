@@ -36,6 +36,7 @@ Deze opdracht is done als:
 - [ ] Je hebt een Performance audit op je website uitgevoerd, gevonden problemen gedocumenteerd en verholpen
 - [ ] Je hebt verschillende performance technieken toegepast
 - [ ] Je hebt met client-side scripting de user experience van je website verbeterd
+- [ ] Je hebt feedback en taken van de vorige sprints opgepakt en verwerkt
 - [ ] Je hebt het eindresultaat gepresenteerd aan de opdrachtgever en ontwerpkeuzes beschreven in de Readme
 
 
