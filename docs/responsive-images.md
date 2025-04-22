@@ -53,43 +53,17 @@ After:
 
 #### Opdracht: `picture` element
 
-Demo bouwen met het picture element en fallback 
-Ga aan de slag met het bouwen van een demo waar je verschillende 
+🛠️ Maak een demo met het picture element, waar je verschillende formaten gebruikt. Kijk in de network tab welke afbeelding er wordt gekozen. Test dit ook met een oude browser via browserstack. Wat zijn de verschillen?
 
-### Verschillende formats
-```
-<picture>
-  <source srcset="plaatje.avif">
-  <source srcset="plaatje.webp">
-
-  <img src="plaatje.jpg" alt="Een plaatje">
-</picture>
-```
-
-
-#### Verschillende formats en sizes
-```
-<picture>
-  <source media="(max-width: 600px)" srcset="plaatje-small.avif">
-  <source media="(max-width: 800px)" srcset="plaatje-medium.avif">
-  <source media="(min-width: 800px)" srcset="plaatje-large.avif">
-
-  <source media="(max-width: 600px)" srcset="plaatje-small.webp">
-  <source media="(max-width: 800px)" srcset="plaatje-medium.webp">
-  <source media="(min-width: 800px)" srcset="plaatje-large.webp">  
-
-  <img src="plaatje-medium.jpg" alt="Een plaatje">
-</picture>
-```
-
-
-
-
-
+💪 Voor de hardlopers
+👉 Je kunt met javascript en de [`.currentSrc`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/currentSrc) de source van het gekozen plaatje console.loggen of nog beter een paragraaf neerzetten en de `textContent` veranderen, zodat je het makkelijker ziet.
 
 ###  Resolution switching
 
+Je kunt met het media attribuut in het picture element verschillende afbeeldingen laten tonen. Dit gaat verder dan alleen de width media query, je kunt de hele lijst aan [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries) gebruiken
 Uiteg dat je srcset en sizes kan gebruiken om hogere of lagere resolutie te laden afhankelijk van de het apparaat/schermgrootte.
+
+🛠️ Maak een tweede demo waar je ten minste drie verschillende media queries toepast.
 
 
 ### Art direction
