@@ -44,7 +44,7 @@ Als een interactie of het laden van content sneller gaat dan 2 seconden, is er g
 Als het laden van content lander duurt dan 2 seconden, dan zal je de gebruiker feedback moeten even dat er iets gebeurt, een loading state.
 
 ##### Do something extra >5s
-Duurt een interactie of het laden van content langer dan 5 sconden? Dan zul je de gebruiker duidelijk moeten maken waarom iets zo lang duurt. Bijvoorbeeld bij het uploaden van content zorg je ervoor dat in de interface duidelijk is wat er gebeurt en hoe lang het nod duurt.
+Duurt een interactie of het laden van content langer dan 5 sconden? Dan zul je de gebruiker duidelijk moeten maken waarom iets zo lang duurt. Bijvoorbeeld bij het uploaden van content zorg je ervoor dat in de interface duidelijk is wat er gebeurt en hoe lang het nog duurt.
 
 #### Illusies en slimme animaties 
 
