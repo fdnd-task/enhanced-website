@@ -64,7 +64,7 @@ Lees eerst het onderdeel Perceived Performance van de Frontend Performance Check
 
 Ga daarna ontwerpen in Figma: 
 - Pas de _Visual Time Response_ toe op de interactie en loading states die je hebt gemaakt in sprint 9. 
-- Instant response: Ontwerp de states voor de buttons. Heb je een ease-in of ease-out animatie voor nodig?
+- Instant response: Ontwerp de states voor de buttons. Heb je een ease-in of ease-out animaties voor nodig voor de button states?
 - System is thinking: Ontwerp de loading animatie in de huisstijl van de opdrachtgever. Voeg zo nodig een skeleton state toe als de content (bijna) geladen wordt
 - Maak een break-down van de client-side JS en CSS die je nodig hebt. Kan je bedenken hoe je dit kan coderen? 
 - Build, and have fun!
