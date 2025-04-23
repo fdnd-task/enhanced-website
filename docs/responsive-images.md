@@ -4,7 +4,7 @@
 Over hoe je images kunt gebruiken in je website volgens het principe van Progressive Enhancement.
 
 Je bent vast wel eens deze twee punten tegengekomen in de lighthouse test:
-- [Server images in next-gen formates](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images)
+- [Serve images in next-gen formates](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images)
 - [Properly size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images)
 
 ## Wat zijn responsive images
