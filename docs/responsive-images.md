@@ -21,7 +21,7 @@ Picture is een element waar we verschillende `<source>` elementen aan kunnen mee
 
 ### Srcset
 
-We kunnen srcset gebruiken in `<img>` en in `<source>` elementen. Hiermee kunnen we de browser vertellen dat we verschillende afbeeldingsformaten hebben zodat het zelfde de juiste keuze kan maken.
+We kunnen het `srcset` attribuut gebruiken in `<img>` en in `<source>` elementen. Hiermee kunnen we de browser vertellen dat we verschillende afbeeldingsformaten hebben zodat het zelfde de juiste keuze kan maken. In combinatie met het `sizes` attribuut kun je de browser ook op weg helpen met verschillende media queries, dit wordt wel [snel ingewikkeld](https://cloudfour.com/thinks/responsive-images-the-simple-way/).
 
 [MDN documentatie srcset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset)
 
