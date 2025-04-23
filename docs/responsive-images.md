@@ -31,7 +31,7 @@ We kunnen in CSS backgrounds ook responsive images gebruiken dmv image-set. Hier
 
 [MDN documentatie image-set](https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set)
 
-## 👉 Opdracht: Formaten en browserondersteuning
+### 👉 Opdracht: Formaten en browserondersteuning
 - Ga op zoek naar de verschillende image formats ​die we kunnen gebruiken op het web​
 - Schrijf ze op het bord, bijv .jpg​ en hoe goed ze ondersteund worden door browsers​
 
