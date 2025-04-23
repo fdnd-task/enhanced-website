@@ -117,7 +117,7 @@ Dat kun je nu gaan upgraden, met de info uit de demo's die je hierboven hebt gem
 
 Lees in de documentatie van Directus hoe je de width, height, quality en meer kan opvragen.
 
-🛠️ Ga in je project aan de slag met responsive images, en alle bovenstaande demo's die je hebt gemaakt.
+🛠️ Ga in je project aan de slag met responsive images om de user experience te verbeteren op een performant en PE manier.
 
 👉 Maak een issue over responsive images, analyseer het 'probleem' in je project.
 
