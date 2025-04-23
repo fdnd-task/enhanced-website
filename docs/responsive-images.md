@@ -38,12 +38,12 @@ We kunnen in CSS backgrounds ook responsive images gebruiken dmv image-set. Hier
 ## Hoe gebruiken we responsive images
 
 Before:
-```
+```html
   <img src="plaatje.png" alt="Plaatje" width="400" height="300" decoding="async">
 ```
 
 After:
-```
+```html
   <picture>
     <source type="image/avif" srcset="plaatje.avif">
     <source type="image/webp" srcset="plaatje.webp">
@@ -63,7 +63,7 @@ After:
 
 Je kunt met het media attribuut in het picture element verschillende sizes van dezelfde afbeelding laten tonen. Een extra laag van progressive enhancement. Dit gaat verder dan alleen de width media query, je kunt de hele lijst aan [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries) gebruiken. Daarnaast kun je ook rekening houden met de hoeveelheid DPR van de eindgebruiker. 
 
-```
+```html
   <picture>
     <source media="(min-width: 600px)" type="image/avif" srcset="plaatje-groot.avif">
     <source type="image/avif" srcset="plaatje.avif, plaatje@2x.avif 2x">
@@ -83,7 +83,7 @@ Je kunt met het media attribuut in het picture element verschillende sizes van d
 
 We hebben nu voornamelijk gekeken naar dezelfde afbeelding serveren op verschillende formaten voor performance en progressive enhancement redenen. Waar het picture element ook veel voor wordt gebruikt is art direction. Een afbeelding die op een breed landscape scherm, goed werkt werkt wellicht juist op een smal portrait scherm, weer minder goed. Door goed na te denken over de art direction van je afbeeldingen kun je de beste versie meegeven voor de eindgebruiker.
 
-```
+```html
   <picture>
     <source media="(orientation: portrait)" type="image/avif" srcset="plaatje-portait.avif" width="300" height="400">
     <source type="image/avif" srcset="plaatje.avif">
@@ -97,23 +97,31 @@ We hebben nu voornamelijk gekeken naar dezelfde afbeelding serveren op verschill
 
 ### Opdracht: Responsive Images met de Directus API in je project
 
-Je kunt met directus verschillende bestandsformaten en groottes opvragen om met responsive images aan de slag te gaan. Waarschijnlijk heb je nu zoiets als:
+Je kunt met de Directus API verschillende bestandsformaten en groottes opvragen om met responsive images aan de slag te gaan. Waarschijnlijk heb je nu zoiets als:
 
-`<img src="https://fdnd-agency.directus.app/assets/{{ bla.image }}" alt="alt text">`
-
-Dat kun je dan nu gaan upgraden met de tests die je hierboven hebt gemaakt naar:
-
+```html
+  <img src="https://fdnd-agency.directus.app/assets/{{ bla.image }}" alt="alt text">
 ```
+
+Dat kun je nu gaan upgraden, met de info uit de demo's die je hierboven hebt gemaakt, naar:
+
+```html
 <picture>
    <source type="image/avif" srcset="https://fdnd-agency.directus.app/assets/{{ bla.image }}?format=avif">
    <source type="image/webp" srcset="https://fdnd-agency.directus.app/assets{{ bla.image }}?format=webp">
-   <img src="https://fdnd-agency.directus.app/assets/{{ bla.image }}" alt="alt text">
+   <img src="https://fdnd-agency.directus.app/assets/{{ bla.image }}" width="" height="" alt="alt text">
 </picture>
 ```
 
-Lees de documentatie hoe je de width, height, quality en meer kan opvragen.
+Lees in de documentatie van Directus hoe je de width, height, quality en meer kan opvragen.
 
-🛠️ Ga in je project aan de slag met responsive images, en alle bovenstaande demo's die je hebt gemaakt. Maak een issue over responsive images, analyseer het 'probleem' in je project, doe een lighthouse performance test vooraf en een test achteraf bij het laatste onderdeel. 
+🛠️ Ga in je project aan de slag met responsive images, en alle bovenstaande demo's die je hebt gemaakt.
+
+👉 Maak een issue over responsive images, analyseer het 'probleem' in je project.
+
+👉 Doe een lighthouse performance test vooraf en een test achteraf.
+
+👉 Documenteer de verbetering. Hiermee verantwoord je je ontwerp.
 
 ### Bronnen
 
