@@ -109,13 +109,13 @@ Dat kun je nu gaan upgraden, met de info uit de demo's die je hierboven hebt gem
 
 ```html
 <picture>
-   <source type="image/avif" srcset="https://fdnd-agency.directus.app/assets/{{ bla.image }}?format=avif">
-   <source type="image/webp" srcset="https://fdnd-agency.directus.app/assets{{ bla.image }}?format=webp">
-   <img src="https://fdnd-agency.directus.app/assets/{{ bla.image }}" width="" height="" alt="alt text">
+   <source type="image/avif" srcset="https://fdnd-agency.directus.app/assets/{{ foto.id }}?format=avif">
+   <source type="image/webp" srcset="https://fdnd-agency.directus.app/assets{{ foto.id }}?format=webp">
+   <img src="https://fdnd-agency.directus.app/assets/{{ foto.id }}" width="{{ foto.width }}" height="{{ foto.height }}" alt="alt text">
 </picture>
 ```
 
-Lees in de documentatie van Directus hoe je de width, height, quality en meer kan opvragen.
+Lees in de documentatie van Directus hoe je de width, height, quality en meer kan opvragen. Zie de workshop [layout-shift](https://github.com/fdnd-task/user-experience-enhanced-website/blob/main/docs/layout-shift.md) hoe je dat ook alweer doet in liquid. 
 
 🛠️ Ga in je project aan de slag met responsive images om de user experience te verbeteren op een performant en PE manier.
 
