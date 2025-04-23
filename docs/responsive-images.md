@@ -85,11 +85,10 @@ We hebben nu voornamelijk gekeken naar dezelfde afbeelding serveren op verschill
 
 ```
   <picture>
-    <source media="(orientation: portrait)" type="image/avif" srcset="plaatje-portait.avif">
-    <source media="(min-width: 600px)" type="image/avif" srcset="plaatje-groot.avif">
-    <source type="image/avif" srcset="plaatje.avif, plaatje@2x.avif 2x">
-    <source type="image/webp" srcset="plaatje.webp, plaatje@2x.webp 2x">
-    <img src="plaatje.png" srcset="plaatje.png 2x" alt="Plaatje" width="400" height="300" decoding="async">
+    <source media="(orientation: portrait)" type="image/avif" srcset="plaatje-portait.avif" width="300" height="400">
+    <source type="image/avif" srcset="plaatje.avif">
+    <source type="image/webp" srcset="plaatje.webp">
+    <img src="plaatje.png" alt="Plaatje" width="400" height="300" decoding="async">
   </picture>
 ```
 
@@ -100,15 +99,15 @@ We hebben nu voornamelijk gekeken naar dezelfde afbeelding serveren op verschill
 
 Je kunt met directus verschillende bestandsformaten en groottes opvragen om met responsive images aan de slag te gaan. Waarschijnlijk heb je nu zoiets als:
 
-`<img src="ietsmetdirectus/assets/{{ bla.image }}" alt="alt text">`
+`<img src="https://fdnd-agency.directus.app/assets/{{ bla.image }}" alt="alt text">`
 
 Dat kun je dan nu gaan upgraden met de tests die je hierboven hebt gemaakt naar:
 
 ```
 <picture>
-   <source type="image/avif" srcset="ietsmetdirectus/assets/{{ bla.image }}?format=avif">
-   <source type="image/webp" srcset="ietsmetdirectus/assets{{ bla.image }}?format=webp">
-   <img src="ietsmetdirectus/assets/{{ bla.image }}" alt="alt text">
+   <source type="image/avif" srcset="https://fdnd-agency.directus.app/assets/{{ bla.image }}?format=avif">
+   <source type="image/webp" srcset="https://fdnd-agency.directus.app/assets{{ bla.image }}?format=webp">
+   <img src="https://fdnd-agency.directus.app/assets/{{ bla.image }}" alt="alt text">
 </picture>
 ```
 
