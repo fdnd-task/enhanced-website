@@ -13,17 +13,17 @@ Responsive images helpen de browser om het beste plaatje te kiezen voor de eindg
 
 Dit zorgt voor een betere user experience en performance zie [nummer 21 op de performance checklist](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#assets-optimizations).
 
-### Srcset
-
-We kunnen srcset gebruiken in een `<img>` element. Hiermee kunnen we de browser vertellen dat we verschillende image formats hebben, verschillende sizes en zelfs welke plaatje we het liefst willen gebruiken voor bepaalde schermgroottes.
-
-[MDN documentatie srcset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset)
-
 ### Picture
 
-Picture is een element waar we verschillende `source` aan kunnen meegeven en een default, zodat we de browser op weg helpen met de juiste afbeelding te kiezen. Picture wordt ook veel voor art direction gebruikt. Denk aan een portrait foto die goed werkt op mobiel maar een andere ratio moet krijgen op desktop. 
+Picture is een element waar we verschillende `<source>` elementen aan kunnen meegeven en een default, zodat we de browser op weg helpen met de juiste afbeelding te kiezen. Picture wordt ook veel voor art direction gebruikt. Denk aan een portrait foto die goed werkt op mobiel maar een andere ratio moet krijgen op desktop. 
 
 [MDN documentatie picture](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture)
+
+### Srcset
+
+We kunnen srcset gebruiken in `<img>` en in `<source>` elementen. Hiermee kunnen we de browser vertellen dat we verschillende afbeeldingsformaten hebben zodat het zelfde de juiste keuze kan maken.
+
+[MDN documentatie srcset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset)
 
 ### Image-set
 
@@ -81,7 +81,7 @@ Je kunt met het media attribuut in het picture element verschillende sizes van d
 
 ### 👉 Opdracht: Art direction
 
-We hebben nu voornamelijk gekeken naar dezelfde afbeelding serveren op verschillende formaten voor performance en progressive enhancement redenen. Waar het picture element ook veel voor wordt gebruikt is art direction. Een afbeelding die op een landscape scherm, zoals je laptop, goed werkt werkt wellicht juist op een portrait scherm, zoals je mobiel, weer minder goed. Door goed na te denken over de art direction van je afbeeldingen kun je de beste versie meegeven voor de eindgebruiker.
+We hebben nu voornamelijk gekeken naar dezelfde afbeelding serveren op verschillende formaten voor performance en progressive enhancement redenen. Waar het picture element ook veel voor wordt gebruikt is art direction. Een afbeelding die op een breed landscape scherm, goed werkt werkt wellicht juist op een smal portrait scherm, weer minder goed. Door goed na te denken over de art direction van je afbeeldingen kun je de beste versie meegeven voor de eindgebruiker.
 
 ```
   <picture>
