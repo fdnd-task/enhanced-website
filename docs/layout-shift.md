@@ -17,7 +17,7 @@ Als content nadat de pagina geladen en gerenderd is opeens verspringt, spreken w
 
 Layout Shifts worden vaak veroorzaakt door video's of afbeeldingen zonder bekende afmetingen, lettertypes die later inladen en anders renderen dan de fallback, dynamische content die client-side wordt geladen, of bijvoorbeeld advertenties die zichzelf groter of kleiner maken nadat de pagina al geladen is.
 
-Dit zorgt voor een betere user experience en performance zie [nummer 60 op de performance checklist](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#60).
+Dit zorgt voor een betere user experience en performance zie [#60 Do you prevent layout shifts and repaints](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#60) van de Frontend Performance Checklist.
 
 
 #### Opdracht: Layout-shift nabootsen
