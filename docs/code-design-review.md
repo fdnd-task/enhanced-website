@@ -8,7 +8,7 @@ Deze week zijn jullie aan de slag gegaan met verschillende performance technieke
 
 Vandaag werken we in groepjes aan een code review met peers die ongeveer even ver zijn als dat jij bent. Binnen je groepje bepaal je welke vragen jullie hebben en waar je graag feedback op zou willen ontvangen.  
 
-De code-review van vandaag is gebaseerd op twee DoD's:
+We gaan kijken hoe ver jullie zijn met de DoD's:
 - [ ] Je hebt verschillende performance technieken toegepast
 - [ ] Je hebt met client-side scripting de user experience van je website verbeterd)
 
