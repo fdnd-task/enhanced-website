@@ -20,8 +20,8 @@ Bekijk onderstaande vier stappen en bepaal tot welke stap jij bent gekomen:
 
 1. Je hebt **een POST** die de data opslaat server-side. De pagina refresht wanneer dit is gelukt.   
 1. Je hebt **een client-side fetch** op jouw POST formulier gemaakt, als alles goed gaat in de browser wordt de pagina niet refresht.
-3. Je hebt **een loading en/of succes state** gemaakt als enhancement.  
-4. Je hebt **één of meer performance technieken** toegepast op je POST interactie.  
+3. Je hebt **een loading en succes state** gemaakt als enhancement.  
+5. Je hebt **één of meer performance technieken** toegepast op je POST interactie.  
 
 Zoek maximaal drie andere studenten die tot dezelfde stap zijn gekomen. Ga samen aan een tafel zitten.
 
