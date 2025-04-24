@@ -18,8 +18,8 @@ De code-review van vandaag is gebaseerd op twee DoD's:
 
 Bekijk onderstaande vier stappen en bepaal tot welke stap jij bent gekomen:  
 
-1. Je hebt **een POST** server-side werkend.  
-1. Je hebt **een client-side fetch** op jouw POST formulier.  
+1. Je hebt **een POST** die de data opslaat server-side. De pagina refresht wanneer dit is gelukt.   
+1. Je hebt **een client-side fetch** op jouw POST formulier gemaakt. De pagina wordt niet meer gerefresht, maar je ziet nog niet de nieuwe data. 
 3. Je hebt **een loading en/of succes state** gemaakt als enhancement.  
 4. Je hebt **verschillende performance technieken**, toegepast zoals responsive images, lay-outshifts etc.  
 
