@@ -19,7 +19,7 @@ We gaan kijken hoe ver jullie zijn met de DoD's:
 Bekijk onderstaande vier stappen en bepaal tot welke stap jij bent gekomen:  
 
 1. Je hebt **een POST** die de data opslaat server-side. De pagina refresht wanneer dit is gelukt.   
-1. Je hebt **een client-side fetch** op jouw POST formulier gemaakt. 
+1. Je hebt **een client-side fetch** op jouw POST formulier gemaakt, als alles goed gaat in de browser wordt de pagina niet refresht.
 3. Je hebt **een loading en/of succes state** gemaakt als enhancement.  
 4. Je hebt **één of meer performance technieken** toegepast op je POST interactie.  
 
