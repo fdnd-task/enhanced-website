@@ -9,6 +9,8 @@ Je bent vast wel eens deze twee punten tegengekomen in de lighthouse test:
 
 ⚠️ [Properly size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images)
 
+Door gebruik te maken van responsive images kan je dit voorkomen.
+
 ## Wat zijn responsive images
 
 Responsive images helpen de browser om het beste plaatje te kiezen voor de eindgebruiker. Daarmee houdt de browser rekening met de internet snelheid, het device en de grootte van het scherm. Wij geven de browser een aantal opties en de browser kiest dan zelf wat de beste is met alle variabelen voor de eindgebruiker. We hebben hiervoor drie opties: `srcset`, `picture` in html en `image-set` in CSS (voor backgrounds).
