@@ -109,7 +109,7 @@ We hebben nu voornamelijk gekeken naar dezelfde afbeelding serveren op verschill
 - [Responsive Images the Simple Way](https://cloudfour.com/thinks/responsive-images-the-simple-way/)
 
 
-### Opdracht: Responsive Images met de Directus API in je project
+## Responsive Images met de Directus API in je project
 
 Je kunt met de Directus API verschillende bestandsformaten en groottes opvragen om met responsive images aan de slag te gaan. Waarschijnlijk heb je nu zoiets als:
 
@@ -127,6 +127,7 @@ Dat kun je nu gaan upgraden, met de info uit de demo's die je hierboven hebt gem
 </picture>
 ```
 
+### Opdracht
 Lees in de documentatie van Directus hoe je de width, height, quality en meer kan opvragen. Zie de workshop [layout-shift](https://github.com/fdnd-task/user-experience-enhanced-website/blob/main/docs/layout-shift.md) hoe je dat ook alweer doet in liquid. 
 
 🛠️ Ga in je project aan de slag met responsive images om de user experience te verbeteren op een performant en PE manier.
@@ -137,7 +138,7 @@ Lees in de documentatie van Directus hoe je de width, height, quality en meer ka
 
 👉 Documenteer de verbetering. Hiermee verantwoord je je ontwerp.
 
-#### Bronnen
+### Bronnen
 
 - [Image optimization in Directus](https://learndirectus.com/image-optimization-in-directus/)
 - [Transform files with Directus](https://directus.io/docs/guides/files/transform)
