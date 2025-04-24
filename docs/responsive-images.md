@@ -39,6 +39,7 @@ We kunnen in CSS backgrounds ook responsive images gebruiken dmv image-set. Hier
 - Ga op zoek naar de verschillende image formats ​die we kunnen gebruiken op het web​
 - Schrijf ze op het bord, bijv .jpg​ en hoe goed ze ondersteund worden door browsers​
 
+
 ## Hoe gebruiken we responsive images
 
 Before:
@@ -55,13 +56,6 @@ After:
   </picture>
 ```
 
-### Bronnen
-
-- [Do we use adaptive media loading and client hints?- Frontend Performance Checklist #21](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#21)
-- [MDN: Using responsive images in HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
-- [Responsive Images 101, Part 1: Definitions](https://cloudfour.com/thinks/responsive-images-101-definitions/)
-- [Responsive Images the Simple Way](https://cloudfour.com/thinks/responsive-images-the-simple-way/)
-
 ### 👉 Opdracht: `picture` element
 
 🛠️ Maak een demo met het picture element, waar je verschillende formaten gebruikt. Kijk in de network tab welke afbeelding er wordt gekozen. Test dit ook met een oude browser via browserstack. Wat zijn de verschillen?
@@ -70,7 +64,7 @@ After:
 
 👉 Je kunt met javascript en de [`.currentSrc`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/currentSrc) de source van het gekozen plaatje console.loggen of nog beter een paragraaf neerzetten en de `textContent` veranderen, zodat je het makkelijker ziet.
 
-###  👉 Opdracht: Resolution switching
+### 👉 Opdracht: Resolution switching
 
 Je kunt met het media attribuut in het picture element verschillende sizes van dezelfde afbeelding laten tonen. Een extra laag van progressive enhancement. Dit gaat verder dan alleen de width media query, je kunt de hele lijst aan [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries) gebruiken. Daarnaast kun je ook rekening houden met de hoeveelheid DPR van de eindgebruiker. 
 
@@ -106,6 +100,13 @@ We hebben nu voornamelijk gekeken naar dezelfde afbeelding serveren op verschill
 🛠️ Maak een derde demo waar je art direction toepast. 
 
 
+
+### Bronnen
+
+- [Do we use adaptive media loading and client hints?- Frontend Performance Checklist #21](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#21)
+- [MDN: Using responsive images in HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
+- [Responsive Images 101, Part 1: Definitions](https://cloudfour.com/thinks/responsive-images-101-definitions/)
+- [Responsive Images the Simple Way](https://cloudfour.com/thinks/responsive-images-the-simple-way/)
 
 
 ### Opdracht: Responsive Images met de Directus API in je project
