@@ -15,7 +15,7 @@ Door gebruik te maken van responsive images kan je dit voorkomen.
 
 Responsive images helpen de browser om het beste plaatje te kiezen voor de eindgebruiker. Daarmee houdt de browser rekening met de internet snelheid, het device en de grootte van het scherm. Wij geven de browser een aantal opties en de browser kiest dan zelf wat de beste is met alle variabelen voor de eindgebruiker. We hebben hiervoor drie opties: `srcset`, `picture` in html en `image-set` in CSS (voor backgrounds).
 
-Dit zorgt voor een betere user experience en performance zie [nummer 21 op de performance checklist](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#assets-optimizations).
+Dit zorgt voor een betere user experience en performance zie [#21 Do we use adaptive media loading and client hints](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#assets-optimizations) van de Frontend Performance Checklist.
 
 ### Picture
 
