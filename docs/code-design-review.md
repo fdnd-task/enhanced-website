@@ -2,7 +2,7 @@
 
 
 ## Code/Design Review
-Deze week zijn jullie aan de slag gegaan met performance. Jullie hebben Perceived Performance technieken toegepast op de client-side code van je POST interactie.  
+Deze week zijn jullie aan de slag gegaan met verschillende performance technieken en jullie hebben Perceived Performance toegepast als enhancement van de client-side POST interactie.
 
 ### Aanpak  
 
