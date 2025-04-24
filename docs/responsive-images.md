@@ -55,6 +55,13 @@ After:
   </picture>
 ```
 
+### Bronnen
+
+- [Do we use adaptive media loading and client hints?- Frontend Performance Checklist #21](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#21)
+- [MDN: Using responsive images in HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
+- [Responsive Images 101, Part 1: Definitions](https://cloudfour.com/thinks/responsive-images-101-definitions/)
+- [Responsive Images the Simple Way](https://cloudfour.com/thinks/responsive-images-the-simple-way/)
+
 ### 👉 Opdracht: `picture` element
 
 🛠️ Maak een demo met het picture element, waar je verschillende formaten gebruikt. Kijk in de network tab welke afbeelding er wordt gekozen. Test dit ook met een oude browser via browserstack. Wat zijn de verschillen?
@@ -99,6 +106,8 @@ We hebben nu voornamelijk gekeken naar dezelfde afbeelding serveren op verschill
 🛠️ Maak een derde demo waar je art direction toepast. 
 
 
+
+
 ### Opdracht: Responsive Images met de Directus API in je project
 
 Je kunt met de Directus API verschillende bestandsformaten en groottes opvragen om met responsive images aan de slag te gaan. Waarschijnlijk heb je nu zoiets als:
@@ -127,10 +136,7 @@ Lees in de documentatie van Directus hoe je de width, height, quality en meer ka
 
 👉 Documenteer de verbetering. Hiermee verantwoord je je ontwerp.
 
-### Bronnen
+#### Bronnen
 
-- [Do we use adaptive media loading and client hints?- Frontend Performance Checklist #21](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#21)
-- [Using responsive images in HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
-- [Responsive Images 101, Part 1: Definitions](https://cloudfour.com/thinks/responsive-images-101-definitions/)
 - [Image optimization in Directus](https://learndirectus.com/image-optimization-in-directus/)
 - [Transform files with Directus](https://directus.io/docs/guides/files/transform)
