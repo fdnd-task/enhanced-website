@@ -12,7 +12,7 @@ We gaan kijken hoe ver jullie zijn met de DoD's:
 - [ ] Je hebt verschillende performance technieken toegepast
 - [ ] Je hebt met client-side scripting de user experience van je website verbeterd
 
-## Code Review (op niveau)  
+## 1. Code Review (op niveau)  
 
 ### Bepaal bij welke stap je bent  
 
@@ -21,7 +21,7 @@ Bekijk onderstaande vier stappen en bepaal tot welke stap jij bent gekomen:
 1. Je hebt **een POST** die de data opslaat server-side. De pagina refresht wanneer dit is gelukt.   
 1. Je hebt **een client-side fetch** op jouw POST formulier gemaakt, als alles goed gaat in de browser wordt de pagina niet refresht.
 3. Je hebt **een loading en succes state** gemaakt als enhancement.  
-5. Je hebt **één of meer performance technieken** toegepast op je POST interactie.  
+5. Je hebt ook al **andere client-side enhancement** toegepast. 
 
 Zoek maximaal drie andere studenten die tot dezelfde stap zijn gekomen. Ga samen aan een tafel zitten.
 
@@ -40,3 +40,12 @@ Vervolgens ga je met je team onderzoeken hoe je antwoorden kunt vinden op deze v
 - Een docent inschakelen voor een code-review.  
 
 Zorg ervoor dat je aan het einde van de ochtend je vragen hebt beantwoord en waardevolle feedback hebt verzameld, zodat je volgende week verder kunt.  
+
+## 2. Code Review Performance technieken
+
+### Feedback ontvangen op jouw uitgewerkte performance techniek
+
+Je hebt deze week meerdere performance technieken toegepast op de leertaak. Denk bijvoorbeeld aan een layout shift, responsive images of een skeleton screen. Daar ga je vandaag feedback op krijgen. 
+
+Kies minimaal één van deze technieken uit waar jij graag feedback op zou willen ontvangen. Maak hiervoor een issue aan en tag daarbij twee medestudenten waarvan jij feedback wilt ontvangen. 
+
