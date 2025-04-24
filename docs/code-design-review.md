@@ -10,7 +10,7 @@ Vandaag werken we in groepjes aan een code review met peers die ongeveer even ve
 
 We gaan kijken hoe ver jullie zijn met de DoD's:
 - [ ] Je hebt verschillende performance technieken toegepast
-- [ ] Je hebt met client-side scripting de user experience van je website verbeterd)
+- [ ] Je hebt met client-side scripting de user experience van je website verbeterd
 
 ## Code Review (op niveau)  
 
