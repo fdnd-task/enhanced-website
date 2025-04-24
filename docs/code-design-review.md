@@ -47,5 +47,9 @@ Zorg ervoor dat je aan het einde van de ochtend je vragen hebt beantwoord en waa
 
 Je hebt deze week meerdere performance technieken toegepast op de leertaak. Denk bijvoorbeeld aan een layout shift, responsive images of een skeleton screen. Daar ga je vandaag feedback op krijgen. 
 
-Kies minimaal één van deze technieken uit waar jij graag feedback op zou willen ontvangen. Maak hiervoor een issue aan en tag daarbij twee medestudenten waarvan jij feedback wilt ontvangen. 
+Maak een lijst voor jezelf met alle performance technieken die jij al hebt toegepast in de leertak. Maak een issue aan omschrijf hoe jij deze technieken hebt toegepast en voeg daarvan code snippets toe. Tag vervolgens twee medestudenten in de issue van wie jij feedback wilt ontvangen. 
+
+Ben je getagged? Dan geef je een code-review op de performance technieken van jouw medestudent. 
+
+
 
