@@ -63,6 +63,8 @@ Bekijk en bespreek de code die bij de performance technieken hoort.
 Schrijf hoe de test is gegaan, geef feedback wat er goed gaat en geef tips als er iets nog niet goed gaat. Voeg zo nodig bronnen of voorbeelden toe.
 
 
+### Review bespreken
 
+Bespreek na de review de feedback met de studenten. Is de feedback die geschreven is duidelijk? Hoe hebben ze getest en wat voor dingen hebben ze in je code gezien?
 
 
