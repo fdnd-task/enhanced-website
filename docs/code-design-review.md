@@ -47,7 +47,7 @@ Zorg ervoor dat je aan het einde van de ochtend je vragen hebt beantwoord en waa
 
 Je hebt deze week meerdere performance technieken toegepast op de leertaak. Zoals het voorkomen layout shift, responsive images of een skeleton screen. Daar ga je vandaag feedback op ~~krijgen~~vragen. 
 
-Maak een issue voor de review en beschrijf de performance technieken die jij al hebt toegepast in de leertaak. Geef een uitleg hoe jij deze technieken hebt toegepast, voeg code snippets toe en link naar code. Zorg dat je website live staat anders kan je code niet getet worden.
+Maak een issue voor de review en beschrijf de performance technieken die jij al hebt toegepast in de leertaak. Geef een uitleg hoe jij deze technieken hebt toegepast, voeg code snippets toe en link naar code. Zorg dat je website live staat anders kan je code niet getest worden.
 
 Tag vervolgens twee medestudenten in de issue van wie jij feedback wilt ontvangen. 
 
