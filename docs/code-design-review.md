@@ -43,13 +43,26 @@ Zorg ervoor dat je aan het einde van de ochtend je vragen hebt beantwoord en waa
 
 ## 2. Code Review Performance technieken
 
-### Feedback ontvangen op jouw uitgewerkte performance techniek
+### Bereid de review voor
 
-Je hebt deze week meerdere performance technieken toegepast op de leertaak. Denk bijvoorbeeld aan een layout shift, responsive images of een skeleton screen. Daar ga je vandaag feedback op krijgen. 
+Je hebt deze week meerdere performance technieken toegepast op de leertaak. Zoals het voorkomen layout shift, responsive images of een skeleton screen. Daar ga je vandaag feedback op ~~krijgen~~vragen. 
 
-Maak een lijst voor jezelf met alle performance technieken die jij al hebt toegepast in de leertak. Maak een issue aan omschrijf hoe jij deze technieken hebt toegepast en voeg daarvan code snippets toe. Tag vervolgens twee medestudenten in de issue van wie jij feedback wilt ontvangen. 
+Maak een issue voor de review en beschrijf de performance technieken die jij al hebt toegepast in de leertaak. Geef een uitleg hoe jij deze technieken hebt toegepast, voeg code snippets toe en link naar code. Zorg dat je website live staat anders kan je code niet getet worden.
 
-Ben je getagged? Dan geef je een code-review op de performance technieken van jouw medestudent. 
+Tag vervolgens twee medestudenten in de issue van wie jij feedback wilt ontvangen. 
+
+
+### Review geven
+
+Ben je getagged? Dan geef je een code-review op de performance technieken van jouw medestudent. Doe dit samen met de andere student die getagged is, zodat je kan overleggen.
+
+Lees de beschrijving goed door en test de website zoals je hebt geleerd in de opdracht [Break the web](https://github.com/fdnd-task/user-experience-enhanced-website/blob/main/docs/performance.md) en de deeltaak [Perfromance Audit](https://github.com/fdnd-task/performance-audit) 
+
+Bekijk en bespreek de code die bij de performance technieken hoort. 
+
+Schrijf hoe de test is gegaan, geef feedback wat er goed gaat en geef tips als er iets nog niet goed gaat. Voeg zo nodig bronnen of voorbeelden toe.
+
+
 
 
 
