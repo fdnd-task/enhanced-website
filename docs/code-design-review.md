@@ -43,7 +43,7 @@ Zorg ervoor dat je aan het einde van de ochtend je vragen hebt beantwoord en waa
 
 ## 2. Code Review Performance technieken
 
-### Bereid de review voor
+### Review voorbereiden
 
 Je hebt deze week meerdere performance technieken toegepast op de leertaak. Zoals het voorkomen layout shift, responsive images of een skeleton screen. Daar ga je vandaag feedback op ~~krijgen~~vragen. 
 
