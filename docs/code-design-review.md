@@ -49,7 +49,7 @@ Je hebt deze week meerdere performance technieken toegepast op de leertaak. Zoal
 
 Maak een issue voor de review en beschrijf de performance technieken die jij al hebt toegepast in de leertaak. Geef een uitleg hoe jij deze technieken hebt toegepast, voeg code snippets toe en link naar code. Zorg dat je website live staat anders kan je code niet getest worden.
 
-Tag vervolgens twee medestudenten in de issue van wie jij feedback wilt ontvangen. 
+Tag vervolgens twee medestudenten _uit de andere squad_ in de issue van wie jij feedback wilt ontvangen. 
 
 
 ### Review geven
