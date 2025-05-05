@@ -20,7 +20,7 @@ Een mooie techniek om bijvoorbeeld de resultaten van een filter en sorteer actie
 
 <video src="https://github.com/user-attachments/assets/e57ac40e-df8a-4c4a-9c63-84bb47076136" controls></video>
 
-*Transitions created with the View Transition API - <a href="https://developer.chrome.com/docs/web-platform/view-transitions/">Smooth transitions with the View Transition API</a>*
+*View transition tussen twee verschillende - [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/) *
 
 Voor een _View Transions_ maakt de browser een _snapshot_ van de oude en de nieuw state. Met CSS kan je bepalen hoe de transitions er uit komen te zien.
 
