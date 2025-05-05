@@ -17,7 +17,8 @@ Deze workshop gaan we met behulp van de `view transition API` feedback geven aan
 Met de `View Transition API` kan je tussen verschillende _views_, oftewel states, animeren.  Voorheen was hier veel JS en CSS voor nodig, maar sinds een paar jaar kunnen moderne browsers dit voor jou doen.
 Een mooie techniek om bijvoorbeeld de resultaten van een filter en sorteer actie te tonen, of de succes state van het posten van een bericht te animeren. 
 
-<video src="https://github.com/user-attachments/assets/5e504c84-1e7f-4924-ac39-19635097f515" controls></video>
+
+<video src="https://github.com/user-attachments/assets/e57ac40e-df8a-4c4a-9c63-84bb47076136" controls></video>
 
 *Transitions created with the View Transition API - <a href="https://developer.chrome.com/docs/web-platform/view-transitions/">Smooth transitions with the View Transition API</a>*
 
