@@ -29,10 +29,18 @@ Niet elke browser ondersteunt deze nieuwe standaard, maar dit is een perfect voo
 
 👉 Adam Argyle heeft een leuke collectie van View Transition demo's: https://codepen.io/collection/GoGOGK — bekijk een aantal voorbeelden en laat je inspireren. Probeer nog niet naar de code te kijken, want we gaan er stap voor stap doorheen.
 
+### Bronnen
+
+- [View Transitions @ Adam Argyle's CodePen](https://codepen.io/collection/GoGOGK)
+- [Nog wat inspiratie nodig?](https://live-transitions.pages.dev/)
+- [Meer (geavanceerde) demo's](https://view-transitions.chrome.dev/)
+
 
 ### Multi-Page transitions
 
-Met de View Transition API kun je vrij gemakkelijk tussen twee pagina's animeren. Dat wordt *cross-document view transitions* of *multi-page transitions* genoemd (voor _Multi-Page Apps, MPAs_). Als je deze CSS toevoegt aan je stylesheet, werkt het al:
+Met de View Transition API kun je vrij gemakkelijk tussen twee pagina's bezoeken animeren. Bijvoorbeeld tussen een overzichtspagina en een detailpagina. Dat worden *cross-document view transitions* of *multi-page transitions* genoemd (voor _Multi-Page Apps, MPAs_).
+
+Als je deze CSS toevoegt aan je stylesheet, werkt het al:
 
 ```css
 @view-transition {
@@ -40,7 +48,7 @@ Met de View Transition API kun je vrij gemakkelijk tussen twee pagina's animeren
 }
 ```
 
-Standaard krijg je een cross-fade tussen de `root` snapshots van beide pagina's, maar met een beetje CSS kun je dit helemaal aanpassen. Met de `view-transition-name` property kun je de browser verschillende snapshots van verschillende elementen laten maken, en die allemaal op een eigen manier laten animeren.
+Als je verder niks doet, krijg je een cross-fade tussen de `root` snapshots van beide pagina's (de hele viewport), maar met een beetje CSS kun je dit helemaal aanpassen. Met de `view-transition-name` property kun je de browser verschillende snapshots van verschillende elementen laten maken, en die allemaal op een eigen manier laten animeren.
 
 👉 Gebruik het artikel [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/) en MDN om jouw eigen project met multi-page transitions uit te breiden. Je hebt hiervoor geen JavaScript nodig.
 
@@ -49,7 +57,7 @@ Standaard krijg je een cross-fade tussen de `root` snapshots van beide pagina's,
 
 - [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/)
 - [Using the View Transition API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using)
-- [Nog wat inspiratie nodig?](https://live-transitions.pages.dev/)
+- [A Practical Guide to the CSS View Transition API door onze eigen Cyd Stumpel!](https://cydstumpel.nl/a-practical-guide-to-the-css-view-transition-api/)
 
 
 ### Single-Page transitions
@@ -109,5 +117,7 @@ Ook hierbij krijg je standaard een cross-fade van de browser, die je helemaal aa
 #### Bronnen
 
 - [View Transitions @ 12 Days of Web](https://12daysofweb.dev/2023/view-transitions/)
+- [Using the View Transition API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using)
 - [Same-document view transitions for single-page applications @ developer.chrome.com](https://developer.chrome.com/docs/web-platform/view-transitions/same-document)
 - [View Transition API: Single Page Apps Without a Framework @ DebugBear](https://www.debugbear.com/blog/view-transitions-spa-without-framework)
+- [Smooth transitions with the View Transition API @ developer.chrome.com](https://developer.chrome.com/docs/web-platform/view-transitions/)
