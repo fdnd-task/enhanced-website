@@ -20,7 +20,7 @@ Een mooie techniek om bijvoorbeeld de resultaten van een filter en sorteer actie
 <video controls>
     <source src="view-transition.mp4">
     Bekijk de video op <a href="https://developer.chrome.com/docs/web-platform/view-transitions/">Smooth transitions with the View Transition API</a>
-</video> 
+</video>
 
 *Transitions created with the View Transition API - <a href="https://developer.chrome.com/docs/web-platform/view-transitions/">Smooth transitions with the View Transition API</a>*
 
@@ -49,7 +49,16 @@ hier een stukkie 'simpele' code
 
 Je kan de `View Transition API` ook gebruiken voor het animeren van verschillende states op dezelfde pagina. Dit is een mooie techniek voor het enhancen van bijvoorbeeld een POST functionaliteit. 
 
+<video controls>
+    <source src="view-transition-spa.mp4">
+    Bekijk de video op <a href="https://developer.chrome.com/docs/web-platform/view-transitions/">Smooth transitions with the View Transition API</a>
+</video>
+
+*Met View Transitions wordt duidelijke feedback voor het toevoegen en verwijderen van cards getoond - <a href="https://developer.chrome.com/docs/web-platform/view-transitions/">Smooth transitions with the View Transition API</a>*
+
+
 Voorheen kon je dit doen met 1.000 regels JS en CSS, maar met _View transitions_ kan je dit de browser laten doen, met CSS transities die beter zijn voor de performance, en een goede fallback heeft. CSS wordt niet uitgevoerd als een browser het niet kent!
+
 
 
 <!--
