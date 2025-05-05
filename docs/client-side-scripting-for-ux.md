@@ -27,7 +27,7 @@ Heel kort door de bocht hoe dit werkt: voor elke _View Transition_ maakt de brow
 
 Niet elke browser ondersteunt deze nieuwe standaard, maar dit is een perfect voorbeeld van een _Progressive Enhancement_, die je nu al in kunt zetten. Oudere browsers laten gewoon de soepele overgang niet zien.
 
-👉 Adam Argyle heeft een leuke collectie van View Transition demo's: https://codepen.io/collection/GoGOGK — bekijk een aantal voorbeelden en laat je inspireren. Ook https://live-transitions.pages.dev/ is een coole demo van wat kan. Probeer nog niet naar de code te kijken, want we gaan er stap voor stap doorheen.
+👉 Adam Argyle heeft een leuke collectie van View Transition demo's: https://codepen.io/collection/GoGOGK — bekijk een aantal voorbeelden en laat je inspireren. Probeer nog niet naar de code te kijken, want we gaan er stap voor stap doorheen.
 
 
 ### Multi-Page transitions
