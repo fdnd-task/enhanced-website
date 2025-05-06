@@ -14,7 +14,7 @@ Verschillende principes zijn belangrijk voor een goede UX, zoals Toegankelijkhei
 
 Deze workshop gaan we met behulp van de _View Transition API_ feedback geven aan de gebruiker als het posten en laden van data is gelukt. Maar eerst gaan we onderzoeken wat _View Transitions_ zijn en wat je er zoal mee kan.
 
-## View Transition API
+## View Transition API (09:30)
 
 Met de _View Transition API_ kan je tussen verschillende _views_, oftewel states, animeren. Voorheen was hier veel JavaScript en CSS voor nodig, maar sinds een paar jaar kunnen moderne browsers dit voor jou doen.
 Het is een mooie techniek om bijvoorbeeld de resultaten van een filter en sorteer actie te tonen, of de success state van het posten van een bericht te animeren. Of om een overgang tussen twee pagina's te animeren. Een website kan hierdoor sneller aanvoelen (_Perceived Performance_).
@@ -38,7 +38,7 @@ Niet elke browser ondersteunt deze nieuwe standaard, maar dit is een perfect voo
 - [Hoe debug en inspecteer je animaties?](https://developer.chrome.com/docs/devtools/css/animations/)
 
 
-### Multi-Page transitions
+## Multi-Page transitions (10:00)
 
 Met de View Transition API kun je vrij gemakkelijk tussen twee pagina's bezoeken animeren. Bijvoorbeeld tussen een overzichtspagina en een detailpagina. Dat worden *cross-document view transitions* of *multi-page transitions* genoemd (voor _Multi-Page Apps, MPAs_).
 
@@ -55,7 +55,7 @@ Als je verder niks doet, krijg je een cross-fade tussen de `root` snapshots van 
 👉 Gebruik het artikel [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/) en MDN om jouw eigen project met multi-page view transitions uit te breiden. Je hebt hiervoor geen JavaScript nodig.
 
 
-#### Bronnen
+### Bronnen
 
 - [Een vette demo](https://live-transitions.pages.dev/)
 - [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/)
@@ -63,7 +63,7 @@ Als je verder niks doet, krijg je een cross-fade tussen de `root` snapshots van 
 - [A Practical Guide to the CSS View Transition API door onze eigen Cyd Stumpel!](https://cydstumpel.nl/a-practical-guide-to-the-css-view-transition-api/)
 
 
-### Single-Page transitions
+## Single-Page transitions (11:00)
 
 Je kunt View Transitions ook inzetten om verschillende states op dezelfde pagina (_Single Page Apps, SPAs_) te animeren. Dit is een mooie techniek voor het extra _enhancen_ van bijvoorbeeld de success state van een POST functionaliteit, als je die met een client-side fetch hebt uitgebreid.
 
@@ -117,7 +117,7 @@ Ook hierbij krijg je standaard een cross-fade van de browser, die je helemaal aa
 👉 Combineer dit voorbeeld met de bronnen hieronder, en pas met JavaScript en CSS Single-Page view transitions toe in jouw eigen success state. Maak hiervoor een nieuw issue aan, voeg schetsen, breakdowns, een analyse van het probleem en bronnen toe.
 
 
-#### Bronnen
+### Bronnen
 
 - [View Transitions @ 12 Days of Web](https://12daysofweb.dev/2023/view-transitions/)
 - [Using the View Transition API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using)
