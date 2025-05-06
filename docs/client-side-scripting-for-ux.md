@@ -27,20 +27,16 @@ Heel kort door de bocht hoe dit werkt: voor elke _View Transition_ maakt de brow
 
 Niet elke browser ondersteunt deze nieuwe standaard, maar dit is een perfect voorbeeld van een _Progressive Enhancement_, die je nu al in kunt zetten. Oudere browsers laten gewoon de soepele overgang niet zien.
 
-👉 Bekijk de view transition op de homepage van Dave Rupert https://daverupert.com. Maak met je tafel een breakdown van de view transition op het whiteboard. Gebruik de devtools om de code met animaties te analyseren. 
+👉 Bekijk de view transitions op [de website van Dave Rupert](https://daverupert.com/). Maak met je tafel een breakdown van de view transitions op het whiteboard. Gebruik de devtools om de code met animaties te analyseren. 
 
 ✌️ Bekijk verschillende voorbeelden van Adam Argyle op Codepen https://codepen.io/collection/GoGOGK. Welke zou jij kunnen toepassen op jouw project?
 
-💪 Bekijk en analyseer de gevanceerde veiw transition voorbeelden op https://view-transitions.chrome.dev/
+💪 Bekijk en analyseer de geavanceerde view transition voorbeelden op https://view-transitions.chrome.dev/
 
 ### Bronnen
 
-- [Hoe debug je animaties?](https://developer.chrome.com/docs/devtools/css/animations/)
-<!--
-- [View Transitions @ Adam Argyle's CodePen](https://codepen.io/collection/GoGOGK)
-- [Nog wat inspiratie nodig?](https://live-transitions.pages.dev/)
-- [Meer (geavanceerde) demo's](https://view-transitions.chrome.dev/)
--->
+- [Hoe debug en inspecteer je animaties?](https://developer.chrome.com/docs/devtools/css/animations/)
+
 
 ### Multi-Page transitions
 
@@ -61,6 +57,7 @@ Als je verder niks doet, krijg je een cross-fade tussen de `root` snapshots van 
 
 #### Bronnen
 
+- [Een vette demo](https://live-transitions.pages.dev/)
 - [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/)
 - [Using the View Transition API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using)
 - [A Practical Guide to the CSS View Transition API door onze eigen Cyd Stumpel!](https://cydstumpel.nl/a-practical-guide-to-the-css-view-transition-api/)
