@@ -27,7 +27,7 @@ Heel kort door de bocht hoe dit werkt: voor elke _View Transition_ maakt de brow
 
 Niet elke browser ondersteunt deze nieuwe standaard, maar dit is een perfect voorbeeld van een _Progressive Enhancement_, die je nu al in kunt zetten. Oudere browsers laten gewoon de soepele overgang niet zien.
 
-👉 Adam Argyle heeft een leuke collectie van View Transition demo's: https://codepen.io/collection/GoGOGK — bekijk een aantal voorbeelden en laat je inspireren. Probeer nog niet naar de code te kijken, want we gaan er stap voor stap doorheen.
+👉 Adam Argyle heeft een leuke collectie van View Transition demo's: https://codepen.io/collection/GoGOGK — bekijk een aantal voorbeelden en laat je inspireren. Probeer nog niet naar de code te kijken, want we gaan er stap voor stap doorheen. Lees ook hoe je [animaties kunt inspecteren en debuggen](https://developer.chrome.com/docs/devtools/css/animations/).
 
 ### Bronnen
 
@@ -51,7 +51,7 @@ Als je deze CSS toevoegt aan je stylesheet, werkt het al:
 
 Als je verder niks doet, krijg je een cross-fade tussen de `root` snapshots van beide pagina's (de hele viewport), maar met een beetje CSS kun je dit helemaal aanpassen. Met de `view-transition-name` property kun je de browser verschillende snapshots van verschillende elementen laten maken, en die allemaal op een eigen manier laten animeren.
 
-👉 Gebruik het artikel [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/) en MDN om jouw eigen project met multi-page transitions uit te breiden. Je hebt hiervoor geen JavaScript nodig.
+👉 Gebruik het artikel [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/) en MDN om jouw eigen project met multi-page view transitions uit te breiden. Je hebt hiervoor geen JavaScript nodig.
 
 
 #### Bronnen
@@ -112,7 +112,7 @@ if (document.startViewTransition) {
 
 Ook hierbij krijg je standaard een cross-fade van de browser, die je helemaal aan kunt passen met CSS.
 
-👉 Combineer dit voorbeeld met de bronnen hieronder, en pas een Single-Page transition toe in jouw eigen success state. Maak hiervoor een nieuw issue aan, voeg schetsen, breakdowns, een analyse van het probleem en bronnen toe.
+👉 Combineer dit voorbeeld met de bronnen hieronder, en pas met JavaScript en CSS Single-Page view transitions toe in jouw eigen success state. Maak hiervoor een nieuw issue aan, voeg schetsen, breakdowns, een analyse van het probleem en bronnen toe.
 
 
 #### Bronnen
