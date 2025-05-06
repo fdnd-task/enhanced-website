@@ -40,7 +40,7 @@ Niet elke browser ondersteunt deze nieuwe standaard, maar dit is een perfect voo
 
 ## Multi-Page transitions (10:00)
 
-Met de View Transition API kun je vrij gemakkelijk tussen twee pagina's bezoeken animeren. Bijvoorbeeld tussen een overzichtspagina en een detailpagina. Dat worden *cross-document view transitions* of *multi-page transitions* genoemd (voor _Multi-Page Apps, MPAs_).
+Met de View Transition API kun je vrij gemakkelijk tussen twee paginabezoeken animeren. Bijvoorbeeld tussen een overzichtspagina en een detailpagina. Dat worden *cross-document view transitions* of *multi-page transitions* genoemd (voor _Multi-Page Apps, MPAs_). Omdat we server-side rendering met dynamische routes gebruiken dit semester, is dit een fijne toevoeging voor de UX.
 
 Als je deze CSS toevoegt aan je stylesheet, werkt het al:
 
