@@ -34,6 +34,7 @@ Niet elke browser ondersteunt deze nieuwe standaard, maar dit is een perfect voo
 - [View Transitions @ Adam Argyle's CodePen](https://codepen.io/collection/GoGOGK)
 - [Nog wat inspiratie nodig?](https://live-transitions.pages.dev/)
 - [Meer (geavanceerde) demo's](https://view-transitions.chrome.dev/)
+- [Hoe debug je animaties?](https://developer.chrome.com/docs/devtools/css/animations/)
 
 
 ### Multi-Page transitions
@@ -62,13 +63,13 @@ Als je verder niks doet, krijg je een cross-fade tussen de `root` snapshots van 
 
 ### Single-Page transitions
 
-Je kunt View Transitions ook inzetten om verschillende states op dezelfde pagina (_Single Page Apps, SPAs_) te animeren. Dit is een mooie techniek voor het enhancen van bijvoorbeeld de success state van een POST functionaliteit.
+Je kunt View Transitions ook inzetten om verschillende states op dezelfde pagina (_Single Page Apps, SPAs_) te animeren. Dit is een mooie techniek voor het extra _enhancen_ van bijvoorbeeld de success state van een POST functionaliteit, als je die met een client-side fetch hebt uitgebreid.
 
 <video src="https://github.com/user-attachments/assets/494cb940-dc89-4e53-afcd-8c0ecd54b7f5" controls></video>
 
 *Met View Transitions wordt duidelijke feedback voor het toevoegen en verwijderen van cards getoond - <a href="https://developer.chrome.com/docs/web-platform/view-transitions/">Smooth transitions with the View Transition API</a>*
 
-Voorheen kon je dit doen met duizenden regels JS en CSS, maar met _View Transitions_ kun je de browser het zware werk laten doen. Je hebt hiervoor één regel JavaScript nodig:
+Voorheen kon je dit doen met duizenden regels JavaScript en CSS, maar met _View Transitions_ kun je de browser het zware werk laten doen. Je hebt hiervoor één regel JavaScript nodig:
 
 ```js
 document.startViewTransition(updateFunction)
@@ -76,7 +77,7 @@ document.startViewTransition(updateFunction)
 
 Hiermee laat je de browser een snapshot van de pagina maken, je update functie uitvoeren, en de view transitions tussen beide states uitvoeren. Hoe die transities precies werken, beschrijf je weer in CSS, precies zoals je bij Multi-Page transitions geleerd hebt.
 
-Je hebt hiervoor alleen wel _feature detection_ nodig. Een browser die deze regel niet kent, zal anders een error geven:
+Je hebt hiervoor alleen wel _feature detection_ nodig. Een browser die deze regel niet kent, zal anders een error geven. Ook hierbij geldt dus: zie een View Transition als Progressive Enhancement. Zonder deze feature kun je nog steeds prima gebruik maken van jouw site, maar mét deze feature kan het net even wat beter.
 
 ```js
 if (document.startViewTransition) {
@@ -111,7 +112,7 @@ if (document.startViewTransition) {
 
 Ook hierbij krijg je standaard een cross-fade van de browser, die je helemaal aan kunt passen met CSS.
 
-👉 Combineer dit voorbeeld met de bronnen hieronder, en pas een Single-Page transition toe in jouw eigen success state.
+👉 Combineer dit voorbeeld met de bronnen hieronder, en pas een Single-Page transition toe in jouw eigen success state. Maak hiervoor een nieuw issue aan, voeg schetsen, breakdowns, een analyse van het probleem en bronnen toe.
 
 
 #### Bronnen
@@ -121,3 +122,4 @@ Ook hierbij krijg je standaard een cross-fade van de browser, die je helemaal aa
 - [Same-document view transitions for single-page applications @ developer.chrome.com](https://developer.chrome.com/docs/web-platform/view-transitions/same-document)
 - [View Transition API: Single Page Apps Without a Framework @ DebugBear](https://www.debugbear.com/blog/view-transitions-spa-without-framework)
 - [Smooth transitions with the View Transition API @ developer.chrome.com](https://developer.chrome.com/docs/web-platform/view-transitions/)
+- [Een veel voorkomend probleem stap voor stap uitgelegd door Jake Archibald](https://jakearchibald.com/2024/view-transitions-handling-aspect-ratio-changes/)
