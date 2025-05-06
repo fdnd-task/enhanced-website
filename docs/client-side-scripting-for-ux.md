@@ -27,15 +27,20 @@ Heel kort door de bocht hoe dit werkt: voor elke _View Transition_ maakt de brow
 
 Niet elke browser ondersteunt deze nieuwe standaard, maar dit is een perfect voorbeeld van een _Progressive Enhancement_, die je nu al in kunt zetten. Oudere browsers laten gewoon de soepele overgang niet zien.
 
-👉 Adam Argyle heeft een leuke collectie van View Transition demo's: https://codepen.io/collection/GoGOGK — bekijk een aantal voorbeelden en laat je inspireren. Probeer nog niet naar de code te kijken, want we gaan er stap voor stap doorheen. Lees ook hoe je [animaties kunt inspecteren en debuggen](https://developer.chrome.com/docs/devtools/css/animations/).
+👉 Bekijk de view transition op de homepage van Dave Rupert https://daverupert.com. Maak met je tafel een breakdown van de view transition op het whiteboard. Gebruik de devtools om de code met animaties te analyseren. 
+
+✌️ Bekijk verschillende voorbeelden van Adam Argyle op Codepen https://codepen.io/collection/GoGOGK. Welke zou jij kunnen toepassen op jouw project?
+
+💪 Bekijk en analyseer de gevanceerde veiw transition voorbeelden op https://view-transitions.chrome.dev/
 
 ### Bronnen
 
+- [Hoe debug je animaties?](https://developer.chrome.com/docs/devtools/css/animations/)
+<!--
 - [View Transitions @ Adam Argyle's CodePen](https://codepen.io/collection/GoGOGK)
 - [Nog wat inspiratie nodig?](https://live-transitions.pages.dev/)
 - [Meer (geavanceerde) demo's](https://view-transitions.chrome.dev/)
-- [Hoe debug je animaties?](https://developer.chrome.com/docs/devtools/css/animations/)
-
+-->
 
 ### Multi-Page transitions
 
