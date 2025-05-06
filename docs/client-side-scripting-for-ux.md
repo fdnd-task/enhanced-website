@@ -52,7 +52,7 @@ Als je deze CSS toevoegt aan je stylesheet, werkt het al:
 
 Als je verder niks doet, krijg je een cross-fade tussen de `root` snapshots van beide pagina's (de hele viewport), maar met een beetje CSS kun je dit helemaal aanpassen. Met de `view-transition-name` property kun je de browser verschillende snapshots van verschillende elementen laten maken, en die allemaal op een eigen manier laten animeren.
 
-👉 Gebruik het artikel [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/) en MDN om jouw eigen project met multi-page view transitions uit te breiden. Je hebt hiervoor geen JavaScript nodig.
+👉 Gebruik het artikel [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/) (vanaf Stap 2, Stap 1 is niet relevant meer) en MDN om jouw eigen project met multi-page view transitions uit te breiden. Je hebt hiervoor geen JavaScript nodig.
 
 
 ### Bronnen
