@@ -36,6 +36,7 @@ Niet elke browser ondersteunt deze nieuwe standaard, maar dit is een perfect voo
 ### Bronnen
 
 - [Hoe debug en inspecteer je animaties?](https://developer.chrome.com/docs/devtools/css/animations/)
+- [Using the View Transition API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using)
 
 
 ## Multi-Page transitions (10:00)
@@ -58,10 +59,10 @@ Als je verder niks doet, krijg je een cross-fade tussen de `root` snapshots van 
 ### Bronnen
 
 - [Een vette demo](https://live-transitions.pages.dev/)
-- [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/)
-- [Using the View Transition API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using)
-- [A Practical Guide to the CSS View Transition API door onze eigen Cyd Stumpel!](https://cydstumpel.nl/a-practical-guide-to-the-css-view-transition-api/)
 
+<!--
+- [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/)
+-->
 
 ## Single-Page transitions (11:00)
 
@@ -119,9 +120,13 @@ Ook hierbij krijg je standaard een cross-fade van de browser, die je helemaal aa
 
 ### Bronnen
 
-- [View Transitions @ 12 Days of Web](https://12daysofweb.dev/2023/view-transitions/)
-- [Using the View Transition API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using)
 - [Same-document view transitions for single-page applications @ developer.chrome.com](https://developer.chrome.com/docs/web-platform/view-transitions/same-document)
 - [View Transition API: Single Page Apps Without a Framework @ DebugBear](https://www.debugbear.com/blog/view-transitions-spa-without-framework)
-- [Smooth transitions with the View Transition API @ developer.chrome.com](https://developer.chrome.com/docs/web-platform/view-transitions/)
 - [Een veel voorkomend probleem stap voor stap uitgelegd door Jake Archibald](https://jakearchibald.com/2024/view-transitions-handling-aspect-ratio-changes/)
+- [A Practical Guide to the CSS View Transition API door onze eigen Cyd Stumpel!](https://cydstumpel.nl/a-practical-guide-to-the-css-view-transition-api/)
+
+<!-- 
+- [View Transitions @ 12 Days of Web](https://12daysofweb.dev/2023/view-transitions/)
+- [Using the View Transition API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using)
+- [Smooth transitions with the View Transition API @ developer.chrome.com](https://developer.chrome.com/docs/web-platform/view-transitions/)
+-->
