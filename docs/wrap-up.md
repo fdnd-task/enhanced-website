@@ -1,13 +1,13 @@
 # Enhanced Website
 
 ## Wrap-Up sprint
-Laatste dingen afmaken, sprint review voorbereiden.
+Laatste dingen afmaken, Sprint Review voorbereiden.
 
 ## Wrap-up
-In de wrap up ga je de sprint review voorbereiden. Wat ga je aan de oprachtgever presenteren? Hoe ga je dat doen? En waar wil je feedback op van de opdrachtgever?
+In de wrap-up ga je de Sprint Review voorbereiden. Wat ga je aan de oprachtgever presenteren? Hoe ga je dat doen? En waar wil je feedback op van de opdrachtgever?
 
 ### Sprint review voorbereiden
-Eerste ga je met je team met studenten die dezelfde opdracht hebben de Sprint Review voorbereiden. Ga met elkaar aan tafel zitten. Laat eerst aan elkaar zien wat je hebt gemaakt deze sprint en aan welke vragen of feedback van de opdachtgever je hebt gewerkt. Bedenk daarna hoe jullie dit gaan presenteren, en bedenk een volgorde van onderwerpen.
+Eerst ga je met je team met studenten die dezelfde opdracht hebben de Sprint Review voorbereiden. Ga met elkaar aan tafel zitten. Laat eerst aan elkaar zien wat je hebt gemaakt deze sprint en aan welke vragen of feedback van de opdachtgever je hebt gewerkt. Bedenk daarna hoe jullie dit gaan presenteren, en bedenk een volgorde van onderwerpen.
 
 Het proces van briefing en sprint reviews gaan over communiceren met de opdrachtgever (en je team). 
 
@@ -16,7 +16,7 @@ Laat zien hoe je een vraag van de opdrachtgever vertaalt naar een ontwerp vraag.
 -->
 
 ### Readme schrijven
-Schrijf daarna een nette Readme waarin je laat zien wat je hebt gedaan. In de Readme laat je het eindresultaat zien en verantwoord je je ontwerpkeuzes...
+Schrijf daarna een nette Readme, waarin je laat zien wat je hebt gedaan. In de Readme laat je het eindresultaat zien en verantwoord je je ontwerpkeuzes...
 
 
 
